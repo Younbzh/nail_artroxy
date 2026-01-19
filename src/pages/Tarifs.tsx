@@ -3,58 +3,50 @@ import { siteConfig } from '../config/siteConfig';
 
 function Tarifs() {
   return (
-    <div className="space-y-16">
+    <div className="space-y-16 md:space-y-20">
       <Section
         eyebrow="Tarifs"
-        title="Une présentation moderne, lisible, premium"
-        description="Dans cette maquette, les tarifs ne sont pas présentés comme une liste brute mais comme des éléments valorisants. 
-        Le but est de montrer comment une mise en forme élégante modifie la perception du visiteur : simplicité, clarté et qualité."
+        title="Une présentation tarifaire plus lisible et plus valorisante"
+        description="L’objectif n’est pas d’indiquer ici les montants exacts, mais de montrer une manière plus moderne de présenter les formules, afin de rendre la lecture simple, fluide et rassurante pour le visiteur."
       >
         <div className="grid gap-6 md:grid-cols-3">
-
           <div className="glass gold-halo p-6">
-            <div className="eyebrow">{siteConfig.audience.primary}</div>
-            <h3 className="mt-3 text-base font-semibold">Formule Couple</h3>
+            <h3 className="text-sm font-semibold text-white">Couples</h3>
             <p className="mt-2 text-sm text-neutral-300 leading-relaxed">
-              Une présentation soignée rend les tarifs plus attractifs, plus crédibles 
-              et renforce l’image haut de gamme du club.
+              La formule centrale du club, mise en avant comme une expérience privilégiée,
+              afin de valoriser l’ambiance, le confort et l’équilibre social du lieu.
             </p>
-            <div className="mt-5 text-sm text-[#E6D39A] font-semibold">
-              Exemple de tarif — personnalisable
-            </div>
+            <p className="mt-4 text-xs text-[#E6D39A]">
+              Exemple de présentation — tarifs à adapter.
+            </p>
           </div>
-
           <div className="glass rose-halo p-6">
-            <div className="eyebrow">{siteConfig.audience.secondary}</div>
-            <h3 className="mt-3 text-base font-semibold">Accueil privilégié</h3>
+            <h3 className="text-sm font-semibold text-white">Femmes seules</h3>
             <p className="mt-2 text-sm text-neutral-300 leading-relaxed">
-              Une mise en avant visuelle douce montre l’attention portée à cette clientèle, ce qui améliore immédiatement la confiance.
+              Une mise en avant élégante, qui souligne l’attention portée à cette clientèle,
+              tout en renforçant la perception de sécurité et de respect.
             </p>
-            <div className="mt-5 text-sm text-[#E6D39A] font-semibold">
-              Exemple — conditions avantageuses
-            </div>
+            <p className="mt-4 text-xs text-[#E6D39A]">
+              Conditions à définir en fonction de la politique du club.
+            </p>
           </div>
-
           <div className="glass gold-halo p-6">
-            <div className="eyebrow">Sélection</div>
-            <h3 className="mt-3 text-base font-semibold">Hommes seuls</h3>
+            <h3 className="text-sm font-semibold text-white">Hommes seuls</h3>
             <p className="mt-2 text-sm text-neutral-300 leading-relaxed">
-              Présenter clairement les conditions d’accès permet d’éviter les mauvaises interprétations 
-              et valorise le sérieux du club.
+              Une explication claire des conditions d’accès, des créneaux ou de la sélection,
+              afin de cadrer les attentes et de préserver l’harmonie du lieu.
             </p>
-            <div className="mt-5 text-sm text-[#E6D39A] font-semibold">
-              Sur sélection — exemple
-            </div>
+            <p className="mt-4 text-xs text-[#E6D39A]">
+              Présentation illustrative — à affiner selon les règles du club.
+            </p>
           </div>
-
         </div>
       </Section>
 
       <Section
-        eyebrow="Note stratégique"
-        title="Pourquoi cette présentation fonctionne"
-        description="Un affichage premium augmente la valeur perçue. Le but de la maquette n’est pas de donner un tarif exact, 
-        mais d’illustrer la manière dont une présentation élégante influence positivement la perception du visiteur."
+        eyebrow="Lecture"
+        title="Ce que cette mise en forme change pour le visiteur"
+        description="Un tarif présenté proprement, avec un vocabulaire choisi et une hiérarchie claire, donne une impression de sérieux et de transparence. C’est un levier important dans la décision de venir ou non."
       />
     </div>
   );

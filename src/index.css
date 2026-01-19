@@ -39,3 +39,18 @@
 
   .btn-primary:hover { filter: brightness(1.08); }
 }
+
+/* LIGHT MODE OVERRIDES */
+body[data-theme="light"] {
+  background: linear-gradient(to bottom, #f8f8f8, #ffffff);
+  color: #111;
+}
+
+body[data-theme="light"] .glass {
+  background: rgba(255,255,255,0.8);
+  border-color: rgba(0,0,0,0.08);
+}
+
+body[data-theme="light"] p {
+  color: #333;
+}

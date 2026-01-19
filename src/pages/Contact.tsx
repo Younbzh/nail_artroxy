@@ -3,60 +3,59 @@ import { siteConfig } from '../config/siteConfig';
 
 function Contact() {
   return (
-    <div className="space-y-16">
+    <div className="space-y-16 md:space-y-20">
       <Section
-        eyebrow="Contact"
-        title="Un espace moderne, rassurant et clair"
-        description="Le formulaire illustratif montre comment une mise en page douce et élégante rend l'étape de contact plus accessible. 
-        Le visiteur comprend que tout est simple, fluide et discret."
+        eyebrow="Prise de contact"
+        title="Un espace clair pour poser des questions ou préparer une visite"
+        description={`Cette page montre comment ${siteConfig.clubName} pourrait présenter un contact moderne, rassurant et discret. Le but est d’encourager les premiers échanges, sans pression.`}
       >
-        <p className="text-xs text-neutral-400 mb-4">
-          Ce formulaire est présenté comme il pourrait apparaître sur le site final de {siteConfig.clubName}.
-        </p>
-
         <div className="grid gap-6 md:grid-cols-2">
-
-          <div className="glass p-7 rose-halo">
-            <h3 className="text-base font-semibold text-white">Formulaire de contact</h3>
-
+          <div className="glass rose-halo p-7">
+            <h3 className="text-base font-semibold text-white">Formulaire illustratif</h3>
             <div className="mt-5 space-y-4">
               <div>
                 <label className="block text-xs text-neutral-300 mb-1">Nom / pseudo</label>
-                <input className="w-full rounded-2xl bg-black/40 border border-white/10 px-3 py-2 text-sm text-neutral-100" placeholder="Votre nom" />
+                <input className="w-full rounded-2xl bg-black/40 border border-white/10 px-3 py-2 text-sm text-neutral-100" />
               </div>
-
               <div>
                 <label className="block text-xs text-neutral-300 mb-1">Email</label>
-                <input className="w-full rounded-2xl bg-black/40 border border-white/10 px-3 py-2 text-sm text-neutral-100" type="email" placeholder="email@exemple.com" />
+                <input
+                  type="email"
+                  className="w-full rounded-2xl bg-black/40 border border-white/10 px-3 py-2 text-sm text-neutral-100"
+                />
               </div>
-
               <div>
                 <label className="block text-xs text-neutral-300 mb-1">Message</label>
-                <textarea className="w-full rounded-2xl bg-black/40 border border-white/10 px-3 py-2 text-sm text-neutral-100" rows={4} placeholder="Votre demande..." />
+                <textarea
+                  rows={4}
+                  className="w-full rounded-2xl bg-black/40 border border-white/10 px-3 py-2 text-sm text-neutral-100"
+                />
               </div>
-
               <button className="btn-primary w-full">Envoyer (maquette)</button>
+              <p className="text-[11px] text-neutral-400 leading-relaxed">
+                Aucun message n’est réellement envoyé depuis cette maquette. Dans une version finale, ce formulaire serait relié
+                à l’adresse e-mail du club ou à un système de réservation.
+              </p>
             </div>
           </div>
 
-          <div className="glass p-7 gold-halo">
+          <div className="glass gold-halo p-7">
             <h3 className="text-base font-semibold text-white">Informations utiles</h3>
-            <p className="mt-2 text-sm text-neutral-300 leading-relaxed">
-              Voici comment une page de contact moderne peut présenter les informations essentielles, tout en restant douce, élégante et rassurante.
+            <p className="mt-3 text-sm text-neutral-300 leading-relaxed">
+              Cette zone peut regrouper les éléments essentiels : adresse, horaires, consignes, accès…
+              L’objectif est de rendre la venue la plus simple et la plus rassurante possible.
             </p>
-
             <div className="mt-5 space-y-2 text-sm text-neutral-300">
-              <div>📍 Adresse du club (exemple)</div>
+              <div>📍 Adresse (exemple)</div>
               <div>📞 Téléphone (exemple)</div>
               <div>🕘 Horaires habituels</div>
-              <div>🧥 Dress-code recommandé</div>
+              <div>🧥 Dress-code conseillé</div>
             </div>
-
-            <div className="mt-6 border-t border-white/10 pt-4 text-[11px] text-neutral-400">
-              Une mention discrète pour rappeler la confidentialité propre à {siteConfig.clubName}.
-            </div>
+            <p className="mt-6 text-[11px] text-neutral-400">
+              Une phrase courte sur la discrétion et le respect de la confidentialité peut être ajoutée ici,
+              afin de renforcer encore la confiance des visiteurs.
+            </p>
           </div>
-
         </div>
       </Section>
     </div>
