@@ -1,204 +1,201 @@
-// 📁 src/config/siteConfig.ts - LA CHALOUPE BORDEAUX
+// 📁 src/config/siteConfig.ts - EUPHORIA SPA
 export const siteConfig = {
-  clubName: "La Chaloupe",
-  city: "Bordeaux",
-  positioning: "Le Club des Libertin(e)s depuis 34 ans • Fun, élégance et tolérance",
+  clubName: "Euphoria Spa",
+  city: "Benesse Maremne",
+  positioning: "Spa & Club Privé Libertin • Glamour, classe et sexy aux portes du Pays Basque",
   accentMode: "dark" as "dark" | "light",
 
   tone: {
     keywords: [
+      "glamour",
+      "classe",
+      "sexy",
+      "raffiné",
       "élégant",
-      "convivial",
-      "chaleureux",
-      "tolérant",
-      "festif",
-      "bienveillant",
-      "libre"
+      "respectueux",
+      "discret"
     ],
     promise:
-      "Voguer sur les rives du plaisir & des sens, dans un écrin de liberté. Un espace de Fun, d'ouverture, de chaleur et de tolérance où chacun peut s'amuser avec élégance et fantaisie.",
+      "Un véritable havre de bien-être et de liberté sur 250 m² d'espace intérieur. Nous vous accueillons toute l'année pour des soirées à thèmes où règne une atmosphère glamour et raffinée, propice à la détente, à la rencontre et à la découverte de nouveaux plaisirs.",
   },
 
   hero: {
-    title: "Bienvenue à La Chaloupe",
-    subtitle: "Club libertin à Bordeaux",
-    tagline: "\"Voguer sur les rives du plaisir & des sens\"",
-    description: "Depuis 34 ans, La Chaloupe vous accueille dans un écrin de liberté pour des soirées inoubliables",
-    cta: "Découvrir La Chaloupe"
+    title: "Bienvenue à Euphoria Spa",
+    subtitle: "Spa & Club Privé Libertin",
+    tagline: "\"Un havre de bien-être et de liberté\"",
+    description: "Situé aux portes du Pays Basque et des Landes, sur 250 m² d'espace glamour et raffiné",
+    cta: "Découvrir Euphoria"
   },
 
   audience: {
     primary: "Couples",
     secondary: "Dames seules",
-    tertiary: "Célibataires (selon soirées)",
-    philosophy: "La Chaloupe est un espace de Fun, d'ouverture, de chaleur et de tolérance, principalement ouvert pour les couples mais accessible à toutes celles et ceux qui respectent et célèbrent la liberté de chacun, qui souhaitent s'amuser avec élégance et fantaisie, sortir des sentiers battus du conformisme."
+    tertiary: "Hommes seuls (nombre proportionné)",
+    philosophy: "Que vous soyez habitué(e) ou débutant(e), de tous âges, notre établissement vous offre un cadre élégant et respectueux des envies de chacun. Euphoria est un club où règne une atmosphère glamour et raffinée. Le respect et la discrétion sont nos maîtres mots. Les samedis soirs sont totalement réservés aux couples et aux femmes seules."
   },
 
   spaces: [
     {
-      title: "Piste de Danse",
-      emoji: "💃",
-      description: "La pièce centrale animée",
-      details: "Une piste de danse où l'alchimie naît parfois d'une simple musique, d'un regard ou d'un pas vers l'autre"
+      title: "Euphoria Club",
+      emoji: "🎊",
+      description: "Bar et Night-Club",
+      details: "Piste de danse avec DJ, cage et barre de pole dance pour toutes les audaces. Ambiance lounge en journée, club festif en soirée"
+    },
+    {
+      title: "Euphoria Spa",
+      emoji: "🌊",
+      description: "Espace balnéo détente",
+      details: "Douches, sauna et bain à bulles dans un espace naturiste pour vous délasser ou vous rapprocher dans les bulles"
+    },
+    {
+      title: "Summer Pool",
+      emoji: "🏖️",
+      description: "Plage naturiste libertine",
+      details: "Votre plage privée pour les beaux jours, espace extérieur naturiste et libertin"
+    },
+    {
+      title: "Salons de Relaxation",
+      emoji: "🛋️",
+      description: "Deux espaces de détente",
+      details: "Des salons cosy à proximité de l'espace balnéo pour des moments de complicité"
+    },
+    {
+      title: "Espace Tapas",
+      emoji: "🍷",
+      description: "Restauration légère",
+      details: "Tapas offerts les jeudis (20h-22h) et samedis (20h-21h30) pour partager un moment convivial"
     },
     {
       title: "Bar Central",
       emoji: "🍸",
-      description: "L'espace convivialité",
-      details: "Le cœur de La Chaloupe où se créent les rencontres et les échanges dans une ambiance chaleureuse"
-    },
-    {
-      title: "Coins Câlins",
-      emoji: "🛋️",
-      description: "Espaces d'intimité",
-      details: "Des espaces pensés pour vivre intensément ou en toute quiétude chaque moment de complicité"
-    },
-    {
-      title: "Jacuzzi",
-      emoji: "🌊",
-      description: "Détente et sensualité",
-      details: "Un espace aquatique pour prolonger le plaisir dans une ambiance détendue et sensuelle"
-    },
-    {
-      title: "Terrasse",
-      emoji: "🌙",
-      description: "Espace extérieur fumeurs",
-      details: "Une terrasse agréable pour prendre l'air et profiter de moments de pause entre deux danses"
-    },
-    {
-      title: "Espace Buffet",
-      emoji: "🍽️",
-      description: "Restauration (samedis)",
-      details: "Buffet salé et sucré à discrétion les samedis soirs pour reprendre des forces"
+      description: "Le point de rencontre",
+      details: "Bar convivial pour profiter d'un verre dans une ambiance chaleureuse et élégante"
     }
   ],
 
   values: [
-    { text: "34 ans d'expérience", icon: "🎉" },
-    { text: "Fun & Tolérance", icon: "💖" },
-    { text: "Élégance appréciée", icon: "👔" },
-    { text: "Ambiance festive", icon: "🎊" },
-    { text: "Convivialité & Respect", icon: "🤝" }
+    { text: "3 espaces en 1", icon: "🎯" },
+    { text: "Glamour & Raffinement", icon: "💎" },
+    { text: "Respect & Discrétion", icon: "🤝" },
+    { text: "Dress code strict", icon: "👗" },
+    { text: "250 m² d'espace", icon: "🏢" }
   ],
 
   dressCode: {
-    ladies: "Tenues sexy vivement appréciées et souhaitées",
-    gentlemen: "Comportement et tenue de parfait gentleman (chemise, pantalon, chaussures de ville)",
-    spirit: "À La Chaloupe, les messieurs gagnent à se mettre en valeur dans une tenue élégante. Les dames sont invitées à briller dans des tenues sexy qui subliment leur féminité."
+    ladies: "Pantalons, shorts, claquettes et baskets INTERDITS. Optez pour une robe ou jupe + talons pour révéler toute votre sensualité",
+    gentlemen: "Bermudas et claquettes INTERDITS. Pantalon + chemise ou polo exigé. Sneakers acceptées",
+    spirit: "Euphoria est un club libertin et sélect, où l'élégance et le raffinement sont de mise. Une tenue soignée est exigée pour préserver cette ambiance chic et sensuelle."
   },
 
   events: [
     {
-      title: "Soirée du Jeudi",
-      schedule: "Jeudi 22h - 02h",
-      description: "Couples, Dames seules & Célibataires",
-      atmosphere: "Une soirée conviviale en semaine pour se détendre et faire de belles rencontres"
+      title: "Jeudi Après-midi & Soirée",
+      schedule: "Jeudi 14h - 01h",
+      description: "Soirée mixte avec tapas de 20h à 22h",
+      atmosphere: "Ambiance lounge décontractée, idéale pour découvrir le club en douceur"
     },
     {
-      title: "Soirée du Vendredi",
-      schedule: "Vendredi & veilles de fériés 22h - 05h",
-      description: "Couples, Dames seules & nombre limité de Célibataires",
-      atmosphere: "L'ambiance monte d'un cran pour démarrer le week-end en beauté jusqu'au petit matin"
+      title: "Vendredi Soir",
+      schedule: "Vendredi 20h - 02h",
+      description: "Soirée mixte - Couples, Dames seules & Hommes seuls",
+      atmosphere: "Démarrez le week-end dans une ambiance festive et glamour"
     },
     {
-      title: "Soirée du Samedi - Couples",
-      schedule: "Samedi 22h - 05h",
-      description: "Exclusivement Couples et Dames seules",
-      atmosphere: "La soirée premium avec buffet à discrétion et ambiance festive garantie jusqu'à l'aube"
+      title: "Samedi Soir Premium",
+      schedule: "Samedi 20h - 03h",
+      description: "EXCLUSIVEMENT Couples et Dames seules + Tapas 20h-21h30",
+      atmosphere: "La soirée d'élite avec DJ, ambiance club et tapas inclus"
     },
     {
-      title: "Soirées Thématiques",
-      schedule: "Tout au long de l'année",
-      description: "Événements spéciaux et thématiques variées",
-      atmosphere: "Consultez nos réseaux sociaux pour découvrir les prochains thèmes"
+      title: "Dimanche Détente",
+      schedule: "Dimanche 14h - 19h30",
+      description: "Soirée mixte en journée",
+      atmosphere: "Terminez le week-end en beauté dans une ambiance décontractée"
     }
   ],
 
   pricing: {
     jeudi: [
-      { label: "Dames seules", price: "Gratuit", note: "+ 1 consommation offerte" },
-      { label: "Célibataires", price: "40€", note: "+ 2 consommations" },
-      { label: "Couples", price: "30€", note: "+ 4 consommations" }
+      { label: "Couples", price: "30€", note: "+ 1 conso/pers" },
+      { label: "Hommes seuls", price: "35€", note: "+ 1 consommation" },
+      { label: "Avec tapas & vin", price: "+15€", note: "Couple 50€ / Homme 45€" }
     ],
     vendredi: [
-      { label: "Dames seules", price: "Gratuit", note: "+ 1 consommation offerte" },
-      { label: "Célibataires", price: "50€", note: "+ 2 consos (nombre limité)" },
-      { label: "Couples", price: "40€", note: "+ 4 consommations" }
+      { label: "Couples", price: "45€", note: "+ 1 conso/pers" },
+      { label: "Hommes seuls", price: "50€", note: "+ 1 consommation" },
+      { label: "Dames seules", price: "Tarif préférentiel", note: "Nous contacter" }
     ],
     samedi: [
-      { label: "Dames seules", price: "Gratuit", note: "+ 1 consommation offerte" },
-      { label: "Couples", price: "50€", note: "+ 4 consos + buffet à discrétion" }
+      { label: "Couples", price: "45€", note: "+ tapas & vin + 1 conso/pers" },
+      { label: "Dames seules", price: "Tarif préférentiel", note: "Nous contacter" }
     ],
-    includes: "Verre supplémentaire : 10€ • Demi-bouteille : 60€ (1 soirée) • Bouteille : 100€ (2 soirées)"
+    dimanche: [
+      { label: "Couples", price: "40€", note: "+ 1 conso/pers" },
+      { label: "Hommes seuls", price: "50€", note: "+ 1 consommation" }
+    ],
+    includes: "🎁 Offre spéciale : Achat d'une bouteille (Alcool ou Champagne 100€) = Entrée Club+Spa offerte pour 2 personnes • 🎉 Formule Week-End : Venir le vendredi = Samedi offert"
   },
 
   contact: {
     address: {
-      street: "30 Rue Giacomo Mattéoti",
-      city: "33100 Bordeaux",
-      region: "Quartier Benauge",
-      access: "Proche du centre-ville de Bordeaux"
+      street: "D810 - Chemin des Sablerets",
+      city: "40220 Benesse Maremne",
+      region: "Entre Pays Basque et Landes",
+      access: "1 minute de la sortie 8 d'autoroute A63 • À deux pas de Capbreton et Hossegor"
     },
-    phone: "05 56 40 28 91",
-    email: "contact@lachaloupe-club.com",
-    website: "www.lachaloupe-club.com",
+    phone: "05 58 72 58 68",
+    email: "contact@euphoriaspa.fr",
+    website: "www.euphoriaspa.fr",
     hours: [
       { day: "Lundi - Mercredi", time: "Fermé" },
-      { day: "Jeudi", time: "22h - 02h (Mixte)" },
-      { day: "Vendredi & veilles fériés", time: "22h - 05h (Mixte limité)" },
-      { day: "Samedi", time: "22h - 05h (Couples uniquement)" },
-      { day: "Dimanche", time: "Fermé" }
+      { day: "Jeudi", time: "14h - 01h (Mixte + Tapas)" },
+      { day: "Vendredi", time: "20h - 02h (Mixte)" },
+      { day: "Samedi", time: "20h - 03h (Couples uniquement + Tapas)" },
+      { day: "Dimanche", time: "14h - 19h30 (Mixte)" }
     ],
-    parking: "Stationnement possible dans le quartier"
+    parking: "Parking privé sur place • Service navette depuis hôtel partenaire disponible"
   },
 
   highlights: [
-    "34 ans d'histoire et d'anecdotes croustillantes",
-    "Ambiance Fun, chaleureuse et tolérante",
-    "Soirées thématiques régulières",
-    "Buffet salé et sucré à discrétion les samedis",
-    "Terrasse extérieure pour les fumeurs",
-    "Accueil bienveillant et convivial",
-    "Cadre élégant et festif",
-    "Chaque soirée est unique et imprévisible"
+    "3 espaces en 1 : Club + Spa + Summer Pool (été)",
+    "250 m² d'espace glamour et raffiné",
+    "Soirées à thèmes chaque week-end",
+    "À proximité des plages naturistes de Capbreton/Hossegor",
+    "Accès facile : 1 min sortie A63",
+    "Hôtel partenaire avec service navette",
+    "Formule Week-End avantageuse",
+    "Tapas offerts jeudis et samedis",
+    "Ambiance glamour, classe et sexy",
+    "Hommes seuls acceptés avec comportement irréprochable",
+    "Samedis réservés aux couples et dames seules"
   ],
 
   features: [
-    "Grande piste de danse centrale",
-    "Bar convivial",
-    "Jacuzzi sensuel",
-    "Multiples coins câlins",
-    "Terrasse extérieure",
-    "Buffet samedis soirs",
-    "Soirées thématiques",
-    "Vestiaires et espaces confort"
+    "Night-Club avec DJ",
+    "Piste de danse + Cage + Pole dance",
+    "Espace balnéo : sauna + jacuzzi",
+    "Douches et vestiaires",
+    "2 salons de relaxation",
+    "Bar central convivial",
+    "Summer Pool (plage naturiste)",
+    "Service tapas",
+    "Parking privé",
+    "Service navette hôtel"
   ],
 
-  testimonials: [
-    {
-      name: "Laurence et Manu",
-      title: "De la joie !",
-      text: "C'était notre retour après plusieurs mois… Forcément ! Comme toujours accueil parfait et bienveillance. Nous adorons. Tout le monde s'y sent bien."
-    },
-    {
-      name: "Audrey",
-      title: "Fun & Volupté",
-      text: "C'est un club où règne une bonne ambiance. Danser en liberté, s'exhiber, se frotter… Le tout arrosé d'un bon accueil. Idéal pour une soirée libertine entre amis."
-    },
-    {
-      name: "Stella",
-      title: "Caliente",
-      text: "Très beau monde. Accueil chaleureux. Fiesta assurée !"
-    }
-  ],
+  weekendFormula: {
+    title: "Formule Week-End",
+    description: "Profitez pleinement de votre séjour : si vous venez le vendredi soir, l'entrée du samedi soir vous est offerte !",
+    conditions: "Valable selon conditions prévues, hors soirées spéciales ou privées"
+  },
 
   strategy: {
     goal:
-      "Mettre en avant l'histoire et l'authenticité de La Chaloupe, un club historique de 34 ans qui privilégie la convivialité, l'élégance et le fun dans un cadre festif et bienveillant.",
+      "Mettre en avant le concept unique 3-en-1 d'Euphoria Spa : un club glamour, un spa détente et une plage naturiste. Souligner l'élégance, le raffinement et la localisation exceptionnelle entre Pays Basque et Landes.",
     explanation:
-      "Une présentation moderne qui reflète les valeurs de La Chaloupe : un lieu où la liberté, le respect et la fête se conjuguent depuis plus de trois décennies pour créer des soirées uniques et mémorables.",
+      "Une présentation moderne qui reflète l'ambiance glamour et classe d'Euphoria, tout en mettant en avant ses atouts : situation géographique privilégiée, espaces variés et formules avantageuses.",
   },
 
   disclaimer:
-    "Maquette illustrative non contractuelle, destinée à présenter une version moderne du site de La Chaloupe.",
+    "Maquette illustrative non contractuelle, destinée à présenter une version moderne du site d'Euphoria Spa.",
 };
