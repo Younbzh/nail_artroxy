@@ -75,6 +75,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100">
+
       {/* Navigation */}
       <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-zinc-900/95 backdrop-blur-lg border-b border-white/5' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-6 py-4">
@@ -419,6 +420,7 @@ export default function App() {
           </p>
         </div>
       </footer>
+
     </div>
   );
 }
