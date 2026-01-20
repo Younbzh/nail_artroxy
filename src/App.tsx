@@ -1,6 +1,6 @@
-// 📁 src/App.tsx
+// 📁 src/App.tsx - Version pour La Chaloupe
 import { useState, useEffect } from 'react';
-import { Menu, X, MapPin, Phone, Mail, Clock, ChevronRight, Users } from 'lucide-react';
+import { Menu, X, MapPin, Phone, Mail, Clock, ChevronRight, Users, Star } from 'lucide-react';
 import { siteConfig } from './config/siteConfig';
 
 export default function App() {
@@ -70,6 +70,7 @@ export default function App() {
     { label: 'Espaces', href: '#espaces' },
     { label: 'Soirées', href: '#soirees' },
     { label: 'Tarifs', href: '#tarifs' },
+    { label: 'Avis', href: '#avis' },
     { label: 'Contact', href: '#contact' }
   ];
 
@@ -178,24 +179,22 @@ export default function App() {
             {siteConfig.values.map((value, idx) => (
               <div 
                 key={idx}
-                className="text-center group hover:scale-105 transition-transform duration-300"
+                className="bg-zinc-800/50 border border-white/5 rounded-xl p-4 text-center hover:border-amber-500/30 transition-all duration-300"
               >
-                <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">
-                  {value.icon}
-                </div>
-                <p className="text-zinc-400 text-sm font-light">{value.text}</p>
+                <div className="text-3xl mb-2">{value.icon}</div>
+                <p className="text-zinc-400 text-xs font-light">{value.text}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Club Section */}
-      <section id="club" className="py-24 bg-zinc-900 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-rose-500/5 rounded-full blur-3xl"></div>
-        <div className="max-w-6xl mx-auto px-6 relative">
-          <h3 className="text-4xl font-light bg-gradient-to-r from-amber-300 to-rose-300 bg-clip-text text-transparent mb-6 text-center">
-            Notre Univers
+      {/* About Section */}
+      <section id="club" className="py-24 bg-zinc-950 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-rose-500/5 rounded-full blur-3xl"></div>
+        <div className="max-w-4xl mx-auto px-6 relative">
+          <h3 className="text-4xl font-light bg-gradient-to-r from-amber-300 to-rose-300 bg-clip-text text-transparent mb-12 text-center">
+            Notre Histoire
           </h3>
           <p className="text-zinc-400 text-center mb-12 max-w-2xl mx-auto leading-relaxed">
             {siteConfig.tone.promise}
@@ -231,7 +230,7 @@ export default function App() {
             Nos Espaces
           </h3>
           <p className="text-zinc-400 text-center mb-16 font-light italic">
-            300m² de plaisir et de détente sur 2 niveaux
+            Tous nos espaces sont prévus pour vous permettre de vivre intensément chaque moment
           </p>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -266,7 +265,7 @@ export default function App() {
             Nos Soirées
           </h3>
           <p className="text-zinc-400 text-center mb-16 font-light italic">
-            Des événements thématiques réguliers pour tous les genres
+            Chaque soirée est unique — Une alchimie imprévisible
           </p>
           
           <div className="grid md:grid-cols-2 gap-8">
@@ -279,17 +278,13 @@ export default function App() {
                   <div className="bg-gradient-to-br from-rose-500/10 to-amber-500/10 p-3 rounded-lg">
                     <Users className="text-rose-400" size={28} />
                   </div>
-                  <div>
-                    <h4 className="text-2xl font-light text-rose-300 mb-2">{event.title}</h4>
-                    <p className="text-zinc-500 text-sm">{event.schedule}</p>
+                  <div className="flex-1">
+                    <h4 className="text-2xl font-light text-amber-300 mb-2">{event.title}</h4>
+                    <p className="text-rose-300 text-sm font-light">{event.schedule}</p>
                   </div>
                 </div>
-                <p className="text-zinc-300 leading-relaxed mb-3">
-                  {event.description}
-                </p>
-                <p className="text-rose-400/80 text-sm italic">
-                  {event.atmosphere}
-                </p>
+                <p className="text-zinc-300 mb-4 leading-relaxed">{event.description}</p>
+                <p className="text-zinc-500 text-sm italic">{event.atmosphere}</p>
               </div>
             ))}
           </div>
@@ -297,20 +292,21 @@ export default function App() {
       </section>
 
       {/* Pricing Section */}
-      <section id="tarifs" className="py-24 bg-zinc-950">
-        <div className="max-w-5xl mx-auto px-6">
+      <section id="tarifs" className="py-24 bg-zinc-950 relative overflow-hidden">
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl"></div>
+        <div className="max-w-6xl mx-auto px-6 relative">
           <h3 className="text-4xl font-light bg-gradient-to-r from-rose-300 to-amber-300 bg-clip-text text-transparent mb-4 text-center">
-            Tarifs
+            Tarifs & Formules
           </h3>
           <p className="text-zinc-500 text-center mb-12 font-light">{siteConfig.pricing.includes}</p>
           
           <div className="space-y-8 mb-8">
-            {/* Journée */}
-            {siteConfig.pricing.journee && (
+            {/* Jeudi */}
+            {siteConfig.pricing.jeudi && (
               <div className="bg-zinc-900/50 border border-white/10 rounded-2xl p-8">
-                <h4 className="text-2xl font-light text-amber-300 mb-6 text-center">En Journée</h4>
+                <h4 className="text-2xl font-light text-amber-300 mb-6 text-center">Jeudi Soir</h4>
                 <div className="grid md:grid-cols-3 gap-6">
-                  {siteConfig.pricing.journee.map((item, idx) => (
+                  {siteConfig.pricing.jeudi.map((item, idx) => (
                     <div key={idx} className="text-center">
                       <p className="text-zinc-400 font-light mb-2">{item.label}</p>
                       {item.note && <p className="text-zinc-500 text-xs mb-3">{item.note}</p>}
@@ -324,7 +320,7 @@ export default function App() {
             {/* Vendredi */}
             {siteConfig.pricing.vendredi && (
               <div className="bg-zinc-900/50 border border-white/10 rounded-2xl p-8">
-                <h4 className="text-2xl font-light text-amber-300 mb-6 text-center">Vendredi Soir</h4>
+                <h4 className="text-2xl font-light text-amber-300 mb-6 text-center">Vendredi Soir & Veilles de Fériés</h4>
                 <div className="grid md:grid-cols-3 gap-6">
                   {siteConfig.pricing.vendredi.map((item, idx) => (
                     <div key={idx} className="text-center">
@@ -340,7 +336,7 @@ export default function App() {
             {/* Samedi */}
             {siteConfig.pricing.samedi && (
               <div className="bg-zinc-900/50 border border-white/10 rounded-2xl p-8">
-                <h4 className="text-2xl font-light text-amber-300 mb-6 text-center">Samedi Soir - Couples uniquement</h4>
+                <h4 className="text-2xl font-light text-amber-300 mb-6 text-center">Samedi Soir - Couples & Dames</h4>
                 <div className="grid md:grid-cols-2 gap-6">
                   {siteConfig.pricing.samedi.map((item, idx) => (
                     <div key={idx} className="text-center">
@@ -352,44 +348,44 @@ export default function App() {
                 </div>
               </div>
             )}
-
-            {/* Fallback pour structure simple couples/singles */}
-            {siteConfig.pricing.couples && siteConfig.pricing.singles && (
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-zinc-900/50 border border-white/10 rounded-2xl p-8">
-                  <h4 className="text-2xl font-light text-amber-300 mb-6 text-center">Couples</h4>
-                  <div className="space-y-4">
-                    {siteConfig.pricing.couples.map((item, idx) => (
-                      <div key={idx} className="flex justify-between items-baseline">
-                        <div>
-                          <span className="text-zinc-400 font-light">{item.label}</span>
-                          <p className="text-zinc-500 text-xs">{item.note}</p>
-                        </div>
-                        <span className="text-3xl font-light text-amber-300">{item.price}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="bg-zinc-900/50 border border-white/10 rounded-2xl p-8">
-                  <h4 className="text-2xl font-light text-amber-300 mb-6 text-center">Célibataires</h4>
-                  <div className="space-y-4">
-                    {siteConfig.pricing.singles.map((item, idx) => (
-                      <div key={idx} className="flex justify-between items-baseline">
-                        <div>
-                          <span className="text-zinc-400 font-light">{item.label}</span>
-                          <p className="text-zinc-500 text-xs">{item.note}</p>
-                        </div>
-                        <span className="text-3xl font-light text-amber-300">{item.price}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            )}
           </div>
         </div>
       </section>
+
+      {/* Testimonials Section - Spécifique à La Chaloupe */}
+      {siteConfig.testimonials && siteConfig.testimonials.length > 0 && (
+        <section id="avis" className="py-24 bg-zinc-900 relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-96 h-96 bg-rose-500/5 rounded-full blur-3xl"></div>
+          <div className="max-w-6xl mx-auto px-6 relative">
+            <h3 className="text-4xl font-light bg-gradient-to-r from-amber-300 to-rose-300 bg-clip-text text-transparent mb-4 text-center">
+              Vos Mots d'Amour
+            </h3>
+            <p className="text-zinc-400 text-center mb-16 font-light italic">
+              Ce que nos visiteurs disent de La Chaloupe
+            </p>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              {siteConfig.testimonials.map((testimonial, idx) => (
+                <div 
+                  key={idx}
+                  className="bg-gradient-to-br from-zinc-800/80 to-rose-950/20 border border-rose-500/10 rounded-xl p-8 hover:shadow-xl hover:shadow-rose-900/20 transition-all duration-500"
+                >
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} size={16} className="fill-amber-400 text-amber-400" />
+                    ))}
+                  </div>
+                  <h4 className="text-xl font-light text-amber-300 mb-3">{testimonial.title}</h4>
+                  <p className="text-zinc-400 text-sm leading-relaxed mb-4 italic">
+                    "{testimonial.text}"
+                  </p>
+                  <p className="text-rose-300 text-sm font-light">— {testimonial.name}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Contact Section */}
       <section id="contact" className="py-24 bg-zinc-900">
