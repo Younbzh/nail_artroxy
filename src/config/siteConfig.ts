@@ -1,302 +1,284 @@
-// 📁 src/config/siteConfig.ts - LA STATION SAUNA PAU
+// 📁 src/config/siteConfig.ts - LE LOKAL PAU
 export const siteConfig = {
-  clubName: "La Station Sauna",
+  clubName: "Le Lokal",
   city: "Pau",
-  positioning: "Sauna Gay & Mixte sur 600 m² et 4 niveaux • Ouvert 7j/7",
+  positioning: "Complexe libertin 3 en 1 • Sauna + Cinéma + Sex-shop • 250 m² au cœur de Pau",
   accentMode: "dark" as "dark" | "light",
 
   tone: {
     keywords: [
+      "tolérant",
+      "propre",
       "convivial",
-      "torride",
-      "respectueux",
-      "varié",
-      "festif",
       "accueillant",
-      "libertin"
+      "authentique",
+      "respectueux",
+      "chaleureux"
     ],
     promise:
-      "La Station est un sauna gay et mixte au centre-ville de Pau. 600 m² de coins câlins torrides sur 4 niveaux avec un espace balnéo refait à neuf. Un club mixte, libertin et échangiste ouvert 7 jours sur 7, où règnent sexe, chaleur et rencontres respectueuses !",
+      "Le Lokal est un complexe unique à Pau qui réunit un sex-shop, un cinéma permanent et un sauna-balnéo de 250 m² dans un cadre authentique où la pierre apparente est superbement mise en valeur. Un lieu tolérant envers toutes les sexualités où règne la propreté et la convivialité.",
   },
 
   hero: {
-    title: "Bienvenue à La Station",
-    subtitle: "Sauna Gay & Mixte à Pau",
-    tagline: "\"600 m² de plaisir sur 4 niveaux\"",
-    description: "Ancien Sauna Eros, La Station vous accueille 7j/7 dans un espace balnéo refait à neuf avec bar musical convivial",
-    cta: "Découvrir La Station"
+    title: "Bienvenue au Lokal",
+    subtitle: "Complexe Libertin à Pau",
+    tagline: "\"3 en 1 : Sex-shop • Cinéma • Sauna de 250 m²\"",
+    description: "Le seul complexe complet de Pau alliant shopping coquin, cinéma pour adultes et espace balnéo",
+    cta: "Découvrir Le Lokal"
   },
 
   audience: {
-    primary: "Public Gay",
-    secondary: "Couples mixtes",
-    tertiary: "Toutes orientations (selon jours)",
-    philosophy: "La Station accueille une clientèle mixte du lundi au samedi, et propose des soirées 100% gay le dimanche de 13h à 20h. Un club où règnent le respect, la chaleur et les rencontres dans un cadre convivial et sans jugement."
+    primary: "Toutes tendances",
+    secondary: "Couples et hommes seuls",
+    tertiary: "Clientèle masculine les mercredi et dimanche",
+    philosophy: "Au Lokal, toutes les sexualités se croisent dans le respect et la tolérance. Que vous soyez en couple, homme seul, gay, bi, hétéro ou curious, vous êtes les bienvenus dans notre espace convivial et propre. Une atmosphère chaleureuse où chacun peut s'exprimer librement."
   },
 
   spaces: [
     {
-      title: "Espace Balnéo",
+      title: "Grand Hammam",
+      emoji: "💨",
+      description: "Capacité 25 personnes à 43°C",
+      details: "Hammam spacieux avec diffuseur d'huiles essentielles aromatiques pour une expérience luxueuse et relaxante"
+    },
+    {
+      title: "Sauna Sec",
+      emoji: "🔥",
+      description: "Accueille jusqu'à 10 personnes",
+      details: "Sauna traditionnel à chaleur sèche pour des moments de détente intense entre amis"
+    },
+    {
+      title: "Piscine à Bulles & Jacuzzi",
       emoji: "🌊",
-      description: "Refait à neuf en 2018",
-      details: "1 Sauna sec (70-85°C), 1 Hammam (40°C) avec huiles essentielles, 2 Jacuzzis (35°C) et multiples douches"
+      description: "10 000 litres d'eau",
+      details: "Grande piscine avec jacuzzi intégré et pédiluve pour une hygiène optimale"
     },
     {
-      title: "Bar Musical",
-      emoji: "🎵",
-      description: "Espace convivial 7j/7",
-      details: "Un bar musical où se retrouver autour d'un verre dans une ambiance décontractée et chaleureuse"
+      title: "10 Cabines Climatisées",
+      emoji: "🚪",
+      description: "Confortablement équipées",
+      details: "Cabines privées climatisées pour plus d'intimité avec gel et préservatifs à disposition"
     },
     {
-      title: "Cabines Thématiques",
-      emoji: "🎭",
-      description: "Plus de 20 cabines variées",
-      details: "Cabines miroir, sling, exhib', et cabines à thèmes : Zèbre, Léopard, Militaire, Glamour..."
-    },
-    {
-      title: "Espace Hard",
-      emoji: "⛓️",
-      description: "Sous-sol dédié",
-      details: "Croix de Saint-André, sling, planche de bondage et autres attractions torrides"
-    },
-    {
-      title: "Glory Holes",
+      title: "Zone Cruising",
       emoji: "🔒",
-      description: "2 espaces avec vidéos",
-      details: "Glory holes ouverts et fermés avec vidéos pour plus d'excitation"
+      description: "Espace de rencontres",
+      details: "Zone dédiée aux rencontres spontanées dans un environnement propre et respectueux"
     },
     {
-      title: "Salons Vidéo",
-      emoji: "📺",
-      description: "1 mixte + 1 gay",
-      details: "Deux salons vidéo dédiés pour se détendre et profiter du spectacle"
+      title: "Sex-shop",
+      emoji: "🛍️",
+      description: "Shopping coquin",
+      details: "Boutique glamour et ludique avec produits sexy dans une atmosphère de confiance"
+    },
+    {
+      title: "Cinéma Permanent",
+      emoji: "🎬",
+      description: "Films pour adultes",
+      details: "Salle de projection permanente pour des moments de détente visuelle"
+    },
+    {
+      title: "Bar",
+      emoji: "🥤",
+      description: "Boissons sans alcool",
+      details: "Espace convivial pour se rafraîchir et faire connaissance"
     },
     {
       title: "Fumoir",
-      emoji: "🚬",
+      emoji: "💨",
       description: "Espace fumeurs",
-      details: "Un espace dédié aux fumeurs pour des pauses conviviales"
-    },
-    {
-      title: "Sex-Shop",
-      emoji: "🛍️",
-      description: "Boutique sur place",
-      details: "Poppers, lubrifiants, cockrings et autres accessoires disponibles à l'accueil"
+      details: "Zone dédiée aux amateurs de tabac"
     }
   ],
 
   values: [
-    { text: "600 m² - 4 niveaux", icon: "🏢" },
-    { text: "Ouvert 7j/7", icon: "📅" },
-    { text: "Balnéo refait à neuf", icon: "✨" },
-    { text: "20+ cabines", icon: "🚪" },
-    { text: "Soirées thématiques", icon: "🎉" }
+    { text: "Complexe 3 en 1", icon: "🏪" },
+    { text: "250 m² balnéo", icon: "🏢" },
+    { text: "Propreté reconnue", icon: "✨" },
+    { text: "Toutes tendances", icon: "🌈" },
+    { text: "Tarif unique 18€", icon: "💰" }
   ],
 
   dressCode: {
-    ladies: "Serviette fournie - Ambiance sauna décontractée",
-    gentlemen: "Serviette fournie - Venez comme vous êtes",
-    spirit: "À La Station, l'ambiance est conviviale et décontractée. Pas de dress code strict, juste le respect et la bonne humeur !"
+    ladies: "Tenue libre - Serviette fournie à l'entrée",
+    gentlemen: "Tenue libre - Serviette fournie à l'entrée",
+    spirit: "Au Lokal, l'ambiance est décontractée et tolérante. Venez comme vous êtes, une serviette vous sera fournie. L'essentiel est le respect mutuel."
   },
 
   weeklySchedule: [
     {
       day: "Lundi",
-      hours: "13h - 00h",
-      orientation: "Mixte",
-      theme: "Journée mixte",
-      description: "Ouvert à tous pour bien démarrer la semaine"
+      hours: "13h - 20h",
+      orientation: "Toutes tendances",
+      theme: "Mixte et convivial",
+      description: "Ouvert à tous dans une ambiance chaleureuse"
     },
     {
       day: "Mardi",
-      hours: "13h - 00h",
-      orientation: "Mixte",
-      theme: "Soirée Couples",
-      description: "Soirée spéciale couples mixtes dans une ambiance torride"
+      hours: "13h - 20h",
+      orientation: "Toutes tendances",
+      theme: "Mixte et convivial",
+      description: "Accueil de toutes les sexualités"
     },
     {
       day: "Mercredi",
-      hours: "13h - 00h",
-      orientation: "Mixte",
-      theme: "Young Boys",
-      description: "Soirée spéciale jeunes dans une ambiance festive"
+      hours: "13h - 20h",
+      orientation: "100% Masculin",
+      theme: "Journée gay",
+      description: "Réservé à la clientèle masculine"
     },
     {
       day: "Jeudi",
       hours: "13h - 00h",
-      orientation: "Mixte",
-      theme: "Couples Gratuit",
-      description: "Entrée gratuite couples mixtes de 18h à 22h !"
+      orientation: "Toutes tendances",
+      theme: "Soirée prolongée mixte",
+      description: "Ouverture jusqu'à minuit pour profiter plus longtemps"
     },
     {
       day: "Vendredi",
-      hours: "13h - 03h",
-      orientation: "Mixte",
-      theme: "Week-end Party",
-      description: "Démarrez le week-end jusqu'à 3h du matin !"
+      hours: "13h - 02h",
+      orientation: "Toutes tendances",
+      theme: "Week-end commence !",
+      description: "Ouverture jusqu'à 2h du matin pour lancer le week-end"
     },
     {
       day: "Samedi",
-      hours: "13h - 03h",
-      orientation: "Mixte",
-      theme: "Soirées spéciales",
-      description: "Soirées thématiques selon calendrier mensuel"
+      hours: "13h - 02h",
+      orientation: "Toutes tendances",
+      theme: "Grande soirée mixte",
+      description: "La soirée phare de la semaine jusqu'à 2h"
     },
     {
       day: "Dimanche",
       hours: "13h - 20h",
-      orientation: "100% Gay",
-      theme: "Gay Day",
-      description: "Dimanche 100% gay de 13h à 20h"
-    }
-  ],
-
-  monthlyEvents: [
-    {
-      title: "1er Samedi - Soirée Cabaret",
-      description: "Entrée gratuite couples dès 18h",
-      icon: "🎭"
-    },
-    {
-      title: "2ème Samedi - Soirée Mousse",
-      description: "Mousse party dans le Hammam",
-      icon: "🫧"
-    },
-    {
-      title: "3ème Samedi - Couples Gratuit",
-      description: "Entrée gratuite couples dès 18h",
-      icon: "💑"
-    },
-    {
-      title: "4ème Samedi - Années 80",
-      description: "Soirée rétro ambiance années 80",
-      icon: "🎵"
+      orientation: "100% Masculin",
+      theme: "Après-midi gay",
+      description: "Réservé à la clientèle masculine"
     }
   ],
 
   events: [
     {
-      title: "Soirées Mixtes",
-      schedule: "Lundi au Samedi",
-      description: "Ouvert à tous - Hommes, femmes, couples",
-      atmosphere: "Ambiance conviviale et torride dans un cadre respectueux"
+      title: "Soirées Toutes Tendances",
+      schedule: "Lundi, Mardi, Jeudi, Vendredi, Samedi",
+      description: "Ouvert à tous : couples, hommes, femmes, toutes orientations",
+      atmosphere: "Ambiance mixte où toutes les sexualités se croisent dans le respect et la tolérance"
     },
     {
-      title: "Dimanche 100% Gay",
-      schedule: "Dimanche 13h - 20h",
-      description: "Journée exclusivement gay",
-      atmosphere: "Entre hommes dans une ambiance détendue et complice"
+      title: "Journées 100% Masculines",
+      schedule: "Mercredi & Dimanche 13h-20h",
+      description: "Réservé à la clientèle masculine gay et bi",
+      atmosphere: "Espace dédié aux hommes dans une ambiance conviviale et respectueuse"
     },
     {
-      title: "Soirée Couples du Mardi",
-      schedule: "Chaque mardi",
-      description: "Soirée spéciale couples mixtes",
-      atmosphere: "Pour les couples qui souhaitent explorer leurs fantasmes"
+      title: "Week-ends Prolongés",
+      schedule: "Vendredi & Samedi jusqu'à 2h",
+      description: "Ouverture étendue pour profiter pleinement",
+      atmosphere: "Les grandes soirées du Lokal avec ambiance festive jusqu'au bout de la nuit"
     },
     {
-      title: "Jeudi Couples Gratuit",
-      schedule: "Chaque jeudi 18h-22h",
-      description: "Entrée gratuite pour les couples mixtes",
-      atmosphere: "Profitez d'une soirée offerte en semaine !"
-    },
-    {
-      title: "Young Boys du Mercredi",
-      schedule: "Chaque mercredi",
-      description: "Soirée dédiée aux jeunes",
-      atmosphere: "Ambiance jeune et festive pour les moins de 30 ans"
-    },
-    {
-      title: "Soirées Thématiques Mensuelles",
-      schedule: "Samedis selon calendrier",
-      description: "Cabaret, Mousse, Années 80...",
-      atmosphere: "Des thèmes variés pour ne jamais s'ennuyer"
+      title: "Complexe Complet",
+      schedule: "Tous les jours d'ouverture",
+      description: "Accès au sex-shop, cinéma et sauna",
+      atmosphere: "Trois expériences en un seul lieu pour une visite complète"
     }
   ],
 
   pricing: {
     standard: [
-      { label: "Homme seul", price: "17€", note: "Tarif standard" },
-      { label: "Couple gay", price: "30€", note: "Pour 2 personnes" },
-      { label: "Happy Hours", price: "Tarif réduit", note: "18h-20h tous les jours" }
+      { label: "Homme seul", price: "18€", note: "Tarif unique" },
+      { label: "Couple", price: "18€", note: "Pour deux personnes" }
     ],
-    gratuit: [
-      { label: "Jeudi Couples", price: "Gratuit", note: "18h-22h pour couples mixtes" },
-      { label: "1er Samedi Couples", price: "Gratuit", note: "Dès 18h" },
-      { label: "3ème Samedi Couples", price: "Gratuit", note: "Dès 18h" }
-    ],
-    includes: "Serviette fournie • Casiers sécurisés • Accès à tous les espaces • Fontaine à eau"
+    includes: "Accès complet au sauna-balnéo 250 m² • Serviette fournie • Gel et préservatifs • Vestiaires sécurisés • Bar (boissons sans alcool)"
   },
 
   contact: {
     address: {
-      street: "8 rue René Fournets",
+      street: "3 rue Duboué",
       city: "64000 Pau",
-      region: "Pyrénées-Atlantiques (64)",
+      region: "Pyrénées-Atlantiques",
       access: "Centre-ville de Pau"
     },
-    phone: "05 59 27 48 80",
-    email: "contact@lastation-sauna.com",
-    website: "www.lastation-sauna.com",
+    phone: "05 59 84 69 85",
+    email: "contact@le-lokal.fr",
+    website: "www.le-lokal.fr",
     hours: [
-      { day: "Lundi - Mercredi", time: "13h - 00h (Mixte)" },
-      { day: "Jeudi", time: "13h - 00h (Mixte - Couples gratuit 18h-22h)" },
-      { day: "Vendredi - Samedi", time: "13h - 03h (Mixte)" },
-      { day: "Dimanche", time: "13h - 20h (100% Gay)" }
+      { day: "Lundi - Mardi", time: "13h - 20h (Toutes tendances)" },
+      { day: "Mercredi", time: "13h - 20h (100% Masculin)" },
+      { day: "Jeudi", time: "13h - 00h (Toutes tendances)" },
+      { day: "Vendredi - Samedi", time: "13h - 02h (Toutes tendances)" },
+      { day: "Dimanche", time: "13h - 20h (100% Masculin)" }
     ],
-    parking: "Stationnement en centre-ville"
+    parking: "Centre-ville de Pau"
   },
 
   highlights: [
-    "600 m² sur 4 niveaux",
-    "Ouvert 7 jours sur 7",
-    "Espace balnéo refait à neuf (2018)",
-    "Plus de 20 cabines thématiques",
-    "Espace Hard au sous-sol",
-    "Bar musical convivial",
-    "Soirées thématiques mensuelles",
-    "Happy Hours quotidiens 18h-20h",
-    "Dimanche 100% gay",
-    "Entrées gratuites couples régulières",
-    "Sex-shop sur place",
-    "Ancien Sauna Eros - Nouvelle direction depuis 2016",
-    "Ambiance respectueuse et conviviale",
-    "Clientèle variée et tolérante"
+    "Complexe unique 3 en 1 à Pau",
+    "Sex-shop glamour et ludique",
+    "Cinéma permanent pour adultes",
+    "Sauna-balnéo de 250 m²",
+    "Grand hammam 25 personnes avec huiles essentielles",
+    "Sauna sec capacité 10 personnes",
+    "Piscine à bulles 10 000 litres + jacuzzi",
+    "Pédiluve pour hygiène optimale",
+    "10 cabines climatisées confortables",
+    "Zone cruising dédiée",
+    "Vestiaires séparés (idéal couples)",
+    "Pierre apparente mise en valeur",
+    "Propreté irréprochable reconnue",
+    "Accueil chaleureux du patron",
+    "Tolérance envers toutes sexualités",
+    "Tarif unique 18€ sans discrimination",
+    "Bar avec boissons sans alcool",
+    "Fumoir à disposition",
+    "Gel et préservatifs partout",
+    "Ambiance conviviale et respectueuse"
   ],
 
   features: [
-    "Sauna sec 70-85°C",
-    "Hammam 40°C avec huiles essentielles",
-    "2 Jacuzzis 35°C",
-    "Douches chaudes et froides",
-    "20+ cabines thématiques",
-    "Cabines miroir et sling",
-    "Espace Hard complet",
-    "2 Glory Holes",
-    "2 Salons vidéo",
-    "Bar musical",
-    "Fumoir",
+    "Hammam 43°C (25 pers.)",
+    "Sauna sec (10 pers.)",
+    "Piscine 10 000L + jacuzzi",
+    "Pédiluve",
+    "10 cabines climatisées",
+    "Zone cruising",
     "Sex-shop",
-    "Vestiaires fermés",
-    "WC avec lavement"
+    "Cinéma permanent",
+    "Bar (sans alcool)",
+    "Fumoir",
+    "Vestiaires séparés",
+    "Pierre apparente"
   ],
 
-  specialOffers: {
-    title: "Offres Spéciales",
-    offers: [
-      "🎁 Jeudi : Couples mixtes GRATUIT 18h-22h",
-      "🎭 1er Samedi : Couples GRATUIT dès 18h + Cabaret",
-      "💑 3ème Samedi : Couples GRATUIT dès 18h",
-      "⏰ Happy Hours : 18h-20h TOUS LES JOURS"
+  complex3in1: {
+    title: "Un complexe unique à Pau",
+    description: "Le Lokal est le seul établissement de Pau à proposer trois expériences en un seul lieu : un sex-shop glamour pour vos achats coquins, un cinéma permanent pour adultes, et un sauna-balnéo de 250 m² superbement aménagé. Une révolution dans le shopping et le divertissement coquin palois !",
+    spaces: [
+      {
+        name: "Sex-shop",
+        icon: "🛍️",
+        description: "Boutique sexy, glamour et ludique dans une atmosphère de confiance"
+      },
+      {
+        name: "Cinéma",
+        icon: "🎬",
+        description: "Projection permanente de films pour adultes"
+      },
+      {
+        name: "Sauna-Balnéo",
+        icon: "💦",
+        description: "250 m² d'espaces bien-être et de rencontres"
+      }
     ]
   },
 
   strategy: {
     goal:
-      "Mettre en avant la diversité de La Station : 600 m² sur 4 niveaux, ouvert 7j/7 avec programmation mixte et gay, soirées thématiques régulières et nombreuses offres gratuites pour les couples.",
+      "Mettre en avant le concept unique du complexe 3 en 1 (sex-shop + cinéma + sauna), les 250 m² de balnéo avec grand hammam et piscine, la programmation mixte/masculine, la propreté reconnue et le tarif unique égalitaire de 18€.",
     explanation:
-      "Une présentation dynamique qui valorise l'espace balnéo refait à neuf, la variété des cabines thématiques, les soirées à thème mensuelles et l'ambiance conviviale et respectueuse.",
+      "Une présentation qui valorise l'unicité du concept tout-en-un, la tolérance envers toutes les sexualités, la qualité des installations (hammam 25 pers., piscine 10 000L) et l'accueil chaleureux dans un cadre authentique avec pierres apparentes.",
   },
 
   disclaimer:
-    "Maquette illustrative non contractuelle, destinée à présenter une version moderne du site de La Station Sauna.",
+    "Maquette illustrative non contractuelle, destinée à présenter une version moderne du site du Lokal.",
 };

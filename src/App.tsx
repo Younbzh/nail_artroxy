@@ -1,6 +1,6 @@
-// 📁 src/App.tsx - Version pour La Station Sauna Pau
+// 📁 src/App.tsx - Version pour Le Lokal Pau
 import { useState, useEffect } from 'react';
-import { Menu, X, MapPin, Phone, Mail, Clock, ChevronRight, Users, Calendar, Gift } from 'lucide-react';
+import { Menu, X, MapPin, Phone, Mail, Clock, ChevronRight, Users, ShoppingBag, Film, Droplets } from 'lucide-react';
 import { siteConfig } from './config/siteConfig';
 
 export default function App() {
@@ -66,24 +66,23 @@ export default function App() {
 
   const navItems = [
     { label: 'Accueil', href: '#accueil' },
-    { label: 'Le Sauna', href: '#sauna' },
+    { label: 'Complexe 3 en 1', href: '#complexe' },
     { label: 'Espaces', href: '#espaces' },
     { label: 'Planning', href: '#planning' },
-    { label: 'Événements', href: '#evenements' },
     { label: 'Tarifs', href: '#tarifs' },
     { label: 'Contact', href: '#contact' }
   ];
 
   // Couleurs par orientation
   const getOrientationColor = (orientation: string) => {
-    if (orientation.includes('Gay')) return 'from-purple-500/20 to-blue-500/20 border-purple-500/30';
-    if (orientation.includes('Mixte')) return 'from-amber-500/20 to-orange-500/20 border-amber-500/30';
+    if (orientation.includes('Masculin')) return 'from-blue-500/20 to-purple-500/20 border-blue-500/30';
+    if (orientation.includes('tendances')) return 'from-amber-500/20 to-rose-500/20 border-amber-500/30';
     return 'from-zinc-500/20 to-zinc-600/20 border-zinc-500/30';
   };
 
   const getOrientationBadgeColor = (orientation: string) => {
-    if (orientation.includes('Gay')) return 'bg-purple-500/20 text-purple-300 border-purple-500/30';
-    if (orientation.includes('Mixte')) return 'bg-amber-500/20 text-amber-300 border-amber-500/30';
+    if (orientation.includes('Masculin')) return 'bg-blue-500/20 text-blue-300 border-blue-500/30';
+    if (orientation.includes('tendances')) return 'bg-amber-500/20 text-amber-300 border-amber-500/30';
     return 'bg-zinc-500/20 text-zinc-300 border-zinc-500/30';
   };
 
@@ -149,9 +148,9 @@ export default function App() {
 
       {/* Hero Section */}
       <section id="accueil" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-orange-950/20 to-zinc-800"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-amber-950/20 to-zinc-800"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(251,191,36,0.08),transparent_40%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(249,115,22,0.06),transparent_40%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(217,119,6,0.06),transparent_40%)]"></div>
         
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-20 left-10 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -160,7 +159,7 @@ export default function App() {
         
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
           <div className="mb-8">
-            <span className="text-6xl">🚂</span>
+            <span className="text-6xl">🏪</span>
           </div>
           <h2 className="text-5xl md:text-7xl font-extralight text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-orange-300 to-amber-300 mb-6 tracking-wide">
             {siteConfig.hero.title}
@@ -175,10 +174,10 @@ export default function App() {
             {siteConfig.tone.promise}
           </p>
           <a
-            href="#sauna"
+            href="#complexe"
             onClick={(e) => {
               e.preventDefault();
-              document.querySelector('#sauna')?.scrollIntoView({ behavior: 'smooth' });
+              document.querySelector('#complexe')?.scrollIntoView({ behavior: 'smooth' });
             }}
             className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-600 via-orange-600 to-amber-700 hover:from-amber-700 hover:via-orange-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg transition-all duration-300 font-light tracking-wide shadow-lg shadow-amber-900/30"
           >
@@ -205,29 +204,56 @@ export default function App() {
         </div>
       </section>
 
+      {/* Complexe 3 en 1 Section - Unique au Lokal */}
+      {siteConfig.complex3in1 && (
+        <section id="complexe" className="py-24 bg-zinc-950 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-amber-500/5 to-transparent"></div>
+          <div className="max-w-6xl mx-auto px-6 relative">
+            <div className="text-center mb-16">
+              <h3 className="text-4xl font-light bg-gradient-to-r from-amber-300 to-orange-300 bg-clip-text text-transparent mb-4">
+                {siteConfig.complex3in1.title}
+              </h3>
+              <p className="text-zinc-400 max-w-3xl mx-auto leading-relaxed">
+                {siteConfig.complex3in1.description}
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              {siteConfig.complex3in1.spaces.map((space, idx) => (
+                <div 
+                  key={idx}
+                  className="bg-gradient-to-br from-zinc-800/80 to-amber-950/20 rounded-2xl p-8 border border-amber-500/10 shadow-xl hover:shadow-2xl hover:shadow-amber-900/20 transition-all duration-500 text-center"
+                >
+                  <div className="text-6xl mb-6">{space.icon}</div>
+                  <h4 className="text-2xl font-light text-amber-300 mb-4">{space.name}</h4>
+                  <p className="text-zinc-400 leading-relaxed">{space.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* About Section */}
-      <section id="sauna" className="py-24 bg-zinc-950 relative overflow-hidden">
+      <section className="py-24 bg-zinc-900 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl"></div>
         <div className="max-w-4xl mx-auto px-6 relative">
-          <h3 className="text-4xl font-light bg-gradient-to-r from-amber-300 to-orange-300 bg-clip-text text-transparent mb-12 text-center">
-            La Station Sauna Pau
+          <h3 className="text-4xl font-light bg-gradient-to-r from-orange-300 to-amber-300 bg-clip-text text-transparent mb-12 text-center">
+            Le Lokal - Esprit & Philosophie
           </h3>
-          <p className="text-zinc-400 text-center mb-12 max-w-2xl mx-auto leading-relaxed">
-            {siteConfig.tone.promise}
-          </p>
           
-          <div className="bg-gradient-to-br from-zinc-800/80 to-orange-950/20 rounded-2xl p-8 border border-amber-500/10 shadow-xl">
+          <div className="bg-gradient-to-br from-zinc-800/80 to-amber-950/20 rounded-2xl p-8 border border-amber-500/10 shadow-xl">
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <p className="text-amber-300 font-light mb-2">Principal Public</p>
+                <p className="text-amber-300 font-light mb-2">Public</p>
                 <p className="text-2xl text-orange-300">{siteConfig.audience.primary}</p>
               </div>
               <div className="text-center">
-                <p className="text-amber-300 font-light mb-2">Également</p>
+                <p className="text-amber-300 font-light mb-2">Accueil</p>
                 <p className="text-2xl text-orange-300">{siteConfig.audience.secondary}</p>
               </div>
               <div className="text-center">
-                <p className="text-amber-300 font-light mb-2">Ambiance</p>
+                <p className="text-amber-300 font-light mb-2">Valeurs</p>
                 <p className="text-xl text-orange-300">{siteConfig.tone.keywords.slice(0, 3).join(' • ')}</p>
               </div>
             </div>
@@ -239,21 +265,21 @@ export default function App() {
       </section>
 
       {/* Spaces Section */}
-      <section id="espaces" className="py-24 bg-zinc-900 relative overflow-hidden">
+      <section id="espaces" className="py-24 bg-zinc-950 relative overflow-hidden">
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl"></div>
         <div className="max-w-6xl mx-auto px-6 relative">
-          <h3 className="text-4xl font-light bg-gradient-to-r from-orange-300 to-amber-300 bg-clip-text text-transparent mb-4 text-center">
+          <h3 className="text-4xl font-light bg-gradient-to-r from-amber-300 to-orange-300 bg-clip-text text-transparent mb-4 text-center">
             Nos Espaces
           </h3>
           <p className="text-zinc-400 text-center mb-16 font-light italic">
-            600 m² sur 4 niveaux • Balnéo refait à neuf
+            250 m² de sauna-balnéo + Sex-shop + Cinéma
           </p>
           
           <div className="grid md:grid-cols-3 gap-8">
             {siteConfig.spaces.map((space, idx) => (
               <div 
                 key={idx}
-                className="bg-zinc-900/50 border border-white/5 rounded-xl p-6 hover:border-amber-500/30 hover:bg-gradient-to-br hover:from-zinc-900/80 hover:to-orange-950/20 transition-all duration-500 group"
+                className="bg-zinc-900/50 border border-white/5 rounded-xl p-6 hover:border-amber-500/30 hover:bg-gradient-to-br hover:from-zinc-900/80 hover:to-amber-950/20 transition-all duration-500 group"
               >
                 <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">
                   {space.emoji}
@@ -275,14 +301,14 @@ export default function App() {
 
       {/* Weekly Schedule Section */}
       {siteConfig.weeklySchedule && (
-        <section id="planning" className="py-24 bg-zinc-950 relative overflow-hidden">
+        <section id="planning" className="py-24 bg-zinc-900 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl"></div>
           <div className="max-w-6xl mx-auto px-6 relative">
             <h3 className="text-4xl font-light bg-gradient-to-r from-amber-300 to-orange-300 bg-clip-text text-transparent mb-4 text-center">
               Planning Hebdomadaire
             </h3>
             <p className="text-zinc-400 text-center mb-16 font-light italic">
-              Ouvert 7 jours/7 • Mixte + 100% Gay le dimanche
+              Mixte toutes tendances + 100% Masculin
             </p>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -314,76 +340,30 @@ export default function App() {
             <div className="mt-12 flex flex-wrap justify-center gap-4">
               <div className="flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 rounded-lg px-4 py-2">
                 <div className="w-3 h-3 rounded-full bg-amber-500"></div>
-                <span className="text-amber-300 text-sm">Mixte</span>
+                <span className="text-amber-300 text-sm">Toutes tendances</span>
               </div>
-              <div className="flex items-center gap-2 bg-purple-500/10 border border-purple-500/20 rounded-lg px-4 py-2">
-                <div className="w-3 h-3 rounded-full bg-purple-500"></div>
-                <span className="text-purple-300 text-sm">100% Gay</span>
+              <div className="flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-lg px-4 py-2">
+                <div className="w-3 h-3 rounded-full bg-blue-500"></div>
+                <span className="text-blue-300 text-sm">100% Masculin</span>
               </div>
             </div>
           </div>
         </section>
       )}
 
-      {/* Monthly Events - Spécifique La Station */}
-      {siteConfig.monthlyEvents && (
-        <section id="evenements" className="py-24 bg-zinc-900 relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl"></div>
-          <div className="max-w-6xl mx-auto px-6 relative">
-            <h3 className="text-4xl font-light bg-gradient-to-r from-orange-300 to-amber-300 bg-clip-text text-transparent mb-4 text-center">
-              Événements Mensuels
-            </h3>
-            <p className="text-zinc-400 text-center mb-16 font-light italic">
-              4 samedis, 4 ambiances différentes chaque mois
-            </p>
-            
-            <div className="grid md:grid-cols-2 gap-8">
-              {siteConfig.monthlyEvents.map((event, idx) => (
-                <div 
-                  key={idx}
-                  className="bg-gradient-to-br from-zinc-800 to-orange-950/30 border border-orange-500/20 rounded-xl p-8 hover:shadow-2xl hover:shadow-orange-900/20 transition-all duration-500 relative"
-                >
-                  {event.badge && (
-                    <div className="absolute top-4 right-4">
-                      <span className="bg-amber-500/20 text-amber-300 border border-amber-500/30 px-3 py-1 rounded-full text-xs font-light">
-                        {event.badge}
-                      </span>
-                    </div>
-                  )}
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="bg-gradient-to-br from-amber-500/10 to-orange-500/10 p-3 rounded-lg">
-                      <Calendar className="text-amber-400" size={28} />
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="text-2xl font-light text-amber-300 mb-2">{event.title}</h4>
-                      <p className="text-orange-300 text-sm font-light">{event.schedule}</p>
-                    </div>
-                  </div>
-                  <p className="text-zinc-300 mb-4 leading-relaxed">{event.description}</p>
-                  <p className="text-zinc-400 text-sm italic">{event.atmosphere}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Weekly Events Detail */}
+      {/* Events Section */}
       <section className="py-24 bg-zinc-950 relative overflow-hidden">
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl"></div>
         <div className="max-w-6xl mx-auto px-6 relative">
-          <h3 className="text-4xl font-light bg-gradient-to-r from-amber-300 to-orange-300 bg-clip-text text-transparent mb-4 text-center">
-            Soirées Hebdomadaires
+          <h3 className="text-4xl font-light bg-gradient-to-r from-orange-300 to-amber-300 bg-clip-text text-transparent mb-16 text-center">
+            Nos Événements
           </h3>
-          <p className="text-zinc-400 text-center mb-16 font-light italic">
-            Des événements réguliers chaque semaine
-          </p>
           
           <div className="grid md:grid-cols-2 gap-8">
             {siteConfig.events.map((event, idx) => (
               <div 
                 key={idx}
-                className="bg-gradient-to-br from-zinc-800 to-amber-950/30 border border-amber-500/20 rounded-xl p-8 hover:shadow-2xl transition-all duration-500"
+                className="bg-gradient-to-br from-zinc-800 to-amber-950/30 border border-amber-500/20 rounded-xl p-8 hover:shadow-2xl hover:shadow-amber-900/20 transition-all duration-500"
               >
                 <div className="flex items-start gap-4 mb-6">
                   <div className="bg-gradient-to-br from-amber-500/10 to-orange-500/10 p-3 rounded-lg">
@@ -405,69 +385,32 @@ export default function App() {
       {/* Pricing Section */}
       <section id="tarifs" className="py-24 bg-zinc-900 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl"></div>
-        <div className="max-w-6xl mx-auto px-6 relative">
-          <h3 className="text-4xl font-light bg-gradient-to-r from-orange-300 to-amber-300 bg-clip-text text-transparent mb-4 text-center">
-            Nos Tarifs
+        <div className="max-w-4xl mx-auto px-6 relative">
+          <h3 className="text-4xl font-light bg-gradient-to-r from-amber-300 to-orange-300 bg-clip-text text-transparent mb-4 text-center">
+            Tarifs
           </h3>
-          <p className="text-zinc-500 text-center mb-12 font-light">{siteConfig.pricing.includes}</p>
+          <p className="text-zinc-400 text-center mb-12 font-light italic">
+            Tarif unique pour tous - Pas de discrimination
+          </p>
           
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Standard */}
-            {siteConfig.pricing.standard && (
-              <div className="bg-gradient-to-br from-amber-900/20 to-zinc-800/50 border border-amber-500/20 rounded-2xl p-8">
-                <h4 className="text-2xl font-light text-amber-300 mb-6 text-center">Tarifs Standard</h4>
-                <div className="space-y-4">
-                  {siteConfig.pricing.standard.map((item, idx) => (
-                    <div key={idx} className="flex justify-between items-baseline border-b border-white/5 pb-3">
-                      <div>
-                        <span className="text-zinc-400 font-light">{item.label}</span>
-                        <p className="text-zinc-500 text-xs">{item.note}</p>
-                      </div>
-                      <span className="text-2xl font-light text-amber-300">{item.price}</span>
-                    </div>
-                  ))}
+          <div className="bg-gradient-to-br from-amber-900/20 to-zinc-800/50 border border-amber-500/20 rounded-2xl p-8 max-w-md mx-auto">
+            <h4 className="text-2xl font-light text-amber-300 mb-8 text-center">Tarif Unique</h4>
+            <div className="space-y-6">
+              {siteConfig.pricing.standard.map((item, idx) => (
+                <div key={idx} className="flex justify-between items-baseline border-b border-white/5 pb-4">
+                  <div>
+                    <span className="text-zinc-300 font-light text-lg">{item.label}</span>
+                    <p className="text-zinc-500 text-xs mt-1">{item.note}</p>
+                  </div>
+                  <span className="text-3xl font-light text-amber-300">{item.price}</span>
                 </div>
-              </div>
-            )}
-
-            {/* Happy Hours */}
-            {siteConfig.pricing.happyHours && (
-              <div className="bg-gradient-to-br from-orange-900/20 to-zinc-800/50 border border-orange-500/20 rounded-2xl p-8">
-                <h4 className="text-2xl font-light text-orange-300 mb-6 text-center">Happy Hours</h4>
-                <div className="space-y-4">
-                  {siteConfig.pricing.happyHours.map((item, idx) => (
-                    <div key={idx} className="flex justify-between items-baseline border-b border-white/5 pb-3">
-                      <div>
-                        <span className="text-zinc-400 font-light">{item.label}</span>
-                        <p className="text-zinc-500 text-xs">{item.note}</p>
-                      </div>
-                      <span className="text-2xl font-light text-orange-300">{item.price}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* Gratuit */}
-            {siteConfig.pricing.gratuit && (
-              <div className="bg-gradient-to-br from-green-900/20 to-zinc-800/50 border border-green-500/20 rounded-2xl p-8 relative overflow-hidden">
-                <div className="absolute top-4 right-4">
-                  <Gift className="text-green-400" size={32} />
-                </div>
-                <h4 className="text-2xl font-light text-green-300 mb-6 text-center">Entrées Gratuites</h4>
-                <div className="space-y-4">
-                  {siteConfig.pricing.gratuit.map((item, idx) => (
-                    <div key={idx} className="flex justify-between items-baseline border-b border-white/5 pb-3">
-                      <div>
-                        <span className="text-zinc-400 font-light">{item.label}</span>
-                        <p className="text-zinc-500 text-xs">{item.note}</p>
-                      </div>
-                      <span className="text-2xl font-light text-green-300">{item.price}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
+              ))}
+            </div>
+            <div className="mt-8 pt-6 border-t border-white/10">
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                {siteConfig.pricing.includes}
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -521,10 +464,10 @@ export default function App() {
             </div>
 
             <div className="bg-zinc-800/50 border border-white/5 rounded-2xl p-8">
-              <h4 className="text-2xl font-light text-amber-300 mb-6">Ouvert 7j/7 !</h4>
+              <h4 className="text-2xl font-light text-amber-300 mb-6">Complexe Complet</h4>
               <div className="space-y-4 text-zinc-400 font-light leading-relaxed text-sm">
-                <p>La Station vous accueille tous les jours de la semaine avec des horaires étendus le week-end.</p>
-                <p>Happy Hours quotidien de 18h à 20h et de nombreuses entrées gratuites pour les couples !</p>
+                <p>Le Lokal vous propose une expérience complète avec sex-shop, cinéma permanent et sauna-balnéo de 250 m².</p>
+                <p>Accueil chaleureux, propreté reconnue et tolérance envers toutes les sexualités.</p>
                 <p className="pt-4 border-t border-white/5">
                   {siteConfig.contact.parking}
                 </p>
