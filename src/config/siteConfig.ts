@@ -1,277 +1,302 @@
-// 📁 src/config/siteConfig.ts - S64 SAUNA BAYONNE
+// 📁 src/config/siteConfig.ts - LA STATION SAUNA PAU
 export const siteConfig = {
-  clubName: "S64 Sauna",
-  city: "Bayonne",
-  positioning: "Le Sauna du Pays Basque • Gay, Bi & Mixte sur 600 m²",
+  clubName: "La Station Sauna",
+  city: "Pau",
+  positioning: "Sauna Gay & Mixte sur 600 m² et 4 niveaux • Ouvert 7j/7",
   accentMode: "dark" as "dark" | "light",
 
   tone: {
     keywords: [
-      "ouvert",
-      "inclusif",
-      "accueillant",
-      "propre",
+      "convivial",
+      "torride",
+      "respectueux",
       "varié",
       "festif",
-      "tolérant"
+      "accueillant",
+      "libertin"
     ],
     promise:
-      "Le plus grand sauna du Pays Basque depuis plus de 10 ans. Un espace de près de 600 m² entièrement climatisé, élégant et propre, où chacun peut profiter d'un moment de détente et de plaisir dans le respect et la convivialité.",
+      "La Station est un sauna gay et mixte au centre-ville de Pau. 600 m² de coins câlins torrides sur 4 niveaux avec un espace balnéo refait à neuf. Un club mixte, libertin et échangiste ouvert 7 jours sur 7, où règnent sexe, chaleur et rencontres respectueuses !",
   },
 
   hero: {
-    title: "Bienvenue au S64",
-    subtitle: "Le Sauna du Pays Basque",
-    tagline: "\"600 m² de détente et de plaisir à Bayonne\"",
-    description: "Le seul sauna de Bayonne et du Pays Basque avec une programmation complète : Gay, Bi et Mixte",
-    cta: "Découvrir le S64"
+    title: "Bienvenue à La Station",
+    subtitle: "Sauna Gay & Mixte à Pau",
+    tagline: "\"600 m² de plaisir sur 4 niveaux\"",
+    description: "Ancien Sauna Eros, La Station vous accueille 7j/7 dans un espace balnéo refait à neuf avec bar musical convivial",
+    cta: "Découvrir La Station"
   },
 
   audience: {
     primary: "Public Gay",
-    secondary: "Couples mixtes et bi",
-    tertiary: "Toutes orientations selon programmation",
-    philosophy: "Au S64, nous proposons une programmation diversifiée pour accueillir tous les publics. Que vous soyez gay, bi, ou en couple mixte, vous trouverez des journées dédiées à vos envies. Notre tarif est le même pour tous, sans discrimination. La bisexualité masculine est omniprésente lors des soirées mixtes, une sexualité open est donc vivement conseillée."
+    secondary: "Couples mixtes",
+    tertiary: "Toutes orientations (selon jours)",
+    philosophy: "La Station accueille une clientèle mixte du lundi au samedi, et propose des soirées 100% gay le dimanche de 13h à 20h. Un club où règnent le respect, la chaleur et les rencontres dans un cadre convivial et sans jugement."
   },
 
   spaces: [
     {
-      title: "Jacuzzi",
+      title: "Espace Balnéo",
       emoji: "🌊",
-      description: "Bain bouillonnant spacieux",
-      details: "Un grand bain à bulles où vous pourrez vous détendre et faire des rencontres dans une ambiance chaleureuse"
+      description: "Refait à neuf en 2018",
+      details: "1 Sauna sec (70-85°C), 1 Hammam (40°C) avec huiles essentielles, 2 Jacuzzis (35°C) et multiples douches"
     },
     {
-      title: "Sauna Finlandais",
-      emoji: "🔥",
-      description: "Chaleur sèche traditionnelle",
-      details: "Un sauna maintenu à la température parfaite pour une détente profonde et des moments intenses"
+      title: "Bar Musical",
+      emoji: "🎵",
+      description: "Espace convivial 7j/7",
+      details: "Un bar musical où se retrouver autour d'un verre dans une ambiance décontractée et chaleureuse"
     },
     {
-      title: "Hammam",
-      emoji: "💨",
-      description: "Vapeur et chaleur humide",
-      details: "Espace hammam pour une purification complète dans une atmosphère sensuelle"
+      title: "Cabines Thématiques",
+      emoji: "🎭",
+      description: "Plus de 20 cabines variées",
+      details: "Cabines miroir, sling, exhib', et cabines à thèmes : Zèbre, Léopard, Militaire, Glamour..."
     },
     {
-      title: "Cabines Privées",
-      emoji: "🚪",
-      description: "Multiples espaces de jeux",
-      details: "Cabines sobrement décorées avec gel et préservatifs à disposition. Propreté irréprochable"
+      title: "Espace Hard",
+      emoji: "⛓️",
+      description: "Sous-sol dédié",
+      details: "Croix de Saint-André, sling, planche de bondage et autres attractions torrides"
     },
     {
-      title: "Douches Premium",
-      emoji: "🚿",
-      description: "Espace douches moderne",
-      details: "Douches spacieuses incluant une cabine pour douche intime comme on aimerait en voir partout"
+      title: "Glory Holes",
+      emoji: "🔒",
+      description: "2 espaces avec vidéos",
+      details: "Glory holes ouverts et fermés avec vidéos pour plus d'excitation"
     },
     {
-      title: "Salles de Repos",
-      emoji: "🛋️",
-      description: "Zones de détente",
-      details: "Nombreuses salles de repos climatisées pour récupérer entre deux moments chauds"
+      title: "Salons Vidéo",
+      emoji: "📺",
+      description: "1 mixte + 1 gay",
+      details: "Deux salons vidéo dédiés pour se détendre et profiter du spectacle"
+    },
+    {
+      title: "Fumoir",
+      emoji: "🚬",
+      description: "Espace fumeurs",
+      details: "Un espace dédié aux fumeurs pour des pauses conviviales"
+    },
+    {
+      title: "Sex-Shop",
+      emoji: "🛍️",
+      description: "Boutique sur place",
+      details: "Poppers, lubrifiants, cockrings et autres accessoires disponibles à l'accueil"
     }
   ],
 
   values: [
-    { text: "600 m² d'espace", icon: "🏢" },
-    { text: "Entièrement climatisé", icon: "❄️" },
-    { text: "Tarif unique pour tous", icon: "💰" },
-    { text: "Soirées thématiques", icon: "🎉" },
-    { text: "Plus de 10 ans", icon: "🎂" }
+    { text: "600 m² - 4 niveaux", icon: "🏢" },
+    { text: "Ouvert 7j/7", icon: "📅" },
+    { text: "Balnéo refait à neuf", icon: "✨" },
+    { text: "20+ cabines", icon: "🚪" },
+    { text: "Soirées thématiques", icon: "🎉" }
   ],
 
   dressCode: {
-    ladies: "Tenue sauna standard - Serviette fournie",
-    gentlemen: "Tenue sauna standard - Serviette fournie",
-    spirit: "Au S64, l'ambiance est décontractée et conviviale. Venez comme vous êtes, une serviette vous sera fournie à l'entrée."
+    ladies: "Serviette fournie - Ambiance sauna décontractée",
+    gentlemen: "Serviette fournie - Venez comme vous êtes",
+    spirit: "À La Station, l'ambiance est conviviale et décontractée. Pas de dress code strict, juste le respect et la bonne humeur !"
   },
 
-  // Planning unique du S64 avec rotation Gay/Bi/Mixte
   weeklySchedule: [
     {
-      day: "Dimanche",
-      hours: "14h - 00h",
-      orientation: "100% Gay",
-      theme: "Soirée Mousse",
-      description: "La soirée mousse incontournable du S64"
-    },
-    {
       day: "Lundi",
-      hours: "14h - 00h",
-      orientation: "100% Gay",
-      theme: "Black Cabine",
-      description: "Soirée spéciale dans le noir pour plus de sensations"
+      hours: "13h - 00h",
+      orientation: "Mixte",
+      theme: "Journée mixte",
+      description: "Ouvert à tous pour bien démarrer la semaine"
     },
     {
       day: "Mardi",
-      hours: "14h - 02h",
+      hours: "13h - 00h",
       orientation: "Mixte",
-      theme: "Soirée Minets",
-      description: "Toutes tendances bienvenues. Spécial -25 ans à 7€"
+      theme: "Soirée Couples",
+      description: "Soirée spéciale couples mixtes dans une ambiance torride"
     },
     {
       day: "Mercredi",
-      hours: "14h - 00h",
-      orientation: "100% Gay",
-      theme: "Naturiste",
-      description: "Soirée naturiste 100% gay"
+      hours: "13h - 00h",
+      orientation: "Mixte",
+      theme: "Young Boys",
+      description: "Soirée spéciale jeunes dans une ambiance festive"
     },
     {
       day: "Jeudi",
-      hours: "14h - 02h",
-      orientation: "Bi",
-      theme: "Soirée Bi",
-      description: "Dédiée à la bisexualité, ouvert à tous"
+      hours: "13h - 00h",
+      orientation: "Mixte",
+      theme: "Couples Gratuit",
+      description: "Entrée gratuite couples mixtes de 18h à 22h !"
     },
     {
       day: "Vendredi",
-      hours: "14h - 02h",
+      hours: "13h - 03h",
       orientation: "Mixte",
-      theme: "Week-end Mixte",
-      description: "Toutes tendances pour bien démarrer le week-end"
+      theme: "Week-end Party",
+      description: "Démarrez le week-end jusqu'à 3h du matin !"
     },
     {
       day: "Samedi",
-      hours: "14h - 02h",
+      hours: "13h - 03h",
+      orientation: "Mixte",
+      theme: "Soirées spéciales",
+      description: "Soirées thématiques selon calendrier mensuel"
+    },
+    {
+      day: "Dimanche",
+      hours: "13h - 20h",
       orientation: "100% Gay",
-      theme: "Soirées thématiques",
-      description: "Bears, Fluo, et autres thématiques variées"
+      theme: "Gay Day",
+      description: "Dimanche 100% gay de 13h à 20h"
+    }
+  ],
+
+  monthlyEvents: [
+    {
+      title: "1er Samedi - Soirée Cabaret",
+      description: "Entrée gratuite couples dès 18h",
+      icon: "🎭"
+    },
+    {
+      title: "2ème Samedi - Soirée Mousse",
+      description: "Mousse party dans le Hammam",
+      icon: "🫧"
+    },
+    {
+      title: "3ème Samedi - Couples Gratuit",
+      description: "Entrée gratuite couples dès 18h",
+      icon: "💑"
+    },
+    {
+      title: "4ème Samedi - Années 80",
+      description: "Soirée rétro ambiance années 80",
+      icon: "🎵"
     }
   ],
 
   events: [
     {
-      title: "Soirées 100% Gay",
-      schedule: "Dimanche, Lundi, Mercredi, Samedi",
-      description: "Clientèle exclusivement masculine",
-      atmosphere: "L'essentiel de la programmation avec des soirées thématiques variées"
+      title: "Soirées Mixtes",
+      schedule: "Lundi au Samedi",
+      description: "Ouvert à tous - Hommes, femmes, couples",
+      atmosphere: "Ambiance conviviale et torride dans un cadre respectueux"
     },
     {
-      title: "Soirée Mousse du Dimanche",
-      schedule: "Chaque dimanche 14h-00h",
-      description: "La soirée phare du S64",
-      atmosphere: "Ambiance festive garantie dans une mer de mousse"
+      title: "Dimanche 100% Gay",
+      schedule: "Dimanche 13h - 20h",
+      description: "Journée exclusivement gay",
+      atmosphere: "Entre hommes dans une ambiance détendue et complice"
     },
     {
-      title: "Black Cabine du Lundi",
-      schedule: "Chaque lundi 14h-00h",
-      description: "Soirée dans le noir",
-      atmosphere: "Laissez vos autres sens prendre le dessus pour plus d'intensité"
+      title: "Soirée Couples du Mardi",
+      schedule: "Chaque mardi",
+      description: "Soirée spéciale couples mixtes",
+      atmosphere: "Pour les couples qui souhaitent explorer leurs fantasmes"
     },
     {
-      title: "Mercredi Naturiste",
-      schedule: "Chaque mercredi 14h-00h",
-      description: "100% gay et 100% naturiste",
-      atmosphere: "Liberté totale dans le plus simple appareil"
+      title: "Jeudi Couples Gratuit",
+      schedule: "Chaque jeudi 18h-22h",
+      description: "Entrée gratuite pour les couples mixtes",
+      atmosphere: "Profitez d'une soirée offerte en semaine !"
     },
     {
-      title: "Jeudi Bi",
-      schedule: "Chaque jeudi 14h-02h",
-      description: "Soirée dédiée à la bisexualité",
-      atmosphere: "Pour ceux qui apprécient tous les plaisirs sans distinction"
+      title: "Young Boys du Mercredi",
+      schedule: "Chaque mercredi",
+      description: "Soirée dédiée aux jeunes",
+      atmosphere: "Ambiance jeune et festive pour les moins de 30 ans"
     },
     {
-      title: "Mardi & Vendredi Mixtes",
-      schedule: "14h-02h",
-      description: "Couples et célibataires, toutes orientations",
-      atmosphere: "Ambiance open avec forte présence de bisexualité masculine"
-    },
-    {
-      title: "Samedi Thématique",
-      schedule: "Samedi 14h-02h",
-      description: "Bears, Fluo, et autres thèmes",
-      atmosphere: "Consultez le site pour les thématiques du mois"
+      title: "Soirées Thématiques Mensuelles",
+      schedule: "Samedis selon calendrier",
+      description: "Cabaret, Mousse, Années 80...",
+      atmosphere: "Des thèmes variés pour ne jamais s'ennuyer"
     }
   ],
 
   pricing: {
-    gay: [
-      { label: "Entrée standard", price: "20€", note: "Dim, Lun, Mer, Sam" },
-      { label: "Moins de 25 ans", price: "7€", note: "Tarif jeune" },
-      { label: "Formule DUO", price: "33€", note: "Couple ou amis" },
-      { label: "Happy Night", price: "15€", note: "Dès 19h (21h samedi)" }
+    standard: [
+      { label: "Homme seul", price: "17€", note: "Tarif standard" },
+      { label: "Couple gay", price: "30€", note: "Pour 2 personnes" },
+      { label: "Happy Hours", price: "Tarif réduit", note: "18h-20h tous les jours" }
     ],
-    bi: [
-      { label: "Homme seul", price: "25€", note: "Jeudi toute la journée" },
-      { label: "Couple", price: "20€", note: "Jeudi" },
-      { label: "Femme seule", price: "Gratuit", note: "Jeudi" }
+    gratuit: [
+      { label: "Jeudi Couples", price: "Gratuit", note: "18h-22h pour couples mixtes" },
+      { label: "1er Samedi Couples", price: "Gratuit", note: "Dès 18h" },
+      { label: "3ème Samedi Couples", price: "Gratuit", note: "Dès 18h" }
     ],
-    mixte: [
-      { label: "Homme seul", price: "25€", note: "Mardi & Vendredi" },
-      { label: "Couple", price: "20€", note: "Mardi & Vendredi" },
-      { label: "Femme seule", price: "Gratuit", note: "Mardi & Vendredi" }
-    ],
-    includes: "Serviette fournie • Gel et préservatifs à disposition • Vestiaire sécurisé"
+    includes: "Serviette fournie • Casiers sécurisés • Accès à tous les espaces • Fontaine à eau"
   },
 
   contact: {
     address: {
-      street: "70 boulevard Alsace-Lorraine",
-      city: "64100 Bayonne",
-      region: "Pays Basque",
-      access: "Centre-ville de Bayonne"
+      street: "8 rue René Fournets",
+      city: "64000 Pau",
+      region: "Pyrénées-Atlantiques (64)",
+      access: "Centre-ville de Pau"
     },
-    phone: "À confirmer",
-    email: "infos@s64-sauna-bayonne.com",
-    website: "www.s64-sauna-bayonne.com",
+    phone: "05 59 27 48 80",
+    email: "contact@lastation-sauna.com",
+    website: "www.lastation-sauna.com",
     hours: [
-      { day: "Dimanche", time: "14h - 00h (100% Gay)" },
-      { day: "Lundi", time: "14h - 00h (100% Gay)" },
-      { day: "Mardi", time: "14h - 02h (Mixte)" },
-      { day: "Mercredi", time: "14h - 00h (100% Gay)" },
-      { day: "Jeudi", time: "14h - 02h (Bi)" },
-      { day: "Vendredi", time: "14h - 02h (Mixte)" },
-      { day: "Samedi", time: "14h - 02h (100% Gay)" }
+      { day: "Lundi - Mercredi", time: "13h - 00h (Mixte)" },
+      { day: "Jeudi", time: "13h - 00h (Mixte - Couples gratuit 18h-22h)" },
+      { day: "Vendredi - Samedi", time: "13h - 03h (Mixte)" },
+      { day: "Dimanche", time: "13h - 20h (100% Gay)" }
     ],
-    parking: "Stationnement en centre-ville de Bayonne"
+    parking: "Stationnement en centre-ville"
   },
 
   highlights: [
-    "Le plus grand sauna du Pays Basque (600 m²)",
-    "Plus de 10 ans d'expérience",
-    "Entièrement climatisé",
-    "Programmation variée : Gay, Bi, Mixte",
-    "Tarif unique pour tous - Pas de discrimination",
-    "Soirées thématiques régulières",
-    "Propreté reconnue et irréprochable",
-    "Équipements de qualité",
-    "Jacuzzi spacieux",
-    "Cabine douche intime unique",
-    "Gel et préservatifs partout",
-    "Ambiance conviviale et accueillante"
+    "600 m² sur 4 niveaux",
+    "Ouvert 7 jours sur 7",
+    "Espace balnéo refait à neuf (2018)",
+    "Plus de 20 cabines thématiques",
+    "Espace Hard au sous-sol",
+    "Bar musical convivial",
+    "Soirées thématiques mensuelles",
+    "Happy Hours quotidiens 18h-20h",
+    "Dimanche 100% gay",
+    "Entrées gratuites couples régulières",
+    "Sex-shop sur place",
+    "Ancien Sauna Eros - Nouvelle direction depuis 2016",
+    "Ambiance respectueuse et conviviale",
+    "Clientèle variée et tolérante"
   ],
 
   features: [
-    "Jacuzzi / Bain bouillonnant",
-    "Sauna finlandais",
-    "Hammam",
-    "Multiples cabines de jeux",
-    "Douches modernes",
-    "Cabine douche intime",
-    "Salles de repos",
-    "Vestiaires sécurisés",
-    "Climatisation intégrale",
-    "Bar"
+    "Sauna sec 70-85°C",
+    "Hammam 40°C avec huiles essentielles",
+    "2 Jacuzzis 35°C",
+    "Douches chaudes et froides",
+    "20+ cabines thématiques",
+    "Cabines miroir et sling",
+    "Espace Hard complet",
+    "2 Glory Holes",
+    "2 Salons vidéo",
+    "Bar musical",
+    "Fumoir",
+    "Sex-shop",
+    "Vestiaires fermés",
+    "WC avec lavement"
   ],
 
-  thematicEvents: [
-    { name: "Soirée Mousse", day: "Dimanche", icon: "🫧" },
-    { name: "Black Cabine", day: "Lundi", icon: "🖤" },
-    { name: "Minets", day: "Mardi", icon: "👔" },
-    { name: "Naturiste", day: "Mercredi", icon: "🌿" },
-    { name: "Bi", day: "Jeudi", icon: "🔀" },
-    { name: "Bears", day: "Variable", icon: "🐻" },
-    { name: "Fluo", day: "Variable", icon: "💡" }
-  ],
+  specialOffers: {
+    title: "Offres Spéciales",
+    offers: [
+      "🎁 Jeudi : Couples mixtes GRATUIT 18h-22h",
+      "🎭 1er Samedi : Couples GRATUIT dès 18h + Cabaret",
+      "💑 3ème Samedi : Couples GRATUIT dès 18h",
+      "⏰ Happy Hours : 18h-20h TOUS LES JOURS"
+    ]
+  },
 
   strategy: {
     goal:
-      "Mettre en avant la spécificité unique du S64 : le seul sauna du Pays Basque avec une programmation complète Gay/Bi/Mixte. Souligner les 600 m² d'espace, la propreté, la climatisation et la politique tarifaire équitable.",
+      "Mettre en avant la diversité de La Station : 600 m² sur 4 niveaux, ouvert 7j/7 avec programmation mixte et gay, soirées thématiques régulières et nombreuses offres gratuites pour les couples.",
     explanation:
-      "Une présentation moderne qui valorise la diversité de la programmation, l'inclusion, et la qualité des installations dans le plus grand sauna de la région.",
+      "Une présentation dynamique qui valorise l'espace balnéo refait à neuf, la variété des cabines thématiques, les soirées à thème mensuelles et l'ambiance conviviale et respectueuse.",
   },
 
   disclaimer:
-    "Maquette illustrative non contractuelle, destinée à présenter une version moderne du site du S64 Sauna Bayonne.",
+    "Maquette illustrative non contractuelle, destinée à présenter une version moderne du site de La Station Sauna.",
 };
