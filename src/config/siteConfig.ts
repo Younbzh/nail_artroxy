@@ -1,180 +1,306 @@
 export const siteConfig = {
   // IDENTITÉ
-  companyName: "Prop' & Net",
-  tagline: "Nettoyer certes, mais nettoyer avec le service en plus",
-  slogan: "Pour des espaces intérieurs et extérieurs plus propres et nets",
+  companyName: "BREIZH MECA NEGOCE",
+  tagline: "Votre spécialiste en négoce de matériel TP et poids lourds d'occasion",
+  slogan: "Des machines de qualité pour vos chantiers",
   city: "Loudéac",
   region: "Centre-Bretagne",
-  foundedYear: 2007,
   
   // HERO
   hero: {
-    title: "Prop' & Net",
-    subtitle: "Votre spécialiste du nettoyage en Centre-Bretagne",
-    tagline: "Nettoyer certes, mais nettoyer avec le service en plus",
-    description: "Depuis 2007, Prop'et Net accompagne particuliers et professionnels pour un environnement impeccable. De Loudéac à Saint-Brieuc, nous intervenons dans un rayon de 80 km avec professionnalisme et réactivité.",
-    cta: "Demander un devis gratuit"
+    title: "BREIZH MECA NEGOCE",
+    subtitle: "Négoce de matériel TP & Poids Lourds d'occasion",
+    tagline: "Votre partenaire de confiance en Centre-Bretagne",
+    description: "Spécialisés dans la vente de matériel de travaux publics, d'engins de chantier et de poids lourds d'occasion, nous vous proposons une sélection rigoureuse de machines contrôlées et prêtes à l'emploi.",
+    cta: "Découvrir notre stock"
   },
 
   // À PROPOS
   about: {
-    title: "Une entreprise familiale au service de la propreté",
-    story: "Fondée en 2007, Prop'et Net est née d'une conviction forte : le nettoyage ne se limite pas à un simple passage, c'est un véritable service qui doit apporter satisfaction et tranquillité d'esprit à nos clients.",
-    philosophy: "Notre maxime guide notre action au quotidien : 'Nettoyer certes, mais nettoyer avec le service en plus'. Cela signifie écoute, conseil, réactivité et qualité irréprochable dans chacune de nos interventions.",
-    team: {
-      director: "Eric Carnac",
-      role: "Gérant",
-      description: "À la tête de l'entreprise depuis 2018, Eric Carnac a développé Prop'et Net en s'appuyant sur des valeurs de professionnalisme, de proximité et d'innovation."
-    }
+    title: "Une expertise au service des professionnels",
+    story: "BREIZH MECA NEGOCE est votre partenaire privilégié pour l'acquisition de matériel TP et poids lourds d'occasion en Centre-Bretagne. Implantés à Loudéac, nous mettons notre expertise au service des professionnels du BTP, des travaux publics, du transport et de l'agriculture.",
+    mission: "Notre mission est simple : vous proposer des machines fiables, contrôlées et aux meilleurs prix du marché. Chaque équipement est soigneusement sélectionné et vérifié avant mise en vente.",
+    values: "Nous privilégions la transparence, la qualité et le conseil personnalisé pour accompagner chaque client dans son projet d'acquisition."
   },
 
-  // SERVICES - PROFESSIONNELS
-  servicesEntreprises: {
-    title: "Services aux Professionnels",
-    description: "Des solutions adaptées à tous les secteurs d'activité",
+  // GAMME DE PRODUITS
+  products: {
+    title: "Notre gamme de produits",
     categories: [
       {
-        title: "Nettoyage de bureaux",
-        icon: "🏢",
-        description: "Entretien quotidien ou ponctuel de vos espaces de travail",
-        services: [
-          "Dépoussiérage des surfaces et mobilier",
-          "Nettoyage des sols (aspirateur, lavage)",
-          "Vidage et désinfection des poubelles",
-          "Entretien des sanitaires",
-          "Nettoyage des espaces de pause et cafétéria",
-          "Entretien des salles de réunion"
-        ]
-      },
-      {
-        title: "Nettoyage industriel",
-        icon: "🏭",
-        description: "Solutions adaptées aux environnements industriels",
-        services: [
-          "Nettoyage de bâtiments agricoles",
-          "Entretien d'ateliers et zones de production",
-          "Remise en état après chantier",
-          "Nettoyage de parkings et zones de stockage",
-          "Dégraissage de sols industriels"
-        ]
-      },
-      {
-        title: "Collectivités & Copropriétés",
-        icon: "🏘️",
-        description: "Entretien des espaces communs et résidences",
-        services: [
-          "Nettoyage des halls d'entrée",
-          "Entretien des escaliers et couloirs",
-          "Nettoyage des parties communes",
-          "Entretien des locaux poubelles",
-          "Vitrerie des parties communes"
-        ]
-      },
-      {
-        title: "Vitrerie professionnelle",
-        icon: "🪟",
-        description: "Nettoyage de vitres avec le système H²O",
-        services: [
-          "Nettoyage intérieur et extérieur",
-          "Système H²O (eau pure) pour vitres impeccables",
-          "Vitres en hauteur (perches télescopiques)",
-          "Baies vitrées et vérandas",
-          "Vitrines de commerces",
-          "Huisseries et châssis"
+        name: "Poids Lourds",
+        icon: "🚛",
+        description: "Camions, tracteurs routiers, porteurs",
+        items: [
+          "Tracteurs routiers",
+          "Porteurs",
+          "Camions benne",
+          "Camions plateau",
+          "Camions frigorifiques",
+          "Véhicules utilitaires lourds"
         ],
-        technology: "Système H²O indoor et outdoor pour un résultat sans traces"
+        brands: ["Renault", "Volvo", "Scania", "Mercedes", "MAN", "DAF", "Iveco"]
       },
       {
-        title: "Nettoyage après travaux",
-        icon: "🔨",
-        description: "Remise en état de vos locaux neufs ou rénovés",
-        services: [
-          "Élimination des poussières de chantier",
-          "Nettoyage des sols et surfaces",
-          "Dégraissage et décapage si nécessaire",
-          "Nettoyage minutieux avant livraison",
-          "Intervention rapide pour inauguration"
-        ]
-      }
-    ]
-  },
-
-  // SERVICES - PARTICULIERS
-  servicesParticuliers: {
-    title: "Services aux Particuliers",
-    description: "Un accompagnement personnalisé pour votre confort",
-    categories: [
-      {
-        title: "Ménage à domicile",
-        icon: "🏠",
-        description: "Entretien régulier ou ponctuel de votre habitation",
-        services: [
-          "Dépoussiérage complet (plinthes, radiateurs, cadres)",
-          "Nettoyage des sols",
-          "Entretien des sanitaires",
-          "Nettoyage de la cuisine",
-          "Repassage du linge",
-          "Intervention adaptée à vos besoins"
-        ]
-      },
-      {
-        title: "Nettoyage de vitres",
-        icon: "✨",
-        description: "Des vitres éclatantes sans effort",
-        services: [
-          "Fenêtres et baies vitrées",
-          "Vérandas",
-          "Vitres intérieures et extérieures",
-          "Huisseries",
-          "Résultat impeccable garanti"
-        ]
-      },
-      {
-        title: "Nettoyage de printemps",
-        icon: "🌸",
-        description: "Grand nettoyage complet de votre maison",
-        services: [
-          "Nettoyage en profondeur de toutes les pièces",
-          "Entretien des surfaces difficiles d'accès",
-          "Remise à neuf de votre intérieur",
-          "Intervention ponctuelle ou saisonnière"
-        ]
-      }
-    ]
-  },
-
-  // SERVICES EXTÉRIEURS
-  servicesExterieurs: {
-    title: "Nettoyage Extérieur",
-    description: "Redonnez de l'éclat à vos espaces extérieurs",
-    services: [
-      {
-        title: "Nettoyage de terrasses",
-        icon: "🪨",
-        description: "Terrasses carrelées, dallées ou en béton",
-        process: "Pulvérisation produit dégraissant puis nettoyage par haute pression",
-        details: "Un entretien régulier permet de conserver l'aspect initial de votre terrasse et d'éviter l'encrassement durable."
-      },
-      {
-        title: "Nettoyage de cours et parkings",
-        icon: "🚗",
-        description: "Cours, entrées, stationnements, pavés auto-bloquants",
-        process: "Dégraissage puis haute pression pour éliminer traces de pneus et salissures",
-        details: "Idéal pour retrouver l'aspect d'origine de vos revêtements extérieurs."
-      },
-      {
-        title: "Nettoyage de bardages",
+        name: "Engins de Chantier BTP",
         icon: "🏗️",
-        description: "La vitrine extérieure de votre entreprise",
-        process: "Lavage par eau pure et brossage manuel",
-        details: "Pour un bardage fortement encrassé, notre méthode douce préserve les matériaux tout en offrant un résultat optimal."
+        description: "Mini-pelles, pelles, chargeuses",
+        items: [
+          "Mini-pelles",
+          "Pelles hydrauliques",
+          "Chargeuses",
+          "Bulldozers",
+          "Compacteurs",
+          "Niveleuses"
+        ],
+        brands: ["Caterpillar", "Komatsu", "Volvo", "JCB", "Hitachi", "Liebherr", "Hyundai"]
       },
       {
-        title: "Entretien de terrasses bois",
-        icon: "🌲",
-        description: "Protection et embellissement du bois",
-        process: "Application dégribois, nettoyage basse pression, application hydrofuge coloré",
-        details: "L'application d'un hydrofuge évite l'encrassement et protège durablement votre terrasse."
+        name: "Dumpers & Tombereaux",
+        icon: "🚜",
+        description: "Dumpers articulés et rigides",
+        items: [
+          "Dumpers articulés",
+          "Mini-dumpers",
+          "Tombereaux",
+          "Dumpers tout-terrain",
+          "Transporteurs de chantier"
+        ],
+        brands: ["Ausa", "Terex", "Mecalac", "Thwaites", "Wacker Neuson"]
+      },
+      {
+        name: "Manutention & Levage",
+        icon: "⚙️",
+        description: "Chariots élévateurs, nacelles, grues",
+        items: [
+          "Chariots élévateurs",
+          "Nacelles élévatrices",
+          "Grues auxiliaires",
+          "Télescopiques",
+          "Transpalettes",
+          "Gerbeurs"
+        ],
+        brands: ["Manitou", "JLG", "Haulotte", "Genie", "Merlo", "Bobcat"]
+      },
+      {
+        name: "Matériel Agricole",
+        icon: "🌾",
+        description: "Tracteurs, matériel de récolte",
+        items: [
+          "Tracteurs agricoles",
+          "Moissonneuses-batteuses",
+          "Ensileuses",
+          "Matériel de fenaison",
+          "Épandeurs",
+          "Remorques agricoles"
+        ],
+        brands: ["John Deere", "New Holland", "Fendt", "Massey Ferguson", "Claas"]
+      },
+      {
+        name: "Compactage & Finition",
+        icon: "🛣️",
+        description: "Rouleaux, compacteurs, finisseurs",
+        items: [
+          "Rouleaux compacteurs",
+          "Compacteurs vibrants",
+          "Finisseurs",
+          "Cylindres",
+          "Plaques vibrantes"
+        ],
+        brands: ["Bomag", "Hamm", "Dynapac", "Ammann", "Wacker Neuson"]
+      }
+    ]
+  },
+
+  // MARQUES
+  brands: {
+    title: "Marques disponibles",
+    description: "Nous travaillons avec les plus grandes marques du secteur",
+    list: [
+      // Poids lourds
+      "Renault Trucks", "Volvo", "Scania", "Mercedes-Benz", "MAN", "DAF", "Iveco",
+      // Engins TP
+      "Caterpillar", "Komatsu", "JCB", "Liebherr", "Hitachi", "Volvo CE", "Hyundai",
+      "Terex", "Mecalac", "Bobcat", "Takeuchi", "Yanmar", "Atlas", "Kobelco",
+      // Manutention
+      "Manitou", "JLG", "Haulotte", "Genie", "Merlo", "Fenwick",
+      // Agricole
+      "John Deere", "New Holland", "Fendt", "Massey Ferguson", "Claas", "Kubota",
+      // Compactage
+      "Bomag", "Hamm", "Dynapac", "Ammann", "Wacker Neuson",
+      // Autres
+      "Ausa", "Case", "Furukawa", "Hidromek", "Sany", "Doosan", "Ingersoll Rand"
+    ]
+  },
+
+  // SERVICES
+  services: {
+    title: "Nos services",
+    items: [
+      {
+        title: "Vente de matériel d'occasion",
+        icon: "🏷️",
+        description: "Large choix de machines TP et poids lourds d'occasion, rigoureusement sélectionnées et contrôlées",
+        details: [
+          "Stock varié et renouvelé régulièrement",
+          "Contrôle technique systématique",
+          "Garantie sur les équipements",
+          "Prix compétitifs",
+          "Financement possible"
+        ]
+      },
+      {
+        title: "Conseil personnalisé",
+        icon: "💡",
+        description: "Notre équipe vous accompagne dans le choix du matériel adapté à vos besoins",
+        details: [
+          "Écoute de vos besoins spécifiques",
+          "Conseils techniques professionnels",
+          "Démonstrations sur demande",
+          "Étude comparative des modèles",
+          "Accompagnement dans votre projet"
+        ]
+      },
+      {
+        title: "Reprise de matériel",
+        icon: "🔄",
+        description: "Nous rachetons votre ancien matériel TP et poids lourds",
+        details: [
+          "Estimation gratuite",
+          "Reprise rapide",
+          "Prix juste et transparent",
+          "Possibilité de reprise en échange",
+          "Enlèvement sur site"
+        ]
+      },
+      {
+        title: "Recherche sur demande",
+        icon: "🔍",
+        description: "Vous cherchez un modèle précis ? Nous le trouvons pour vous",
+        details: [
+          "Sourcing personnalisé",
+          "Recherche dans notre réseau",
+          "Délais optimisés",
+          "Vérification de l'historique",
+          "Accompagnement jusqu'à la livraison"
+        ]
+      }
+    ]
+  },
+
+  // PROCESS D'ACHAT
+  process: {
+    title: "Comment acheter chez nous ?",
+    steps: [
+      {
+        number: "01",
+        title: "Consultation du stock",
+        description: "Parcourez nos annonces en ligne ou contactez-nous pour connaître notre stock disponible"
+      },
+      {
+        number: "02",
+        title: "Demande d'information",
+        description: "Contactez-nous pour obtenir plus de détails, photos supplémentaires ou planifier une visite"
+      },
+      {
+        number: "03",
+        title: "Visite & Essai",
+        description: "Venez voir la machine sur place, inspectez-la et testez-la si possible"
+      },
+      {
+        number: "04",
+        title: "Négociation & Devis",
+        description: "Nous établissons un devis détaillé. Possibilité de financement et de reprise"
+      },
+      {
+        number: "05",
+        title: "Finalisation",
+        description: "Signature, paiement et organisation de la livraison ou de l'enlèvement"
+      }
+    ]
+  },
+
+  // AVANTAGES
+  advantages: {
+    title: "Pourquoi choisir BREIZH MECA NEGOCE ?",
+    items: [
+      {
+        icon: "✅",
+        title: "Machines contrôlées",
+        description: "Chaque équipement est vérifié avant mise en vente"
+      },
+      {
+        icon: "💰",
+        title: "Prix compétitifs",
+        description: "Meilleur rapport qualité-prix du marché"
+      },
+      {
+        icon: "🔧",
+        title: "État transparent",
+        description: "Historique et état réel communiqués"
+      },
+      {
+        icon: "🚚",
+        title: "Livraison possible",
+        description: "Organisation du transport sur toute la France"
+      },
+      {
+        icon: "💳",
+        title: "Financement",
+        description: "Solutions de financement adaptées"
+      },
+      {
+        icon: "🤝",
+        title: "Reprise",
+        description: "Rachat de votre ancien matériel"
+      },
+      {
+        icon: "📍",
+        title: "Proximité",
+        description: "Basés à Loudéac, Centre-Bretagne"
+      },
+      {
+        icon: "⭐",
+        title: "Expertise",
+        description: "Connaissance approfondie du secteur"
+      }
+    ]
+  },
+
+  // SECTEURS CLIENTS
+  clientSectors: {
+    title: "Nos clients",
+    description: "Nous accompagnons les professionnels de tous secteurs",
+    sectors: [
+      {
+        name: "Entreprises BTP",
+        icon: "🏗️",
+        description: "Construction, gros œuvre, génie civil"
+      },
+      {
+        name: "Travaux Publics",
+        icon: "🛣️",
+        description: "Terrassement, VRD, assainissement"
+      },
+      {
+        name: "Transport & Logistique",
+        icon: "🚛",
+        description: "Transporteurs routiers, messagerie"
+      },
+      {
+        name: "Agriculture",
+        icon: "🌾",
+        description: "Exploitations agricoles, ETA, CUMA"
+      },
+      {
+        name: "Collectivités",
+        icon: "🏛️",
+        description: "Communes, communautés de communes"
+      },
+      {
+        name: "Industrie",
+        icon: "🏭",
+        description: "Sites industriels, entrepôts"
       }
     ]
   },
@@ -182,223 +308,122 @@ export const siteConfig = {
   // ZONE D'INTERVENTION
   zone: {
     title: "Zone d'intervention",
-    description: "Nous intervenons dans un rayon de 80 km autour de Loudéac",
-    radius: "80 km",
+    description: "Basés à Loudéac, nous intervenons dans toute la Bretagne et au-delà",
+    coverage: "Bretagne et toute la France",
     cities: [
       "Loudéac",
       "Saint-Brieuc",
-      "Dinan",
       "Pontivy",
-      "Moncontour",
-      "Merdrignac",
-      "Lamballe",
-      "Langueux",
-      "Trégueux",
-      "Yffiniac",
-      "Plérin",
-      "Grâce-Uzel",
-      "Le Quillio"
-    ]
+      "Vannes",
+      "Lorient",
+      "Quimper",
+      "Rennes",
+      "Brest",
+      "Dinan",
+      "Lamballe"
+    ],
+    delivery: "Livraison possible dans toute la France"
   },
 
-  // RÉFÉRENCES
-  references: {
-    title: "Ils nous font confiance",
-    clients: [
+  // STOCK EN LIGNE
+  onlineStock: {
+    title: "Notre stock en ligne",
+    description: "Consultez nos annonces actualisées quotidiennement",
+    platforms: [
       {
-        name: "Centre Leclerc Lamballe",
-        type: "Grande distribution",
-        service: "Nettoyage parking sous-sol"
+        name: "Le Bon Coin Pro",
+        url: "https://www.leboncoin.fr/boutique/7026089/breizh_meca_negoce.htm",
+        description: "Retrouvez toutes nos annonces avec photos et détails"
       },
       {
-        name: "Centre Hospitalier de Saint-Brieuc",
-        type: "Santé",
-        service: "Rénovation et nettoyage d'unités"
-      },
-      {
-        name: "Espace Roger-Ollivier - Plérin",
-        type: "Collectivité",
-        service: "Nettoyage de fin de chantier"
-      },
-      {
-        name: "Maison de retraite du Cosquer - Le Quillio",
-        type: "EHPAD",
-        service: "Décapage et remise en état"
-      }
-    ]
-  },
-
-  // VALEURS
-  values: [
-    { text: "Réactivité", icon: "⚡" },
-    { text: "Professionnalisme", icon: "👔" },
-    { text: "Conseil", icon: "💡" },
-    { text: "Qualité", icon: "✨" },
-    { text: "Proximité", icon: "🤝" },
-    { text: "Écoresponsabilité", icon: "🌿" }
-  ],
-
-  // POINTS FORTS
-  highlights: [
-    "Plus de 17 ans d'expérience",
-    "Équipe formée et qualifiée",
-    "Produits écologiques et professionnels",
-    "Matériel moderne et performant",
-    "Intervention 80 km autour de Loudéac",
-    "Devis gratuit et sans engagement",
-    "Assurance responsabilité civile",
-    "Disponibilité et réactivité",
-    "Service personnalisé",
-    "Suivi qualité régulier"
-  ],
-
-  // TECHNOLOGIES
-  technologies: {
-    title: "Nos équipements",
-    items: [
-      {
-        name: "Système H²O",
-        description: "Nettoyage de vitres par eau pure (indoor & outdoor)",
-        benefit: "Résultat impeccable sans traces ni produits chimiques"
-      },
-      {
-        name: "Nettoyeur haute pression",
-        description: "Pour terrasses, cours et parkings",
-        benefit: "Élimination efficace des salissures tenaces"
-      },
-      {
-        name: "Matériel professionnel",
-        description: "Autolaveuses, monobrosse, aspirateurs professionnels",
-        benefit: "Efficacité et rapidité d'intervention"
-      },
-      {
-        name: "Produits écologiques",
-        description: "Gamme de produits respectueux de l'environnement",
-        benefit: "Protection de la santé et de la planète"
-      }
-    ]
-  },
-
-  // TÉMOIGNAGES
-  testimonials: [
-    {
-      name: "Sandrine P.",
-      type: "Entreprise",
-      comment: "Super boulot ! Nos locaux n'ont jamais été aussi propres.",
-      rating: 5
-    },
-    {
-      name: "Client particulier",
-      type: "Particulier",
-      comment: "Nous avons laissé notre clef pour un nettoyage de printemps, au retour toute la maison super propre avec une super odeur qui a duré très longtemps. C'est la première fois que nous avons une maison aussi propre qu'on l'exige faite par un tiers.",
-      rating: 5
-    },
-    {
-      name: "Client professionnel",
-      type: "Professionnel",
-      comment: "Prop & Net, une équipe souriante qui a le sens du service, réactif et très professionnel. En plus, ils peuvent aussi vous conseiller !",
-      rating: 5
-    },
-    {
-      name: "Avis Google",
-      type: "Professionnel",
-      comment: "Le lieu, c'est une chose. Un personnel très talentueux, efficace et aimable. Du travail de Pro et en plus c'est écolo. À recommander.",
-      rating: 5
-    }
-  ],
-
-  // PROCESSUS
-  process: {
-    title: "Notre démarche",
-    steps: [
-      {
-        number: "01",
-        title: "Contact & Évaluation",
-        description: "Contactez-nous par téléphone ou email. Nous échangeons sur vos besoins spécifiques et planifions une visite si nécessaire."
-      },
-      {
-        number: "02",
-        title: "Devis gratuit",
-        description: "Nous établissons un devis détaillé et personnalisé, sans engagement de votre part."
-      },
-      {
-        number: "03",
-        title: "Planification",
-        description: "Nous convenons ensemble des dates et horaires d'intervention adaptés à votre emploi du temps."
-      },
-      {
-        number: "04",
-        title: "Intervention",
-        description: "Notre équipe intervient avec professionnalisme, efficacité et discrétion."
-      },
-      {
-        number: "05",
-        title: "Contrôle qualité",
-        description: "Nous vérifions la satisfaction du travail réalisé et restons à votre écoute pour tout ajustement."
+        name: "MachineryZone",
+        description: "Plateforme internationale de matériel TP"
       }
     ]
   },
 
   // CONTACT
   contact: {
+    title: "Nous contacter",
     address: {
-      street: "10 rue Jacquart",
+      street: "25 rue du Méné",
       city: "22600 Loudéac",
       region: "Côtes-d'Armor, Bretagne"
     },
     phone: "À compléter",
-    email: "contact@propetnet.com",
-    website: "www.propetnet.com",
-    siret: "834 049 397 00021",
-    manager: "Eric Carnac - Gérant"
+    email: "contact@breizhmecanegoce.fr",
+    siret: "945 287 027",
+    schedule: {
+      title: "Horaires d'ouverture",
+      hours: [
+        "Du lundi au vendredi : 9h00 - 12h00 / 14h00 - 18h00",
+        "Samedi : Sur rendez-vous",
+        "Dimanche : Fermé"
+      ],
+      note: "Visite du parc machines sur rendez-vous"
+    }
   },
 
-  // HORAIRES
-  schedule: {
-    title: "Disponibilité",
-    description: "Nous adaptons nos horaires d'intervention à vos contraintes",
-    availability: [
-      "Interventions en journée",
-      "Possibilité d'interventions en soirée",
-      "Week-end sur demande",
-      "Urgences : intervention rapide"
+  // VALEURS
+  values: [
+    { text: "Qualité", icon: "⭐" },
+    { text: "Transparence", icon: "💎" },
+    { text: "Expertise", icon: "🎯" },
+    { text: "Proximité", icon: "🤝" },
+    { text: "Conseil", icon: "💡" },
+    { text: "Réactivité", icon: "⚡" }
+  ],
+
+  // POINTS FORTS
+  highlights: [
+    "Large choix de matériel TP et poids lourds d'occasion",
+    "Machines contrôlées et vérifiées",
+    "Prix compétitifs",
+    "Conseil personnalisé",
+    "Reprise de votre ancien matériel",
+    "Financement possible",
+    "Livraison dans toute la France",
+    "Stock renouvelé régulièrement",
+    "Plus de 50 marques disponibles",
+    "Basés à Loudéac, Centre-Bretagne"
+  ],
+
+  // GARANTIES
+  guarantees: {
+    title: "Nos garanties",
+    items: [
+      "Contrôle technique avant vente",
+      "Transparence sur l'état et l'historique",
+      "Garantie sur les équipements vendus",
+      "Assistance après-vente",
+      "Documentation complète fournie"
     ]
   },
 
-  // SECTEURS D'ACTIVITÉ
-  sectors: [
-    "Bureaux et espaces tertiaires",
-    "Commerces et magasins",
-    "Industrie et bâtiments agricoles",
-    "Santé et établissements médicaux",
-    "Collectivités publiques",
-    "Copropriétés et résidences",
-    "Hôtellerie et restauration",
-    "Particuliers"
-  ],
-
-  // CERTIFICATIONS
-  certifications: {
-    title: "Garanties et assurances",
-    items: [
-      "SIRET : 834 049 397 00021",
-      "Assurance responsabilité civile professionnelle",
-      "Convention collective des entreprises de propreté",
-      "Personnel formé aux normes d'hygiène et sécurité"
+  // TYPES DE FINANCEMENT
+  financing: {
+    title: "Solutions de financement",
+    description: "Nous vous accompagnons dans le financement de votre matériel",
+    options: [
+      "Crédit-bail (LOA)",
+      "Location avec option d'achat (LOA)",
+      "Crédit classique",
+      "Paiement échelonné",
+      "Reprise de l'ancien matériel"
     ]
   },
 
   // SEO
   seo: {
-    title: "Prop' & Net - Entreprise de nettoyage à Loudéac (22)",
-    description: "Prop'et Net, spécialiste du nettoyage professionnel et particulier en Centre-Bretagne. Nettoyage de bureaux, vitrerie, entretien industriel. Intervention 80 km autour de Loudéac. Devis gratuit.",
-    keywords: "nettoyage Loudéac, entreprise nettoyage 22, nettoyage bureaux Loudéac, vitrerie professionnelle, nettoyage industriel Centre-Bretagne, ménage domicile Loudéac, nettoyage Saint-Brieuc, Prop'et Net"
+    title: "BREIZH MECA NEGOCE - Négoce Matériel TP & Poids Lourds Occasion Loudéac (22)",
+    description: "BREIZH MECA NEGOCE, spécialiste de la vente de matériel TP, engins de chantier et poids lourds d'occasion à Loudéac. Large choix, prix compétitifs, livraison France.",
+    keywords: "matériel TP occasion, poids lourds occasion, engins chantier Loudéac, dumper occasion, pelle occasion, chargeuse occasion, tracteur routier, Bretagne, 22, négoce TP"
   },
 
   // THÈME
   theme: {
-    primary: "blue", // Couleur professionnelle et propre
-    accent: "green", // Aspect écologique
-    mode: "light" // Site lumineux pour évoquer la propreté
+    primary: "orange", // Couleur industrielle et dynamique
+    accent: "slate", // Professionnel
+    mode: "light" // Fond clair pour mettre en valeur les produits
   }
 };
