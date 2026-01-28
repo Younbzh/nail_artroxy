@@ -1,341 +1,268 @@
 export const siteConfig = {
   // IDENTITÉ
-  companyName: "Elixir au Féminin",
-  tagline: "Institut de beauté & Onglerie",
-  slogan: "Sublimez vos mains et vos pieds",
-  city: "Uzel",
+  teamName: "WRC Trévé RX",
+  fullName: "Team WRC Trévé RX",
+  tagline: "Team de Rallycross",
+  slogan: "La passion du rallycross en Bretagne",
+  city: "Trévé",
   region: "Côtes-d'Armor, Bretagne",
+  founded: "2009",
   
   // HERO
   hero: {
-    title: "Elixir au Féminin",
-    subtitle: "Institut de beauté & Onglerie",
-    tagline: "Votre moment de beauté à Uzel",
-    description: "Spécialisée en onglerie et soins des mains et pieds, je vous accueille dans mon institut chaleureux pour un moment de détente et de beauté. Pose de vernis semi-permanent, nail art, soins complets... Prenez soin de vous !",
-    cta: "Prendre rendez-vous"
+    title: "Team WRC Trévé RX",
+    subtitle: "Double Champion de France de Rallycross",
+    tagline: "Division 4 • 2024 & 2025",
+    description: "Team de rallycross bretonne menée par Luc Derrien, double champion de France consécutif en Division 4. Performance, passion et dépassement de soi sur tous les circuits français.",
+    cta: "Suivez-nous"
   },
 
-  // À PROPOS
-  about: {
-    title: "Bienvenue chez Elixir au Féminin",
-    story: "Elixir au Féminin est votre institut de beauté spécialisé en onglerie à Uzel. Passionnée par l'art de l'ongle et le bien-être, je vous accueille dans un cadre chaleureux et féminin pour prendre soin de vos mains et de vos pieds.",
-    mission: "Ma mission : vous offrir un moment de détente privilégié tout en sublimant vos ongles avec des techniques professionnelles et des produits de qualité.",
-    expertise: "Formée aux dernières techniques de l'onglerie, je maîtrise la pose de vernis semi-permanent, le nail art, la pose complète et tous les soins pour des mains et pieds parfaits.",
-    values: "Qualité, écoute et bienveillance sont au cœur de mon approche. Chaque cliente bénéficie d'un service personnalisé et de conseils adaptés."
+  // LE PILOTE
+  pilot: {
+    name: "Luc DERRIEN",
+    number: "#35",
+    title: "Pilote & Double Champion de France",
+    bio: "Pilote passionné et déterminé, Luc Derrien incarne l'excellence du rallycross français. Avec un talent indéniable et une régularité impressionnante, il a su s'imposer comme une référence en Division 4.",
+    achievements: "Double champion de France consécutif (2024-2025), Luc a démontré sa maîtrise technique et sa combativité lors de la finale 2025 à Dreux, remontant un retard de 15 points pour décrocher le titre.",
+    style: "Pilotage agressif mais précis, excellente gestion de course, spécialiste des départs canon",
+    quote: "Le rallycross, c'est ma passion. Chaque course est un nouveau défi, chaque victoire est le fruit d'un travail d'équipe acharné."
   },
 
-  // SERVICES
-  services: {
-    title: "Mes prestations",
-    subtitle: "Des mains et des pieds sublimes",
-    categories: [
-      {
-        title: "Manucure",
-        icon: "💅",
-        color: "from-pink-500 to-rose-600",
-        items: [
-          {
-            name: "Pose complète AVEC NAIL ART",
-            duration: "2h",
-            price: "55 €",
-            description: "Pose complète de vernis semi-permanent avec nail art personnalisé"
-          },
-          {
-            name: "Pose complète SANS Nail Art",
-            duration: "2h",
-            price: "55 €",
-            description: "Pose complète de vernis semi-permanent"
-          },
-          {
-            name: "Remplissage AVEC NAIL ART",
-            duration: "2h",
-            price: "50 €",
-            description: "Remplissage et nail art"
-          },
-          {
-            name: "Remplissage SANS NAIL ART",
-            duration: "2h",
-            price: "50 €",
-            description: "Remplissage simple"
-          },
-          {
-            name: "Gainage AVEC NAIL ART",
-            duration: "1h 55min",
-            price: "45 €",
-            description: "Gainage et nail art"
-          }
-        ]
-      },
-      {
-        title: "Beauté des pieds",
-        icon: "🦶",
-        color: "from-purple-500 to-pink-600",
-        items: [
-          {
-            name: "Pose complète AVEC NAIL ART",
-            duration: "1h 30min",
-            price: "55 €",
-            description: "À partir de 6 capsules - Pose complète avec nail art"
-          },
-          {
-            name: "Pose complète SANS NAIL ART",
-            duration: "1h 30min",
-            price: "55 €",
-            description: "À partir de 6 capsules - Pose complète"
-          },
-          {
-            name: "Pose semi-complète AVEC NAIL ART",
-            duration: "1h",
-            price: "45 €",
-            description: "À partir de 2 capsules - Pose semi-complète avec nail art"
-          },
-          {
-            name: "Pose semi-complète SANS NAIL ART",
-            duration: "1h",
-            price: "45 €",
-            description: "À partir de 2 capsules - Pose semi-complète"
-          },
-          {
-            name: "Semi-permanent AVEC NAIL ART",
-            duration: "1h",
-            price: "40 €",
-            description: "Vernis semi-permanent avec nail art"
-          }
-        ]
-      }
+  // LA VOITURE
+  car: {
+    model: "Honda Civic Type R",
+    category: "Division 4",
+    number: "#35",
+    specs: {
+      motorisation: "2.0L i-VTEC",
+      puissance: "~280 ch",
+      transmission: "6 rapports",
+      poids: "~1150 kg",
+      entrainement: "Traction avant"
+    },
+    colors: ["Noir", "Vert fluo", "Jaune"],
+    features: [
+      "Châssis renforcé rallycross",
+      "Suspension ajustable",
+      "Freinage haute performance",
+      "Arceau de sécurité FIA",
+      "Pneumatiques mixtes terre/asphalte"
     ]
   },
 
-  // AVANTAGES
-  advantages: {
-    title: "Pourquoi choisir Elixir au Féminin ?",
-    items: [
+  // PALMARÈS
+  achievements: {
+    title: "Palmarès",
+    titles: [
       {
-        icon: "⭐",
-        title: "Excellente réputation",
-        description: "Note de 5/5 sur 12 avis clients"
+        year: "2025",
+        title: "Champion de France Rallycross Division 4",
+        points: "304 points",
+        highlight: "Victoire finale à Dreux après une remontée spectaculaire de 15 points",
+        details: [
+          "2 victoires en qualifications (Q2 et Q3)",
+          "1ère place en demi-finale",
+          "Victoire en finale",
+          "Domination du championnat"
+        ]
       },
       {
-        icon: "💅",
-        title: "Spécialiste onglerie",
-        description: "Expertise en nail art et soins des ongles"
-      },
-      {
-        icon: "🎨",
-        title: "Nail art personnalisé",
-        description: "Créations uniques selon vos envies"
-      },
-      {
-        icon: "✨",
-        title: "Produits de qualité",
-        description: "Marques professionnelles reconnues"
-      },
-      {
-        icon: "🏠",
-        title: "Cadre chaleureux",
-        description: "Ambiance cosy et féminine"
-      },
-      {
-        icon: "📅",
-        title: "Réservation en ligne",
-        description: "RDV 24/7 sur Planity"
+        year: "2024",
+        title: "Champion de France Rallycross Division 4",
+        points: "304 points",
+        highlight: "Premier titre national avec une régularité impressionnante",
+        details: [
+          "Domination de la saison",
+          "Multiples podiums",
+          "Constance exceptionnelle",
+          "Titre mérité"
+        ]
       }
-    ]
-  },
-
-  // AVIS CLIENTS
-  testimonials: {
-    title: "Vos avis",
-    subtitle: "Note globale : 5,0/5 ⭐",
-    rating: {
-      global: 5.0,
-      accueil: 4.9,
-      proprete: 5.0,
-      cadre: 5.0,
-      qualite: 5.0,
-      reviewCount: 12
+    ],
+    stats: {
+      titres: 2,
+      victoires: "15+",
+      podiums: "25+",
+      annees: "2024-2025"
     }
   },
 
-  // HORAIRES
-  schedule: {
-    title: "Horaires d'ouverture",
-    hours: [
+  // LE RALLYCROSS
+  rallycross: {
+    title: "Le Rallycross",
+    subtitle: "Sport automobile spectaculaire",
+    description: "Le rallycross est une discipline de sport automobile se déroulant sur circuit fermé alternant surface en terre et surface en asphalte. Des courses intenses de 4 à 6 tours avec départs groupés, dérapages spectaculaires et dépassements audacieux.",
+    characteristics: [
       {
-        day: "Lundi",
-        slots: ["09:30 - 13:45", "14:30 - 18:30", "18:30 - 18:50"]
+        icon: "🏁",
+        title: "Circuit mixte",
+        description: "60% terre / 40% asphalte"
       },
       {
-        day: "Mardi",
-        slots: ["09:30 - 13:45", "14:30 - 18:30", "18:30 - 18:50"]
+        icon: "⚡",
+        title: "Courses courtes",
+        description: "4-6 tours ultra-intensifs"
       },
       {
-        day: "Mercredi",
-        slots: ["14:15 - 18:15"]
+        icon: "🚗",
+        title: "Départs groupés",
+        description: "6 voitures simultanément"
       },
       {
-        day: "Jeudi",
-        slots: ["09:30 - 13:45", "14:30 - 18:30", "18:30 - 18:50"]
+        icon: "🎯",
+        title: "Joker Lap",
+        description: "Variante tactique obligatoire"
       },
       {
-        day: "Vendredi",
-        slots: ["09:30 - 13:45", "14:30 - 18:30"]
+        icon: "💨",
+        title: "Spectacle garanti",
+        description: "Dérapages et dépassements"
       },
       {
-        day: "Samedi",
-        slots: ["09:00 - 13:00"]
-      },
-      {
-        day: "Dimanche",
-        slots: ["Fermé"]
+        icon: "🏆",
+        title: "Compétition",
+        description: "Qualifs, demi-finales, finale"
       }
     ]
   },
 
-  // CONTACT
+  // PARTENAIRES
+  partners: {
+    title: "Nos partenaires",
+    subtitle: "Ils nous font confiance",
+    main: [
+      {
+        name: "SARL Glais et Fils",
+        type: "Partenaire principal",
+        location: "Plémet",
+        description: "Partenaire historique apportant un soutien logistique et financier essentiel"
+      }
+    ],
+    sponsors: [
+      { name: "YACCO", type: "Lubrifiants" },
+      { name: "Nova Forklift", type: "Matériel" },
+      { name: "MCP", type: "Pièces auto" },
+      { name: "Graphiee", type: "Communication" },
+      { name: "Balticross", type: "Équipement" },
+      { name: "Cooper Tires", type: "Pneumatiques" }
+    ]
+  },
+
+  // LA TEAM
+  team: {
+    title: "L'équipe",
+    description: "Une équipe soudée et passionnée au service de la performance. Pilote, mécaniciens, préparateurs et partenaires travaillent ensemble pour viser l'excellence à chaque course.",
+    values: [
+      { icon: "🏁", text: "Performance", description: "Toujours viser le podium" },
+      { icon: "🤝", text: "Esprit d'équipe", description: "La force du collectif" },
+      { icon: "🔧", text: "Préparation", description: "Rigueur et professionnalisme" },
+      { icon: "💪", text: "Combativité", description: "Ne jamais abandonner" },
+      { icon: "❤️", text: "Passion", description: "L'amour du rallycross" }
+    ]
+  },
+
+  // CHAMPIONNAT
+  championship: {
+    title: "Championnat de France Rallycross",
+    description: "Le championnat de France de rallycross est l'une des compétitions nationales les plus relevées au monde. Avec 8 manches sur les meilleurs circuits français, il attire les meilleurs pilotes et offre un spectacle exceptionnel.",
+    divisions: [
+      {
+        name: "Supercar",
+        description: "Catégorie reine (~600ch, 4x4)"
+      },
+      {
+        name: "Super 1600",
+        description: "Future élite (~280ch)"
+      },
+      {
+        name: "Division 3",
+        description: "Propulsion (~250ch)"
+      },
+      {
+        name: "Division 4",
+        description: "Notre catégorie (~280ch, traction)"
+      }
+    ],
+    circuits: [
+      "Lessay", "Faleyras", "Châteauroux", "Pont-de-Rouan",
+      "Kerlabo", "Lohéac", "Mayenne", "Dreux"
+    ]
+  },
+
+  // SAISON
+  season: {
+    title: "Saison 2025 - Bilan",
+    subtitle: "Une saison de folie !",
+    highlight: "8ème et dernière manche à Dreux : week-end d'exception avec 2 victoires en qualifications, victoire en demi-finale et victoire en finale pour décrocher le titre de champion !",
+    finalRace: {
+      circuit: "Dreux",
+      date: "Octobre 2025",
+      position: "1er",
+      points: "304 points au total",
+      context: "15 points de retard avant la manche"
+    }
+  },
+
+  // CONTACT & RÉSEAUX
   contact: {
-    title: "Me contacter",
+    title: "Nous contacter",
     address: {
-      street: "5 Place du Martray",
-      city: "22460 Uzel",
+      street: "15 rue de Beauséjour",
+      city: "22600 Trévé",
       region: "Côtes-d'Armor, Bretagne"
     },
-    phone: "À venir",
-    email: "contact@elixiraufeminin.fr",
-    booking: "https://www.planity.com/elixir-au-feminin-22460-uzel",
-    cta: "Réserver sur Planity"
+    social: {
+      facebook: "https://www.facebook.com/p/Team-WRC-Trévé-RX-100063737791619/",
+      instagram: "https://www.instagram.com/wrc_treve_rx/",
+      followers: "1000+"
+    },
+    cta: "Suivez nos aventures sur les réseaux sociaux !"
   },
 
-  // SPÉCIALITÉS
-  specialties: {
-    title: "Mes spécialités",
-    items: [
-      {
-        name: "Nail Art",
-        icon: "🎨",
-        description: "Créations artistiques personnalisées"
-      },
-      {
-        name: "Semi-permanent",
-        icon: "💅",
-        description: "Tenue longue durée garantie"
-      },
-      {
-        name: "Pose complète",
-        icon: "✨",
-        description: "Extensions d'ongles professionnelles"
-      },
-      {
-        name: "Beauté des pieds",
-        icon: "🦶",
-        description: "Soins complets et pose"
-      },
-      {
-        name: "Gainage",
-        icon: "💎",
-        description: "Renforcement des ongles naturels"
-      },
-      {
-        name: "Remplissage",
-        icon: "🔄",
-        description: "Entretien régulier de vos ongles"
-      }
-    ]
+  // GALERIE
+  gallery: {
+    title: "Galerie",
+    categories: ["Victoires", "Course", "Team", "Voiture"]
   },
 
-  // PROCESSUS
-  process: {
-    title: "Comment ça se passe ?",
-    steps: [
-      {
-        number: "01",
-        title: "Réservation",
-        description: "Prenez RDV en ligne sur Planity 24/7"
-      },
-      {
-        number: "02",
-        title: "Accueil",
-        description: "Je vous accueille dans mon institut chaleureux"
-      },
-      {
-        number: "03",
-        title: "Conseil",
-        description: "Nous discutons de vos envies et besoins"
-      },
-      {
-        number: "04",
-        title: "Soin",
-        description: "Je réalise votre prestation avec soin"
-      },
-      {
-        number: "05",
-        title: "Résultat",
-        description: "Vous repartez avec des ongles sublimes !"
-      }
-    ]
-  },
-
-  // FAQ
-  faq: [
-    {
-      question: "Combien de temps dure le vernis semi-permanent ?",
-      answer: "Le vernis semi-permanent tient en moyenne 3 à 4 semaines selon la pousse de vos ongles et leur entretien."
-    },
-    {
-      question: "Le nail art est-il inclus dans tous les tarifs ?",
-      answer: "Non, le nail art est proposé en option. Vous pouvez choisir une pose avec ou sans nail art selon vos préférences et votre budget."
-    },
-    {
-      question: "Faut-il prendre rendez-vous ?",
-      answer: "Oui, je travaille uniquement sur rendez-vous. Vous pouvez réserver facilement en ligne sur Planity 24h/24 et 7j/7."
-    },
-    {
-      question: "Utilisez-vous des produits de qualité ?",
-      answer: "Oui, je travaille exclusivement avec des marques professionnelles reconnues pour garantir la qualité et la tenue de vos ongles."
-    },
-    {
-      question: "Proposez-vous des soins pour hommes ?",
-      answer: "Je suis spécialisée dans les soins féminins, mais n'hésitez pas à me contacter pour discuter de vos besoins."
-    },
-    {
-      question: "Où vous situez-vous exactement ?",
-      answer: "Je suis située au cœur d'Uzel, 5 Place du Martray (22460). Un parking est disponible à proximité."
+  // ACTUALITÉS
+  news: {
+    title: "Actualités",
+    latest: {
+      title: "Luc Derrien sacré champion de France pour la 2ème fois !",
+      date: "Octobre 2025",
+      excerpt: "Week-end exceptionnel à Dreux avec une finale mémorable qui offre le titre à Luc Derrien devant Arthur Barbault Forget.",
+      content: "La Team WRC de Trévé avec son pilote Luc DERRIEN a passé un week-end d'exception lors de la 8ème et dernière manche du championnat de France de Rallycross à Dreux avec 2 victoires en Q2 et Q3, une première place en demi finale et bien sûr la victoire en finale devant son concurrent direct Arthur Barbault Forget qui comptait 15 points d'avance avant le week-end. Luc Derrien devient donc champion de France de Rallycross de la Division 4 pour la seconde fois consécutive."
     }
-  ],
+  },
 
-  // VALEURS
-  values: [
-    { text: "Qualité", icon: "✨" },
-    { text: "Écoute", icon: "👂" },
-    { text: "Bienveillance", icon: "💖" },
-    { text: "Créativité", icon: "🎨" },
-    { text: "Professionnalisme", icon: "⭐" }
-  ],
-
-  // POINTS FORTS
-  highlights: [
-    "Institut spécialisé en onglerie",
-    "Note de 5/5 sur Planity",
-    "Nail art personnalisé",
-    "Produits professionnels",
-    "Cadre chaleureux et féminin",
-    "Horaires flexibles",
-    "Réservation en ligne facile",
-    "Au cœur d'Uzel"
-  ],
+  // DEVENIR PARTENAIRE
+  partnership: {
+    title: "Devenir partenaire",
+    subtitle: "Associez votre marque à la performance",
+    benefits: [
+      "Visibilité sur la voiture et les équipements",
+      "Logo sur tous nos supports de communication",
+      "Présence sur nos réseaux sociaux",
+      "Invitations VIP aux courses",
+      "Retombées médiatiques nationales",
+      "Association à une équipe gagnante"
+    ],
+    cta: "Contactez-nous pour un partenariat"
+  },
 
   // SEO
   seo: {
-    title: "Elixir au Féminin - Onglerie & Institut de beauté Uzel (22460)",
-    description: "Institut de beauté et onglerie à Uzel. Spécialiste nail art, semi-permanent, pose complète. Note 5/5. RDV en ligne sur Planity. 5 Place du Martray, 22460 Uzel.",
-    keywords: "onglerie Uzel, nail art, manucure Uzel, beauté des pieds, vernis semi-permanent, pose d'ongles, Elixir au Féminin, institut beauté 22460"
+    title: "Team WRC Trévé RX - Double Champion de France Rallycross",
+    description: "Team WRC Trévé RX : Luc Derrien, double champion de France de rallycross 2024-2025 en Division 4. Honda Civic #35. Suivez nos courses sur tous les circuits français !",
+    keywords: "WRC Trévé, rallycross, Luc Derrien, champion France, Division 4, Honda Civic, sport automobile, Bretagne, Côtes-d'Armor, rallycross France, team rallycross"
   },
 
   // THÈME
   theme: {
-    primary: "pink", // Rose féminin
-    secondary: "purple", // Violet élégant
-    accent: "rose", // Rose doux
-    mode: "light" // Mode clair pour un aspect frais et lumineux
+    primary: "green", // Vert fluo de la voiture
+    secondary: "yellow", // Jaune des sponsors
+    accent: "black", // Noir de la voiture
+    mode: "dark" // Mode sombre pour ambiance racing
   }
 };
