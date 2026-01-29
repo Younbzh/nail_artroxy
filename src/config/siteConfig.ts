@@ -1,310 +1,322 @@
 export const siteConfig = {
   // IDENTITÉ
-  companyName: "Avalon Stratège",
-  tagline: "Votre présence en ligne, enfin accessible",
-  slogan: "Des sites web professionnels à prix honnête pour TPE et auto-entrepreneurs",
+  barName: "Dartrad",
+  fullName: "Dartrad Pontivy",
+  tagline: "Bar à Fléchettes",
+  slogan: "Où la tradition rencontre la performance",
+  city: "Pontivy",
+  region: "Morbihan, Bretagne",
   
   // HERO
   hero: {
-    title: "Votre Site Web Professionnel",
-    subtitle: "Livré en 48h, sans vous ruiner",
-    price: "190€",
-    highlight: "Installation complète",
-    description: "Vous êtes artisan, commerçant ou auto-entrepreneur ? Obtenez enfin votre site web professionnel sans exploser votre budget. Installation complète à 190€ + gestion totale à 39€/mois.",
-    cta: "Obtenir mon devis gratuit",
-    promise: "✓ Devis gratuit ✓ Livré en 48h ✓ Pas de surprise"
+    title: "Dartrad",
+    subtitle: "Bar à Fléchettes • Pontivy",
+    tagline: "Dart + Trad = Passion des fléchettes",
+    description: "Le premier bar à fléchettes de Pontivy créé par Thibault Tricole, n°1 français et 61e mondial. Un lieu convivial pour découvrir, pratiquer et vibrer autour des fléchettes traditionnelles.",
+    opening: "Ouverture : Vendredi 6 février 2026",
+    inauguration: "Inauguration officielle : Fin mars 2026",
+    cta: "Venez nous découvrir"
   },
 
-  // OFFRE PRINCIPALE
-  mainOffer: {
-    title: "190€ – Installation Complète",
-    subtitle: "Paiement unique • Déductible d'impôts",
-    description: "Tout ce qu'il faut pour être en ligne, prêt à accueillir vos clients.",
-    includes: [
+  // THIBAULT TRICOLE
+  founder: {
+    name: "Thibault Tricole",
+    nickname: "The French Touch",
+    title: "Fondateur & N°1 Français",
+    age: 36,
+    birthplace: "Auray, Morbihan",
+    currentRanking: "61e mondial PDC",
+    frenchRanking: "N°1 Français",
+    bio: "Thibault Tricole est le meilleur joueur français de fléchettes et une figure incontournable de la scène internationale. Premier français à remporter un match au Championnat du monde PDC, il a à cœur de démocratiser les fléchettes en France.",
+    achievements: [
+      "61e mondial au classement PDC",
+      "N°1 français de fléchettes",
+      "1er français à gagner un match au Mondial PDC",
+      "Finaliste Championnat du monde WDF 2022",
+      "Vainqueur de l'Open du Danemark 2021",
+      "Triple champion de France",
+      "Président du Bleiz Darts Club"
+    ],
+    career: "Joueur professionnel depuis plus de 20 ans, Thibault a représenté la France dans les plus grandes compétitions mondiales. Son objectif : faire rayonner les fléchettes françaises au plus haut niveau.",
+    music: "Musique d'entrée : Essentielles - Ibrahim Maalouf"
+  },
+
+  // MARIE BOUFFAUT
+  coFounder: {
+    name: "Marie Bouffaut",
+    title: "Co-fondatrice",
+    experience: "14 ans d'expérience dans la gestion du Ty Lou à Malguénac",
+    role: "Marie apporte toute son expertise en gestion de bar et crée l'ambiance chaleureuse du Dartrad.",
+    passion: "Passionnée de fléchettes, elle est le pilier de l'organisation et veille à ce que chacun se sente bien au Dartrad."
+  },
+
+  // LE CONCEPT
+  concept: {
+    title: "Le Concept Dartrad",
+    subtitle: "Un bar unique dédié aux fléchettes",
+    mission: "Démocratiser les fléchettes et créer un lieu convivial où débutants et confirmés peuvent pratiquer, s'améliorer et partager leur passion.",
+    vision: "Faire du Dartrad LE lieu incontournable des amateurs de fléchettes en Bretagne.",
+    name: "Dartrad = Dart (fléchette en anglais) + Trad (pour traditionnelle)",
+    atmosphere: "Ambiance conviviale et passionnée, dans un cadre moderne avec un esprit traditionnel. Ici, tout le monde est bienvenu, du curieux au compétiteur."
+  },
+
+  // CE QU'ON PROPOSE
+  offers: {
+    title: "Ce qu'on propose",
+    categories: [
       {
-        icon: "⚙️",
-        title: "Installation & Configuration",
-        items: [
-          "Installation du site personnalisé",
-          "Adaptation du design (couleurs, logo)",
-          "Intégration de vos textes et photos",
-          "Mise en ligne sur votre hébergeur"
+        icon: "🎯",
+        title: "Jeu libre",
+        description: "Venez jouer aux fléchettes dans une ambiance décontractée",
+        details: [
+          "Cibles professionnelles",
+          "Fléchettes fournies",
+          "Conseils des pros",
+          "Tarifs accessibles"
         ]
       },
       {
-        icon: "🔒",
-        title: "Sécurité & Performance",
-        items: [
-          "Certificat SSL (HTTPS) activé",
-          "Optimisation vitesse de chargement",
-          "Configuration du nom de domaine",
-          "Adresse mail professionnelle (optionnel)"
+        icon: "🏆",
+        title: "Compétitions",
+        description: "Participez à nos tournois réguliers",
+        details: [
+          "Tournois hebdomadaires",
+          "Niveaux débutant à expert",
+          "Prizes et récompenses",
+          "Classements officiels"
         ]
       },
       {
-        icon: "📱",
-        title: "Livraison Clé-en-main",
-        items: [
-          "Site responsive (mobile + tablette + PC)",
-          "Page d'accueil + pages essentielles",
-          "Prêt à être indexé sur Google",
-          "Livré en 24 à 48h"
+        icon: "🎓",
+        title: "Initiation & Cours",
+        description: "Apprenez avec le meilleur joueur français",
+        details: [
+          "Cours pour débutants",
+          "Perfectionnement",
+          "Conseils de Thibault",
+          "Techniques professionnelles"
+        ]
+      },
+      {
+        icon: "🍺",
+        title: "Bar & Convivialité",
+        description: "Un vrai bar avec une vraie ambiance",
+        details: [
+          "Boissons variées",
+          "Snacking",
+          "Écrans géants",
+          "Ambiance chaleureuse"
         ]
       }
-    ],
-    taxDeductible: true,
-    taxNote: "Les 190€ sont une charge professionnelle déductible d'impôts"
+    ]
   },
 
-  // PACK SÉRÉNITÉ
-  serenityPack: {
-    title: "39€/mois – Pack Sérénité",
-    subtitle: "Sans engagement • Résiliable à tout moment",
-    description: "Votre site 100% géré. Vous n'avez rien à faire, on s'occupe de tout.",
-    includes: [
-      {
-        icon: "🚀",
-        title: "Hébergement Premium",
-        items: [
-          "Serveurs rapides et sécurisés",
-          "Renouvellement annuel du domaine",
-          "Sauvegardes automatiques quotidiennes",
-          "Surveillance 24/7"
-        ]
-      },
-      {
-        icon: "🛠️",
-        title: "Maintenance & Support",
-        items: [
-          "Mises à jour régulières du site",
-          "1 modification par mois incluse",
-          "Support par email ou message",
-          "Réponse rapide garantie"
-        ]
-      },
-      {
-        icon: "🔧",
-        title: "Tranquillité d'esprit",
-        items: [
-          "Maintenance technique continue",
-          "Correction des bugs éventuels",
-          "Monitoring des performances",
-          "Vous n'avez rien à gérer"
-        ]
-      }
-    ],
-    noCommitment: true,
-    commitment: "Résiliable à tout moment, sans frais",
-    benefit: "Votre site reste en ligne et performant, sans effort de votre part"
-  },
-
-  // POURQUOI NOUS
+  // POURQUOI LE DARTRAD
   whyUs: {
-    title: "Pourquoi Avalon Stratège ?",
-    subtitle: "Une solution pensée pour les petits budgets",
+    title: "Pourquoi le Dartrad ?",
     reasons: [
       {
-        icon: "💰",
-        title: "Prix honnête",
-        description: "190€ pour démarrer, c'est tout. Pas de frais cachés, pas de mauvaise surprise."
-      },
-      {
-        icon: "⚡",
-        title: "Rapide",
-        description: "Votre site en ligne en 24 à 48h. Vous êtes pressé ? Nous aussi."
+        icon: "⭐",
+        title: "Fondé par un champion",
+        description: "Thibault Tricole, n°1 français, a créé ce lieu pour partager sa passion"
       },
       {
         icon: "🎯",
-        title: "Simple",
-        description: "Pas de jargon technique. On s'occupe de tout, vous gérez votre activité."
+        title: "Équipement pro",
+        description: "Cibles et fléchettes de qualité professionnelle"
       },
       {
-        icon: "🤝",
-        title: "À l'écoute",
-        description: "Support réactif par email ou téléphone. Une vraie personne vous répond."
+        icon: "👥",
+        title: "Tous niveaux",
+        description: "Du débutant complet au joueur confirmé, tout le monde est bienvenu"
       },
       {
-        icon: "📈",
-        title: "Professionnel",
-        description: "Un site qui inspire confiance à vos clients et valorise votre activité."
+        icon: "🏆",
+        title: "Ambiance unique",
+        description: "L'esprit traditionnel des pubs anglais avec la convivialité bretonne"
       },
       {
-        icon: "✅",
-        title: "Sans risque",
-        description: "Pack mensuel sans engagement. Vous arrêtez quand vous voulez."
+        icon: "📺",
+        title: "Retransmissions live",
+        description: "Suivez les grands championnats sur écran géant"
+      },
+      {
+        icon: "🍻",
+        title: "Bar complet",
+        description: "Bières, softs, snacking... tout pour passer un bon moment"
       }
     ]
   },
 
   // POUR QUI
   target: {
-    title: "Cette offre est faite pour vous si...",
+    title: "Le Dartrad, c'est pour qui ?",
     profiles: [
       {
-        icon: "🔨",
-        title: "Artisan",
-        description: "Plombier, électricien, menuisier... Vous avez besoin d'être trouvé localement."
+        icon: "🎯",
+        title: "Les curieux",
+        description: "Vous n'avez jamais joué ? Parfait, on vous apprend !"
       },
       {
-        icon: "🏪",
-        title: "Commerçant",
-        description: "Boutique, restaurant, salon... Vos clients doivent pouvoir vous trouver en ligne."
+        icon: "🍺",
+        title: "Les groupes d'amis",
+        description: "Une sortie originale et conviviale entre potes"
       },
       {
-        icon: "💼",
-        title: "Auto-entrepreneur",
-        description: "Coach, consultant, freelance... Vous voulez crédibiliser votre activité."
+        icon: "🏆",
+        title: "Les compétiteurs",
+        description: "Venez vous entraîner et progresser avec des pros"
       },
       {
-        icon: "🏡",
-        title: "TPE / PME",
-        description: "Petite entreprise qui veut une présence web sans se ruiner."
+        icon: "👨‍👩‍👧‍👦",
+        title: "Les familles",
+        description: "Un loisir accessible à tous les âges"
       },
       {
-        icon: "🚀",
-        title: "Lancement",
-        description: "Vous démarrez et avez besoin d'un site vite, bien et pas cher."
+        icon: "🎉",
+        title: "Les événements",
+        description: "Anniversaires, EVG/EVJF, team building..."
       },
       {
-        icon: "🔄",
-        title: "Refonte",
-        description: "Votre site actuel est obsolète, trop cher ou ne vous convient plus."
+        icon: "📺",
+        title: "Les fans de dart",
+        description: "Regardez les championnats entre passionnés"
       }
     ]
   },
 
-  // PROCESSUS
-  process: {
-    title: "Comment ça marche ?",
-    subtitle: "4 étapes simples pour être en ligne",
-    steps: [
+  // LES FLÉCHETTES
+  darts: {
+    title: "Les Fléchettes, c'est quoi ?",
+    subtitle: "Un sport de précision accessible à tous",
+    description: "Les fléchettes sont un sport de précision où le joueur lance des fléchettes sur une cible circulaire divisée en sections. Simple à comprendre, difficile à maîtriser, c'est un jeu qui allie concentration, technique et stratégie.",
+    rules: [
       {
-        number: "01",
-        title: "Vous me contactez",
-        description: "Email ou téléphone, comme vous préférez. On discute de votre projet gratuitement."
+        title: "La cible",
+        text: "Divisée en 20 sections numérotées, avec des zones doubles et triples"
       },
       {
-        number: "02",
-        title: "Je vous envoie un devis",
-        description: "Clair, détaillé, sans surprise. Vous validez si ça vous convient."
+        title: "Le jeu le plus populaire",
+        text: "Le 501 : partir de 501 points et arriver exactement à 0"
       },
       {
-        number: "03",
-        title: "Je crée votre site",
-        description: "Vous me donnez vos infos (textes, photos, logo). Je m'occupe du reste."
+        title: "La distance",
+        text: "2,37 mètres de la cible, réglementaire"
       },
       {
-        number: "04",
-        title: "Votre site est en ligne",
-        description: "En 24-48h, vous avez un site professionnel et vous pouvez accueillir vos clients !"
+        title: "Les fléchettes",
+        text: "3 fléchettes par tour, pointes acier pour les traditionnelles"
       }
+    ],
+    benefits: [
+      "Améliore la concentration",
+      "Développe la précision",
+      "Sport accessible à tous",
+      "Convivial et compétitif",
+      "Peut se pratiquer à tout âge"
     ]
   },
 
-  // CE QU'ILS DISENT (exemples fictifs mais réalistes)
-  testimonials: {
-    title: "Ce qu'ils en disent",
-    reviews: [
-      {
-        name: "Sophie M.",
-        business: "Salon de coiffure",
-        text: "J'avais besoin d'un site rapidement et sans me ruiner. Avalon Stratège m'a livré un site nickel en 48h. Mes clients me trouvent enfin sur Google !",
-        rating: 5
-      },
-      {
-        name: "Thomas L.",
-        business: "Plombier auto-entrepreneur",
-        text: "Le pack à 39€/mois est parfait. Je ne m'occupe de rien, mon site est toujours à jour et si j'ai une question, j'ai une réponse rapide.",
-        rating: 5
-      },
-      {
-        name: "Marie D.",
-        business: "Coach bien-être",
-        text: "Enfin un tarif honnête ! J'ai eu peur de me faire arnaquer avec d'autres agences qui demandaient 10 fois plus. Merci pour ce service accessible.",
-        rating: 5
-      }
-    ]
-  },
-
-  // FAQ
-  faq: [
-    {
-      question: "Pourquoi si peu cher ?",
-      answer: "Je travaille avec des templates professionnels que je personnalise à vos couleurs. Pas de développement sur-mesure coûteux, mais un résultat pro et efficace. Et je ne facture pas 5000€ pour faire croire que c'est du luxe."
+  // INFORMATIONS PRATIQUES
+  infos: {
+    title: "Informations pratiques",
+    opening: {
+      date: "Vendredi 6 février 2026",
+      inauguration: "Fin mars 2026",
+      note: "Ouverture initialement prévue plus tôt, mais nous voulions être bien prêts !"
     },
-    {
-      question: "Y a-t-il des frais cachés ?",
-      answer: "Non. 190€ pour l'installation, puis 39€/mois si vous voulez le pack sérénité. C'est tout. Pas de surprise, pas de frais annexes."
+    address: {
+      street: "14 rue Albert-de-Mun",
+      city: "56300 Pontivy",
+      region: "Morbihan, Bretagne"
     },
-    {
-      question: "Le pack à 39€/mois est-il obligatoire ?",
-      answer: "Non, mais fortement recommandé. Sans lui, vous devrez gérer vous-même l'hébergement, les mises à jour, la maintenance... Le pack vous libère de tout ça."
+    hours: {
+      note: "Horaires à venir",
+      temp: "Les horaires seront communiqués prochainement"
     },
-    {
-      question: "Puis-je résilier le pack mensuel quand je veux ?",
-      answer: "Oui, sans engagement. Vous arrêtez quand vous voulez, sans frais de résiliation."
-    },
-    {
-      question: "Qu'est-ce qu'une 'petite modification' incluse par mois ?",
-      answer: "Changer un texte, mettre à jour des horaires, ajouter une photo, modifier un tarif... Des petites choses qui prennent 10-15 minutes. Si c'est plus gros, on en discute."
-    },
-    {
-      question: "Est-ce que mon site sera bien référencé sur Google ?",
-      answer: "Votre site sera optimisé techniquement pour le référencement (structure, vitesse, mobile). Mais être en 1ère page demande du temps et du contenu. Je peux vous conseiller gratuitement."
-    },
-    {
-      question: "Je n'ai pas de logo, pas de photos. Vous pouvez m'aider ?",
-      answer: "Oui. Je peux vous orienter vers des solutions gratuites ou peu chères pour le logo. Pour les photos, on peut utiliser des images libres de droits en attendant que vous ayez les vôtres."
-    },
-    {
-      question: "Est-ce que les 190€ sont vraiment déductibles ?",
-      answer: "Oui, si vous êtes professionnel (auto-entrepreneur, entreprise...). C'est une charge professionnelle comme vos autres dépenses. Parlez-en à votre comptable pour confirmation."
+    contact: {
+      phone: "À venir",
+      email: "contact@dartrad.fr",
+      facebook: "Dartrad Pontivy",
+      instagram: "@dartrad_pontivy"
     }
-  ],
+  },
 
-  // GARANTIES
-  guarantees: {
-    title: "Mes engagements",
-    items: [
-      "✓ Devis gratuit et transparent",
-      "✓ Livraison en 24 à 48h",
-      "✓ Site responsive (mobile/tablette/PC)",
-      "✓ Support réactif",
-      "✓ Pas de frais cachés",
-      "✓ Résiliation libre du pack mensuel"
+  // ACTUALITÉS
+  news: {
+    title: "Suivez l'aventure",
+    latest: {
+      title: "Ouverture confirmée le 6 février 2026 !",
+      date: "Janvier 2026",
+      content: "Après des mois de travaux débutés en octobre 2025, le Dartrad ouvrira ses portes le vendredi 6 février 2026. L'inauguration officielle aura lieu fin mars. Thibault et Marie sont impatients de vous accueillir dans ce lieu unique à Pontivy !"
+    }
+  },
+
+  // THIBAULT AU MONDIAL
+  worldChampionship: {
+    title: "Thibault aux Championnats du Monde",
+    description: "Suivez les performances de Thibault Tricole aux plus grandes compétitions mondiales",
+    recent: "Thibault a participé pour la 3ème fois consécutive aux Championnats du monde PDC à Londres en décembre 2025",
+    next: "Suivez ses prochaines compétitions en direct au Dartrad !"
+  },
+
+  // L'HISTOIRE
+  story: {
+    title: "L'histoire du Dartrad",
+    timeline: [
+      {
+        date: "Octobre 2025",
+        event: "Début des travaux",
+        description: "Thibault et Marie lancent la transformation du local rue Albert-de-Mun"
+      },
+      {
+        date: "Janvier 2026",
+        event: "Finalisation",
+        description: "Les derniers aménagements sont peaufinés pour offrir le meilleur cadre"
+      },
+      {
+        date: "6 février 2026",
+        event: "Ouverture !",
+        description: "Le Dartrad ouvre ses portes au public"
+      },
+      {
+        date: "Fin mars 2026",
+        event: "Inauguration officielle",
+        description: "Grande fête d'inauguration avec invités et animations"
+      }
     ]
   },
 
-  // CONTACT
-  contact: {
-    title: "Prêt à lancer votre site ?",
-    subtitle: "Contactez-moi pour un devis gratuit",
-    email: "avalonstratege@gmail.com",
-    phone: "06 58 96 89 59",
-    cta: "Demander un devis gratuit",
-    availability: "Réponse sous 24h maximum"
-  },
-
-  // INFOS PRATIQUES
-  legalInfo: {
-    companyName: "Avalon Stratège",
-    email: "avalonstratege@gmail.com",
-    phone: "06 58 96 89 59",
-    siret: "À compléter si nécessaire"
+  // ÉVÉNEMENTS
+  events: {
+    title: "Événements à venir",
+    upcoming: [
+      {
+        title: "Ouverture au public",
+        date: "6 février 2026",
+        description: "Venez découvrir le Dartrad dès le premier jour !"
+      },
+      {
+        title: "Inauguration officielle",
+        date: "Fin mars 2026",
+        description: "Grande soirée d'inauguration avec animations et surprises"
+      }
+    ]
   },
 
   // SEO
   seo: {
-    title: "Avalon Stratège - Sites Web Pros pour TPE à 190€",
-    description: "Création de sites web professionnels pour artisans, commerçants et auto-entrepreneurs. Installation complète 190€ + gestion 39€/mois sans engagement. Livraison en 48h.",
-    keywords: "création site web, site pas cher, site TPE, site artisan, site auto-entrepreneur, site internet professionnel, 190 euros, hébergement web, maintenance site"
+    title: "Dartrad Pontivy - Bar à Fléchettes de Thibault Tricole",
+    description: "Le Dartrad, bar à fléchettes créé par Thibault Tricole (n°1 français) et Marie Bouffaut. Ouverture le 6 février 2026 à Pontivy. Jeu, tournois, initiation et convivialité.",
+    keywords: "Dartrad, bar fléchettes Pontivy, Thibault Tricole, fléchettes Morbihan, dart Bretagne, bar Pontivy, The French Touch, fléchettes traditionnelles, tournoi dart"
   },
 
-  // THÈME
+  // THÈME (couleurs du logo)
   theme: {
-    primary: "blue", // Bleu confiance
-    secondary: "indigo", // Indigo professionnel
-    accent: "green", // Vert validation/succès
-    mode: "light" // Mode clair pour inspirer confiance
+    primary: "orange", // Orange du logo
+    secondary: "amber", // Beige/crème
+    accent: "purple", // Mauve
+    dark: "stone", // Marron foncé
+    mode: "light" // Fond clair avec accents sombres
   }
 };
