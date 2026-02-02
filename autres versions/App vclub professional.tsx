@@ -5,38 +5,6 @@ import { siteConfig } from './config/siteConfig';
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [showForm, setShowForm] = useState(false);
-  const [stars, setStars] = useState<Array<{ id: number; x: number; y: number; duration: number; delay: number }>>([]);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    date: '',
-    guests: '',
-    message: ''
-  });
-
-  // Generate stars on mount
-  useEffect(() => {
-    const generateStars = () => {
-      const newStars = [];
-      const starCount = 150; // Nombre d'étoiles (comme une Rolls-Royce)
-      
-      for (let i = 0; i < starCount; i++) {
-        newStars.push({
-          id: i,
-          x: Math.random() * 100, // Position X en %
-          y: Math.random() * 100, // Position Y en %
-          duration: Math.random() * 3 + 2, // Durée de scintillement 2-5s
-          delay: Math.random() * 5 // Délai initial 0-5s
-        });
-      }
-      
-      setStars(newStars);
-    };
-    
-    generateStars();
-  }, []);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -47,11 +15,6 @@ export default function App() {
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
     setIsMenuOpen(false);
-  };
-
-  const handleFormSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert('Formulaire de démonstration : Les données ne sont pas envoyées.');
   };
 
   return (
@@ -91,27 +54,6 @@ export default function App() {
           }
         }
         
-        @keyframes twinkle {
-          0%, 100% { opacity: 0; }
-          50% { opacity: 1; }
-        }
-        
-        .starlight {
-          position: fixed;
-          inset: 0;
-          pointer-events: none;
-          z-index: 1;
-        }
-        
-        .star {
-          position: absolute;
-          width: 1px;
-          height: 1px;
-          background: white;
-          border-radius: 50%;
-          box-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
-        }
-        
         .hover-line {
           position: relative;
         }
@@ -146,38 +88,10 @@ export default function App() {
           pointer-events: none;
           z-index: 100;
         }
-        
-        .modal-backdrop {
-          position: fixed;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.9);
-          backdrop-filter: blur(8px);
-          z-index: 200;
-          animation: fadeIn 0.3s ease-out;
-        }
-        
-        .modal-content {
-          animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        }
       `}</style>
 
       {/* Grain texture overlay */}
       <div className="grain" />
-
-      {/* Starlight effect - Rolls-Royce style */}
-      <div className="starlight">
-        {stars.map((star) => (
-          <div
-            key={star.id}
-            className="star"
-            style={{
-              left: `${star.x}%`,
-              top: `${star.y}%`,
-              animation: `twinkle ${star.duration}s ease-in-out ${star.delay}s infinite`
-            }}
-          />
-        ))}
-      </div>
 
       {/* Navigation */}
       <nav className={`fixed w-full z-50 transition-all duration-500 ${
@@ -203,12 +117,12 @@ export default function App() {
                   {item}
                 </button>
               ))}
-              <button
-                onClick={() => setShowForm(true)}
+              <a
+                href={`tel:${siteConfig.contact.phone.replace(/\s/g, '')}`}
                 className="px-8 py-3 bg-white text-black text-sm uppercase tracking-widest font-medium hover:bg-white/90 transition-all"
               >
                 Réserver
-              </button>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -233,12 +147,12 @@ export default function App() {
                     {item}
                   </button>
                 ))}
-                <button
-                  onClick={() => setShowForm(true)}
+                <a
+                  href={`tel:${siteConfig.contact.phone.replace(/\s/g, '')}`}
                   className="px-8 py-3 bg-white text-black text-sm uppercase tracking-widest font-medium text-center"
                 >
                   Réserver
-                </button>
+                </a>
               </div>
             </div>
           )}
@@ -256,9 +170,17 @@ export default function App() {
         }} />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 text-center fade-in">
+          {/* Opening badge */}
+          <div className="inline-flex items-center gap-3 px-6 py-2 border border-white/20 backdrop-blur-sm mb-8" style={{
+            animationDelay: '0.2s'
+          }}>
+            <div className="w-1.5 h-1.5 bg-white rounded-full" />
+            <span className="text-xs uppercase tracking-[0.3em] text-white/80">Ouverture {siteConfig.opening.date}</span>
+          </div>
+
           {/* Main title */}
           <h1 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl mb-8 slide-up" style={{
-            animationDelay: '0.2s',
+            animationDelay: '0.4s',
             lineHeight: '0.95'
           }}>
             V CLUB
@@ -266,20 +188,20 @@ export default function App() {
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl md:text-2xl text-white/60 mb-4 max-w-2xl mx-auto slide-up" style={{
-            animationDelay: '0.4s'
+            animationDelay: '0.6s'
           }}>
             {siteConfig.hero.subtitle}
           </p>
 
           <p className="text-sm sm:text-base text-white/40 mb-12 max-w-xl mx-auto slide-up" style={{
-            animationDelay: '0.5s'
+            animationDelay: '0.7s'
           }}>
             {siteConfig.address.city} — {siteConfig.venue.features[0].title}
           </p>
 
           {/* Featured event */}
           <div className="inline-block border border-white/10 backdrop-blur-sm p-8 mb-12 slide-up" style={{
-            animationDelay: '0.6s'
+            animationDelay: '0.8s'
           }}>
             <p className="text-xs uppercase tracking-[0.3em] text-white/60 mb-4">Soirée d'ouverture</p>
             <p className="font-display text-4xl sm:text-5xl mb-4">14 Février 2026</p>
@@ -289,15 +211,15 @@ export default function App() {
 
           {/* CTA */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center slide-up" style={{
-            animationDelay: '0.8s'
+            animationDelay: '1s'
           }}>
-            <button
-              onClick={() => setShowForm(true)}
+            <a
+              href={`tel:${siteConfig.contact.phone.replace(/\s/g, '')}`}
               className="group px-10 py-4 bg-white text-black text-sm uppercase tracking-widest font-medium hover:bg-white/90 transition-all flex items-center justify-center gap-2"
             >
               Réserver une table
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
             <button
               onClick={() => scrollToSection('programme')}
               className="px-10 py-4 border border-white/20 text-sm uppercase tracking-widest hover:bg-white/5 transition-all"
@@ -305,6 +227,14 @@ export default function App() {
               Voir le programme
             </button>
           </div>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 fade-in" style={{
+          animationDelay: '1.2s'
+        }}>
+          <span className="text-xs uppercase tracking-[0.3em] text-white/40">Défiler</span>
+          <div className="w-px h-12 bg-white/20" />
         </div>
       </section>
 
@@ -359,37 +289,24 @@ export default function App() {
             </div>
 
             {/* Regular nights */}
-            <div className="border border-white/10 p-8 lg:p-12">
-              <div className="mb-8">
-                <h4 className="font-display text-3xl mb-4">Soirées régulières</h4>
-                <p className="text-white/60">
-                  Tous les vendredis et samedis — Accès aux deux salles
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div className="space-y-3">
-                  <h5 className="text-xl font-medium mb-2">Salle V Club</h5>
-                  <p className="text-white/60 text-sm">Électro • House • Techno</p>
-                </div>
-                <div className="space-y-3">
-                  <h5 className="text-xl font-medium mb-2">Salle Valentino</h5>
-                  <p className="text-white/60 text-sm">Pop • Charts • Hip-Hop • R&B</p>
-                </div>
-              </div>
-
-              <div className="pt-6 border-t border-white/10">
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                  <div>
-                    <p className="text-sm text-white/60 mb-2">Entrée unique • Accès aux 2 salles</p>
-                    <p className="text-white/40 text-xs">{siteConfig.schedule.days[0]} • {siteConfig.schedule.hours}</p>
+            <div className="grid md:grid-cols-2 gap-6">
+              {siteConfig.music.styles.map((style, index) => (
+                <div key={index} className="border border-white/10 hover:border-white/20 transition-all p-8">
+                  <div className="mb-6">
+                    <h4 className="font-display text-2xl mb-3">{style}</h4>
+                    <p className="text-white/60 text-sm mb-4">
+                      {index === 0 ? 'Électro, House, Techno' : 'Charts, Hip-Hop, R&B'}
+                    </p>
                   </div>
-                  <div className="text-left sm:text-right">
-                    <p className="text-3xl font-display mb-1">{siteConfig.schedule.prices.standard}</p>
-                    <p className="text-sm text-white/40">par personne</p>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex items-center justify-between pb-3 border-b border-white/10">
+                      <span className="text-white/60">{siteConfig.schedule.days[0]}</span>
+                      <span className="text-white">{siteConfig.schedule.prices.standard}</span>
+                    </div>
+                    <p className="text-xs text-white/40">{siteConfig.schedule.hours}</p>
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -444,9 +361,9 @@ export default function App() {
                 <p className="text-xs uppercase tracking-[0.3em] text-white/60 mb-4">Espace privatif</p>
                 <h3 className="font-display text-3xl mb-4">{siteConfig.ambiance.vip.title}</h3>
                 <p className="text-white/60 mb-4">{siteConfig.ambiance.vip.capacity} • {siteConfig.ambiance.vip.location}</p>
-                <button onClick={() => setShowForm(true)} className="text-sm hover-line inline-block">
+                <a href={`tel:${siteConfig.contact.phone.replace(/\s/g, '')}`} className="text-sm hover-line inline-block">
                   Demander un devis →
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -541,148 +458,6 @@ export default function App() {
           </div>
         </div>
       </section>
-
-      {/* Contact Form Modal */}
-      {showForm && (
-        <div className="modal-backdrop fixed inset-0 flex items-center justify-center p-4 z-[300]" onClick={() => setShowForm(false)}>
-          <div className="modal-content bg-black border border-white/20 max-w-2xl w-full max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
-            {/* Header */}
-            <div className="sticky top-0 bg-black border-b border-white/10 px-8 py-6 flex items-center justify-between">
-              <div>
-                <h3 className="font-display text-3xl mb-2">Réserver une table</h3>
-                <p className="text-sm text-white/60">V Club • Quéven</p>
-              </div>
-              <button
-                onClick={() => setShowForm(false)}
-                className="text-white/60 hover:text-white transition-colors"
-              >
-                <X className="w-6 h-6" />
-              </button>
-            </div>
-
-            {/* Demo notice */}
-            <div className="mx-8 mt-6 px-6 py-4 bg-amber-500/10 border border-amber-500/20">
-              <p className="text-sm text-amber-200/90">
-                <strong>Formulaire de démonstration</strong> — Ce formulaire n'est pas actuellement connecté. Aucune donnée ne sera envoyée. Pour une vraie réservation, veuillez nous appeler au {siteConfig.contact.phone}.
-              </p>
-            </div>
-
-            {/* Form */}
-            <form onSubmit={handleFormSubmit} className="p-8 space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-xs uppercase tracking-widest text-white/60 mb-3">
-                    Nom complet *
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:border-white/30 focus:outline-none transition-colors"
-                    placeholder="Votre nom"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs uppercase tracking-widest text-white/60 mb-3">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:border-white/30 focus:outline-none transition-colors"
-                    placeholder="votre@email.com"
-                  />
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-xs uppercase tracking-widest text-white/60 mb-3">
-                    Téléphone *
-                  </label>
-                  <input
-                    type="tel"
-                    required
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:border-white/30 focus:outline-none transition-colors"
-                    placeholder="06 12 34 56 78"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs uppercase tracking-widest text-white/60 mb-3">
-                    Date souhaitée *
-                  </label>
-                  <input
-                    type="date"
-                    required
-                    value={formData.date}
-                    onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                    className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:border-white/30 focus:outline-none transition-colors"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-xs uppercase tracking-widest text-white/60 mb-3">
-                  Nombre de personnes *
-                </label>
-                <select
-                  required
-                  value={formData.guests}
-                  onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
-                  className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:border-white/30 focus:outline-none transition-colors"
-                >
-                  <option value="">Sélectionner</option>
-                  <option value="1-2">1-2 personnes</option>
-                  <option value="3-4">3-4 personnes</option>
-                  <option value="5-6">5-6 personnes</option>
-                  <option value="7-10">7-10 personnes</option>
-                  <option value="10+">Plus de 10 personnes</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-xs uppercase tracking-widest text-white/60 mb-3">
-                  Message (optionnel)
-                </label>
-                <textarea
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  rows={4}
-                  className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:border-white/30 focus:outline-none transition-colors resize-none"
-                  placeholder="Demandes particulières, espace VIP, anniversaire..."
-                />
-              </div>
-
-              <div className="pt-4 flex flex-col sm:flex-row gap-4">
-                <button
-                  type="submit"
-                  className="flex-1 px-8 py-4 bg-white text-black text-sm uppercase tracking-widest font-medium hover:bg-white/90 transition-all"
-                >
-                  Envoyer la demande
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setShowForm(false)}
-                  className="px-8 py-4 border border-white/20 text-sm uppercase tracking-widest hover:bg-white/5 transition-all"
-                >
-                  Annuler
-                </button>
-              </div>
-
-              <p className="text-xs text-white/40 text-center">
-                Vous recevrez une confirmation par email sous 24h
-              </p>
-            </form>
-          </div>
-        </div>
-      )}
 
       {/* Footer */}
       <footer className="py-12 border-t border-white/5">

@@ -1,322 +1,420 @@
 export const siteConfig = {
   // IDENTITÉ
-  barName: "Dartrad",
-  fullName: "Dartrad Pontivy",
-  tagline: "Bar à Fléchettes",
-  slogan: "Où la tradition rencontre la performance",
-  city: "Pontivy",
-  region: "Morbihan, Bretagne",
+  name: "V Club",
+  fullName: "V Club Quéven",
+  tagline: "La plus grande boîte de nuit du pays de Lorient",
+  slogan: "Électro • Pop • 18-30 ans",
   
+  // DATES CLÉS
+  opening: {
+    date: "14 février 2026",
+    event: "Saint-Valentin",
+    headliner: "KGS",
+    specialNote: "Ouverture exceptionnelle avec le chanteur KGS en tête d'affiche"
+  },
+
   // HERO
   hero: {
-    title: "Dartrad",
-    subtitle: "Bar à Fléchettes • Pontivy",
-    tagline: "Dart + Trad = Passion des fléchettes",
-    description: "Le premier bar à fléchettes de Pontivy créé par Thibault Tricole, n°1 français et 61e mondial. Un lieu convivial pour découvrir, pratiquer et vibrer autour des fléchettes traditionnelles.",
-    opening: "Ouverture : Vendredi 6 février 2026",
-    inauguration: "Inauguration officielle : Fin mars 2026",
-    cta: "Venez nous découvrir"
-  },
-
-  // THIBAULT TRICOLE
-  founder: {
-    name: "Thibault Tricole",
-    nickname: "The French Touch",
-    title: "Fondateur & N°1 Français",
-    age: 36,
-    birthplace: "Auray, Morbihan",
-    currentRanking: "61e mondial PDC",
-    frenchRanking: "N°1 Français",
-    bio: "Thibault Tricole est le meilleur joueur français de fléchettes et une figure incontournable de la scène internationale. Premier français à remporter un match au Championnat du monde PDC, il a à cœur de démocratiser les fléchettes en France.",
-    achievements: [
-      "61e mondial au classement PDC",
-      "N°1 français de fléchettes",
-      "1er français à gagner un match au Mondial PDC",
-      "Finaliste Championnat du monde WDF 2022",
-      "Vainqueur de l'Open du Danemark 2021",
-      "Triple champion de France",
-      "Président du Bleiz Darts Club"
-    ],
-    career: "Joueur professionnel depuis plus de 20 ans, Thibault a représenté la France dans les plus grandes compétitions mondiales. Son objectif : faire rayonner les fléchettes françaises au plus haut niveau.",
-    music: "Musique d'entrée : Essentielles - Ibrahim Maalouf"
-  },
-
-  // MARIE BOUFFAUT
-  coFounder: {
-    name: "Marie Bouffaut",
-    title: "Co-fondatrice",
-    experience: "14 ans d'expérience dans la gestion du Ty Lou à Malguénac",
-    role: "Marie apporte toute son expertise en gestion de bar et crée l'ambiance chaleureuse du Dartrad.",
-    passion: "Passionnée de fléchettes, elle est le pilier de l'organisation et veille à ce que chacun se sente bien au Dartrad."
-  },
-
-  // LE CONCEPT
-  concept: {
-    title: "Le Concept Dartrad",
-    subtitle: "Un bar unique dédié aux fléchettes",
-    mission: "Démocratiser les fléchettes et créer un lieu convivial où débutants et confirmés peuvent pratiquer, s'améliorer et partager leur passion.",
-    vision: "Faire du Dartrad LE lieu incontournable des amateurs de fléchettes en Bretagne.",
-    name: "Dartrad = Dart (fléchette en anglais) + Trad (pour traditionnelle)",
-    atmosphere: "Ambiance conviviale et passionnée, dans un cadre moderne avec un esprit traditionnel. Ici, tout le monde est bienvenu, du curieux au compétiteur."
-  },
-
-  // CE QU'ON PROPOSE
-  offers: {
-    title: "Ce qu'on propose",
-    categories: [
-      {
-        icon: "🎯",
-        title: "Jeu libre",
-        description: "Venez jouer aux fléchettes dans une ambiance décontractée",
-        details: [
-          "Cibles professionnelles",
-          "Fléchettes fournies",
-          "Conseils des pros",
-          "Tarifs accessibles"
-        ]
-      },
-      {
-        icon: "🏆",
-        title: "Compétitions",
-        description: "Participez à nos tournois réguliers",
-        details: [
-          "Tournois hebdomadaires",
-          "Niveaux débutant à expert",
-          "Prizes et récompenses",
-          "Classements officiels"
-        ]
-      },
-      {
-        icon: "🎓",
-        title: "Initiation & Cours",
-        description: "Apprenez avec le meilleur joueur français",
-        details: [
-          "Cours pour débutants",
-          "Perfectionnement",
-          "Conseils de Thibault",
-          "Techniques professionnelles"
-        ]
-      },
-      {
-        icon: "🍺",
-        title: "Bar & Convivialité",
-        description: "Un vrai bar avec une vraie ambiance",
-        details: [
-          "Boissons variées",
-          "Snacking",
-          "Écrans géants",
-          "Ambiance chaleureuse"
-        ]
-      }
+    title: "V Club",
+    subtitle: "La plus grande boîte de nuit du pays de Lorient",
+    description: "700 places • 640m² • Électro & Pop • Ambiance nouvelle génération",
+    openingDate: "Ouverture le 14 février 2026",
+    badges: [
+      "700 places",
+      "Électro & Pop",
+      "18-30 ans",
+      "Navette gratuite"
     ]
   },
 
-  // POURQUOI LE DARTRAD
-  whyUs: {
-    title: "Pourquoi le Dartrad ?",
-    reasons: [
-      {
-        icon: "⭐",
-        title: "Fondé par un champion",
-        description: "Thibault Tricole, n°1 français, a créé ce lieu pour partager sa passion"
-      },
-      {
-        icon: "🎯",
-        title: "Équipement pro",
-        description: "Cibles et fléchettes de qualité professionnelle"
-      },
+  // ÉQUIPE
+  team: {
+    director: {
+      name: "Gervaise Huet",
+      age: 63,
+      role: "Responsable V Club",
+      quote: "J'ai ça dans le sang",
+      alsoManages: "Le Point de Vue (Laz, Finistère)",
+      experience: "Passionnée de la nuit depuis toujours"
+    },
+    programmer: {
+      name: "Valentin Perron",
+      artistName: "DJ Sixter",
+      age: 20,
+      role: "Communication & Programmation musicale",
+      djSets: "1 samedi par mois au V Club",
+      experience: "DJ le week-end en Bretagne",
+      previousLife: "10 ans en Savoie (Lyon, Grenoble)",
+      vision: "Apporter l'électro à Lorient, changer des autres boîtes"
+    },
+    owners: {
+      family: "Famille Hurst",
+      since: 1988,
+      currentManagers: ["Bruno (avec Gervaise)", "Christelle", "Mireille"],
+      note: "Enfants des fondateurs qui co-gèrent le complexe"
+    }
+  },
+
+  // ADRESSE & CONTACT
+  address: {
+    street: "Penquelen",
+    city: "Quéven",
+    postalCode: "56530",
+    region: "Bretagne",
+    department: "Morbihan",
+    sector: "Pays de Lorient",
+    note: "Juste à côté du Valentino",
+    coordinates: {
+      lat: 47.7833,
+      lng: -3.4167
+    }
+  },
+
+  contact: {
+    phone: "02 97 65 00 31", // Référence Valentino, à confirmer pour V Club
+    email: "", // À confirmer
+    facebook: "",
+    instagram: "",
+    website: ""
+  },
+
+  // CAPACITÉ & SPECS
+  venue: {
+    capacity: 700,
+    seating: 245,
+    floorArea: "640 m²",
+    title: "La plus grande boîte de nuit du secteur de Lorient",
+    features: [
       {
         icon: "👥",
-        title: "Tous niveaux",
-        description: "Du débutant complet au joueur confirmé, tout le monde est bienvenu"
+        title: "700 places",
+        description: "Dont 245 assises"
+      },
+      {
+        icon: "🎵",
+        title: "640 m²",
+        description: "De piste de danse"
       },
       {
         icon: "🏆",
-        title: "Ambiance unique",
-        description: "L'esprit traditionnel des pubs anglais avec la convivialité bretonne"
+        title: "N°1 du secteur",
+        description: "Plus grande boîte de Lorient"
       },
       {
-        icon: "📺",
-        title: "Retransmissions live",
-        description: "Suivez les grands championnats sur écran géant"
-      },
-      {
-        icon: "🍻",
-        title: "Bar complet",
-        description: "Bières, softs, snacking... tout pour passer un bon moment"
+        icon: "🎧",
+        title: "Son",
+        description: "Système entièrement neuf"
       }
     ]
   },
 
-  // POUR QUI
-  target: {
-    title: "Le Dartrad, c'est pour qui ?",
-    profiles: [
+  // AMBIANCE & DESIGN
+  ambiance: {
+    title: "Ambiance & Design",
+    subtitle: "Entièrement rénové pour une expérience clubbing unique",
+    description: "Le V Club a été entièrement repensé : design noir profond, éclairages modernes, son de qualité professionnelle et piste de danse exceptionnelle.",
+    renovations: [
       {
-        icon: "🎯",
-        title: "Les curieux",
-        description: "Vous n'avez jamais joué ? Parfait, on vous apprend !"
+        icon: "🎨",
+        title: "Design noir",
+        description: "Murs et plafonds peints en noir pour une ambiance clubbing immersive"
       },
       {
-        icon: "🍺",
-        title: "Les groupes d'amis",
-        description: "Une sortie originale et conviviale entre potes"
+        icon: "💎",
+        title: "Boule à facettes",
+        description: "L'iconique disco ball pour une ambiance rétro-futuriste"
       },
       {
-        icon: "🏆",
-        title: "Les compétiteurs",
-        description: "Venez vous entraîner et progresser avec des pros"
+        icon: "🛋️",
+        title: "Fauteuils colorés",
+        description: "Assises jaune et fuchsia remises au goût du jour"
       },
       {
-        icon: "👨‍👩‍👧‍👦",
-        title: "Les familles",
-        description: "Un loisir accessible à tous les âges"
+        icon: "🎤",
+        title: "Scène pro",
+        description: "Scène fabriquée pour accueillir les showcases"
       },
       {
-        icon: "🎉",
-        title: "Les événements",
-        description: "Anniversaires, EVG/EVJF, team building..."
+        icon: "🪵",
+        title: "Parquet exceptionnel",
+        description: "Grande piste de danse sur parquet - le plus beau de la région"
       },
       {
-        icon: "📺",
-        title: "Les fans de dart",
-        description: "Regardez les championnats entre passionnés"
-      }
-    ]
-  },
-
-  // LES FLÉCHETTES
-  darts: {
-    title: "Les Fléchettes, c'est quoi ?",
-    subtitle: "Un sport de précision accessible à tous",
-    description: "Les fléchettes sont un sport de précision où le joueur lance des fléchettes sur une cible circulaire divisée en sections. Simple à comprendre, difficile à maîtriser, c'est un jeu qui allie concentration, technique et stratégie.",
-    rules: [
-      {
-        title: "La cible",
-        text: "Divisée en 20 sections numérotées, avec des zones doubles et triples"
-      },
-      {
-        title: "Le jeu le plus populaire",
-        text: "Le 501 : partir de 501 points et arriver exactement à 0"
-      },
-      {
-        title: "La distance",
-        text: "2,37 mètres de la cible, réglementaire"
-      },
-      {
-        title: "Les fléchettes",
-        text: "3 fléchettes par tour, pointes acier pour les traditionnelles"
+        icon: "🚬",
+        title: "Espace fumeurs",
+        description: "Coin aménagé et abrité par un préau"
       }
     ],
-    benefits: [
-      "Améliore la concentration",
-      "Développe la précision",
-      "Sport accessible à tous",
-      "Convivial et compétitif",
-      "Peut se pratiquer à tout âge"
+    vip: {
+      title: "Carré VIP",
+      capacity: 19,
+      location: "À l'étage",
+      description: "Espace privatif avec vue sur la salle"
+    },
+    bar: {
+      title: "Bar refait à neuf",
+      description: "Entièrement rénové pour un service optimal"
+    },
+    parquet: {
+      quote: "Aucune boîte n'a un aussi beau parquet. Pour danser, il n'y a rien de mieux. Et la musique sonne mieux.",
+      author: "Sophie (fille de Gervaise)"
+    }
+  },
+
+  // MUSIQUE
+  music: {
+    title: "Programmation Musicale",
+    subtitle: "Électro & Pop - Une nouvelle vague musicale à Lorient",
+    target: "18-30 ans",
+    styles: ["Électro", "Pop"],
+    differentiation: {
+      title: "Une musique qui change",
+      regional: "Dans le coin, c'est beaucoup le style antillais, shatta",
+      lyonGrenoble: "Vers Lyon, Grenoble, c'est plus électro",
+      vClub: "On apporte l'électro à Lorient"
+    },
+    djSixter: {
+      name: "DJ Sixter",
+      realName: "Valentin Perron",
+      frequency: "1 samedi par mois",
+      style: "Électro, remixes, sons actuels",
+      quote: "La musique changera des autres boîtes de nuit",
+      background: "10 ans en Savoie, habitué de l'électro lyonnaise"
+    },
+    philosophy: "Oubliez les années 1980 ou le rock"
+  },
+
+  // HORAIRES & TARIFS
+  schedule: {
+    openingPhase: "Dans un premier temps",
+    days: ["Samedi"],
+    hours: "Minuit - 6h",
+    note: "Ouverture uniquement le samedi au démarrage",
+    prices: {
+      standard: "12€",
+      showcase: "20€"
+    }
+  },
+
+  // TRANSPORT
+  transport: {
+    title: "Navette gratuite",
+    subtitle: "Bus de 60 places pour rentrer en toute sécurité",
+    capacity: 60,
+    circuit: ["Guidel", "Quéven", "Plœmeur", "Lorient"],
+    note: "Plusieurs tours dans la nuit",
+    description: "Un bus de soixante places fera plusieurs tours entre Guidel, Quéven, Plœmeur et Lorient."
+  },
+
+  // LE COMPLEXE
+  complex: {
+    title: "2 Salles, 2 Ambiances",
+    subtitle: "V Club + Valentino = Le plus grand complexe de nuit du secteur",
+    concept: "Deux boîtes adjacentes pour deux publics complémentaires",
+    vClub: {
+      name: "V Club",
+      style: "Électro & Pop",
+      target: "18-30 ans",
+      vibe: "Nouvelle génération, musique moderne"
+    },
+    valentino: {
+      name: "Le Valentino",
+      style: "Disco-Rock",
+      target: "Tous âges",
+      vibe: "Classique, ambiance festive",
+      activities: "Boîte de nuit + Thés dansants + Danse en ligne"
+    },
+    symbolism: {
+      title: "Le V de Valentino",
+      description: "On a gardé le V de Valentino pour symboliser la continuité et le lien entre les deux établissements."
+    }
+  },
+
+  // HISTOIRE
+  history: {
+    title: "L'Histoire du Complexe",
+    familleHurst: {
+      since: 1988,
+      founders: "Famille Hurst",
+      current: "Bruno, Christelle, Mireille (2e génération)"
+    },
+    timeline: [
+      {
+        period: "1988",
+        event: "Acquisition du Valentino par la famille Hurst"
+      },
+      {
+        period: "Il y a 8 ans",
+        event: "Démolition de l'ancien hangar et construction du nouveau bâtiment"
+      },
+      {
+        period: "Période intermédiaire",
+        event: "Valentino fermé (sauf thés dansants), soirées dans le nouveau bâtiment jusqu'à 3h disco puis électro"
+      },
+      {
+        period: "Il y a 1 an et demi",
+        event: "Réouverture du Valentino en mode boîte de nuit + danse en ligne"
+      },
+      {
+        period: "2025-2026",
+        event: "Nouveaux travaux pour créer le V Club"
+      },
+      {
+        period: "14 février 2026",
+        event: "Ouverture officielle du V Club avec KGS"
+      }
+    ],
+    quote: "Avant, ici, c'était un hangar. La famille Hurst l'a rasé pour construire ce bâtiment il y a huit ans.",
+    evolution: "De hangar → Salle multi-usage → V Club + Valentino"
+  },
+
+  // EMPLOI
+  jobs: {
+    count: "~10 personnes",
+    roles: [
+      "Bar",
+      "Sécurité",
+      "Accueil",
+      "DJ",
+      "Technique son/lumière",
+      "Service"
     ]
   },
 
-  // INFORMATIONS PRATIQUES
-  infos: {
-    title: "Informations pratiques",
-    opening: {
-      date: "Vendredi 6 février 2026",
-      inauguration: "Fin mars 2026",
-      note: "Ouverture initialement prévue plus tôt, mais nous voulions être bien prêts !"
-    },
-    address: {
-      street: "14 rue Albert-de-Mun",
-      city: "56300 Pontivy",
-      region: "Morbihan, Bretagne"
-    },
-    hours: {
-      note: "Horaires à venir",
-      temp: "Les horaires seront communiqués prochainement"
-    },
-    contact: {
-      phone: "À venir",
-      email: "contact@dartrad.fr",
-      facebook: "Dartrad Pontivy",
-      instagram: "@dartrad_pontivy"
-    }
-  },
-
-  // ACTUALITÉS
-  news: {
-    title: "Suivez l'aventure",
-    latest: {
-      title: "Ouverture confirmée le 6 février 2026 !",
-      date: "Janvier 2026",
-      content: "Après des mois de travaux débutés en octobre 2025, le Dartrad ouvrira ses portes le vendredi 6 février 2026. L'inauguration officielle aura lieu fin mars. Thibault et Marie sont impatients de vous accueillir dans ce lieu unique à Pontivy !"
-    }
-  },
-
-  // THIBAULT AU MONDIAL
-  worldChampionship: {
-    title: "Thibault aux Championnats du Monde",
-    description: "Suivez les performances de Thibault Tricole aux plus grandes compétitions mondiales",
-    recent: "Thibault a participé pour la 3ème fois consécutive aux Championnats du monde PDC à Londres en décembre 2025",
-    next: "Suivez ses prochaines compétitions en direct au Dartrad !"
-  },
-
-  // L'HISTOIRE
-  story: {
-    title: "L'histoire du Dartrad",
-    timeline: [
+  // POURQUOI V CLUB
+  whyVClub: {
+    title: "Pourquoi le V Club ?",
+    reasons: [
       {
-        date: "Octobre 2025",
-        event: "Début des travaux",
-        description: "Thibault et Marie lancent la transformation du local rue Albert-de-Mun"
+        icon: "🏆",
+        title: "La plus grande du secteur",
+        description: "700 places, 640m² - aucune autre boîte de cette taille à Lorient"
       },
       {
-        date: "Janvier 2026",
-        event: "Finalisation",
-        description: "Les derniers aménagements sont peaufinés pour offrir le meilleur cadre"
+        icon: "🎵",
+        title: "Musique différente",
+        description: "Électro & Pop, loin de l'antillais/shatta dominant dans la région"
       },
       {
-        date: "6 février 2026",
-        event: "Ouverture !",
-        description: "Le Dartrad ouvre ses portes au public"
+        icon: "👨‍🎤",
+        title: "DJ Sixter résident",
+        description: "20 ans, expérience Savoie/Lyon, vision électro moderne"
       },
       {
-        date: "Fin mars 2026",
-        event: "Inauguration officielle",
-        description: "Grande fête d'inauguration avec invités et animations"
+        icon: "🪵",
+        title: "Le meilleur parquet",
+        description: "Grande piste sur parquet exceptionnel - confort et acoustique"
+      },
+      {
+        icon: "🎨",
+        title: "Design rénové",
+        description: "Entièrement refait à neuf : noir, fuchsia, jaune, son pro"
+      },
+      {
+        icon: "🚌",
+        title: "Navette gratuite",
+        description: "Bus 60 places Guidel-Quéven-Plœmeur-Lorient"
+      },
+      {
+        icon: "🎤",
+        title: "Scène pour showcases",
+        description: "Accueil d'artistes et shows live"
+      },
+      {
+        icon: "💎",
+        title: "Carré VIP",
+        description: "19 places à l'étage avec vue sur la salle"
       }
     ]
   },
 
-  // ÉVÉNEMENTS
-  events: {
-    title: "Événements à venir",
-    upcoming: [
+  // TARGET
+  target: {
+    age: "18-30 ans",
+    profile: "Jeunes qui aiment l'électro, la pop, les sons modernes",
+    mindset: "Nouvelle génération qui veut danser sur de la vraie musique électro",
+    contrast: "Pas les années 80, pas le rock, pas seulement l'antillais"
+  },
+
+  // LORIENT
+  city: {
+    title: "Pays de Lorient",
+    description: "Le V Club s'implante dans le pays de Lorient, apportant une nouvelle offre de nuit électro pour la jeunesse du territoire.",
+    proximity: [
+      "Lorient : centre névralgique",
+      "Quéven : implantation stratégique",
+      "Guidel : accès facile",
+      "Plœmeur : proximité immédiate"
+    ],
+    context: "Jusqu'à présent, les boîtes de la région proposaient surtout de l'antillais et du shatta. Le V Club vient combler un manque pour les amateurs d'électro et de pop."
+  },
+
+  // FAQ
+  faq: {
+    title: "Questions fréquentes",
+    questions: [
       {
-        title: "Ouverture au public",
-        date: "6 février 2026",
-        description: "Venez découvrir le Dartrad dès le premier jour !"
+        question: "Quelle est la date d'ouverture ?",
+        answer: "Le V Club ouvre ses portes le 14 février 2026, jour de la Saint-Valentin, avec le chanteur KGS en tête d'affiche."
       },
       {
-        title: "Inauguration officielle",
-        date: "Fin mars 2026",
-        description: "Grande soirée d'inauguration avec animations et surprises"
+        question: "Quels sont les horaires d'ouverture ?",
+        answer: "Dans un premier temps, le V Club n'ouvrira que le samedi, de minuit à 6h du matin."
+      },
+      {
+        question: "Quel type de musique est jouée ?",
+        answer: "Le V Club propose une programmation électro et pop, ciblant les 18-30 ans. Oubliez les années 1980 ou le rock - ici, c'est la nouvelle génération électro."
+      },
+      {
+        question: "Quelle est la capacité de la boîte ?",
+        answer: "Le V Club peut accueillir jusqu'à 700 personnes (dont 245 places assises) sur 640m² - c'est la plus grande boîte de nuit du pays de Lorient."
+      },
+      {
+        question: "Y a-t-il une navette ?",
+        answer: "Oui ! Un bus de 60 places fait plusieurs tours entre Guidel, Quéven, Plœmeur et Lorient tout au long de la nuit."
+      },
+      {
+        question: "Quel est le prix d'entrée ?",
+        answer: "L'entrée est à 12€ en soirée normale, et 20€ lors des showcases avec artistes invités."
+      },
+      {
+        question: "Quelle est la différence avec le Valentino ?",
+        answer: "Le V Club et le Valentino sont deux boîtes adjacentes formant un grand complexe. Le V Club est orienté électro/pop pour les 18-30 ans, tandis que le Valentino propose du disco-rock pour tous les âges. Deux salles, deux ambiances !"
+      },
+      {
+        question: "Y a-t-il un espace VIP ?",
+        answer: "Oui, un carré VIP à l'étage peut accueillir jusqu'à 19 personnes avec vue sur la salle."
+      },
+      {
+        question: "Qui est DJ Sixter ?",
+        answer: "DJ Sixter (Valentin Perron, 20 ans) s'occupe de la programmation musicale et mixera un samedi par mois. Il a vécu 10 ans en Savoie et apporte la culture électro lyonnaise à Lorient."
       }
     ]
   },
 
   // SEO
   seo: {
-    title: "Dartrad Pontivy - Bar à Fléchettes de Thibault Tricole",
-    description: "Le Dartrad, bar à fléchettes créé par Thibault Tricole (n°1 français) et Marie Bouffaut. Ouverture le 6 février 2026 à Pontivy. Jeu, tournois, initiation et convivialité.",
-    keywords: "Dartrad, bar fléchettes Pontivy, Thibault Tricole, fléchettes Morbihan, dart Bretagne, bar Pontivy, The French Touch, fléchettes traditionnelles, tournoi dart"
+    title: "V Club Quéven - Plus grande boîte électro du pays de Lorient • Ouverture 14 février 2026",
+    description: "700 places, 640m² de piste sur parquet. Électro & Pop pour les 18-30 ans. Navette gratuite Guidel-Lorient. Ouverture le 14/02/26 avec KGS. Penquelen, Quéven.",
+    keywords: [
+      "V Club Quéven",
+      "boîte de nuit Lorient",
+      "discothèque électro Morbihan",
+      "club Quéven",
+      "DJ Sixter",
+      "soirée électro Lorient",
+      "Valentino Quéven",
+      "clubbing Bretagne",
+      "boîte 18-30 ans",
+      "navette gratuite Lorient"
+    ]
   },
 
-  // THÈME (couleurs du logo)
+  // THÈME
   theme: {
-    primary: "orange", // Orange du logo
-    secondary: "amber", // Beige/crème
-    accent: "purple", // Mauve
-    dark: "stone", // Marron foncé
-    mode: "light" // Fond clair avec accents sombres
+    primary: "purple", // Électro, neon, clubbing
+    secondary: "fuchsia", // Fauteuils fuchsia
+    accent: "yellow", // Fauteuils jaune
+    dark: "black" // Murs et plafonds noirs
   }
 };
