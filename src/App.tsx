@@ -1,713 +1,485 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X, Calendar, MapPin, Clock, Phone, Instagram, Facebook, Mail, ArrowRight, ChevronRight } from 'lucide-react';
+import React, { useState } from 'react';
+import { MapPin, Phone, Clock, Music, Utensils, Users, ChevronDown, ChevronUp, Heart, Waves, Wine, Leaf, Sun } from 'lucide-react';
 import { siteConfig } from './config/siteConfig';
 
-export default function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const [showForm, setShowForm] = useState(false);
-  const [stars, setStars] = useState<Array<{ id: number; x: number; y: number; duration: number; delay: number }>>([]);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    date: '',
-    guests: '',
-    message: ''
-  });
+const App = () => {
+  const [openSection, setOpenSection] = useState<string | null>('menu');
+  const [openDay, setOpenDay] = useState<string | null>(null);
 
-  // Generate stars on mount
-  useEffect(() => {
-    const generateStars = () => {
-      const newStars = [];
-      const starCount = 150; // Nombre d'étoiles (comme une Rolls-Royce)
-      
-      for (let i = 0; i < starCount; i++) {
-        newStars.push({
-          id: i,
-          x: Math.random() * 100, // Position X en %
-          y: Math.random() * 100, // Position Y en %
-          duration: Math.random() * 3 + 2, // Durée de scintillement 2-5s
-          delay: Math.random() * 5 // Délai initial 0-5s
-        });
-      }
-      
-      setStars(newStars);
-    };
-    
-    generateStars();
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-    setIsMenuOpen(false);
+  const toggleSection = (section: string) => {
+    setOpenSection(openSection === section ? null : section);
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert('Formulaire de démonstration : Les données ne sont pas envoyées.');
+  const toggleDay = (day: string) => {
+    setOpenDay(openDay === day ? null : day);
+  };
+
+  const getDayInfo = (dayName: string) => {
+    const hours = siteConfig.hours[dayName as keyof typeof siteConfig.hours];
+    if (!hours) return null;
+    
+    const isClosed = hours.midi === "Fermé" && hours.soir === "Fermé";
+    return { ...hours, isClosed };
   };
 
   return (
-    <div className="min-h-screen bg-black text-white" style={{
-      fontFamily: '"Neue Montreal", "Helvetica Neue", -apple-system, sans-serif'
-    }}>
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&display=swap');
+    <div className="min-h-screen bg-stone-50">
+      {/* Hero Section élégant */}
+      <header className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-slate-800 via-slate-700 to-stone-600">
+        {/* Texture subtile en overlay */}
+        <div className="absolute inset-0 opacity-5 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMDAiIGZpbGwtb3BhY2l0eT0iMSI+PHBhdGggZD0iTTM2IDE0YzMuMzE0IDAgNiAyLjY4NiA2IDZzLTIuNjg2IDYtNiA2LTYtMi42ODYtNi02IDIuNjg2LTYgNi02ek0yNCA0OGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiLz48L2c+PC9nPjwvc3ZnPg==')]"></div>
         
-        * { box-sizing: border-box; }
-        
-        .font-display {
-          font-family: 'Cormorant Garamond', serif;
-          font-weight: 300;
-          letter-spacing: 0.02em;
-        }
-        
-        .fade-in {
-          animation: fadeIn 1.2s ease-out forwards;
-          opacity: 0;
-        }
-        
-        @keyframes fadeIn {
-          to { opacity: 1; }
-        }
-        
-        .slide-up {
-          animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-          opacity: 0;
-          transform: translateY(30px);
-        }
-        
-        @keyframes slideUp {
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        
-        @keyframes twinkle {
-          0%, 100% { opacity: 0; }
-          50% { opacity: 1; }
-        }
-        
-        .starlight {
-          position: fixed;
-          inset: 0;
-          pointer-events: none;
-          z-index: 1;
-        }
-        
-        .star {
-          position: absolute;
-          width: 1px;
-          height: 1px;
-          background: white;
-          border-radius: 50%;
-          box-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
-        }
-        
-        .hover-line {
-          position: relative;
-        }
-        
-        .hover-line::after {
-          content: '';
-          position: absolute;
-          bottom: -2px;
-          left: 0;
-          width: 0;
-          height: 1px;
-          background: white;
-          transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        
-        .hover-line:hover::after {
-          width: 100%;
-        }
-        
-        .gradient-text {
-          background: linear-gradient(135deg, #FFFFFF 0%, #999999 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-        }
-        
-        .grain {
-          position: fixed;
-          inset: 0;
-          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3.5' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-          opacity: 0.03;
-          pointer-events: none;
-          z-index: 100;
-        }
-        
-        .modal-backdrop {
-          position: fixed;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.9);
-          backdrop-filter: blur(8px);
-          z-index: 200;
-          animation: fadeIn 0.3s ease-out;
-        }
-        
-        .modal-content {
-          animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-      `}</style>
-
-      {/* Grain texture overlay */}
-      <div className="grain" />
-
-      {/* Starlight effect - Rolls-Royce style */}
-      <div className="starlight">
-        {stars.map((star) => (
-          <div
-            key={star.id}
-            className="star"
-            style={{
-              left: `${star.x}%`,
-              top: `${star.y}%`,
-              animation: `twinkle ${star.duration}s ease-in-out ${star.delay}s infinite`
-            }}
-          />
-        ))}
-      </div>
-
-      {/* Navigation */}
-      <nav className={`fixed w-full z-50 transition-all duration-500 ${
-        scrolled ? 'bg-black/95 backdrop-blur-xl border-b border-white/5' : 'bg-transparent'
-      }`}>
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="flex justify-between items-center h-20 lg:h-24">
-            {/* Logo */}
-            <button onClick={() => scrollToSection('hero')} className="group">
-              <h1 className="font-display text-2xl lg:text-3xl tracking-wide hover-line">
-                V CLUB
-              </h1>
-            </button>
-
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-12">
-              {['Programme', 'Infos', 'Contact'].map(item => (
-                <button
-                  key={item}
-                  onClick={() => scrollToSection(item.toLowerCase())}
-                  className="text-sm uppercase tracking-widest hover-line text-white/70 hover:text-white transition-colors"
-                >
-                  {item}
-                </button>
-              ))}
-              <button
-                onClick={() => setShowForm(true)}
-                className="px-8 py-3 bg-white text-black text-sm uppercase tracking-widest font-medium hover:bg-white/90 transition-all"
-              >
-                Réserver
-              </button>
-            </div>
-
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="lg:hidden text-white"
-            >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
-
-          {/* Mobile Menu */}
-          {isMenuOpen && (
-            <div className="lg:hidden py-8 border-t border-white/10">
-              <div className="flex flex-col gap-6">
-                {['Programme', 'Infos', 'Contact'].map(item => (
-                  <button
-                    key={item}
-                    onClick={() => scrollToSection(item.toLowerCase())}
-                    className="text-left text-sm uppercase tracking-widest text-white/70 hover:text-white transition-colors"
-                  >
-                    {item}
-                  </button>
-                ))}
-                <button
-                  onClick={() => setShowForm(true)}
-                  className="px-8 py-3 bg-white text-black text-sm uppercase tracking-widest font-medium text-center"
-                >
-                  Réserver
-                </button>
-              </div>
-            </div>
-          )}
+        {/* Effet eau qui miroite (subtil) */}
+        <div className="absolute inset-0">
+          <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-blue-900/10 to-transparent"></div>
         </div>
-      </nav>
 
-      {/* Hero Section */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background with gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black z-0" />
-        
-        {/* Placeholder for hero image/video */}
-        <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900" style={{
-          backgroundImage: 'radial-gradient(circle at 30% 50%, rgba(99, 102, 241, 0.1), transparent 50%)',
-        }} />
-
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 text-center fade-in">
-          {/* Main title */}
-          <h1 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl mb-8 slide-up" style={{
-            animationDelay: '0.2s',
-            lineHeight: '0.95'
-          }}>
-            V CLUB
-          </h1>
-
-          {/* Subtitle */}
-          <p className="text-lg sm:text-xl md:text-2xl text-white/60 mb-4 max-w-2xl mx-auto slide-up" style={{
-            animationDelay: '0.4s'
-          }}>
-            {siteConfig.hero.subtitle}
-          </p>
-
-          <p className="text-sm sm:text-base text-white/40 mb-12 max-w-xl mx-auto slide-up" style={{
-            animationDelay: '0.5s'
-          }}>
-            {siteConfig.address.city} — {siteConfig.venue.features[0].title}
-          </p>
-
-          {/* Featured event */}
-          <div className="inline-block border border-white/10 backdrop-blur-sm p-8 mb-12 slide-up" style={{
-            animationDelay: '0.6s'
-          }}>
-            <p className="text-xs uppercase tracking-[0.3em] text-white/60 mb-4">Soirée d'ouverture</p>
-            <p className="font-display text-4xl sm:text-5xl mb-4">14 Février 2026</p>
-            <p className="text-xl text-white/80 mb-2">KGS • Live</p>
-            <p className="text-sm text-white/50">Saint-Valentin Special</p>
-          </div>
-
-          {/* CTA */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center slide-up" style={{
-            animationDelay: '0.8s'
-          }}>
-            <button
-              onClick={() => setShowForm(true)}
-              className="group px-10 py-4 bg-white text-black text-sm uppercase tracking-widest font-medium hover:bg-white/90 transition-all flex items-center justify-center gap-2"
-            >
-              Réserver une table
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button
-              onClick={() => scrollToSection('programme')}
-              className="px-10 py-4 border border-white/20 text-sm uppercase tracking-widest hover:bg-white/5 transition-all"
-            >
-              Voir le programme
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Programme Section */}
-      <section id="programme" className="py-24 lg:py-32 border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          {/* Section header */}
-          <div className="mb-20">
-            <p className="text-xs uppercase tracking-[0.3em] text-white/40 mb-4">À venir</p>
-            <h2 className="font-display text-5xl sm:text-6xl lg:text-7xl mb-6">
-              Programme
-            </h2>
-            <p className="text-white/60 max-w-2xl">
-              Tous les vendredis et samedis. Deux ambiances, une soirée inoubliable.
+        <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
+          {/* Logo élégant */}
+          <div className="mb-8">
+            <h1 className="text-6xl md:text-8xl font-serif font-light text-white mb-4 tracking-wide">
+              Y'a du Goût
+            </h1>
+            <div className="w-32 h-px bg-gradient-to-r from-transparent via-amber-600 to-transparent mx-auto mb-6"></div>
+            <p className="text-xl md:text-2xl text-stone-200 font-light tracking-widest uppercase">
+              Bar-Restaurant
             </p>
           </div>
 
-          {/* Event list */}
-          <div className="space-y-6">
-            {/* Opening Event */}
-            <div className="group border border-white/10 hover:border-white/30 transition-all p-8 lg:p-12">
-              <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
-                <div className="flex-1">
-                  <div className="flex items-center gap-4 mb-4">
-                    <span className="px-3 py-1 bg-white text-black text-xs uppercase tracking-widest font-medium">
-                      Ouverture
-                    </span>
-                    <span className="text-sm text-white/40">Saint-Valentin</span>
-                  </div>
-                  <h3 className="font-display text-3xl lg:text-4xl mb-3">
-                    KGS • Opening Night
-                  </h3>
-                  <p className="text-white/60 mb-4">
-                    Soirée inaugurale avec {siteConfig.music.djSixter.realName}, resident DJ
-                  </p>
-                  <div className="flex flex-wrap gap-3 text-sm text-white/50">
-                    <span className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4" />
-                      Vendredi 14 Février
-                    </span>
-                    <span className="flex items-center gap-2">
-                      <Clock className="w-4 h-4" />
-                      {siteConfig.schedule.hours}
-                    </span>
-                  </div>
-                </div>
-                <div className="lg:text-right">
-                  <p className="text-3xl font-display mb-2">{siteConfig.schedule.prices.showcase}</p>
-                  <p className="text-sm text-white/40">Prévente</p>
-                </div>
-              </div>
-            </div>
+          <p className="text-lg md:text-xl text-stone-300 mb-12 leading-relaxed max-w-3xl mx-auto font-light">
+            Au bord du Scorff, dans un cadre d'exception, savourez une cuisine saisonnière
+            <br className="hidden md:block" />
+            et partagez des moments conviviaux
+          </p>
 
-            {/* Regular nights */}
-            <div className="border border-white/10 p-8 lg:p-12">
-              <div className="mb-8">
-                <h4 className="font-display text-3xl mb-4">Soirées régulières</h4>
-                <p className="text-white/60">
-                  Tous les vendredis et samedis — Accès aux deux salles
+          {/* Caractéristiques subtiles */}
+          <div className="flex flex-wrap justify-center gap-8 mb-16 text-stone-300">
+            <div className="flex items-center gap-2">
+              <Waves className="w-5 h-5 text-amber-600" />
+              <span className="font-light">Terrasse sur le Scorff</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Leaf className="w-5 h-5 text-amber-600" />
+              <span className="font-light">Produits de saison</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Wine className="w-5 h-5 text-amber-600" />
+              <span className="font-light">Bar de caractère</span>
+            </div>
+          </div>
+
+          {/* CTA élégant */}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <a
+              href={`tel:${siteConfig.phone.replace(/\s/g, '')}`}
+              className="group bg-amber-700 hover:bg-amber-800 text-white px-10 py-4 rounded-sm font-light text-lg transition-all duration-500 hover:shadow-2xl hover:shadow-amber-900/30 flex items-center justify-center gap-3 border border-amber-800"
+            >
+              <Phone className="w-5 h-5" />
+              {siteConfig.phone}
+            </a>
+            <a
+              href="#menu"
+              className="group bg-transparent hover:bg-white/5 text-white px-10 py-4 rounded-sm font-light text-lg border border-white/30 hover:border-white/60 transition-all duration-500 flex items-center justify-center gap-3"
+            >
+              <Utensils className="w-5 h-5" />
+              Découvrir la carte
+            </a>
+          </div>
+        </div>
+
+        {/* Scroll indicator discret */}
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2">
+          <ChevronDown className="w-6 h-6 text-white/40 animate-bounce" />
+        </div>
+      </header>
+
+      {/* Le Cadre - Section mise en avant */}
+      <section className="py-24 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-light text-slate-800 mb-6">
+              Un lieu d'exception
+            </h2>
+            <div className="w-24 h-px bg-amber-700 mx-auto mb-6"></div>
+            <p className="text-lg text-stone-600 font-light max-w-3xl mx-auto leading-relaxed">
+              Niché au bord du Scorff, notre établissement occupe un bâtiment remarquable sur pilotis, 
+              alliance harmonieuse de bois et de pierres apparentes. Un cadre authentique pour une cuisine sincère.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
+            {siteConfig.highlights.map((highlight, index) => (
+              <div
+                key={index}
+                className="group"
+              >
+                <div className="text-5xl mb-6 text-amber-700">
+                  {highlight.icon}
+                </div>
+                <h3 className="text-2xl font-serif font-light text-slate-800 mb-4">
+                  {highlight.title}
+                </h3>
+                <p className="text-stone-600 font-light leading-relaxed text-lg">
+                  {highlight.description}
                 </p>
               </div>
-
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div className="space-y-3">
-                  <h5 className="text-xl font-medium mb-2">Salle V Club</h5>
-                  <p className="text-white/60 text-sm">Électro • House • Techno</p>
-                </div>
-                <div className="space-y-3">
-                  <h5 className="text-xl font-medium mb-2">Salle Valentino</h5>
-                  <p className="text-white/60 text-sm">Pop • Charts • Hip-Hop • R&B</p>
-                </div>
-              </div>
-
-              <div className="pt-6 border-t border-white/10">
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                  <div>
-                    <p className="text-sm text-white/60 mb-2">Entrée unique • Accès aux 2 salles</p>
-                    <p className="text-white/40 text-xs">{siteConfig.schedule.days[0]} • {siteConfig.schedule.hours}</p>
-                  </div>
-                  <div className="text-left sm:text-right">
-                    <p className="text-3xl font-display mb-1">{siteConfig.schedule.prices.standard}</p>
-                    <p className="text-sm text-white/40">par personne</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Venue Section */}
-      <section className="py-24 lg:py-32 border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
-            {/* Left column */}
-            <div>
-              <p className="text-xs uppercase tracking-[0.3em] text-white/40 mb-4">Le lieu</p>
-              <h2 className="font-display text-5xl lg:text-6xl mb-8">
-                Deux salles,<br />Deux ambiances
-              </h2>
-              <p className="text-white/60 mb-8 leading-relaxed">
-                {siteConfig.hero.description}
-              </p>
-              
-              {/* Features */}
-              <div className="space-y-6">
-                {siteConfig.venue.features.map((feature, index) => (
-                  <div key={index} className="flex items-start gap-4 pb-6 border-b border-white/10 last:border-0">
-                    <span className="text-3xl">{feature.icon}</span>
-                    <div>
-                      <h4 className="text-lg mb-1">{feature.title}</h4>
-                      <p className="text-sm text-white/60">{feature.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Right column */}
-            <div className="space-y-8">
-              {/* V Club card */}
-              <div className="bg-zinc-900 p-8 border border-white/10">
-                <h3 className="font-display text-3xl mb-4">V CLUB</h3>
-                <p className="text-white/60 mb-6">{siteConfig.complex.vClub.style}</p>
-                <p className="text-sm text-white/40">{siteConfig.complex.vClub.target}</p>
-              </div>
-
-              {/* Valentino card */}
-              <div className="bg-zinc-900 p-8 border border-white/10">
-                <h3 className="font-display text-3xl mb-4">VALENTINO</h3>
-                <p className="text-white/60 mb-6">{siteConfig.complex.valentino.style}</p>
-                <p className="text-sm text-white/40">{siteConfig.complex.valentino.target}</p>
-              </div>
-
-              {/* VIP */}
-              <div className="bg-white/5 p-8 border border-white/20">
-                <p className="text-xs uppercase tracking-[0.3em] text-white/60 mb-4">Espace privatif</p>
-                <h3 className="font-display text-3xl mb-4">{siteConfig.ambiance.vip.title}</h3>
-                <p className="text-white/60 mb-4">{siteConfig.ambiance.vip.capacity} • {siteConfig.ambiance.vip.location}</p>
-                <button onClick={() => setShowForm(true)} className="text-sm hover-line inline-block">
-                  Demander un devis →
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Infos Section */}
-      <section id="infos" className="py-24 lg:py-32 border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-3 gap-12 lg:gap-16">
-            {/* Location */}
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <MapPin className="w-5 h-5 text-white/40" />
-                <h3 className="text-xs uppercase tracking-[0.3em] text-white/60">Adresse</h3>
-              </div>
-              <p className="text-xl mb-2">{siteConfig.address.street}</p>
-              <p className="text-white/60 mb-6">
-                {siteConfig.address.postalCode} {siteConfig.address.city}
-              </p>
-              <a
-                href={`https://maps.google.com/?q=${encodeURIComponent(siteConfig.address.street + ' ' + siteConfig.address.city)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm hover-line inline-block"
-              >
-                Voir sur Google Maps →
-              </a>
-            </div>
-
-            {/* Hours */}
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <Clock className="w-5 h-5 text-white/40" />
-                <h3 className="text-xs uppercase tracking-[0.3em] text-white/60">Horaires</h3>
-              </div>
-              <p className="text-xl mb-2">{siteConfig.schedule.days[0]}</p>
-              <p className="text-white/60 mb-6">{siteConfig.schedule.hours}</p>
-              <p className="text-sm text-white/40">
-                Ouverture {siteConfig.opening.date}
-              </p>
-            </div>
-
-            {/* Transport */}
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <ChevronRight className="w-5 h-5 text-white/40" />
-                <h3 className="text-xs uppercase tracking-[0.3em] text-white/60">Navette gratuite</h3>
-              </div>
-              <div className="space-y-2 mb-6">
-                {siteConfig.transport.circuit.map((ville, index) => (
-                  <p key={index} className="text-white/60">• {ville}</p>
-                ))}
-              </div>
-              <p className="text-sm text-white/40">
-                Aller-retour inclus
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="py-24 lg:py-32 border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-xs uppercase tracking-[0.3em] text-white/40 mb-6">Réservations</p>
-            <h2 className="font-display text-5xl lg:text-6xl mb-8">
-              Contactez-nous
+      {/* Menu Section élégante */}
+      <section className="py-24 px-4 bg-stone-50" id="menu">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-light text-slate-800 mb-6">
+              Notre Carte
             </h2>
-            
-            {/* Contact methods */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-              <a
-                href={`tel:${siteConfig.contact.phone.replace(/\s/g, '')}`}
-                className="group px-10 py-5 bg-white text-black hover:bg-white/90 transition-all flex items-center justify-center gap-3"
-              >
-                <Phone className="w-5 h-5" />
-                <span className="text-sm uppercase tracking-widest font-medium">
-                  {siteConfig.contact.phone}
-                </span>
-              </a>
-            </div>
-
-            <p className="text-white/60 mb-8">
-              Pour toute demande de réservation de table ou d'espace privatif
+            <div className="w-24 h-px bg-amber-700 mx-auto mb-6"></div>
+            <p className="text-stone-600 text-lg font-light">
+              Une cuisine saisonnière généreuse et réconfortante
             </p>
+          </div>
 
-            <p className="text-sm text-white/40">
-              {siteConfig.address.street}, {siteConfig.address.postalCode} {siteConfig.address.city}
+          <div className="space-y-8">
+            {siteConfig.menu.sections.map((section, index) => (
+              <div
+                key={index}
+                className="bg-white border border-stone-200 overflow-hidden transition-all duration-500 hover:shadow-lg"
+              >
+                <button
+                  onClick={() => toggleSection(section.title)}
+                  className="w-full p-8 flex items-center justify-between group hover:bg-stone-50 transition-colors"
+                >
+                  <h3 className="text-2xl font-serif font-light text-slate-800">
+                    {section.title}
+                  </h3>
+                  {openSection === section.title ? (
+                    <ChevronUp className="w-5 h-5 text-amber-700" />
+                  ) : (
+                    <ChevronDown className="w-5 h-5 text-amber-700" />
+                  )}
+                </button>
+                
+                {openSection === section.title && (
+                  <div className="px-8 pb-8 space-y-6">
+                    {section.items.map((item, itemIndex) => (
+                      <div
+                        key={itemIndex}
+                        className="border-l-2 border-amber-700 pl-6 py-3"
+                      >
+                        <h4 className="text-xl font-serif text-slate-800 mb-2">
+                          {item.name}
+                        </h4>
+                        {item.description && (
+                          <p className="text-stone-600 font-light leading-relaxed">
+                            {item.description}
+                          </p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 p-8 bg-amber-50 border border-amber-200">
+            <p className="text-stone-700 text-center font-light leading-relaxed">
+              {siteConfig.menu.note}
             </p>
           </div>
         </div>
       </section>
 
-      {/* Contact Form Modal */}
-      {showForm && (
-        <div className="modal-backdrop fixed inset-0 flex items-center justify-center p-4 z-[300]" onClick={() => setShowForm(false)}>
-          <div className="modal-content bg-black border border-white/20 max-w-2xl w-full max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
-            {/* Header */}
-            <div className="sticky top-0 bg-black border-b border-white/10 px-8 py-6 flex items-center justify-between">
-              <div>
-                <h3 className="font-display text-3xl mb-2">Réserver une table</h3>
-                <p className="text-sm text-white/60">V Club • Quéven</p>
-              </div>
-              <button
-                onClick={() => setShowForm(false)}
-                className="text-white/60 hover:text-white transition-colors"
+      {/* Événements & Ambiance */}
+      <section className="py-24 px-4 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-light text-slate-800 mb-6">
+              Moments de partage
+            </h2>
+            <div className="w-24 h-px bg-amber-700 mx-auto mb-6"></div>
+            <p className="text-lg text-stone-600 font-light max-w-3xl mx-auto leading-relaxed">
+              Au-delà de notre table, Y'a du Goût est aussi un lieu de convivialité 
+              où culture et moments festifs se rencontrent dans une ambiance chaleureuse.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { icon: Music, title: "Concerts Live", desc: "Artistes de la région et programmation variée" },
+              { icon: Users, title: "Soirées Thématiques", desc: "Karaoké, blind tests musicaux" },
+              { icon: Waves, title: "Événements Sportifs", desc: "Retransmissions dans une ambiance conviviale" }
+            ].map((event, index) => (
+              <div
+                key={index}
+                className="text-center group"
               >
-                <X className="w-6 h-6" />
-              </button>
-            </div>
-
-            {/* Demo notice */}
-            <div className="mx-8 mt-6 px-6 py-4 bg-amber-500/10 border border-amber-500/20">
-              <p className="text-sm text-amber-200/90">
-                <strong>Formulaire de démonstration</strong> — Ce formulaire n'est pas actuellement connecté. Aucune donnée ne sera envoyée. Pour une vraie réservation, veuillez nous appeler au {siteConfig.contact.phone}.
-              </p>
-            </div>
-
-            {/* Form */}
-            <form onSubmit={handleFormSubmit} className="p-8 space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-xs uppercase tracking-widest text-white/60 mb-3">
-                    Nom complet *
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:border-white/30 focus:outline-none transition-colors"
-                    placeholder="Votre nom"
-                  />
+                <div className="inline-flex items-center justify-center w-16 h-16 border-2 border-amber-700 mb-6 group-hover:bg-amber-700 transition-all duration-500">
+                  <event.icon className="w-8 h-8 text-amber-700 group-hover:text-white transition-colors duration-500" />
                 </div>
-
-                <div>
-                  <label className="block text-xs uppercase tracking-widest text-white/60 mb-3">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:border-white/30 focus:outline-none transition-colors"
-                    placeholder="votre@email.com"
-                  />
-                </div>
+                <h3 className="text-xl font-serif font-light text-slate-800 mb-3">
+                  {event.title}
+                </h3>
+                <p className="text-stone-600 font-light leading-relaxed">
+                  {event.desc}
+                </p>
               </div>
+            ))}
+          </div>
 
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-xs uppercase tracking-widest text-white/60 mb-3">
-                    Téléphone *
-                  </label>
-                  <input
-                    type="tel"
-                    required
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:border-white/30 focus:outline-none transition-colors"
-                    placeholder="06 12 34 56 78"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs uppercase tracking-widest text-white/60 mb-3">
-                    Date souhaitée *
-                  </label>
-                  <input
-                    type="date"
-                    required
-                    value={formData.date}
-                    onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                    className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:border-white/30 focus:outline-none transition-colors"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-xs uppercase tracking-widest text-white/60 mb-3">
-                  Nombre de personnes *
-                </label>
-                <select
-                  required
-                  value={formData.guests}
-                  onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
-                  className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:border-white/30 focus:outline-none transition-colors"
-                >
-                  <option value="">Sélectionner</option>
-                  <option value="1-2">1-2 personnes</option>
-                  <option value="3-4">3-4 personnes</option>
-                  <option value="5-6">5-6 personnes</option>
-                  <option value="7-10">7-10 personnes</option>
-                  <option value="10+">Plus de 10 personnes</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-xs uppercase tracking-widest text-white/60 mb-3">
-                  Message (optionnel)
-                </label>
-                <textarea
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  rows={4}
-                  className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:border-white/30 focus:outline-none transition-colors resize-none"
-                  placeholder="Demandes particulières, espace VIP, anniversaire..."
-                />
-              </div>
-
-              <div className="pt-4 flex flex-col sm:flex-row gap-4">
-                <button
-                  type="submit"
-                  className="flex-1 px-8 py-4 bg-white text-black text-sm uppercase tracking-widest font-medium hover:bg-white/90 transition-all"
-                >
-                  Envoyer la demande
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setShowForm(false)}
-                  className="px-8 py-4 border border-white/20 text-sm uppercase tracking-widest hover:bg-white/5 transition-all"
-                >
-                  Annuler
-                </button>
-              </div>
-
-              <p className="text-xs text-white/40 text-center">
-                Vous recevrez une confirmation par email sous 24h
-              </p>
-            </form>
+          <div className="mt-16 text-center">
+            <p className="text-stone-600 font-light italic">
+              Possibilité de privatisation pour vos événements
+            </p>
           </div>
         </div>
-      )}
+      </section>
+
+      {/* Notre Histoire */}
+      <section className="py-24 px-4 bg-gradient-to-b from-slate-700 to-slate-600">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-light text-white mb-6">
+              Notre Histoire
+            </h2>
+            <div className="w-24 h-px bg-amber-600 mx-auto"></div>
+          </div>
+          
+          <div className="bg-white/5 backdrop-blur-sm p-12 border border-white/10">
+            <p className="text-stone-200 text-lg font-light leading-relaxed mb-8 text-center">
+              {siteConfig.about.story}
+            </p>
+            
+            <div className="grid sm:grid-cols-2 gap-6 mt-12">
+              {siteConfig.about.team.map((member, index) => (
+                <div
+                  key={index}
+                  className="bg-white/5 backdrop-blur-sm p-6 border border-white/10 text-center"
+                >
+                  <p className="text-amber-500 font-serif text-xl mb-1">{member.name}</p>
+                  <p className="text-stone-300 font-light text-sm tracking-wider uppercase">{member.role}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Horaires */}
+      <section className="py-24 px-4 bg-stone-50" id="horaires">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-light text-slate-800 mb-6">
+              Horaires
+            </h2>
+            <div className="w-24 h-px bg-amber-700 mx-auto"></div>
+          </div>
+          
+          <div className="space-y-4">
+            {Object.entries(siteConfig.hours).map(([day, hours]) => {
+              const dayInfo = getDayInfo(day);
+              const isOpen = !dayInfo?.isClosed;
+              const capitalizedDay = day.charAt(0).toUpperCase() + day.slice(1);
+              
+              return (
+                <div
+                  key={day}
+                  className={`bg-white border transition-all duration-300 ${
+                    isOpen 
+                      ? 'border-stone-200 hover:border-amber-700 hover:shadow-md' 
+                      : 'border-stone-200 opacity-50'
+                  }`}
+                >
+                  <button
+                    onClick={() => toggleDay(day)}
+                    className="w-full p-6 flex items-center justify-between"
+                  >
+                    <div className="flex items-center gap-4">
+                      <Clock className={`w-5 h-5 ${isOpen ? 'text-amber-700' : 'text-stone-400'}`} />
+                      <span className={`font-serif text-xl ${isOpen ? 'text-slate-800' : 'text-stone-400'}`}>
+                        {capitalizedDay}
+                      </span>
+                    </div>
+                    
+                    {isOpen ? (
+                      openDay === day ? (
+                        <ChevronUp className="w-5 h-5 text-amber-700" />
+                      ) : (
+                        <ChevronDown className="w-5 h-5 text-amber-700" />
+                      )
+                    ) : (
+                      <span className="text-stone-400 font-light text-sm tracking-wider uppercase">
+                        Fermé
+                      </span>
+                    )}
+                  </button>
+                  
+                  {openDay === day && isOpen && (
+                    <div className="px-6 pb-6 space-y-3 border-t border-stone-100">
+                      <div className="flex items-center justify-between text-stone-600 pt-4">
+                        <span className="font-light">Déjeuner</span>
+                        <span className="font-serif">{hours.midi}</span>
+                      </div>
+                      <div className="flex items-center justify-between text-stone-600">
+                        <span className="font-light">Dîner</span>
+                        <span className="font-serif">{hours.soir}</span>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Services & Prestations */}
+      <section className="py-24 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-light text-slate-800 mb-6">
+              Services & Prestations
+            </h2>
+            <div className="w-24 h-px bg-amber-700 mx-auto"></div>
+          </div>
+          
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {siteConfig.services.map((service, index) => (
+              <div
+                key={index}
+                className="p-6 border border-stone-200 hover:border-amber-700 transition-all duration-300 hover:shadow-md"
+              >
+                <p className="text-stone-700 font-light">{service}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact & Localisation */}
+      <section className="py-24 px-4 bg-stone-50">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-light text-slate-800 mb-6">
+              Nous Trouver
+            </h2>
+            <div className="w-24 h-px bg-amber-700 mx-auto"></div>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Contact Info */}
+            <div className="space-y-8">
+              <div className="bg-white p-8 border border-stone-200">
+                <div className="flex items-start gap-4">
+                  <MapPin className="w-6 h-6 text-amber-700 flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="text-xl font-serif text-slate-800 mb-3">Adresse</h3>
+                    <p className="text-stone-600 font-light leading-relaxed">
+                      {siteConfig.address.street}<br />
+                      {siteConfig.address.postalCode} {siteConfig.address.city}<br />
+                      {siteConfig.address.region}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-8 border border-stone-200">
+                <div className="flex items-start gap-4">
+                  <Phone className="w-6 h-6 text-amber-700 flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="text-xl font-serif text-slate-800 mb-3">Réservations</h3>
+                    <a
+                      href={`tel:${siteConfig.phone.replace(/\s/g, '')}`}
+                      className="text-amber-700 hover:text-amber-800 text-lg font-serif transition-colors"
+                    >
+                      {siteConfig.phone}
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-amber-50 p-8 border border-amber-200">
+                <Waves className="w-8 h-8 text-amber-700 mb-4" />
+                <p className="text-stone-700 font-light leading-relaxed">
+                  Bâtiment remarquable sur pilotis, au bord de la rivière Scorff. 
+                  Terrasse panoramique avec vue sur l'eau.
+                </p>
+              </div>
+            </div>
+
+            {/* Map */}
+            <div className="bg-white p-2 border border-stone-200">
+              <div className="aspect-video overflow-hidden">
+                <iframe
+                  src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.5!2d${siteConfig.address.coordinates.lng}!3d${siteConfig.address.coordinates.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x481059c5151fbe2d%3A0x664cff88c882b6c4!2s6%20Rue%20du%20Vieux%20Pont%2C%2056620%20Pont-Scorff!5e0!3m2!1sfr!2sfr!4v1234567890`}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Localisation Y'a du Goût"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          {/* À Proximité */}
+          <div className="mt-16 bg-white p-8 border border-stone-200">
+            <h3 className="text-2xl font-serif font-light text-slate-800 mb-8 text-center">
+              À découvrir aux alentours
+            </h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {siteConfig.location.nearbyAttractions.map((attraction, index) => (
+                <div
+                  key={index}
+                  className="p-4 border border-stone-200 text-stone-600 font-light text-center"
+                >
+                  {attraction}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
-      <footer className="py-12 border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
-            <div>
-              <h3 className="font-display text-2xl mb-2">V CLUB</h3>
-              <p className="text-sm text-white/40">{siteConfig.tagline}</p>
-            </div>
-
-            <div className="flex gap-8">
-              <a href="#" className="text-white/40 hover:text-white transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-white/40 hover:text-white transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-            </div>
+      <footer className="bg-slate-800 py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h3 className="text-4xl font-serif font-light text-white mb-4">
+              Y'a du Goût
+            </h3>
+            <div className="w-24 h-px bg-amber-600 mx-auto mb-6"></div>
+            <p className="text-stone-300 font-light mb-8">
+              Bar-Restaurant au bord du Scorff
+            </p>
+            
+            <a
+              href={`tel:${siteConfig.phone.replace(/\s/g, '')}`}
+              className="inline-flex items-center gap-3 bg-amber-700 hover:bg-amber-800 text-white px-8 py-4 font-light transition-all duration-500 hover:shadow-xl"
+            >
+              <Phone className="w-5 h-5" />
+              {siteConfig.phone}
+            </a>
           </div>
 
-          <div className="mt-12 pt-8 border-t border-white/5 text-center text-xs text-white/30 uppercase tracking-[0.3em]">
-            © {new Date().getFullYear()} V Club • Tous droits réservés
+          <div className="border-t border-white/10 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-stone-400 text-sm font-light">
+              <p>
+                {siteConfig.address.street}, {siteConfig.address.postalCode} {siteConfig.address.city}
+              </p>
+              <p>
+                © {new Date().getFullYear()} Y'a du Goût
+              </p>
+            </div>
           </div>
         </div>
       </footer>
     </div>
   );
-}
+};
+
+export default App;
