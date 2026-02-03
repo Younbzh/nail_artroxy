@@ -1,174 +1,232 @@
 export const siteConfig = {
   // Informations générales
-  name: "Y'a du Goût",
-  tagline: "Bar-Restaurant & Événements",
-  description: "Bar-restaurant convivial au bord du Scorff. Cuisine saisonnière réconfortante, concerts, soirées DJ, karaoké et événements sportifs. Terrasse avec vue sur la rivière.",
+  name: "Ze Bar",
+  tagline: "Le Bar Branché de Pontivy",
+  slogan: "Ambiance, Jeux & Rooftop",
+  description: "Bar convivial au cœur de Pontivy avec rooftop, billard, fléchettes et événements réguliers. Une ambiance décontractée pour passer d'excellentes soirées entre amis.",
   
   // Contact
   address: {
-    street: "6, rue du Vieux-Pont",
-    city: "Pont-Scorff",
-    postalCode: "56620",
+    street: "3 Bis rue Noble",
+    city: "Pontivy",
+    postalCode: "56300",
     region: "Morbihan, Bretagne",
+    details: "Dans une petite ruelle du centre-ville, perpendiculaire à la rue Nationale",
     coordinates: {
-      lat: 47.8317,
-      lng: -3.4089
+      lat: 48.0667,
+      lng: -2.9667
     }
   },
   
-  phone: "09 80 58 91 17",
+  phone: "02 97 27 32 29",
   email: "", // Non communiqué
-  
-  // Horaires
-  hours: {
-    mardi: { midi: "12h - 14h", soir: "17h - 23h" },
-    mercredi: { midi: "12h - 14h", soir: "17h - 23h" },
-    jeudi: { midi: "12h - 14h", soir: "17h - 23h" },
-    vendredi: { midi: "12h - 14h", soir: "17h - 00h" },
-    samedi: { midi: "12h - 14h", soir: "17h - 00h" },
-    dimanche: { midi: "Fermé", soir: "Fermé" },
-    lundi: { midi: "Fermé", soir: "Fermé" }
-  },
   
   // Réseaux sociaux
   social: {
-    facebook: "https://www.facebook.com/lentre2pontscorff", // Ancien compte, à vérifier s'ils ont créé un nouveau
-    instagram: "@lentre2pontscorff", // Ancien compte
+    facebook: "zebar.pontivy",
+    facebookUrl: "https://www.facebook.com/zebar.pontivy",
+    instagram: "ze_bar_pontivy",
+    instagramUrl: "https://www.instagram.com/ze_bar_pontivy/"
   },
   
-  // À propos
+  // Horaires
+  hours: {
+    lundi: { ouvert: false, horaires: "Fermé" },
+    mardi: { ouvert: true, horaires: "17:00 - 02:00" },
+    mercredi: { ouvert: true, horaires: "17:00 - 02:00" },
+    jeudi: { ouvert: true, horaires: "17:00 - 02:00" },
+    vendredi: { ouvert: true, horaires: "17:00 - 02:00" },
+    samedi: { ouvert: true, horaires: "17:00 - 02:00" },
+    dimanche: { ouvert: true, horaires: "18:00 - 23:00" }
+  },
+  
+  // Concept
   about: {
-    story: "Nadia Eon-Bihan et Emmanuel Eon, originaires du pays de Lorient (Groix et Rédéné), ont repris ce lieu emblématique au bord du Scorff. Après 10 ans d'expérience dans la restauration, dont une crêperie à Saint-Nazaire et un bar à Sarzeau, ils sont revenus dans leur région pour créer Y'a du Goût : un bar-restaurant chaleureux où cuisine réconfortante et ambiance festive se rencontrent.",
-    team: [
-      { name: "Nadia Eon-Bihan", role: "Co-gérante" },
-      { name: "Emmanuel Eon", role: "Co-gérant" },
-      { name: "Adrien", role: "Service" },
-      { name: "Maëlle", role: "Service" }
-    ]
+    story: "Ze Bar est LE bar incontournable de Pontivy depuis plusieurs années. Situé dans une petite ruelle discrète mais animée, cet établissement sur plusieurs niveaux propose une ambiance unique mêlant convivialité, divertissement et soirées à thème. Avec son décor atypique qui rappelle un mix entre un bar de nuit moderne et un pub chaleureux, Ze Bar séduit une clientèle jeune et dynamique.",
+    vision: "Un lieu de rencontres et de convivialité où l'on vient pour l'ambiance, les jeux, la musique et l'accueil chaleureux des gérants.",
+    team: "Une équipe professionnelle et souriante, toujours à l'écoute des clients"
   },
   
   // Points forts
   highlights: [
     {
-      icon: "🏞️",
-      title: "Cadre exceptionnel",
-      description: "Bâtiment sur pilotis au bord du Scorff avec terrasse panoramique"
+      icon: "🏠",
+      title: "Rooftop Cocooning",
+      description: "Notre magnifique rooftop récent, très bien décoré, idéal pour profiter d'un verre dans une ambiance chaleureuse"
+    },
+    {
+      icon: "🎱",
+      title: "Espace Jeux",
+      description: "Billards de qualité, fléchettes, flipper et baby-foot pour des soirées animées"
+    },
+    {
+      icon: "🎉",
+      title: "Soirées à Thème",
+      description: "Concerts live, événements sportifs, soirées années 80, rock le dimanche, électro le jeudi"
     },
     {
       icon: "🎵",
-      title: "Événements variés",
-      description: "Concerts, soirées DJ, karaoké, blind tests et retransmissions sportives"
-    },
-    {
-      icon: "🍺",
-      title: "Bar convivial",
-      description: "Nombreuses bières à la pression, cocktails maison et ambiance chaleureuse"
-    },
-    {
-      icon: "🍽️",
-      title: "Cuisine saisonnière",
-      description: "Plats montagnards réconfortants et burgers gourmands"
+      title: "Ambiance Musicale",
+      description: "Playlist variée pour tous les goûts, écran vidéo, ambiance décontractée de 20 à 45 ans"
     }
   ],
   
-  // Menu (Carte d'hiver 2025-2026)
-  menu: {
-    sections: [
+  // Carte & Boissons
+  drinks: {
+    categories: [
       {
-        title: "🧀 Spécialités Montagnardes",
-        items: [
-          { name: "Raclette", description: "Fromage fondant, charcuterie et pommes de terre" },
-          { name: "Fondue Savoyarde", description: "3 fromages, pain croustillant" },
-          { name: "Tartiflette", description: "Reblochon, lardons, oignons et pommes de terre" },
-          { name: "Camembert Rôti", description: "Au four, accompagné de pain et salade" }
-        ]
+        name: "Bières Pression",
+        icon: "🍺",
+        description: "Large sélection de bières à partir de 5€",
+        items: ["Pintes", "Demis", "Bières artisanales", "Bières locales"]
       },
       {
-        title: "🍔 Burgers & Plats",
-        items: [
-          { name: "Burger Classique", description: "Steak, cheddar, salade, tomate, oignons" },
-          { name: "Burger du Chef", description: "Recette signature de la maison" },
-          { name: "Plat de la Semaine", description: "Création hebdomadaire du chef" }
-        ]
+        name: "Cocktails",
+        icon: "🍹",
+        description: "Cocktails maison préparés par nos barmen",
+        items: ["Pina Colada", "Mojito", "Cocktails du moment", "Cocktails personnalisés"]
       },
       {
-        title: "🥨 Snacking au Bar",
-        items: [
-          { name: "Planches à partager", description: "Tapas, charcuterie, fromages" },
-          { name: "Frites maison", description: "" },
-          { name: "Petites portions apéro", description: "" }
-        ]
+        name: "Planches Apéro",
+        icon: "🧀",
+        price: "15,00 €",
+        items: ["Fromage", "Charcuterie", "Tomate", "Cornichons", "Tapas"]
+      },
+      {
+        name: "Soft & Autres",
+        icon: "🥤",
+        items: ["Softs", "Jus de fruits", "Boissons chaudes"]
       }
-    ],
-    note: "La carte change avec les saisons. Menu du midi disponible en semaine.",
-    priceRange: "€€ (20-30€)"
+    ]
+  },
+  
+  // Activités & Jeux
+  activities: [
+    "🎱 Tables de billard de qualité",
+    "🎯 Jeux de fléchettes (3 jeux disponibles)",
+    "⚽ Baby-foot",
+    "🕹️ Flipper",
+    "📺 Retransmission événements sportifs",
+    "🎤 Karaoké",
+    "🎸 Concerts live",
+    "🎬 Écran vidéo",
+    "💃 Soirées à thème régulières"
+  ],
+  
+  // Ambiance & Style
+  atmosphere: {
+    style: "Bar branché et tendance",
+    ambiance: "Décontractée, conviviale, énergique",
+    décor: "Mix entre bar de nuit moderne et pub avec escaliers en bois, décoration atypique et charmante",
+    musique: "Playlist variée - Électro le jeudi, Rock le dimanche, hits pour tous les goûts",
+    public: "20-45 ans, étudiants, jeunes actifs, groupes d'amis"
   },
   
   // Services
   services: [
-    "🍽️ Restaurant & Snacking",
-    "🍺 Bar avec multiples tireuses",
-    "🎯 Jeu de fléchettes",
-    "🎤 Soirées karaoké",
-    "🎵 Concerts live",
-    "🎧 Soirées DJ",
-    "🎮 Blind tests",
-    "⚽ Retransmissions sportives",
+    "🍺 Large carte de bières et cocktails",
+    "🧀 Planches apéro",
+    "🏠 Rooftop aménagé",
+    "🪑 Terrasse extérieure",
+    "🎱 Salle de billard à l'étage",
+    "📺 Diffusion matchs",
+    "🎵 Soirées à thème",
     "🎉 Privatisation possible",
-    "🌊 Terrasse au bord du Scorff",
-    "♿ Accès PMR",
-    "🅿️ Parking à proximité"
+    "💳 Paiement carte",
+    "♿ Accessible PMR"
   ],
   
-  // Ambiance & Atouts
-  atmosphere: {
-    style: "Convivial, festif, chaleureux",
-    cadre: "Bâtiment sur pilotis en bois et pierres apparentes, terrasse 'les pieds dans l'eau'",
-    ambiance: "Bar-restaurant animé avec programmation événementielle régulière",
-    publicCible: "Étudiants, groupes d'amis, familles, touristes, habitués du coin"
-  },
-  
-  // Spécificités
-  specialities: [
-    "Emplacement unique au bord de la rivière Scorff",
-    "Architecture remarquable (sur pilotis)",
-    "Programmation culturelle régulière",
-    "Ambiance bar + qualité restaurant",
-    "Cuisine saisonnière qui évolue",
-    "Retour aux sources des propriétaires (enfants du pays)"
-  ],
-  
-  // Localisation & Accès
-  location: {
-    city: "Pont-Scorff",
-    description: "Petite Cité de Caractère du Morbihan, labellisée en 2023",
-    nearbyAttractions: [
-      "Zoo Les Terres de Nataé",
-      "Centre-ville historique de Pont-Scorff",
-      "Rivière Scorff (pêche, promenades)",
-      "Lorient (10 km)",
-      "Côte bretonne (20 min)"
+  // Événements réguliers
+  events: {
+    regular: [
+      {
+        day: "Jeudi",
+        type: "Soirée Électro & Dance",
+        description: "Ambiance électro pour danser jusqu'au bout de la nuit"
+      },
+      {
+        day: "Vendredi & Samedi",
+        type: "Animations",
+        description: "Soirées festives jusqu'à 2h du matin"
+      },
+      {
+        day: "Dimanche",
+        type: "Rock Night",
+        description: "Ambiance rock de 18h à 23h"
+      }
     ],
-    access: "Parking gratuit à proximité, accessible PMR"
+    special: [
+      "Concerts live",
+      "Soirées années 80",
+      "Retransmissions sportives (rugby, foot)",
+      "Événements privés sur réservation"
+    ]
   },
+  
+  // Localisation
+  location: {
+    description: "Situé dans une petite ruelle discrète du centre-ville de Pontivy, perpendiculaire à la rue Nationale. Un lieu à découvrir absolument !",
+    parking: "Parking Général de Gaulle à 225m",
+    access: "Gare de Pontivy à 772m à pied",
+    nearbyAttractions: [
+      "Centre-ville Pontivy",
+      "Rue Nationale (commerces)",
+      "Château des Rohan",
+      "Canal de Nantes à Brest",
+      "Basilique Notre-Dame-de-Joie"
+    ]
+  },
+  
+  // Avis clients (extraits authentiques)
+  testimonials: [
+    {
+      text: "Meilleur bar de Bretagne ! Super billard, patron génial et super accueillant.",
+      author: "Camille"
+    },
+    {
+      text: "Super bar. Les gérants sont au top, l'ambiance également. La playlist est bonne, la carte des boissons variée, le lieu spacieux avec terrasse et roof top.",
+      author: "Avis Google"
+    },
+    {
+      text: "Le bar de Pontivy où il faut y aller, beau rooftop, le personnel très accueillant, toujours un bon moment passé dans ce bar.",
+      author: "Malika"
+    },
+    {
+      text: "Sympathique endroit de convivialité, de rencontres, bonne ambiance. Toujours un plaisir de passer une soirée entre amis/collègues.",
+      author: "Avis vérifié"
+    }
+  ],
   
   // SEO
   seo: {
     keywords: [
-      "restaurant Pont-Scorff",
-      "bar Pont-Scorff",
-      "terrasse Scorff",
-      "raclette Morbihan",
-      "burger Pont-Scorff",
-      "soirée concert Bretagne",
-      "karaoké Lorient",
-      "restaurant bord de rivière",
-      "bar événementiel Morbihan",
-      "Y'a du Goût"
+      "bar Pontivy",
+      "Ze Bar",
+      "bar rooftop Pontivy",
+      "billard Pontivy",
+      "soirées Pontivy",
+      "bar branché Morbihan",
+      "concerts Pontivy",
+      "fléchettes Pontivy",
+      "bar à cocktails Pontivy",
+      "sortir à Pontivy",
+      "vie nocturne Pontivy"
     ],
     og: {
-      title: "Y'a du Goût - Bar-Restaurant & Événements à Pont-Scorff",
-      description: "Bar-restaurant convivial au bord du Scorff. Cuisine saisonnière, concerts, DJ, karaoké. Terrasse panoramique sur la rivière. 09 80 58 91 17"
+      title: "Ze Bar - Le Bar Branché de Pontivy | Rooftop, Billard & Soirées",
+      description: "Bar convivial avec rooftop, billard, fléchettes et soirées à thème. Ambiance décontractée et accueil chaleureux au cœur de Pontivy. Ouvert jusqu'à 2h. ☎️ 02 97 27 32 29"
     }
+  },
+  
+  // Infos pratiques
+  practical: {
+    price_range: "€€",
+    average_drink: "5-8€",
+    capacity: "Bar spacieux sur plusieurs niveaux",
+    reservations: "Non nécessaire (sauf privatisation)",
+    parking: true,
+    terrace: true,
+    rooftop: true,
+    accessibility: true
   }
 };
