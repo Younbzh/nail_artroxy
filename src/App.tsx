@@ -1,469 +1,419 @@
-import React, { useState } from 'react';
-import { MapPin, Phone, Clock, Facebook, Instagram, Beer, Music, Gamepad2, Users, Calendar, Star, ChevronDown, Palmtree } from 'lucide-react';
+import React from 'react';
+import { Sparkles, Palette, Paintbrush2, Heart, MapPin, Phone, Instagram, Facebook, Clock, Gift, Home } from 'lucide-react';
 import { siteConfig } from './config/siteConfig';
 
-const App = () => {
+function App() {
   return (
-    <div className="min-h-screen bg-neutral-900">
-      {/* Hero Section - Tropical Lounge */}
-      <header className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-neutral-900 via-rose-950/30 to-neutral-900">
-        {/* Animated tropical lights effect */}
-        <div className="absolute inset-0">
-          <div className="absolute top-20 right-20 w-96 h-96 bg-rose-500/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 left-20 w-96 h-96 bg-emerald-500/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-          <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-fuchsia-500/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-pink-50 to-purple-50">
+      {/* Hero Section */}
+      <header className="relative overflow-hidden">
+        {/* Decorative background elements */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-pink-300 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-300 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         </div>
 
-        <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
-          {/* Logo avec effet tropical */}
-          <div className="mb-8">
-            <div className="flex items-center justify-center gap-4 mb-6">
-              <Palmtree className="w-12 h-12 text-emerald-400 animate-pulse" />
-              <h1 className="text-8xl md:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-fuchsia-400 to-pink-400" style={{ fontFamily: "'Oswald', sans-serif" }}>
-                ZE BAR
-              </h1>
-              <Palmtree className="w-12 h-12 text-emerald-400 animate-pulse" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24">
+          <div className="text-center space-y-6 animate-fade-in">
+            {/* Logo/Brand */}
+            <div className="inline-flex items-center gap-2 px-6 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg">
+              <Sparkles className="w-5 h-5 text-pink-500" />
+              <span className="text-sm font-medium text-pink-900 tracking-wide">NAIL ART • MORÉAC</span>
             </div>
-            <div className="flex items-center justify-center gap-6 my-6">
-              <div className="h-1 w-24 bg-gradient-to-r from-transparent via-rose-400 to-transparent"></div>
-              <Beer className="w-8 h-8 text-rose-400" />
-              <div className="h-1 w-24 bg-gradient-to-r from-transparent via-emerald-400 to-transparent"></div>
+
+            {/* Main title with unique typography */}
+            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-tight">
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-rose-400 to-purple-400 font-serif" style={{ fontFamily: "'Bodoni Moda', serif" }}>
+                Nail.art.rox
+              </span>
+              <span className="block text-2xl sm:text-3xl lg:text-4xl text-pink-900 mt-2 font-light tracking-wider">
+                by Dina
+              </span>
+            </h1>
+
+            {/* Tagline */}
+            <p className="text-xl sm:text-2xl text-pink-800 font-light italic max-w-2xl mx-auto">
+              {siteConfig.tagline}
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+              <a 
+                href={`tel:${siteConfig.contact.phone.replace(/\s/g, '')}`}
+                className="group relative px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-400 text-white rounded-full font-medium overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              >
+                <span className="relative z-10 flex items-center gap-2">
+                  <Phone className="w-5 h-5" />
+                  {siteConfig.contact.phone}
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-rose-400 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </a>
+
+              <a 
+                href={siteConfig.social.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 bg-white/80 backdrop-blur-sm text-pink-900 rounded-full font-medium hover:bg-white transition-all duration-300 hover:scale-105 hover:shadow-lg flex items-center gap-2"
+              >
+                <Instagram className="w-5 h-5" />
+                Instagram
+              </a>
+            </div>
+
+            {/* Promo badge */}
+            <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-400 to-yellow-300 rounded-full shadow-lg animate-bounce mt-8">
+              <Gift className="w-5 h-5 text-amber-900" />
+              <span className="text-sm font-semibold text-amber-900">
+                -15% pour les nouvelles clientes
+              </span>
             </div>
           </div>
-
-          {/* Tagline */}
-          <p className="text-3xl md:text-5xl font-bold text-rose-400 mb-4 tracking-wider" style={{ fontFamily: "'Oswald', sans-serif" }}>
-            AMBIANCE TROPICALE & LOUNGE
-          </p>
-          
-          <p className="text-xl md:text-2xl text-amber-200/90 mb-12 font-light">
-            Rooftop • Billard • Soirées • Fauteuils Cosy
-          </p>
-
-          {/* Key features avec style tropical */}
-          <div className="flex flex-wrap justify-center gap-8 mb-12">
-            <div className="flex items-center gap-3 bg-gradient-to-r from-rose-900/50 to-fuchsia-900/50 px-6 py-3 rounded-full border border-rose-400/30 backdrop-blur-sm">
-              <Palmtree className="w-5 h-5 text-emerald-400" />
-              <span className="text-amber-100 font-medium">Ambiance Tropical</span>
-            </div>
-            <div className="flex items-center gap-3 bg-gradient-to-r from-emerald-900/50 to-teal-900/50 px-6 py-3 rounded-full border border-emerald-400/30 backdrop-blur-sm">
-              <Music className="w-5 h-5 text-rose-400" />
-              <span className="text-amber-100 font-medium">Soirées Live</span>
-            </div>
-            <div className="flex items-center gap-3 bg-gradient-to-r from-fuchsia-900/50 to-pink-900/50 px-6 py-3 rounded-full border border-fuchsia-400/30 backdrop-blur-sm">
-              <Gamepad2 className="w-5 h-5 text-emerald-400" />
-              <span className="text-amber-100 font-medium">Billard & Jeux</span>
-            </div>
-          </div>
-
-          {/* CTA */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href={`tel:${siteConfig.phone.replace(/\s/g, '')}`}
-              className="group bg-gradient-to-r from-rose-500 to-fuchsia-500 hover:from-rose-600 hover:to-fuchsia-600 text-white px-10 py-4 font-bold text-lg transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/50 flex items-center justify-center gap-3 rounded-lg"
-              style={{ fontFamily: "'Oswald', sans-serif" }}
-            >
-              <Phone className="w-5 h-5" />
-              {siteConfig.phone}
-            </a>
-            <a
-              href="#horaires"
-              className="group bg-amber-800/80 hover:bg-amber-700 text-amber-100 px-10 py-4 font-bold text-lg border-2 border-rose-400/30 hover:border-rose-400 transition-all duration-300 flex items-center justify-center gap-3 rounded-lg"
-              style={{ fontFamily: "'Oswald', sans-serif" }}
-            >
-              <Clock className="w-5 h-5" />
-              HORAIRES
-            </a>
-          </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <ChevronDown className="w-8 h-8 text-rose-400" />
         </div>
       </header>
 
-      {/* Points Forts - Style tropical lounge */}
-      <section className="py-20 px-4 bg-gradient-to-br from-neutral-900 to-stone-900">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-fuchsia-400 mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>
-              POURQUOI ZE BAR ?
-            </h2>
-            <div className="h-1 w-32 bg-gradient-to-r from-rose-400 via-emerald-400 to-fuchsia-400 mx-auto"></div>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {siteConfig.highlights.map((highlight, index) => (
-              <div
-                key={index}
-                className="bg-gradient-to-br from-stone-800 to-neutral-900 p-8 border-2 border-rose-500/20 hover:border-rose-400/50 transition-all duration-300 group rounded-lg"
-              >
-                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">{highlight.icon}</div>
-                <h3 className="text-2xl font-bold text-rose-400 mb-3" style={{ fontFamily: "'Oswald', sans-serif" }}>
-                  {highlight.title}
-                </h3>
-                <p className="text-amber-100/80 font-light leading-relaxed">
-                  {highlight.description}
-                </p>
+      {/* About Section */}
+      <section className="py-20 bg-white/60 backdrop-blur-sm">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6 animate-slide-in-left">
+              <div className="inline-block">
+                <span className="text-sm font-semibold tracking-widest text-pink-600 uppercase">À propos</span>
+                <div className="h-0.5 w-16 bg-gradient-to-r from-pink-500 to-purple-400 mt-2"></div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* Notre Histoire avec fond bois */}
-      <section className="py-20 px-4 bg-gradient-to-br from-amber-950/40 via-stone-900 to-neutral-900">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-fuchsia-400 mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>
-              LE BAR INCONTOURNABLE
-            </h2>
-            <div className="h-1 w-32 bg-gradient-to-r from-rose-400 via-emerald-400 to-fuchsia-400 mx-auto mb-8"></div>
-          </div>
+              <h2 className="text-4xl sm:text-5xl font-bold text-pink-900 font-serif" style={{ fontFamily: "'Bodoni Moda', serif" }}>
+                Roxana, artiste ongulaire
+              </h2>
 
-          <div className="bg-gradient-to-br from-stone-800/80 to-neutral-900/80 p-10 border-l-4 border-rose-500 rounded-lg backdrop-blur-sm">
-            <p className="text-amber-100/90 text-lg font-light leading-relaxed mb-6">
-              {siteConfig.about.story}
-            </p>
-            
-            <div className="bg-gradient-to-r from-rose-500/10 via-emerald-500/10 to-fuchsia-500/10 p-6 border-l-4 border-emerald-500 rounded">
-              <p className="text-amber-50 font-light italic leading-relaxed text-lg">
-                "{siteConfig.about.vision}"
+              <p className="text-lg text-gray-700 leading-relaxed">
+                {siteConfig.about.story}
               </p>
+
+              <div className="grid grid-cols-2 gap-4 pt-4">
+                {siteConfig.about.values.map((value, idx) => (
+                  <div 
+                    key={idx}
+                    className="flex items-start gap-2 animate-fade-in"
+                    style={{ animationDelay: `${idx * 100}ms` }}
+                  >
+                    <Sparkles className="w-5 h-5 text-pink-500 flex-shrink-0 mt-1" />
+                    <span className="text-sm text-gray-700">{value}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="relative animate-slide-in-right">
+              <div className="aspect-square rounded-3xl bg-gradient-to-br from-pink-200 via-rose-200 to-purple-200 p-8 shadow-2xl overflow-hidden">
+                <div className="w-full h-full rounded-2xl overflow-hidden border-4 border-white shadow-inner relative group">
+                  <img 
+                    src="/nail-art-sample.jpg"
+                    alt="Nail art de Noël par Dina - Sapins et flocons"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-pink-900/90 via-pink-900/40 to-transparent flex items-end p-6">
+                    <p className="text-xl sm:text-2xl font-serif text-white italic leading-tight" style={{ fontFamily: "'Bodoni Moda', serif" }}>
+                      Chaque ongle est une petite œuvre d'art
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/* Decorative elements */}
+              <div className="absolute -top-6 -right-6 w-24 h-24 bg-purple-300 rounded-full blur-2xl opacity-60"></div>
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-pink-300 rounded-full blur-2xl opacity-60"></div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Carte Boissons avec ambiance chaleureuse */}
-      <section className="py-20 px-4 bg-neutral-900">
-        <div className="max-w-6xl mx-auto">
+      {/* Services Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-fuchsia-400 mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>
-              NOTRE CARTE
+            <span className="text-sm font-semibold tracking-widest text-pink-600 uppercase">Mes prestations</span>
+            <h2 className="text-4xl sm:text-5xl font-bold text-pink-900 mt-4 font-serif" style={{ fontFamily: "'Bodoni Moda', serif" }}>
+              Des ongles sublimes
             </h2>
-            <div className="h-1 w-32 bg-gradient-to-r from-rose-400 via-emerald-400 to-fuchsia-400 mx-auto mb-6"></div>
-            <p className="text-amber-200/90 font-light text-xl">
-              Bières, cocktails tropicaux et planches apéro
-            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {siteConfig.drinks.categories.map((category, index) => (
-              <div
-                key={index}
-                className="bg-gradient-to-br from-stone-800 to-neutral-900 p-8 border-2 border-amber-700/30 hover:border-rose-400/50 transition-all duration-300 rounded-lg"
-              >
-                <div className="flex items-center gap-4 mb-6">
-                  <span className="text-5xl">{category.icon}</span>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-amber-200 mb-2" style={{ fontFamily: "'Oswald', sans-serif" }}>
-                      {category.name}
-                    </h3>
-                    {category.price && (
-                      <p className="text-rose-400 font-bold text-xl">{category.price}</p>
-                    )}
-                  </div>
-                </div>
-                {category.description && (
-                  <p className="text-amber-100/70 mb-4 font-light">{category.description}</p>
-                )}
-                <ul className="space-y-2">
-                  {category.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="text-amber-100/80 font-light pl-4 border-l-2 border-rose-500/30">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {siteConfig.services.map((service, idx) => {
+              const icons = {
+                sparkles: Sparkles,
+                palette: Palette,
+                'paintbrush-2': Paintbrush2,
+                heart: Heart
+              };
+              const Icon = icons[service.icon as keyof typeof icons];
 
-      {/* Activités & Jeux avec style lounge */}
-      <section className="py-20 px-4 bg-gradient-to-br from-stone-900 via-neutral-900 to-rose-950/20">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-fuchsia-400 mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>
-              ACTIVITÉS & JEUX
-            </h2>
-            <div className="h-1 w-32 bg-gradient-to-r from-rose-400 via-emerald-400 to-fuchsia-400 mx-auto"></div>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {siteConfig.activities.map((activity, index) => (
-              <div
-                key={index}
-                className="bg-gradient-to-br from-amber-900/30 to-stone-900/80 p-6 text-amber-100/90 font-light border border-amber-700/30 hover:border-rose-400/50 hover:bg-gradient-to-br hover:from-rose-900/20 hover:to-stone-900 transition-all duration-300 rounded-lg"
-              >
-                {activity}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Événements avec néons tropicaux */}
-      <section className="py-20 px-4 bg-neutral-900">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-fuchsia-400 mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>
-              ÉVÉNEMENTS
-            </h2>
-            <div className="h-1 w-32 bg-gradient-to-r from-rose-400 via-emerald-400 to-fuchsia-400 mx-auto"></div>
-          </div>
-
-          {/* Événements réguliers */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {siteConfig.events.regular.map((event, index) => (
-              <div
-                key={index}
-                className="bg-gradient-to-br from-rose-900/30 via-stone-800 to-fuchsia-900/30 p-8 border-2 border-rose-500/30 hover:border-rose-400 transition-all duration-300 rounded-lg"
-              >
-                <Calendar className="w-10 h-10 text-rose-400 mb-4" />
-                <h3 className="text-2xl font-bold text-amber-200 mb-2" style={{ fontFamily: "'Oswald', sans-serif" }}>
-                  {event.day}
-                </h3>
-                <p className="text-rose-400 font-bold mb-3">{event.type}</p>
-                <p className="text-amber-100/80 font-light">{event.description}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Événements spéciaux */}
-          <div className="bg-gradient-to-br from-stone-800 to-neutral-900 p-8 border-l-4 border-emerald-500 rounded-lg">
-            <h3 className="text-2xl font-bold text-amber-200 mb-6" style={{ fontFamily: "'Oswald', sans-serif" }}>
-              ÉVÉNEMENTS SPÉCIAUX
-            </h3>
-            <div className="grid grid-cols-2 gap-4">
-              {siteConfig.events.special.map((event, index) => (
-                <div
-                  key={index}
-                  className="p-4 bg-amber-900/20 text-amber-100/90 font-light border border-amber-700/30 rounded"
+              return (
+                <div 
+                  key={idx}
+                  className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-fade-in"
+                  style={{ animationDelay: `${idx * 100}ms` }}
                 >
-                  • {event}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Horaires avec style bois chaud */}
-      <section className="py-20 px-4 bg-gradient-to-br from-amber-950/40 to-stone-900" id="horaires">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-fuchsia-400 mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>
-              HORAIRES
-            </h2>
-            <div className="h-1 w-32 bg-gradient-to-r from-rose-400 via-emerald-400 to-fuchsia-400 mx-auto"></div>
-          </div>
-
-          <div className="bg-gradient-to-br from-stone-800/80 to-neutral-900/80 p-8 space-y-4 rounded-lg backdrop-blur-sm">
-            {Object.entries(siteConfig.hours).map(([day, info]) => (
-              <div
-                key={day}
-                className={`p-6 border-l-4 ${
-                  info.ouvert ? 'border-rose-500 bg-gradient-to-r from-rose-900/20 to-transparent' : 'border-stone-600 bg-stone-900/30'
-                } hover:bg-gradient-to-r hover:from-rose-900/30 hover:to-transparent transition-colors duration-300 rounded`}
-              >
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-4">
-                    <Clock className={`w-6 h-6 ${info.ouvert ? 'text-rose-400' : 'text-stone-500'}`} />
-                    <span className={`font-bold text-xl capitalize ${info.ouvert ? 'text-amber-200' : 'text-stone-500'}`} style={{ fontFamily: "'Oswald', sans-serif" }}>
-                      {day}
-                    </span>
-                  </div>
-                  <span className={`font-light text-lg ${info.ouvert ? 'text-amber-100/90' : 'text-stone-500'}`}>
-                    {info.horaires}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-8 text-center">
-            <p className="text-amber-300/80 font-light text-lg">
-              Ouvert jusqu'à 2h du matin du mardi au samedi ! 🎉🍹
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Avis Clients */}
-      <section className="py-20 px-4 bg-gradient-to-br from-neutral-900 to-rose-950/20">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-fuchsia-400 mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>
-              ILS EN PARLENT
-            </h2>
-            <div className="h-1 w-32 bg-gradient-to-r from-rose-400 via-emerald-400 to-fuchsia-400 mx-auto mb-4"></div>
-            <div className="flex items-center justify-center gap-2 text-amber-400">
-              <Star className="w-6 h-6 fill-current" />
-              <span className="text-2xl font-bold">4.5/5</span>
-              <span className="text-amber-300/70 font-light">• Plus de 400 avis</span>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {siteConfig.testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-gradient-to-br from-stone-800/80 to-neutral-900/80 p-8 border-l-4 border-rose-500 hover:bg-stone-800/90 transition-colors duration-300 rounded-lg backdrop-blur-sm"
-              >
-                <p className="text-amber-100/90 font-light leading-relaxed mb-4 italic">
-                  "{testimonial.text}"
-                </p>
-                <p className="text-rose-400 font-medium">
-                  — {testimonial.author}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Contact & Localisation */}
-      <section className="py-20 px-4 bg-neutral-900">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-fuchsia-400 mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>
-              NOUS TROUVER
-            </h2>
-            <div className="h-1 w-32 bg-gradient-to-r from-rose-400 via-emerald-400 to-fuchsia-400 mx-auto"></div>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-10">
-            {/* Infos */}
-            <div className="space-y-6">
-              <div className="bg-gradient-to-br from-stone-800 to-neutral-900 p-8 border-l-4 border-rose-500 rounded-lg">
-                <div className="flex items-start gap-4">
-                  <MapPin className="w-8 h-8 text-rose-400 flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="text-2xl font-bold text-amber-200 mb-3" style={{ fontFamily: "'Oswald', sans-serif" }}>
-                      ADRESSE
+                  <div className="absolute inset-0 bg-gradient-to-br from-pink-100 to-purple-100 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  
+                  <div className="relative space-y-4">
+                    <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-purple-400 rounded-2xl flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
+                      <Icon className="w-8 h-8 text-white" />
+                    </div>
+                    
+                    <h3 className="text-2xl font-bold text-pink-900 font-serif" style={{ fontFamily: "'Bodoni Moda', serif" }}>
+                      {service.name}
                     </h3>
-                    <p className="text-amber-100/90 font-light leading-relaxed mb-2">
-                      {siteConfig.address.street}<br />
-                      {siteConfig.address.postalCode} {siteConfig.address.city}<br />
-                      {siteConfig.address.region}
-                    </p>
-                    <p className="text-amber-300/60 font-light text-sm italic">
-                      {siteConfig.address.details}
+                    
+                    <p className="text-gray-600 leading-relaxed">
+                      {service.description}
                     </p>
                   </div>
                 </div>
-              </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
 
-              <div className="bg-gradient-to-br from-stone-800 to-neutral-900 p-8 border-l-4 border-emerald-500 rounded-lg">
+      {/* Features/Benefits Section */}
+      <section className="py-20 bg-gradient-to-br from-pink-100 via-rose-100 to-purple-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-8">
+            {siteConfig.features.map((feature, idx) => {
+              const icons = {
+                'À domicile': Home,
+                'Offre découverte': Gift,
+                'Sur rendez-vous': Clock
+              };
+              const Icon = icons[feature.title as keyof typeof icons];
+
+              return (
+                <div 
+                  key={idx}
+                  className={`bg-white rounded-2xl p-8 shadow-lg text-center space-y-4 animate-fade-in ${
+                    feature.highlight ? 'ring-2 ring-pink-400 transform scale-105' : ''
+                  }`}
+                  style={{ animationDelay: `${idx * 100}ms` }}
+                >
+                  <div className={`w-16 h-16 mx-auto rounded-full flex items-center justify-center ${
+                    feature.highlight 
+                      ? 'bg-gradient-to-br from-pink-500 to-purple-400' 
+                      : 'bg-gradient-to-br from-pink-200 to-purple-200'
+                  }`}>
+                    <Icon className={`w-8 h-8 ${feature.highlight ? 'text-white' : 'text-pink-900'}`} />
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-pink-900">
+                    {feature.title}
+                  </h3>
+                  
+                  <p className="text-gray-600">
+                    {feature.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Hours Section */}
+      <section className="py-16 bg-white/60 backdrop-blur-sm">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-400 rounded-full shadow-lg">
+            <Clock className="w-6 h-6 text-white" />
+            <span className="text-lg font-medium text-white">
+              {siteConfig.hours.type}
+            </span>
+          </div>
+          <p className="text-gray-600 mt-4">
+            {siteConfig.hours.note}
+          </p>
+        </div>
+      </section>
+
+      {/* Contact & Map Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="text-sm font-semibold tracking-widest text-pink-600 uppercase">Contact</span>
+            <h2 className="text-4xl sm:text-5xl font-bold text-pink-900 mt-4 font-serif" style={{ fontFamily: "'Bodoni Moda', serif" }}>
+              Prendre rendez-vous
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Contact Info */}
+            <div className="space-y-8">
+              <div className="bg-white rounded-2xl p-8 shadow-lg space-y-6">
                 <div className="flex items-start gap-4">
-                  <Phone className="w-8 h-8 text-emerald-400 flex-shrink-0 mt-1" />
+                  <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-white" />
+                  </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-amber-200 mb-3" style={{ fontFamily: "'Oswald', sans-serif" }}>
-                      CONTACT
-                    </h3>
-                    <a
-                      href={`tel:${siteConfig.phone.replace(/\s/g, '')}`}
-                      className="text-emerald-400 hover:text-emerald-300 text-xl font-light transition-colors"
+                    <h3 className="font-bold text-pink-900 text-lg mb-1">Adresse</h3>
+                    <p className="text-gray-600">{siteConfig.contact.address}</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-pink-900 text-lg mb-1">Téléphone</h3>
+                    <a 
+                      href={`tel:${siteConfig.contact.phone.replace(/\s/g, '')}`}
+                      className="text-pink-600 hover:text-pink-700 font-medium"
                     >
-                      {siteConfig.phone}
+                      {siteConfig.contact.phone}
+                    </a>
+                  </div>
+                </div>
+
+                <div className="pt-6 border-t border-pink-100">
+                  <h3 className="font-bold text-pink-900 text-lg mb-4">Suivez-moi</h3>
+                  <div className="flex gap-4">
+                    <a 
+                      href={siteConfig.social.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-400 rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                    >
+                      <Instagram className="w-6 h-6 text-white" />
+                    </a>
+                    <a 
+                      href={siteConfig.social.facebook}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-400 rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                    >
+                      <Facebook className="w-6 h-6 text-white" />
                     </a>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-r from-rose-500/10 via-emerald-500/10 to-fuchsia-500/10 p-8 border-l-4 border-fuchsia-500 rounded-lg backdrop-blur-sm">
-                <p className="text-amber-100/90 font-light leading-relaxed mb-4">
-                  {siteConfig.location.description}
+              <div className="bg-gradient-to-br from-amber-400 to-yellow-300 rounded-2xl p-6 shadow-lg">
+                <div className="flex items-center gap-3 mb-2">
+                  <Gift className="w-6 h-6 text-amber-900" />
+                  <h3 className="font-bold text-amber-900 text-lg">Offre spéciale</h3>
+                </div>
+                <p className="text-amber-900 font-medium">
+                  15% de réduction pour toutes les nouvelles clientes !
                 </p>
-                <p className="text-amber-200/80 font-light text-sm">
-                  🚗 {siteConfig.location.parking}<br />
-                  🚂 {siteConfig.location.access}
-                </p>
-              </div>
-
-              {/* Réseaux sociaux */}
-              <div className="flex gap-4">
-                <a
-                  href={siteConfig.social.facebookUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 bg-gradient-to-br from-stone-800 to-neutral-900 hover:from-blue-600 hover:to-blue-700 p-6 border border-amber-700/30 hover:border-blue-500 transition-all duration-300 flex items-center justify-center gap-3 rounded-lg"
-                >
-                  <Facebook className="w-6 h-6" />
-                  <span className="font-medium text-amber-100">Facebook</span>
-                </a>
-                <a
-                  href={siteConfig.social.instagramUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 bg-gradient-to-br from-stone-800 to-neutral-900 hover:from-pink-600 hover:to-pink-700 p-6 border border-amber-700/30 hover:border-pink-500 transition-all duration-300 flex items-center justify-center gap-3 rounded-lg"
-                >
-                  <Instagram className="w-6 h-6" />
-                  <span className="font-medium text-amber-100">Instagram</span>
-                </a>
               </div>
             </div>
 
             {/* Map */}
-            <div className="bg-stone-800 p-2 border-2 border-amber-700/30 rounded-lg">
-              <div className="aspect-square overflow-hidden rounded">
-                <iframe
-                  src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.5!2d${siteConfig.address.coordinates.lng}!3d${siteConfig.address.coordinates.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDA0JzAwLjEiTiAywrA1OCcwMC4xIlc!5e0!3m2!1sfr!2sfr!4v1234567890`}
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Localisation Ze Bar"
-                ></iframe>
-              </div>
+            <div className="rounded-2xl overflow-hidden shadow-2xl h-[500px]">
+              <iframe
+                src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.5!2d${siteConfig.contact.location.lng}!3d${siteConfig.contact.location.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDU1JzEzLjgiTiAywrA0OScwOS44Ilc!5e0!3m2!1sfr!2sfr!4v1234567890`}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localisation Nail.art.rox by Dina"
+              ></iframe>
             </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-black py-16 px-4 border-t border-rose-500/20">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-10">
-            <h3 className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-fuchsia-400 to-pink-400 mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>
-              ZE BAR
-            </h3>
-            <div className="h-1 w-32 bg-gradient-to-r from-rose-400 via-emerald-400 to-fuchsia-400 mx-auto mb-6"></div>
-            <p className="text-amber-300/80 font-light text-lg mb-8">
-              Ambiance tropicale & lounge à Pontivy
-            </p>
+      <footer className="bg-gradient-to-br from-pink-900 via-rose-800 to-purple-900 text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <h3 className="text-2xl font-bold mb-4 font-serif" style={{ fontFamily: "'Bodoni Moda', serif" }}>
+                {siteConfig.name}
+              </h3>
+              <p className="text-pink-200 italic">{siteConfig.tagline}</p>
+            </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href={`tel:${siteConfig.phone.replace(/\s/g, '')}`}
-                className="inline-flex items-center gap-3 bg-gradient-to-r from-rose-500 to-fuchsia-500 hover:from-rose-600 hover:to-fuchsia-600 text-white px-8 py-4 font-bold transition-colors rounded-lg"
-                style={{ fontFamily: "'Oswald', sans-serif" }}
-              >
-                <Phone className="w-5 h-5" />
-                {siteConfig.phone}
-              </a>
+            <div>
+              <h4 className="font-bold mb-4">Contact</h4>
+              <div className="space-y-2 text-pink-200">
+                <p>{siteConfig.contact.address}</p>
+                <p>{siteConfig.contact.phone}</p>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="font-bold mb-4">Zone d'intervention</h4>
+              <p className="text-pink-200">
+                Moréac et alentours<br />
+                (20 km autour de Moréac)
+              </p>
             </div>
           </div>
 
-          <div className="border-t border-stone-800 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-stone-500 text-sm font-light">
-              <p>
-                {siteConfig.address.street}, {siteConfig.address.postalCode} {siteConfig.address.city}
-              </p>
-              <p>
-                © {new Date().getFullYear()} Ze Bar Pontivy
-              </p>
-            </div>
+          <div className="border-t border-pink-700 pt-8 text-center text-pink-200 text-sm">
+            <p>&copy; {new Date().getFullYear()} {siteConfig.name}. Tous droits réservés.</p>
+            <p className="mt-2">Prothésiste ongulaire à Moréac, Morbihan (56)</p>
+            <p className="mt-4 text-pink-300/80">
+              Site créé par <a href="https://avalon-stratege.fr" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-200 underline decoration-pink-300/50">Avalon Stratège</a>
+            </p>
           </div>
         </div>
       </footer>
+
+      {/* Animations CSS */}
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@400;500;700&display=swap');
+
+        * {
+          font-family: 'DM Sans', sans-serif;
+        }
+
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes slide-in-left {
+          from {
+            opacity: 0;
+            transform: translateX(-50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        @keyframes slide-in-right {
+          from {
+            opacity: 0;
+            transform: translateX(50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        .animate-fade-in {
+          animation: fade-in 0.8s ease-out forwards;
+        }
+
+        .animate-slide-in-left {
+          animation: slide-in-left 0.8s ease-out forwards;
+        }
+
+        .animate-slide-in-right {
+          animation: slide-in-right 0.8s ease-out forwards;
+        }
+      `}</style>
     </div>
   );
-};
+}
 
 export default App;
