@@ -20,7 +20,7 @@ export const siteConfig = {
 
   hours: {
     type: "Sur rendez-vous uniquement",
-    note: "Prise de rendez-vous en message privé sur Instagram ou Facebook"
+    note: "Prise de rendez-vous via le bouton de réservation ou en message privé sur Instagram et Facebook"
   },
 
   about: {
@@ -60,8 +60,8 @@ export const siteConfig = {
 
   features: [
     {
-      title: "À domicile",
-      description: "Je me déplace chez vous dans un rayon de 20 km autour de Moréac",
+      title: "Cadre intimiste",
+      description: "Je vous reçois dans un espace dédié, calme et personnalisé, pour une expérience beauté sur-mesure",
       highlight: true
     },
     {
