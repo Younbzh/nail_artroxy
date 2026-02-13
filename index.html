@@ -7,8 +7,8 @@
   <!-- Primary Meta Tags -->
   <title>Nail.art.rox by Dina | Prothésiste Ongulaire Moréac (56500)</title>
   <meta name="title" content="Nail.art.rox by Dina | Prothésiste Ongulaire Moréac (56500)" />
-  <meta name="description" content="Roxana, prothésiste ongulaire passionnée à Moréac. Gel, semi-permanent, nail art & pédicure. Déplacement à domicile 20km. -15% nouvelles clientes. ☎ 06 60 27 48 20" />
-  <meta name="keywords" content="prothésiste ongulaire Moréac, nail art Moréac, onglerie Moréac 56500, gel semi-permanent Morbihan, pédicure domicile Moréac, manucure Locminé, styliste ongulaire Bretagne, pose gel Moréac, nail art domicile Morbihan, prothésiste ongulaire domicile 56" />
+  <meta name="description" content="Roxana, prothésiste ongulaire passionnée à Moréac. Gel, semi-permanent, nail art & pédicure. Déplacement à domicile 20km. Réservation en ligne. -15% nouvelles clientes. ☎ 06 60 27 48 20" />
+  <meta name="keywords" content="prothésiste ongulaire Moréac, nail art Moréac, réservation onglerie en ligne, onglerie Moréac 56500, gel semi-permanent Morbihan, pédicure domicile Moréac, manucure Locminé, styliste ongulaire Bretagne, pose gel Moréac, nail art domicile Morbihan, prothésiste ongulaire domicile 56" />
   <meta name="author" content="Nail.art.rox by Dina" />
   <meta name="robots" content="index, follow" />
   <meta name="language" content="French" />
@@ -18,7 +18,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://nailartrox.fr" />
   <meta property="og:title" content="Nail.art.rox by Dina - Ongles parfaits, toujours" />
-  <meta property="og:description" content="Prothésiste ongulaire à Moréac. Gel, semi-permanent, nail art sur-mesure. Déplacement à domicile. Offre -15% nouvelles clientes." />
+  <meta property="og:description" content="Prothésiste ongulaire à Moréac. Gel, semi-permanent, nail art sur-mesure. Déplacement à domicile. Réservation en ligne. Offre -15% nouvelles clientes." />
   <meta property="og:image" content="https://nailartrox.fr/og-image.jpg" />
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:site_name" content="Nail.art.rox by Dina" />
@@ -27,7 +27,7 @@
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://nailartrox.fr" />
   <meta property="twitter:title" content="Nail.art.rox by Dina - Ongles parfaits, toujours" />
-  <meta property="twitter:description" content="Prothésiste ongulaire à Moréac. Gel, semi-permanent, nail art sur-mesure. Déplacement à domicile. Offre -15% nouvelles clientes." />
+  <meta property="twitter:description" content="Prothésiste ongulaire à Moréac. Gel, semi-permanent, nail art sur-mesure. Déplacement à domicile. Réservation en ligne." />
   <meta property="twitter:image" content="https://nailartrox.fr/og-image.jpg" />
   
   <!-- Geo Tags -->
@@ -52,7 +52,7 @@
     "@id": "https://nailartrox.fr",
     "name": "Nail.art.rox by Dina",
     "alternateName": "Nail Art Roxy",
-    "description": "Prothésiste ongulaire passionnée par les détails et la couleur. Gel, semi-permanent, nail art & pédicure avec soin et douceur à Moréac.",
+    "description": "Prothésiste ongulaire passionnée par les détails et la couleur. Gel, semi-permanent, nail art & pédicure avec soin et douceur à Moréac. Réservation en ligne disponible.",
     "url": "https://nailartrox.fr",
     "telephone": "+33660274820",
     "priceRange": "€€",
@@ -180,5 +180,32 @@
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
+  
+  <!-- Cal.com Embed (chargé après React) -->
+  <script>
+    (function (C, A, L) { 
+      let p = function (a, ar) { a.q.push(ar); }; 
+      let d = C.document; 
+      C.Cal = C.Cal || function () { 
+        let cal = C.Cal; 
+        let ar = arguments; 
+        if (!cal.loaded) { 
+          cal.ns = {}; 
+          cal.q = cal.q || []; 
+          d.head.appendChild(d.createElement("script")).src = A; 
+          cal.loaded = true; 
+        } 
+        if (ar[0] === L) { 
+          const api = function () { p(api, arguments); }; 
+          const namespace = ar[1]; 
+          api.q = api.q || []; 
+          typeof namespace === "string" ? (cal.ns[namespace] = api) && p(api, ar) : p(cal, ar); 
+          return; 
+        } 
+        p(cal, ar); 
+      }; 
+    })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", {origin:"https://cal.com"});
+  </script>
 </body>
 </html>
