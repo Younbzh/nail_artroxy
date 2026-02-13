@@ -47,7 +47,7 @@ const servicesRdv = [
     name: 'Gel',
     description: 'Pose de gel pour des ongles naturels et résistants',
     icon: 'sparkles',
-    duree: '30-45 min',
+    duree: '1h30',
     dureeColor: 'bg-pink-100 text-pink-600',
     gradient: 'from-pink-500 to-rose-400',
     hoverBorder: 'hover:border-pink-400',
