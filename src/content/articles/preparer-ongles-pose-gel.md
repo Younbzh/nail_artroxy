@@ -1,4 +1,4 @@
----
+
 
 Tu as pris rendez-vous pour une pose de gel dans quelques jours et tu te demandes comment préparer tes ongles pour obtenir le meilleur résultat possible ? Bonne nouvelle : une préparation adaptée peut faire toute la différence entre une pose qui tient 3 semaines et une qui s'écaille au bout de 5 jours. Dans mon institut à Moréac, je constate que les clientes qui arrivent avec des ongles bien préparés repartent avec une manucure deux fois plus résistante. Je vais te partager mes secrets de prothésiste ongulaire diplômée pour optimiser ta pose de gel ou semi-permanent et éviter les déceptions.
 
