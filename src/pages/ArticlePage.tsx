@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { getArticleBySlug } from '../content/articles';
 import { Sparkles, ArrowLeft, Calendar as CalendarIcon, Clock, Tag } from 'lucide-react';
