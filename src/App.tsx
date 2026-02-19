@@ -47,7 +47,7 @@ const servicesRdv = [
     name: 'Gel',
     description: 'Pose de gel pour des ongles naturels et résistants',
     icon: 'sparkles',
-    duree: '30-45 min',
+    duree: '1h30',
     dureeColor: 'bg-pink-100 text-pink-600',
     gradient: 'from-pink-500 to-rose-400',
     hoverBorder: 'hover:border-pink-400',
@@ -706,7 +706,7 @@ function HomePage() {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div><h3 className="text-2xl font-bold mb-4 font-serif" style={{ fontFamily: "'Bodoni Moda', serif" }}>{siteConfig.name}</h3><p className="text-pink-200 italic">{siteConfig.tagline}</p></div>
             <div><h4 className="font-bold mb-4">Contact</h4><div className="space-y-2 text-pink-200"><p>{siteConfig.contact.address}</p><p>{siteConfig.contact.phone}</p></div></div>
-            <div><h4 className="font-bold mb-4">Zone d'intervention</h4><p className="text-pink-200">Moréac et alentours<br />(20 km autour de Moréac)</p></div>
+            <div><h4 className="font-bold mb-4">Cadre intimiste</h4><p className="text-pink-200">Espace dédié, calme et personnalisé,<br />pour une expérience beauté sur-mesure</p></div>
           </div>
           <div className="border-t border-pink-700 pt-8 text-center text-pink-200 text-sm">
             <p>&copy; {new Date().getFullYear()} {siteConfig.name}. Tous droits réservés.</p>
