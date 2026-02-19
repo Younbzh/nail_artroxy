@@ -83,102 +83,6 @@ export const articles: Article[] = [
   },
   {
     "id": 5,
-    "slug": "frequence-ideale-pose-gel-pause",
-    "title": "Fréquence idéale des poses gel : quand faire une pause ? | Nail Art Roxy Moréac",
-    "description": "À quelle fréquence refaire ton gel ? Dois-tu faire des pauses ? Roxana te dit tout sur le rythme idéal pour des ongles sains. Réservation Moréac.",
-    "image": "/blog/frequence-ideale-pose-gel-pause.jpg",
-    "category": "Conseils",
-    "date": "2026-02-12T00:00:00.000Z",
-    "readTime": 7,
-    "tags": [
-      "fréquence pose gel",
-      "pause entre poses",
-      "rythme manucure Moréac",
-      "santé ongles Morbihan"
-    ]
-  },
-  {
-    "id": 6,
-    "slug": "gel-vs-semi-permanent-difference",
-    "title": "Gel ou semi-permanent : quelle technique choisir ? | Nail Art Roxy Moréac",
-    "description": "Gel ou semi-permanent pour tes ongles ? Découvre les vraies différences et comment choisir selon tes besoins. Guide expert Moréac. -15% nouvelles clientes.",
-    "image": "/blog/gel-vs-semi-permanent-difference.jpg",
-    "category": "Conseils",
-    "date": "2026-02-12T00:00:00.000Z",
-    "readTime": 7,
-    "tags": [
-      "gel vs semi-permanent",
-      "différence gel semi-permanent",
-      "pose ongles Moréac",
-      "onglerie Morbihan"
-    ]
-  },
-  {
-    "id": 9,
-    "slug": "offre-nouvelles-clientes-premiere-pose",
-    "title": "Nouvelles clientes : -15% sur ta première pose | Nail Art Roxy Moréac",
-    "description": "Tu hésites à tester une pose gel ou semi-permanent ? Profite de -15% sur ta première prestation à Moréac. Réserve en ligne sur [cal.eu/nail-art-roxy](https://cal.eu/nail-art-roxy).",
-    "image": "/blog/offre-nouvelles-clientes-premiere-pose.jpg",
-    "category": "Actualités",
-    "date": "2026-02-12T00:00:00.000Z",
-    "readTime": 6,
-    "tags": [
-      "offre nouvelles clientes",
-      "réduction première pose",
-      "prothésiste ongulaire Moréac",
-      "manucure Morbihan"
-    ]
-  },
-  {
-    "id": 11,
-    "slug": "pause-gel-necessaire",
-    "title": "Pause entre poses de gel : pourquoi tes ongles en ont besoin | Nail Art Roxy Moréac",
-    "description": "Tes ongles se cassent après chaque pose gel ? Découvre pourquoi la pause est essentielle et comment ta prothésiste à Moréac peut t'aider. -15% nouvelles clientes.",
-    "image": "/blog/pause-entre-poses-gel-ongles.jpg",
-    "category": "Conseils",
-    "date": "2026-02-12T00:00:00.000Z",
-    "readTime": 7,
-    "tags": [
-      "pause gel",
-      "ongles fragilisés",
-      "prothésiste ongulaire Moréac",
-      "soin ongles Morbihan"
-    ]
-  },
-  {
-    "id": 12,
-    "slug": "preparer-ongles-avant-pose-gel",
-    "title": "Préparer ses ongles avant une pose de gel : le guide expert | Nail Art Roxy Moréac",
-    "description": "Découvre les 5 étapes pour préparer tes ongles avant une pose de gel et garantir une tenue parfaite. Conseils de ta prothésiste à Moréac. -15% nouvelles clientes.",
-    "image": "/blog/preparer-ongles-avant-pose-gel.jpg",
-    "category": "Conseils",
-    "date": "2026-02-12T00:00:00.000Z",
-    "readTime": 6,
-    "tags": [
-      "préparation ongles",
-      "pose gel",
-      "manucure Moréac",
-      "prothésiste ongulaire Morbihan"
-    ]
-  },
-  {
-    "id": 13,
-    "slug": "routine-cuticules-maison",
-    "title": "Routine cuticules maison : 5 étapes pour des mains parfaites | Nail Art Roxy Moréac",
-    "description": "Cuticules sèches et abîmées ? Découvre la routine maison express de ta prothésiste à Moréac pour des cuticules impeccables. -15% nouvelles clientes ici.",
-    "image": "/blog/routine-cuticules-maison.jpg",
-    "category": "Soins",
-    "date": "2026-02-12T00:00:00.000Z",
-    "readTime": 6,
-    "tags": [
-      "soin cuticules",
-      "routine maison",
-      "manucure Moréac",
-      "beauté mains Morbihan"
-    ]
-  },
-  {
-    "id": 14,
     "slug": "faire-durer-semi-permanent",
     "title": "Faire durer son semi-permanent 4 semaines : les secrets pro | Nail Art Roxy Moréac",
     "description": "Ton semi-permanent s'écaille en 1 semaine ? Découvre les 8 secrets pour le faire tenir 4 semaines. Conseils pro de Moréac. -15% nouvelles clientes.",
@@ -194,7 +98,87 @@ export const articles: Article[] = [
     ]
   },
   {
-    "id": 15,
+    "id": 6,
+    "slug": "frequence-ideale-pose-gel-pause",
+    "title": "Fréquence idéale des poses gel : quand faire une pause ? | Nail Art Roxy Moréac",
+    "description": "À quelle fréquence refaire ton gel ? Dois-tu faire des pauses ? Roxana te dit tout sur le rythme idéal pour des ongles sains. Réservation Moréac.",
+    "image": "/blog/frequence-ideale-pose-gel-pause.jpg",
+    "category": "Conseils",
+    "date": "2026-02-12T00:00:00.000Z",
+    "readTime": 7,
+    "tags": [
+      "fréquence pose gel",
+      "pause entre poses",
+      "rythme manucure Moréac",
+      "santé ongles Morbihan"
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "gel-vs-semi-permanent-difference",
+    "title": "Gel ou semi-permanent : quelle technique choisir ? | Nail Art Roxy Moréac",
+    "description": "Gel ou semi-permanent pour tes ongles ? Découvre les vraies différences et comment choisir selon tes besoins. Guide expert Moréac. -15% nouvelles clientes.",
+    "image": "/blog/gel-vs-semi-permanent-difference.jpg",
+    "category": "Conseils",
+    "date": "2026-02-12T00:00:00.000Z",
+    "readTime": 7,
+    "tags": [
+      "gel vs semi-permanent",
+      "différence gel semi-permanent",
+      "pose ongles Moréac",
+      "onglerie Morbihan"
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "offre-nouvelles-clientes-premiere-pose",
+    "title": "Nouvelles clientes : -15% sur ta première pose | Nail Art Roxy Moréac",
+    "description": "Tu hésites à tester une pose gel ou semi-permanent ? Profite de -15% sur ta première prestation à Moréac. Réserve en ligne sur [cal.eu/nail-art-roxy](https://cal.eu/nail-art-roxy).",
+    "image": "/blog/offre-nouvelles-clientes-premiere-pose.jpg",
+    "category": "Actualités",
+    "date": "2026-02-12T00:00:00.000Z",
+    "readTime": 6,
+    "tags": [
+      "offre nouvelles clientes",
+      "réduction première pose",
+      "prothésiste ongulaire Moréac",
+      "manucure Morbihan"
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "pause-gel-necessaire",
+    "title": "Pause entre poses de gel : pourquoi tes ongles en ont besoin | Nail Art Roxy Moréac",
+    "description": "Tes ongles se cassent après chaque pose gel ? Découvre pourquoi la pause est essentielle et comment ta prothésiste à Moréac peut t'aider. -15% nouvelles clientes.",
+    "image": "/blog/pause-entre-poses-gel-ongles.jpg",
+    "category": "Conseils",
+    "date": "2026-02-12T00:00:00.000Z",
+    "readTime": 7,
+    "tags": [
+      "pause gel",
+      "ongles fragilisés",
+      "prothésiste ongulaire Moréac",
+      "soin ongles Morbihan"
+    ]
+  },
+  {
+    "id": 13,
+    "slug": "preparer-ongles-avant-pose-gel",
+    "title": "Préparer ses ongles avant une pose de gel : le guide expert | Nail Art Roxy Moréac",
+    "description": "Découvre les 5 étapes pour préparer tes ongles avant une pose de gel et garantir une tenue parfaite. Conseils de ta prothésiste à Moréac. -15% nouvelles clientes.",
+    "image": "/blog/preparer-ongles-avant-pose-gel.jpg",
+    "category": "Conseils",
+    "date": "2026-02-12T00:00:00.000Z",
+    "readTime": 6,
+    "tags": [
+      "préparation ongles",
+      "pose gel",
+      "manucure Moréac",
+      "prothésiste ongulaire Morbihan"
+    ]
+  },
+  {
+    "id": 14,
     "slug": "preparer-pieds-ete-guide-complet",
     "title": "Préparer ses pieds pour l'été : le guide complet | Nail Art Roxy Moréac",
     "description": "Pieds secs et abîmés avant l'été ? Découvre le guide complet pour des pieds nets, doux et beaux en sandales. Conseils pro Moréac. -15% nouvelles clientes.",
@@ -210,7 +194,23 @@ export const articles: Article[] = [
     ]
   },
   {
-    "id": 7,
+    "id": 15,
+    "slug": "routine-cuticules-maison",
+    "title": "Routine cuticules maison : 5 étapes pour des mains parfaites | Nail Art Roxy Moréac",
+    "description": "Cuticules sèches et abîmées ? Découvre la routine maison express de ta prothésiste à Moréac pour des cuticules impeccables. -15% nouvelles clientes ici.",
+    "image": "/blog/routine-cuticules-maison.jpg",
+    "category": "Soins",
+    "date": "2026-02-12T00:00:00.000Z",
+    "readTime": 6,
+    "tags": [
+      "soin cuticules",
+      "routine maison",
+      "manucure Moréac",
+      "beauté mains Morbihan"
+    ]
+  },
+  {
+    "id": 8,
     "slug": "nail-art-noel-2025",
     "title": "Retour sur nos nail arts de Noël 2025 : les plus belles créations",
     "description": "Description à venir",
@@ -225,7 +225,7 @@ export const articles: Article[] = [
     ]
   },
   {
-    "id": 8,
+    "id": 9,
     "slug": "nail-art-stars-2026",
     "title": "Les manucures des stars à copier en 2026",
     "description": "Description à venir",
@@ -240,7 +240,7 @@ export const articles: Article[] = [
     ]
   },
   {
-    "id": 10,
+    "id": 11,
     "slug": "ongles-mariage-2026",
     "title": "Inspiration manucure mariage 2026 : élégance et romantisme",
     "description": "Description à venir",
