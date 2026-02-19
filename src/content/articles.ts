@@ -18,6 +18,118 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    "id": 1,
+    "slug": "coulisses-prestation-nail-art-roxy",
+    "title": "Coulisses d'une prestation nail art chez Nail Art Roxy | Moréac",
+    "description": "Découvre ce qui se passe vraiment lors d'une prestation nail art chez Nail Art Roxy à Moréac. De l'accueil aux finitions. -15% nouvelles clientes.",
+    "image": "/blog/coulisses-prestation-nail-art-roxy.jpg",
+    "category": "Actualités",
+    "date": "2026-02-13T00:00:00.000Z",
+    "readTime": 6,
+    "tags": [
+      "coulisses nail art",
+      "prestation onglerie Moréac",
+      "expérience cliente",
+      "institut beauté Morbihan"
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "entretenir-nail-art-quotidien",
+    "title": "Entretenir son nail art : 7 gestes pour le faire durer | Nail Art Roxy Moréac",
+    "description": "Ton nail art s'abîme trop vite ? Découvre les 7 gestes quotidiens pour prolonger sa tenue. Conseils de ta styliste ongulaire à Moréac. -15% nouvelles clientes.",
+    "image": "/blog/entretenir-nail-art-quotidien.jpg",
+    "category": "Conseils",
+    "date": "2026-02-12T00:00:00.000Z",
+    "readTime": 6,
+    "tags": [
+      "entretien nail art",
+      "soin ongles décorés",
+      "nail art Moréac",
+      "manucure Morbihan"
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "erreurs-manucure-parfaite",
+    "title": "10 erreurs qui ruinent ta manucure (et comment les éviter) | Nail Art Roxy Moréac",
+    "description": "Ta manucure s'abîme en 48h ? Découvre les 10 erreurs fatales et comment les éviter. Conseils de ta prothésiste à Moréac. -15% nouvelles clientes.",
+    "image": "/blog/erreurs-manucure-parfaite.jpg",
+    "category": "Conseils",
+    "date": "2026-02-12T00:00:00.000Z",
+    "readTime": 7,
+    "tags": [
+      "erreurs manucure",
+      "entretien ongles",
+      "pose gel Moréac",
+      "beauté mains Morbihan"
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "evenements-nail-art-mariages-evjf-anniversaires",
+    "title": "Événements nail art : mariages, EVJF, anniversaires | Nail Art Roxy Moréac",
+    "description": "Organise ton EVJF, ton mariage ou ton anniversaire avec un atelier nail art privé à Moréac. Ambiance conviviale garantie. Réservation [cal.eu/nail-art-roxy](https://cal.eu/nail-art-roxy).",
+    "image": "/blog/evenements-nail-art-mariages-evjf-anniversaires.jpg",
+    "category": "Actualités",
+    "date": "2026-02-12T00:00:00.000Z",
+    "readTime": 7,
+    "tags": [
+      "événements nail art",
+      "manucure EVJF",
+      "nail art mariage Moréac",
+      "atelier ongles Morbihan"
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "frequence-ideale-pose-gel-pause",
+    "title": "Fréquence idéale des poses gel : quand faire une pause ? | Nail Art Roxy Moréac",
+    "description": "À quelle fréquence refaire ton gel ? Dois-tu faire des pauses ? Roxana te dit tout sur le rythme idéal pour des ongles sains. Réservation Moréac.",
+    "image": "/blog/frequence-ideale-pose-gel-pause.jpg",
+    "category": "Conseils",
+    "date": "2026-02-12T00:00:00.000Z",
+    "readTime": 7,
+    "tags": [
+      "fréquence pose gel",
+      "pause entre poses",
+      "rythme manucure Moréac",
+      "santé ongles Morbihan"
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "gel-vs-semi-permanent-difference",
+    "title": "Gel ou semi-permanent : quelle technique choisir ? | Nail Art Roxy Moréac",
+    "description": "Gel ou semi-permanent pour tes ongles ? Découvre les vraies différences et comment choisir selon tes besoins. Guide expert Moréac. -15% nouvelles clientes.",
+    "image": "/blog/gel-vs-semi-permanent-difference.jpg",
+    "category": "Conseils",
+    "date": "2026-02-12T00:00:00.000Z",
+    "readTime": 7,
+    "tags": [
+      "gel vs semi-permanent",
+      "différence gel semi-permanent",
+      "pose ongles Moréac",
+      "onglerie Morbihan"
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "offre-nouvelles-clientes-premiere-pose",
+    "title": "Nouvelles clientes : -15% sur ta première pose | Nail Art Roxy Moréac",
+    "description": "Tu hésites à tester une pose gel ou semi-permanent ? Profite de -15% sur ta première prestation à Moréac. Réserve en ligne sur [cal.eu/nail-art-roxy](https://cal.eu/nail-art-roxy).",
+    "image": "/blog/offre-nouvelles-clientes-premiere-pose.jpg",
+    "category": "Actualités",
+    "date": "2026-02-12T00:00:00.000Z",
+    "readTime": 6,
+    "tags": [
+      "offre nouvelles clientes",
+      "réduction première pose",
+      "prothésiste ongulaire Moréac",
+      "manucure Morbihan"
+    ]
+  },
+  {
     "id": 11,
     "slug": "pause-gel-necessaire",
     "title": "Pause entre poses de gel : pourquoi tes ongles en ont besoin | Nail Art Roxy Moréac",
@@ -34,33 +146,67 @@ export const articles: Article[] = [
     ]
   },
   {
-    "id": 1,
-    "slug": "coulisses-prestation",
-    "title": "Les coulisses d’une prestation nail art chez Nail.art.rox",
-    "description": "Description à venir",
-    "image": "/blog/default.jpg",
-    "category": "Actualités",
-    "date": "2025-02-25T00:00:00.000Z",
-    "readTime": 4,
+    "id": 12,
+    "slug": "preparer-ongles-avant-pose-gel",
+    "title": "Préparer ses ongles avant une pose de gel : le guide expert | Nail Art Roxy Moréac",
+    "description": "Découvre les 5 étapes pour préparer tes ongles avant une pose de gel et garantir une tenue parfaite. Conseils de ta prothésiste à Moréac. -15% nouvelles clientes.",
+    "image": "/blog/preparer-ongles-avant-pose-gel.jpg",
+    "category": "Conseils",
+    "date": "2026-02-12T00:00:00.000Z",
+    "readTime": 6,
     "tags": [
-      "nail art Moréac",
-      "prestations ongles",
-      "institut manucure"
+      "préparation ongles",
+      "pose gel",
+      "manucure Moréac",
+      "prothésiste ongulaire Morbihan"
     ]
   },
   {
-    "id": 4,
-    "slug": "evenementiel-nailart",
-    "title": "Organisation d’événements nail art : mariages, EVJF, anniversaires",
-    "description": "Description à venir",
-    "image": "/blog/default.jpg",
-    "category": "Actualités",
-    "date": "2025-02-24T00:00:00.000Z",
-    "readTime": 4,
+    "id": 13,
+    "slug": "routine-cuticules-maison",
+    "title": "Routine cuticules maison : 5 étapes pour des mains parfaites | Nail Art Roxy Moréac",
+    "description": "Cuticules sèches et abîmées ? Découvre la routine maison express de ta prothésiste à Moréac pour des cuticules impeccables. -15% nouvelles clientes ici.",
+    "image": "/blog/routine-cuticules-maison.jpg",
+    "category": "Soins",
+    "date": "2026-02-12T00:00:00.000Z",
+    "readTime": 6,
     "tags": [
-      "nail art événementiel",
-      "EVJF",
-      "mariage"
+      "soin cuticules",
+      "routine maison",
+      "manucure Moréac",
+      "beauté mains Morbihan"
+    ]
+  },
+  {
+    "id": 14,
+    "slug": "faire-durer-semi-permanent",
+    "title": "Faire durer son semi-permanent 4 semaines : les secrets pro | Nail Art Roxy Moréac",
+    "description": "Ton semi-permanent s'écaille en 1 semaine ? Découvre les 8 secrets pour le faire tenir 4 semaines. Conseils pro de Moréac. -15% nouvelles clientes.",
+    "image": "/blog/faire-durer-semi-permanent.jpg",
+    "category": "Conseils",
+    "date": "2026-02-12T00:00:00.000Z",
+    "readTime": 6,
+    "tags": [
+      "semi-permanent longue tenue",
+      "vernis semi-permanent",
+      "manucure Moréac",
+      "onglerie Morbihan"
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "preparer-pieds-ete-guide-complet",
+    "title": "Préparer ses pieds pour l'été : le guide complet | Nail Art Roxy Moréac",
+    "description": "Pieds secs et abîmés avant l'été ? Découvre le guide complet pour des pieds nets, doux et beaux en sandales. Conseils pro Moréac. -15% nouvelles clientes.",
+    "image": "/blog/preparer-pieds-ete-guide-complet.jpg",
+    "category": "Soins",
+    "date": "2026-02-12T00:00:00.000Z",
+    "readTime": 7,
+    "tags": [
+      "préparer pieds été",
+      "pédicure été",
+      "soins pieds Moréac",
+      "beauté pieds Morbihan"
     ]
   },
   {
@@ -94,36 +240,6 @@ export const articles: Article[] = [
     ]
   },
   {
-    "id": 2,
-    "slug": "entretien-nail-art",
-    "title": "Comment bien entretenir son Nail Art au quotidien ?",
-    "description": "Description à venir",
-    "image": "/blog/default.jpg",
-    "category": "Conseils",
-    "date": "2025-02-20T00:00:00.000Z",
-    "readTime": 4,
-    "tags": [
-      "nail art",
-      "entretien vernis",
-      "conseils manucure"
-    ]
-  },
-  {
-    "id": 5,
-    "slug": "frequence-pose-gel",
-    "title": "Combien de temps entre deux poses de gel ? Réponses d’experte",
-    "description": "Description à venir",
-    "image": "/blog/default.jpg",
-    "category": "Conseils",
-    "date": "2025-02-19T00:00:00.000Z",
-    "readTime": 4,
-    "tags": [
-      "pose gel",
-      "entretien ongles",
-      "gel et santé"
-    ]
-  },
-  {
     "id": 10,
     "slug": "ongles-mariage-2026",
     "title": "Inspiration manucure mariage 2026 : élégance et romantisme",
@@ -136,36 +252,6 @@ export const articles: Article[] = [
       "manucure mariage",
       "nail art mariage",
       "idées ongles 2026"
-    ]
-  },
-  {
-    "id": 15,
-    "slug": "soins-pieds-ete",
-    "title": "Préparer ses pieds pour l’été : le guide complet",
-    "description": "Description à venir",
-    "image": "/blog/default.jpg",
-    "category": "Soins",
-    "date": "2025-02-17T00:00:00.000Z",
-    "readTime": 5,
-    "tags": [
-      "pédicure été",
-      "soin pieds maison",
-      "pieds secs"
-    ]
-  },
-  {
-    "id": 9,
-    "slug": "offre-decouverte-moréac",
-    "title": "Nouvelles clientes : profitez de -15% sur votre première pose",
-    "description": "Description à venir",
-    "image": "/blog/default.jpg",
-    "category": "Actualités",
-    "date": "2025-02-16T00:00:00.000Z",
-    "readTime": 3,
-    "tags": [
-      "offre manucure Moréac",
-      "remise prothésiste ongulaire",
-      "première visite"
     ]
   },
   {
@@ -184,66 +270,6 @@ export const articles: Article[] = [
     ]
   },
   {
-    "id": 13,
-    "slug": "routine-soin-cuticules-maison",
-    "title": "Routine maison pour des cuticules impeccables",
-    "description": "Description à venir",
-    "image": "/blog/default.jpg",
-    "category": "Soins",
-    "date": "2025-02-14T00:00:00.000Z",
-    "readTime": 4,
-    "tags": [
-      "soin cuticules",
-      "soin des ongles",
-      "routine manucure"
-    ]
-  },
-  {
-    "id": 3,
-    "slug": "erreurs-manucure-parfaite",
-    "title": "Les erreurs à éviter pour garder une manucure parfaite",
-    "description": "Description à venir",
-    "image": "/blog/default.jpg",
-    "category": "Conseils",
-    "date": "2025-02-13T00:00:00.000Z",
-    "readTime": 5,
-    "tags": [
-      "manucure qui s’écaille",
-      "erreurs vernis semi-permanent",
-      "soin des ongles à domicile"
-    ]
-  },
-  {
-    "id": 12,
-    "slug": "preparer-ongles-pose-gel",
-    "title": "Comment préparer ses ongles avant une pose de gel ou semi-permanent ?",
-    "description": "Description à venir",
-    "image": "/blog/default.jpg",
-    "category": "Conseils",
-    "date": "2025-02-12T00:00:00.000Z",
-    "readTime": 5,
-    "tags": [
-      "préparer ses ongles",
-      "pose gel",
-      "semi-permanent maison",
-      "conseils prothésiste ongulaire"
-    ]
-  },
-  {
-    "id": 14,
-    "slug": "semi-permanent-duree",
-    "title": "Comment faire durer son vernis semi-permanent plus longtemps ?",
-    "description": "Description à venir",
-    "image": "/blog/default.jpg",
-    "category": "Conseils",
-    "date": "2025-02-10T00:00:00.000Z",
-    "readTime": 5,
-    "tags": [
-      "semi-permanent",
-      "entretien"
-    ]
-  },
-  {
     "id": 16,
     "slug": "tendances-2025",
     "title": "Les tendances Nail Art 2025 à adopter absolument",
@@ -255,20 +281,6 @@ export const articles: Article[] = [
     "tags": [
       "tendances",
       "nail art"
-    ]
-  },
-  {
-    "id": 6,
-    "slug": "gel-vs-semi",
-    "title": "Gel vs Semi-permanent : Quelle est la différence ?",
-    "description": "Description à venir",
-    "image": "/blog/default.jpg",
-    "category": "Conseils",
-    "date": "2025-02-05T00:00:00.000Z",
-    "readTime": 6,
-    "tags": [
-      "gel",
-      "comparatif"
     ]
   }
 ];
