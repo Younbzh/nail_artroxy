@@ -20,7 +20,7 @@ export const siteConfig = {
 
   hours: {
     type: "Sur rendez-vous uniquement",
-    note: "Prise de rendez-vous via le boutpon de réservation ou en message privé sur Instagram et Facebook"
+    note: "Prise de rendez-vous via le bouton de réservation ou en message privé sur Instagram et Facebook"
   },
 
   about: {
