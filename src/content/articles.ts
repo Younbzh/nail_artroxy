@@ -18,6 +18,23 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    "id": 17,
+    "slug": "tendances-nail-art-printemps-2026",
+    "title": "3 tendances nail art printemps 2026 à adopter | Nail Art Roxy Moréac",
+    "description": "Bambi Nails, Clean Girl, Cat Eye : découvre les 3 tendances nail art qui vont sublimer tes ongles ce printemps 2026. Inspiration et réalisation à Moréac.",
+    "image": "/blog/tendances-nail-art-printemps-2026.jpg",
+    "category": "Tendances",
+    "date": "2026-02-20T00:00:00.000Z",
+    "readTime": 6,
+    "tags": [
+      "tendances printemps 2026",
+      "bambi nails",
+      "clean girl nails",
+      "cat eye nails",
+      "nail art Moréac"
+    ]
+  },
+  {
     "id": 1,
     "slug": "coulisses-prestation-nail-art-roxy",
     "title": "Coulisses d'une prestation nail art chez Nail Art Roxy | Moréac",
@@ -252,21 +269,6 @@ export const articles: Article[] = [
       "manucure mariage",
       "nail art mariage",
       "idées ongles 2026"
-    ]
-  },
-  {
-    "id": 17,
-    "slug": "tendances-printemps-2026",
-    "title": "Les tendances Nail Art printemps 2026 à ne pas manquer",
-    "description": "Description à venir",
-    "image": "/blog/default.jpg",
-    "category": "Tendances",
-    "date": "2025-02-15T00:00:00.000Z",
-    "readTime": 4,
-    "tags": [
-      "tendances ongles",
-      "printemps 2026",
-      "nail art floral"
     ]
   },
   {
