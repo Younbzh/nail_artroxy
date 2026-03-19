@@ -33,12 +33,12 @@ const portfolioItems = [
 
 // DATA DIPLÔMES
 const certifications = [
-  { id: 1, title: 'CAP Esthétique Cosmétique', institution: 'Académie de Rennes', year: '2020', type: 'Diplôme d\'État', icon: GraduationCap, color: 'from-pink-500 to-rose-400' },
-  { id: 2, title: 'Certification Prothésiste Ongulaire', institution: 'École Française de l\'Ongle', year: '2021', type: 'Certification Professionnelle', icon: Star, color: 'from-purple-500 to-pink-400' },
-  { id: 3, title: 'Formation Nail Art Avancé', institution: 'Beauty Academy Paris', year: '2022', type: 'Formation Continue', icon: Paintbrush2, color: 'from-rose-500 to-purple-400' },
-  { id: 4, title: 'Hygiène & Salubrité', institution: 'ARS Bretagne', year: '2023', type: 'Attestation Obligatoire', icon: Shield, color: 'from-pink-400 to-rose-500' },
-  { id: 5, title: 'Perfectionnement Gel & Résine', institution: 'Formation Younails Pro', year: '2023', type: 'Formation Spécialisée', icon: Award, color: 'from-purple-400 to-pink-500' },
-  { id: 6, title: 'Techniques de Pédicure Médicale', institution: 'Institut de Podologie Bretagne', year: '2024', type: 'Formation Continue', icon: CheckCircle, color: 'from-rose-400 to-purple-500' },
+  { id: 1, title: 'CAP Esthétique Cosmétique', institution: 'Académie de Rennes', year: '2020', type: 'Diplôme d'État', image: '/diplome1.png' },
+  { id: 2, title: 'Certification Prothésiste Ongulaire', institution: 'École Française de l'Ongle', year: '2021', type: 'Certification Professionnelle', image: '/diplome2.png' },
+  { id: 3, title: 'Formation Nail Art Avancé', institution: 'Beauty Academy Paris', year: '2022', type: 'Formation Continue', image: '/diplome3.png' },
+  { id: 4, title: 'Hygiène & Salubrité', institution: 'ARS Bretagne', year: '2023', type: 'Attestation Obligatoire', image: '/diplome4.png' },
+  { id: 5, title: 'Perfectionnement Gel & Résine', institution: 'Formation Younails Pro', year: '2023', type: 'Formation Spécialisée', image: '/diplome5.png' },
+  { id: 6, title: 'Techniques de Pédicure Médicale', institution: 'Institut de Podologie Bretagne', year: '2024', type: 'Formation Continue', image: '/diplome6.png' },
 ];
 
 // DATA SERVICES FUSIONNÉS (description + lien Cal.eu + durée)
@@ -504,13 +504,17 @@ function HomePage() {
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">Prothésiste ongulaire diplômée d'État et formée aux dernières techniques professionnelles</p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {certifications.map((cert, idx) => {
-              const IconComponent = cert.icon;
-              return (
-                <div key={cert.id} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-fade-in" style={{ animationDelay: `${idx * 100}ms` }}>
-                  <div className={`w-16 h-16 bg-gradient-to-br ${cert.color} rounded-2xl flex items-center justify-center mb-4 transform transition-transform duration-300 hover:scale-110`}>
-                    <IconComponent className="w-8 h-8 text-white" />
-                  </div>
+            {certifications.map((cert, idx) => (
+              <div key={cert.id} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-fade-in" style={{ animationDelay: `${idx * 100}ms` }}>
+                <div className="aspect-[4/3] overflow-hidden bg-gray-100">
+                  <img 
+                    src={cert.image} 
+                    alt={cert.title} 
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    onError={(e) => { (e.target as HTMLImageElement).src = '/nail-art-sample.jpg'; }}
+                  />
+                </div>
+                <div className="p-6">
                   <h3 className="text-xl font-bold text-pink-900 mb-2 leading-tight">{cert.title}</h3>
                   <p className="text-gray-600 text-sm mb-3">{cert.institution}</p>
                   <div className="flex items-center justify-between gap-2 pt-3 border-t border-gray-100">
@@ -518,8 +522,8 @@ function HomePage() {
                     <span className="text-xs text-gray-500 font-medium">{cert.type}</span>
                   </div>
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
           <div className="max-w-4xl mx-auto bg-white rounded-3xl p-10 shadow-2xl text-center">
             <div className="flex justify-center mb-6">
