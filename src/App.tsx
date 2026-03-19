@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { Sparkles, Palette, Paintbrush2, Heart, MapPin, Phone, Clock, Gift, Home, Calendar, CheckCircle, Menu, X } from 'lucide-react';
+import { Sparkles, Palette, Paintbrush2, Heart, MapPin, Phone, Clock, Gift, Home, Calendar, Award, CheckCircle, Star, GraduationCap, Shield, Menu, X } from 'lucide-react';
 import { siteConfig } from './config/siteConfig';
 import { getLatestArticles } from './content/articles';
 import emailjs from '@emailjs/browser';
@@ -47,7 +47,7 @@ const servicesRdv = [
     name: 'Gel',
     description: 'Pose de gel pour des ongles naturels et résistants',
     icon: 'sparkles',
-    duree: '1h30',
+    duree: '2h à 2h30',
     dureeColor: 'bg-pink-100 text-pink-600',
     gradient: 'from-pink-500 to-rose-400',
     hoverBorder: 'hover:border-pink-400',
@@ -66,17 +66,6 @@ const servicesRdv = [
     populaire: false,
   },
   {
-    name: 'Nail Art',
-    description: 'Créations artistiques personnalisées selon vos envies',
-    icon: 'paintbrush-2',
-    duree: '1h-1h30',
-    dureeColor: 'bg-rose-100 text-rose-600',
-    gradient: 'from-rose-500 to-purple-400',
-    hoverBorder: 'hover:border-rose-400',
-    url: 'https://cal.eu/nail-art-roxy/nail-art',
-    populaire: true,
-  },
-  {
     name: 'Pédicure',
     description: 'Soins et beauté pour vos pieds',
     icon: 'heart',
@@ -88,6 +77,17 @@ const servicesRdv = [
     populaire: false,
   },
 ];
+
+// OPTION NAIL ART (supplément)
+const nailArtOption = {
+  name: 'Nail Art',
+  description: 'À ajouter à votre prestation Gel ou Semi-permanent',
+  icon: 'paintbrush-2',
+  duree: '+30 min',
+  dureeColor: 'bg-amber-100 text-amber-600',
+  gradient: 'from-amber-400 to-yellow-300',
+  url: 'https://cal.eu/nail-art-roxy',
+};
 
 function HomePage() {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -348,7 +348,7 @@ function HomePage() {
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">Choisissez votre prestation et réservez votre créneau en un clic</p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             {servicesRdv.map((service, idx) => {
               const icons = { sparkles: Sparkles, palette: Palette, 'paintbrush-2': Paintbrush2, heart: Heart };
               const Icon = icons[service.icon as keyof typeof icons];
@@ -356,11 +356,6 @@ function HomePage() {
                 <a key={idx} href={service.url} target="_blank" rel="noopener noreferrer"
                   className={`group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent ${service.hoverBorder} animate-fade-in`}
                   style={{ animationDelay: `${idx * 100}ms` }}>
-                  {service.populaire && (
-                    <div className="absolute -top-3 -right-3 px-3 py-1 bg-gradient-to-r from-amber-400 to-yellow-300 rounded-full shadow-lg">
-                      <span className="text-xs font-bold text-amber-900">⭐ Populaire</span>
-                    </div>
-                  )}
                   <div className="absolute top-4 right-4 px-3 py-1 rounded-full">
                     <div className={`flex items-center gap-1 px-2 py-1 rounded-full text-xs font-semibold ${service.dureeColor}`}>
                       <Clock className="w-3 h-3" />{service.duree}
@@ -381,6 +376,30 @@ function HomePage() {
                 </a>
               );
             })}
+          </div>
+
+          {/* OPTION NAIL ART */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl p-8 shadow-lg border-2 border-amber-200 relative overflow-hidden">
+              <div className="absolute -top-3 -right-3 px-4 py-1 bg-gradient-to-r from-amber-400 to-yellow-300 rounded-full shadow-lg">
+                <span className="text-xs font-bold text-amber-900">✨ OPTION</span>
+              </div>
+              <div className="flex flex-col md:flex-row items-center gap-6">
+                <div className="w-20 h-20 bg-gradient-to-br from-amber-400 to-yellow-300 rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <Paintbrush2 className="w-10 h-10 text-white" />
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-2xl font-bold text-amber-900 mb-2 font-serif" style={{ fontFamily: "'Bodoni Moda', serif" }}>Nail Art</h3>
+                  <p className="text-amber-800 mb-2">{nailArtOption.description}</p>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-100 rounded-full text-sm font-semibold text-amber-700">
+                    <Clock className="w-4 h-4" />{nailArtOption.duree}
+                  </div>
+                </div>
+                <a href={nailArtOption.url} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-gradient-to-r from-amber-400 to-yellow-300 text-amber-900 rounded-full font-bold hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center gap-2">
+                  Ajouter <Calendar className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="text-center mb-12">
