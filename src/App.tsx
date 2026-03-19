@@ -381,7 +381,7 @@ function HomePage() {
           {/* OPTION NAIL ART */}
           <div className="max-w-4xl mx-auto mb-12">
             <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl p-8 shadow-lg border-2 border-amber-200 relative overflow-hidden">
-              <div className="absolute -top-3 -right-3 px-4 py-1 bg-gradient-to-r from-amber-400 to-yellow-300 rounded-full shadow-lg">
+              <div className="absolute -top-4 -right-4 px-4 py-1 bg-gradient-to-r from-amber-400 to-yellow-300 rounded-full shadow-lg">
                 <span className="text-xs font-bold text-amber-900">✨ OPTION</span>
               </div>
               <div className="flex flex-col md:flex-row items-center gap-6">
