@@ -31,10 +31,10 @@ const portfolioItems = [
   { id: 11, category: 'Gel', image: '/portfolio/gel-french.jpg', title: 'French classique gel', description: 'French traditionnelle en gel longue tenue', featured: false },
 ];
 
-// DATA DIPLÔMES
+// DATA DIPLÔMES - MODIFIÉ POUR AFFICHER LES IMAGES
 const certifications = [
-  { id: 1, title: 'CAP Esthétique Cosmétique', institution: 'Académie de Rennes', year: '2020', type: 'Diplôme d'État', image: '/diplome1.png' },
-  { id: 2, title: 'Certification Prothésiste Ongulaire', institution: 'École Française de l'Ongle', year: '2021', type: 'Certification Professionnelle', image: '/diplome2.png' },
+  { id: 1, title: 'CAP Esthétique Cosmétique', institution: 'Académie de Rennes', year: '2020', type: 'Diplôme d\'État', image: '/diplome1.png' },
+  { id: 2, title: 'Certification Prothésiste Ongulaire', institution: 'École Française de l\'Ongle', year: '2021', type: 'Certification Professionnelle', image: '/diplome2.png' },
   { id: 3, title: 'Formation Nail Art Avancé', institution: 'Beauty Academy Paris', year: '2022', type: 'Formation Continue', image: '/diplome3.png' },
   { id: 4, title: 'Hygiène & Salubrité', institution: 'ARS Bretagne', year: '2023', type: 'Attestation Obligatoire', image: '/diplome4.png' },
   { id: 5, title: 'Perfectionnement Gel & Résine', institution: 'Formation Younails Pro', year: '2023', type: 'Formation Spécialisée', image: '/diplome5.png' },
@@ -495,7 +495,7 @@ function HomePage() {
         </div>
       </section>
 
-      {/* SECTION DIPLÔMES */}
+      {/* SECTION DIPLÔMES - MODIFIÉ POUR AFFICHER LES IMAGES */}
       <section id="diplomes" className="py-20 bg-gradient-to-br from-pink-100 via-rose-100 to-purple-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
