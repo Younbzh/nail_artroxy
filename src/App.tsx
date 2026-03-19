@@ -103,6 +103,7 @@ function HomePage() {
     message: ''
   });
   const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const [selectedDiplome, setSelectedDiplome] = useState<string | null>(null);
 
   const filteredPortfolio = portfolioItems.filter(item => {
     if (activeFilter === 'all') return item.featured === true;
@@ -495,7 +496,7 @@ function HomePage() {
         </div>
       </section>
 
-      {/* SECTION DIPLÔMES - MODIFIÉ POUR AFFICHER LES IMAGES */}
+      {/* SECTION DIPLÔMES AVEC LIGHTBOX */}
       <section id="diplomes" className="py-20 bg-gradient-to-br from-pink-100 via-rose-100 to-purple-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -505,14 +506,26 @@ function HomePage() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {certifications.map((cert, idx) => (
-              <div key={cert.id} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-fade-in" style={{ animationDelay: `${idx * 100}ms` }}>
-                <div className="aspect-[4/3] overflow-hidden bg-gray-100">
+              <div 
+                key={cert.id} 
+                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-fade-in cursor-pointer group" 
+                style={{ animationDelay: `${idx * 100}ms` }}
+                onClick={() => setSelectedDiplome(cert.image)}
+              >
+                <div className="aspect-[4/3] overflow-hidden bg-gray-50 relative">
                   <img 
                     src={cert.image} 
                     alt={cert.title} 
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                     onError={(e) => { (e.target as HTMLImageElement).src = '/nail-art-sample.jpg'; }}
                   />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300 flex items-center justify-center">
+                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/90 rounded-full p-3 shadow-lg">
+                      <svg className="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-pink-900 mb-2 leading-tight">{cert.title}</h3>
@@ -525,6 +538,29 @@ function HomePage() {
               </div>
             ))}
           </div>
+          
+          {/* LIGHTBOX DIPLÔME */}
+          {selectedDiplome && (
+            <div 
+              className="fixed inset-0 z-[70] flex items-center justify-center p-4 bg-black/90 animate-fade-in cursor-pointer"
+              onClick={() => setSelectedDiplome(null)}
+            >
+              <button 
+                onClick={() => setSelectedDiplome(null)}
+                className="absolute top-4 right-4 p-2 bg-white rounded-full hover:bg-gray-100 transition-colors z-10"
+              >
+                <X className="w-6 h-6 text-gray-900" />
+              </button>
+              <div className="max-w-2xl w-full relative" onClick={(e) => e.stopPropagation()}>
+                <img 
+                  src={selectedDiplome} 
+                  alt="Diplôme agrandi" 
+                  className="w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+                />
+              </div>
+            </div>
+          )}
+
           <div className="max-w-4xl mx-auto bg-white rounded-3xl p-10 shadow-2xl text-center">
             <div className="flex justify-center mb-6">
               <div className="w-24 h-24 bg-gradient-to-br from-amber-400 to-yellow-300 rounded-full flex items-center justify-center shadow-lg">
