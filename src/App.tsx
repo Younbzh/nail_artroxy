@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { Sparkles, Palette, Paintbrush2, Heart, MapPin, Phone, Clock, Gift, Home, Calendar, Award, CheckCircle, Star, GraduationCap, Shield, Menu, X } from 'lucide-react';
+import { Sparkles, Palette, Paintbrush2, Heart, MapPin, Phone, Clock, Gift, Home, Calendar, CheckCircle, Menu, X } from 'lucide-react';
 import { siteConfig } from './config/siteConfig';
 import { getLatestArticles } from './content/articles';
 import emailjs from '@emailjs/browser';
