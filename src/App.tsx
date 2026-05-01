@@ -31,14 +31,14 @@ const portfolioItems = [
   { id: 11, category: 'Gel', image: '/portfolio/gel-french.jpg', title: 'French classique gel', description: 'French traditionnelle en gel longue tenue', featured: false },
 ];
 
-// DATA DIPLÔMES - MODIFIÉ POUR AFFICHER LES IMAGES
+// DATA DIPLÔMES
 const certifications = [
-  { id: 1, title: 'CAP Esthétique Cosmétique', institution: 'Académie de Rennes', year: '2020', type: 'Diplôme d\'État', image: '/diplome1.png' },
-  { id: 2, title: 'Certification Prothésiste Ongulaire', institution: 'École Française de l\'Ongle', year: '2021', type: 'Certification Professionnelle', image: '/diplome2.png' },
-  { id: 3, title: 'Formation Nail Art Avancé', institution: 'Beauty Academy Paris', year: '2022', type: 'Formation Continue', image: '/diplome3.png' },
-  { id: 4, title: 'Hygiène & Salubrité', institution: 'ARS Bretagne', year: '2023', type: 'Attestation Obligatoire', image: '/diplome4.png' },
-  { id: 5, title: 'Perfectionnement Gel & Résine', institution: 'Formation Younails Pro', year: '2023', type: 'Formation Spécialisée', image: '/diplome5.png' },
-  { id: 6, title: 'Techniques de Pédicure Médicale', institution: 'Institut de Podologie Bretagne', year: '2024', type: 'Formation Continue', image: '/diplome6.png' },
+  { id: 1, title: 'Les Secrets de l\'Entretien Complet et Rapide', institution: 'Ioana Diana', year: '2025', type: 'Formation', image: '/diplome1.png' },
+  { id: 2, title: 'Ultraslim, Slim, Classique vs Chablon', institution: 'Ioana Diana', year: '2025', type: 'Certificat', image: '/diplome2.png' },
+  { id: 3, title: 'The Trend Tips Technique', institution: 'Ioana Diana', year: '2025', type: 'Diplôme', image: '/diplome3.png' },
+  { id: 4, title: 'Résistance des Ongles et Allergies', institution: 'Ioana Diana', year: '2025', type: 'Diplôme', image: '/diplome4.png' },
+  { id: 5, title: 'Cuticule - Le Fondement de la Manucure Parfaite', institution: 'Ioana Diana', year: '2025', type: 'Diplôme', image: '/diplome5.png' },
+  { id: 6, title: 'Dites Non aux Ongles Rongés', institution: 'Ioana Diana', year: '2025', type: 'Certificat', image: '/diplome6.png' },
 ];
 
 // DATA SERVICES FUSIONNÉS (description + lien Cal.eu + durée)
@@ -47,7 +47,7 @@ const servicesRdv = [
     name: 'Gel',
     description: 'Pose de gel pour des ongles naturels et résistants',
     icon: 'sparkles',
-    duree: '2h à 2h30',
+    duree: '2h30 à 3h',
     dureeColor: 'bg-pink-100 text-pink-600',
     gradient: 'from-pink-500 to-rose-400',
     hoverBorder: 'hover:border-pink-400',
@@ -58,7 +58,7 @@ const servicesRdv = [
     name: 'Semi-permanent',
     description: 'Vernis longue durée avec brillance éclatante',
     icon: 'palette',
-    duree: '1h',
+    duree: '1h à 1h30',
     dureeColor: 'bg-purple-100 text-purple-600',
     gradient: 'from-purple-500 to-pink-400',
     hoverBorder: 'hover:border-purple-400',
