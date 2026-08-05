@@ -10,6 +10,26 @@ import AncrageLocal from '../components/AncrageLocal';
 
 const titreCourt = (t: string) => t.replace(/ \| Nail[ .]?[Aa]rt[ .]?[Rr]ox.*$/, '');
 
+/**
+ * Les fichiers Markdown, indexés par leur nom réel.
+ *
+ * Un import construit à partir du slug échouait : quatre articles portent un
+ * nom de fichier qui n'a rien à voir avec lui — « manucure-gel-sante-risques-
+ * prevention » vit dans « Manucure-gel-et-santé.md ». Vite fige ici la liste
+ * des fichiers réellement présents, et `article.fichier` donne la bonne clé.
+ *
+ * Les noms sont normalisés en NFC : macOS écrit les accents en décomposé, ce
+ * qui rend « santé » différent de « santé » à la comparaison.
+ */
+const fichiersMd = Object.fromEntries(
+  Object.entries(
+    import.meta.glob('../content/articles/*.md', { query: '?raw', import: 'default' }),
+  ).map(([chemin, charger]) => [
+    (chemin.split('/').pop() ?? '').normalize('NFC'),
+    charger as () => Promise<string>,
+  ]),
+);
+
 export default function ArticlePage() {
   const { slug } = useParams<{ slug: string }>();
   const article = slug ? getArticleBySlug(slug) : undefined;
@@ -19,12 +39,19 @@ export default function ArticlePage() {
   const [echec, setEchec] = useState(false);
 
   useEffect(() => {
-    if (!slug || corps !== null) return;
+    if (!slug || corps !== null || !article) return;
     let annule = false;
 
-    import(`../content/articles/${slug}.md?raw`)
-      .then((mod) => {
-        if (!annule) setCorps(corpsSeul(mod.default as string));
+    const charger = fichiersMd[article.fichier.normalize('NFC')];
+    if (!charger) {
+      console.error(`Fichier « ${article.fichier} » absent pour l'article « ${slug} »`);
+      setEchec(true);
+      return;
+    }
+
+    charger()
+      .then((brut) => {
+        if (!annule) setCorps(corpsSeul(brut));
       })
       .catch((err) => {
         console.error(`Article « ${slug} » illisible :`, err);
@@ -34,7 +61,7 @@ export default function ArticlePage() {
     return () => {
       annule = true;
     };
-  }, [slug, corps]);
+  }, [slug, corps, article]);
 
   if (!article) {
     return (

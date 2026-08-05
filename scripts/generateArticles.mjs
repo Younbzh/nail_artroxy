@@ -33,6 +33,8 @@ function generateArticlesTs() {
     return {
       id: index + 1,
       slug: data.slug || file.replace('.md', ''),
+      // Le nom du fichier ne se déduit pas du slug : quatre articles diffèrent.
+      fichier: file,
       title: data.title || 'Sans titre',
       description: data.description || 'Description à venir',
       image: data.image || '/blog/default.jpg',
@@ -64,6 +66,8 @@ export interface Article {
   date: string;
   readTime: number;
   tags: string[];
+  /** Nom réel du fichier Markdown — il ne correspond pas toujours au slug. */
+  fichier: string;
   /** Corps trop court pour être publié : ni listé, ni prérendu, ni indexé. */
   brouillon: boolean;
 }
