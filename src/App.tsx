@@ -1,6 +1,7 @@
 import { lazy, Suspense, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
+import HautDePage from './components/HautDePage';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import DevisModal from './components/DevisModal';
@@ -53,24 +54,27 @@ function Accueil() {
  */
 export default function App() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-paper" />}>
-      <Routes>
-        <Route path="/" element={<Accueil />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/articles/:slug" element={<ArticlePage />} />
+    <>
+      <HautDePage />
+      <Suspense fallback={<div className="min-h-screen bg-paper" />}>
+        <Routes>
+          <Route path="/" element={<Accueil />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/articles/:slug" element={<ArticlePage />} />
 
-        {/*
-          Une route par commune, déclarée explicitement.
-          React Router exige qu'un paramètre occupe un segment d'URL entier :
-          « /onglerie-proche-:slug » ne correspondrait à rien, puisque le
-          paramètre y partage son segment avec du texte fixe.
-        */}
-        {communes.map((c) => (
-          <Route key={c.nom} path={cheminCommune(c.nom)} element={<PageCommune commune={c} />} />
-        ))}
+          {/*
+            Une route par commune, déclarée explicitement.
+            React Router exige qu'un paramètre occupe un segment d'URL entier :
+            « /onglerie-proche-:slug » ne correspondrait à rien, puisque le
+            paramètre y partage son segment avec du texte fixe.
+          */}
+          {communes.map((c) => (
+            <Route key={c.nom} path={cheminCommune(c.nom)} element={<PageCommune commune={c} />} />
+          ))}
 
-        <Route path="*" element={<NonTrouvee />} />
-      </Routes>
-    </Suspense>
+          <Route path="*" element={<NonTrouvee />} />
+        </Routes>
+      </Suspense>
+    </>
   );
 }
