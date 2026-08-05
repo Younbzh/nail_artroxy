@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Nail.art.rox by Dina",
-  url: "https://nailartrox.fr",
+  url: "https://nail-art-rox.com",
   ville: "Moréac",
   tagline: "Ongles parfaits, toujours",
   description: "Prothésiste ongulaire passionnée par les détails et la couleur. Gel, semi-permanent, nail art & pédicure avec soin et douceur à Moréac.",
