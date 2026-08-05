@@ -1,5 +1,7 @@
 export const siteConfig = {
   name: "Nail.art.rox by Dina",
+  url: "https://nailartrox.fr",
+  ville: "Moréac",
   tagline: "Ongles parfaits, toujours",
   description: "Prothésiste ongulaire passionnée par les détails et la couleur. Gel, semi-permanent, nail art & pédicure avec soin et douceur à Moréac.",
   
@@ -16,6 +18,16 @@ export const siteConfig = {
   social: {
     instagram: "https://www.instagram.com/nail_artroxy",
     facebook: "https://www.facebook.com/people/Nailartrox-by-Dina/61570895737920/"
+  },
+
+  // Réservation en ligne — une seule source pour tous les boutons du site
+  reservation: {
+    url: "https://cal.eu/nail-art-roxy",
+    prestations: {
+      gel: "https://cal.eu/nail-art-roxy/gel",
+      semiPermanent: "https://cal.eu/nail-art-roxy/semi-permanent",
+      pedicure: "https://cal.eu/nail-art-roxy/pedicure"
+    }
   },
 
   hours: {
@@ -77,34 +89,43 @@ export const siteConfig = {
 
   seo: {
     title: "Nail.art.rox by Dina | Prothésiste Ongulaire Moréac (56500)",
-    description: "Roxana, prothésiste ongulaire passionnée à Moréac. Gel, semi-permanent, nail art & pédicure. Déplacement à domicile 20km. -15% nouvelles clientes. ☎ 06 60 27 48 20",
+    description: "Roxana, prothésiste ongulaire à Moréac (56500). Gel, semi-permanent, nail art & pédicure dans un espace dédié, sur rendez-vous. -15% sur la première pose. ☎ 06 60 27 48 20",
     keywords: [
       "prothésiste ongulaire Moréac",
       "nail art Moréac",
       "onglerie Moréac 56500",
       "gel semi-permanent Morbihan",
-      "pédicure domicile Moréac",
+      "pédicure Moréac",
       "manucure Locminé",
       "styliste ongulaire Bretagne",
       "pose gel Moréac",
-      "nail art domicile Morbihan",
-      "prothésiste ongulaire domicile 56"
+      "onglerie proche Locminé",
+      "prothésiste ongulaire Centre Morbihan"
     ],
     og: {
       title: "Nail.art.rox by Dina - Ongles parfaits, toujours",
-      description: "Prothésiste ongulaire à Moréac. Gel, semi-permanent, nail art sur-mesure. Déplacement à domicile. Offre -15% nouvelles clientes.",
+      description: "Prothésiste ongulaire à Moréac. Gel, semi-permanent, nail art sur-mesure, sur rendez-vous. -15% sur la première pose.",
       image: "/og-image.jpg",
       type: "website"
     }
   },
 
+  /**
+   * Direction visuelle retenue : « Blanc & Rose poudré ».
+   * Ces valeurs sont la référence — leur application vit dans tailwind.config.cjs.
+   * Deux directions ont été maquettées en repli si la cliente change d'avis :
+   *   A — Crème & Aubergine : #FAF6F3 / #2D1B2E / #B87333
+   *   B — Nuit & Or         : #1A1218 / #F2ECE4 / #C9A227
+   */
   colors: {
-    primary: "#f4a8b4", // Rose poudré/blush sophistiqué
-    secondary: "#c4b5fd", // Mauve doux
-    accent: "#fcd5ce", // Pêche clair
-    gold: "#d4af37", // Doré
-    copper: "#b87333", // Cuivre
-    dark: "#2d1b2e", // Aubergine foncé
-    light: "#fef3f5" // Rose très pâle
+    paper: "#FFFFFF",   // fond principal
+    chalk: "#FAF8F8",   // fond alterné, très légèrement rosé
+    ink: "#141414",     // titres
+    inkSoft: "#4A4646", // texte courant
+    inkMuted: "#7A7474",// légendes
+    blush: "#F4A8B4",   // aplats : boutons, tuiles
+    blushInk: "#A8505F",// accent lisible sur blanc
+    blushPale: "#FDF2F4",
+    line: "#E9E5E5"
   }
 };

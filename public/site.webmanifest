@@ -1,0 +1,15 @@
+{
+  "name": "Nail.art.rox by Dina",
+  "short_name": "Nail.art.rox",
+  "description": "Prothésiste ongulaire à Moréac (56500) — gel, semi-permanent, nail art et pédicure sur rendez-vous.",
+  "lang": "fr-FR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#F4A8B4",
+  "icons": [
+    { "src": "/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/favicon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

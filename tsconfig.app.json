@@ -5,7 +5,9 @@
     "useDefineForClassFields": true,
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "types": ["vite/client"],
+    // `node` est nécessaire : src/entry-server.tsx tourne sous Node au prérendu
+    // et consomme un flux Node (Buffer, async iterator).
+    "types": ["vite/client", "node"],
     "skipLibCheck": true,
 
     /* Bundler mode */

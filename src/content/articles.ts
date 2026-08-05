@@ -14,9 +14,12 @@ export interface Article {
   date: string;
   readTime: number;
   tags: string[];
+  /** Corps trop court pour être publié : ni listé, ni prérendu, ni indexé. */
+  brouillon: boolean;
 }
 
-export const articles: Article[] = [
+/** Tous les articles, brouillons compris. */
+export const tousLesArticles: Article[] = [
   {
     "id": 1,
     "slug": "manucure-gel-sante-risques-prevention",
@@ -31,7 +34,8 @@ export const articles: Article[] = [
       "risques gel ongles",
       "prévention allergie",
       "onglerie sûre Moréac"
-    ]
+    ],
+    "brouillon": false
   },
   {
     "id": 2,
@@ -47,7 +51,8 @@ export const articles: Article[] = [
       "french manucure",
       "ongles courts",
       "manucure minimaliste Moréac"
-    ]
+    ],
+    "brouillon": false
   },
   {
     "id": 19,
@@ -64,7 +69,8 @@ export const articles: Article[] = [
       "clean girl nails",
       "cat eye nails",
       "nail art Moréac"
-    ]
+    ],
+    "brouillon": false
   },
   {
     "id": 3,
@@ -80,7 +86,8 @@ export const articles: Article[] = [
       "prestation onglerie Moréac",
       "expérience cliente",
       "institut beauté Morbihan"
-    ]
+    ],
+    "brouillon": false
   },
   {
     "id": 4,
@@ -96,7 +103,8 @@ export const articles: Article[] = [
       "soin ongles décorés",
       "nail art Moréac",
       "manucure Morbihan"
-    ]
+    ],
+    "brouillon": false
   },
   {
     "id": 5,
@@ -112,7 +120,8 @@ export const articles: Article[] = [
       "entretien ongles",
       "pose gel Moréac",
       "beauté mains Morbihan"
-    ]
+    ],
+    "brouillon": false
   },
   {
     "id": 6,
@@ -128,7 +137,8 @@ export const articles: Article[] = [
       "manucure EVJF",
       "nail art mariage Moréac",
       "atelier ongles Morbihan"
-    ]
+    ],
+    "brouillon": false
   },
   {
     "id": 7,
@@ -144,7 +154,8 @@ export const articles: Article[] = [
       "vernis semi-permanent",
       "manucure Moréac",
       "onglerie Morbihan"
-    ]
+    ],
+    "brouillon": false
   },
   {
     "id": 8,
@@ -160,7 +171,8 @@ export const articles: Article[] = [
       "pause entre poses",
       "rythme manucure Moréac",
       "santé ongles Morbihan"
-    ]
+    ],
+    "brouillon": false
   },
   {
     "id": 9,
@@ -176,7 +188,8 @@ export const articles: Article[] = [
       "différence gel semi-permanent",
       "pose ongles Moréac",
       "onglerie Morbihan"
-    ]
+    ],
+    "brouillon": false
   },
   {
     "id": 12,
@@ -192,7 +205,8 @@ export const articles: Article[] = [
       "réduction première pose",
       "prothésiste ongulaire Moréac",
       "manucure Morbihan"
-    ]
+    ],
+    "brouillon": false
   },
   {
     "id": 14,
@@ -208,7 +222,8 @@ export const articles: Article[] = [
       "ongles fragilisés",
       "prothésiste ongulaire Moréac",
       "soin ongles Morbihan"
-    ]
+    ],
+    "brouillon": false
   },
   {
     "id": 15,
@@ -224,7 +239,8 @@ export const articles: Article[] = [
       "pose gel",
       "manucure Moréac",
       "prothésiste ongulaire Morbihan"
-    ]
+    ],
+    "brouillon": false
   },
   {
     "id": 16,
@@ -240,7 +256,8 @@ export const articles: Article[] = [
       "pédicure été",
       "soins pieds Moréac",
       "beauté pieds Morbihan"
-    ]
+    ],
+    "brouillon": false
   },
   {
     "id": 17,
@@ -256,7 +273,8 @@ export const articles: Article[] = [
       "routine maison",
       "manucure Moréac",
       "beauté mains Morbihan"
-    ]
+    ],
+    "brouillon": false
   },
   {
     "id": 10,
@@ -271,7 +289,8 @@ export const articles: Article[] = [
       "nail art noël",
       "ongles fêtes",
       "idées manucure hiver"
-    ]
+    ],
+    "brouillon": true
   },
   {
     "id": 11,
@@ -286,7 +305,8 @@ export const articles: Article[] = [
       "manucure stars",
       "tendances 2026",
       "ongles inspirés"
-    ]
+    ],
+    "brouillon": true
   },
   {
     "id": 13,
@@ -301,7 +321,8 @@ export const articles: Article[] = [
       "manucure mariage",
       "nail art mariage",
       "idées ongles 2026"
-    ]
+    ],
+    "brouillon": true
   },
   {
     "id": 18,
@@ -315,16 +336,16 @@ export const articles: Article[] = [
     "tags": [
       "tendances",
       "nail art"
-    ]
+    ],
+    "brouillon": true
   }
 ];
 
-export const getLatestArticles = (count: number = 3): Article[] => {
-  return articles
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-    .slice(0, count);
-};
+/** Les articles réellement publiables — c'est ce que le site affiche. */
+export const articles: Article[] = tousLesArticles.filter((a) => !a.brouillon);
 
-export const getArticleBySlug = (slug: string): Article | undefined => {
-  return articles.find(article => article.slug === slug);
-};
+export const getLatestArticles = (count: number = 3): Article[] =>
+  articles.slice(0, count);
+
+export const getArticleBySlug = (slug: string): Article | undefined =>
+  articles.find((article) => article.slug === slug);
