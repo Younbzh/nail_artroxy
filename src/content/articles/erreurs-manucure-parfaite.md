@@ -6,7 +6,7 @@ category: Conseils
 readTime: 7
 tags: ['erreurs manucure', 'entretien ongles', 'pose gel Moréac', 'beauté mains Morbihan']
 description: "Ta manucure s'abîme en 48h ? Découvre les 10 erreurs fatales et comment les éviter. Conseils de ta prothésiste à Moréac. -15% nouvelles clientes."
-image: "/blog/erreurs-manucure-parfaite.jpg"
+image: "/portfolio/semi-nude-poudre-800.webp"
 ---
 
 Tu sors de chez ta prothésiste ongulaire avec une manucure impeccable. Deux jours plus tard, c'est la catastrophe : un ongle écaillé, un autre qui se décolle, et tu ne comprends pas ce qui s'est passé. Pourtant, tu n'as rien fait de spécial. Ou plutôt si, justement. Dans mon institut à Moréac, je constate que 90% des manucures abîmées prématurément sont le résultat de petites erreurs du quotidien. Des gestes anodins qui semblent inoffensifs mais qui fragilisent progressivement ton gel ou ton semi-permanent. La bonne nouvelle ? Une fois que tu connais ces erreurs, tu peux facilement les éviter et prolonger la tenue de ta manucure de 2 à 3 semaines supplémentaires. Je vais te révéler les 10 pièges dans lesquels tombent presque toutes mes clientes et comment t'en protéger efficacement.

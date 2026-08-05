@@ -6,7 +6,7 @@ category: Soins
 readTime: 7
 tags: ['préparer pieds été', 'pédicure été', 'soins pieds Moréac', 'beauté pieds Morbihan']
 description: "Pieds secs et abîmés avant l'été ? Découvre le guide complet pour des pieds nets, doux et beaux en sandales. Conseils pro Moréac. -15% nouvelles clientes."
-image: "/blog/preparer-pieds-ete-guide-complet.jpg"
+image: "/portfolio/pedicure-turquoise-800.webp"
 ---
 
 Les beaux jours arrivent et tu commences à ressortir tes sandales du placard. Mais quand tu regardes tes pieds après des mois enfermés dans des chaussettes et des bottes, c'est la catastrophe. Talons fendillés, peau rugueuse, ongles négligés, cuticules sèches. Tu n'oses même pas imaginer les montrer en public. Pas de panique, tu as encore le temps de transformer tes pieds d'hiver en pieds d'été dignes de sandales élégantes. Dans mon institut à Moréac, je vois défiler chaque printemps des dizaines de clientes dans la même situation que toi. Avec une routine simple et quelques bons gestes réalisés régulièrement, tu peux retrouver des pieds parfaits en 3 semaines maximum. Je vais te partager mon protocole de prothésiste ongulaire diplômée pour préparer tes pieds pour l'été et adopter les réflexes qui les garderont beaux toute la saison.

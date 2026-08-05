@@ -6,7 +6,7 @@ category: Tendances
 readTime: 6
 tags: ['tendances printemps 2026', 'bambi nails', 'clean girl nails', 'cat eye nails', 'nail art Moréac']
 description: "Bambi Nails, Clean Girl, Cat Eye : découvre les 3 tendances nail art qui vont sublimer tes ongles ce printemps 2026. Inspiration et réalisation à Moréac."
-image: "/blog/tendances-nail-art-printemps-2026.jpg"
+image: "/portfolio/nailart-floral-rose-800.webp"
 ---
 
 La french manucure classique laisse progressivement sa place à des styles plus audacieux et raffinés pour le printemps 2026. Fini le blanc impeccable sur base nude, place aux effets magnétiques, aux motifs animaliers revisités et au minimalisme épuré. Tu te demandes quelle manucure adopter pour être dans la tendance sans tomber dans l'excès ? Dans mon institut à Moréac, je vois déjà ces trois nouvelles tendances s'imposer auprès de mes clientes qui veulent des ongles originaux mais élégants. Les Bambi Nails, les Clean Girl Nails et l'effet Cat Eye sont en train de révolutionner le nail art avec des approches totalement différentes qui correspondent chacune à une personnalité. Je vais te détailler ces trois mouvements pour que tu puisses choisir celui qui te ressemble et transformer tes ongles en véritables accessoires de mode ce printemps.

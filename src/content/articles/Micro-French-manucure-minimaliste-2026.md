@@ -6,7 +6,7 @@ category: Tendances
 readTime: 6
 tags: ['micro-french', 'french manucure', 'ongles courts', 'manucure minimaliste Moréac']
 description: "La micro-French révolutionne la manucure en 2026 : élégante, discrète, adaptée aux ongles courts. Découvre pourquoi l'adopter à Moréac. -15% nouvelles clientes."
-image: "/blog/micro-french-manucure-minimaliste-2026.jpg"
+image: "/portfolio/semi-degrade-nude-800.webp"
 ---
 
 Tu en as assez des french manucures avec leur bande blanche épaisse qui donne un effet artificiel ? Tu trouves que la french classique ne va pas sur des ongles courts ? La micro-French débarque en 2026 pour révolutionner tout ce que tu pensais savoir sur cette manucure iconique. Cette version minimaliste réduit la bordure blanche caractéristique à son strict minimum : plus elle est fine, mieux c'est. Le résultat ? Une élégance discrète qui s'adapte à toutes les longueurs d'ongles et qui sublime sans artifice. Dans mon institut à Moréac, je vois cette tendance exploser depuis janvier et mes clientes qui l'essaient une fois ne reviennent jamais en arrière. Je vais t'expliquer pourquoi la micro-French est en train de devenir la manucure la plus demandée de l'année et comment elle peut transformer tes mains même si tu as des ongles très courts.

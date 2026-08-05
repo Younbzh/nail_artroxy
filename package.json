@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build && node scripts/prerendre.mjs",
     "generate:articles": "node scripts/generateArticles.mjs",
-    "prebuild": "npm run generate:articles"
+    "prebuild": "node scripts/generateArticles.mjs --strict"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

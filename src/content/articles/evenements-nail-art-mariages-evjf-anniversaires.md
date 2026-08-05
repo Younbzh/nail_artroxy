@@ -6,7 +6,7 @@ category: Actualités
 readTime: 7
 tags: ['événements nail art', 'manucure EVJF', 'nail art mariage Moréac', 'atelier ongles Morbihan']
 description: "Organise ton EVJF, ton mariage ou ton anniversaire avec un atelier nail art privé à Moréac. Ambiance conviviale garantie. Réservation [cal.eu/nail-art-roxy](https://cal.eu/nail-art-roxy)."
-image: "/blog/evenements-nail-art-mariages-evjf-anniversaires.jpg"
+image: "/portfolio/nailart-fleur-blanche-800.webp"
 ---
 
 Tu prépares ton mariage et tu veux que tes témoins aient des ongles assortis pour les photos ? Tu organises un EVJF mémorable pour ta meilleure amie et tu cherches une activité originale qui plaira à toutes ? Tu fêtes tes 30 ans et tu veux marquer le coup avec tes copines autour d'un moment beauté ? Les événements privés autour du nail art sont de plus en plus populaires, et pour cause : ils combinent détente, création, convivialité et résultat concret que chacune ramène chez elle. Dans mon institut à Moréac, j'organise régulièrement ce type de prestations sur-mesure qui transforment une simple manucure en véritable expérience partagée. Que ce soit pour 3 personnes ou pour un groupe de 8, je m'adapte à ton événement, ton budget et tes envies pour créer un moment unique et inoubliable.

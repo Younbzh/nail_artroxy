@@ -6,7 +6,7 @@ category: Actualités
 readTime: 6
 tags: ['coulisses nail art', 'prestation onglerie Moréac', 'expérience cliente', 'institut beauté Morbihan']
 description: "Découvre ce qui se passe vraiment lors d'une prestation nail art chez Nail Art Roxy à Moréac. De l'accueil aux finitions. -15% nouvelles clientes."
-image: "/blog/coulisses-prestation-nail-art-roxy.jpg"
+image: "/portfolio/nailart-fleur-relief-800.webp"
 ---
 
 Tu as réservé ton premier rendez-vous chez Nail Art Roxy mais tu ne sais pas vraiment à quoi t'attendre ? Tu te demandes comment se déroule une séance, combien de temps ça prend vraiment, si l'ambiance est sympa ou guindée ? Je comprends cette petite appréhension avant de franchir la porte d'un nouvel institut. C'est normal de vouloir savoir dans quoi tu t'engages, surtout quand tu vas passer 1h30 à 2h avec quelqu'un que tu ne connais pas encore. Dans mon institut à Moréac, j'ai à cœur que chaque cliente se sente à l'aise dès les premières minutes et reparte non seulement avec de beaux ongles, mais aussi avec l'envie de revenir. Je vais te faire découvrir les coulisses d'une prestation nail art chez moi, de ton arrivée jusqu'au moment où tu sors avec tes ongles parfaits. Prépare-toi à lever le voile sur ce qui se passe vraiment derrière la porte de mon cabinet.

@@ -6,7 +6,7 @@ category: Conseils
 readTime: 6
 tags: ['entretien nail art', 'soin ongles décorés', 'nail art Moréac', 'manucure Morbihan']
 description: "Ton nail art s'abîme trop vite ? Découvre les 7 gestes quotidiens pour prolonger sa tenue. Conseils de ta styliste ongulaire à Moréac. -15% nouvelles clientes."
-image: "/blog/entretenir-nail-art-quotidien.jpg"
+image: "/portfolio/nailart-fleurs-jaunes-800.webp"
 ---
 
 Tu viens de sortir de chez ta prothésiste ongulaire avec un magnifique nail art sur-mesure. Tes ongles sont impeccables, les strass brillent, les dégradés sont parfaits. Mais voilà, trois jours plus tard, tu remarques déjà de petites imperfections. Un strass qui se décolle, une pointe qui s'écaille, une brillance qui s'estompe. Frustrée, tu te demandes comment faire durer ce petit chef-d'œuvre que tu as payé. Bonne nouvelle : avec quelques gestes simples au quotidien, tu peux facilement prolonger la tenue de ton nail art de 2 à 3 semaines supplémentaires. Dans mon institut à Moréac, j'accompagne mes clientes avec des conseils d'entretien précis pour que leur investissement beauté reste intact le plus longtemps possible.

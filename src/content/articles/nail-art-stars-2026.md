@@ -5,6 +5,7 @@ date: 2025-02-21
 category: Tendances
 readTime: 5
 tags: ['manucure stars', 'tendances 2026', 'ongles inspirés']
+image: "/portfolio/nailart-corail-neon-800.webp"
 ---
 
 Du rouge profond au chrome futuriste : les looks stars qui vont faire fureur cette année.

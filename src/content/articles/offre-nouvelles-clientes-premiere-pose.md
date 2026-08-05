@@ -6,7 +6,7 @@ category: Actualités
 readTime: 6
 tags: ['offre nouvelles clientes', 'réduction première pose', 'prothésiste ongulaire Moréac', 'manucure Morbihan']
 description: "Tu hésites à tester une pose gel ou semi-permanent ? Profite de -15% sur ta première prestation à Moréac. Réserve en ligne sur [cal.eu/nail-art-roxy](https://cal.eu/nail-art-roxy)."
-image: "/blog/offre-nouvelles-clientes-premiere-pose.jpg"
+image: "/portfolio/nailart-corail-800.webp"
 ---
 
 Tu passes devant un salon d'onglerie depuis des semaines en te disant que tu devrais essayer. Tu scrolles sur Instagram en admirant les nail art parfaits en te demandant si ça pourrait tenir sur toi. Tu hésites parce que tu ne connais pas la prothésiste, tu ne sais pas si ça va te convenir, tu n'es pas sûre du résultat. Je comprends parfaitement cette hésitation. Franchir la porte d'un nouvel institut pour la première fois demande une certaine confiance. C'est pourquoi j'ai créé une offre spéciale pour les nouvelles clientes de mon institut à Moréac : une réduction de 15% sur ta toute première prestation, quelle qu'elle soit. Gel, semi-permanent, nail art, pédicure : tu choisis ce qui te fait envie et tu bénéficies automatiquement de cette remise de bienvenue. Je vais t'expliquer comment profiter de cette offre et surtout ce qui rend l'expérience Nail Art Roxy différente des autres salons d'onglerie.

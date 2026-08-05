@@ -6,7 +6,7 @@ category: Conseils
 readTime: 7
 tags: ['fréquence pose gel', 'pause entre poses', 'rythme manucure Moréac', 'santé ongles Morbihan']
 description: "À quelle fréquence refaire ton gel ? Dois-tu faire des pauses ? Roxana te dit tout sur le rythme idéal pour des ongles sains. Réservation Moréac."
-image: "/blog/frequence-ideale-pose-gel-pause.jpg"
+image: "/portfolio/gel-amande-nacre-800.webp"
 ---
 
 Tu enchaines les poses de gel depuis des mois et tu te demandes si c'est vraiment bon pour tes ongles. Tu entends tout et son contraire : certaines te disent qu'il faut absolument faire des pauses, d'autres te jurent qu'elles portent du gel depuis 5 ans sans interruption et que tout va bien. Tu es perdue et tu ne sais plus quoi croire. Dans mon institut à Moréac, c'est la question que mes clientes me posent le plus souvent après quelques mois de poses régulières. La vérité, c'est qu'il n'y a pas une seule réponse universelle. Le rythme idéal dépend de ton type d'ongles, de la qualité des poses, de ta routine d'entretien et de tes objectifs. Je vais t'expliquer en détail quelle fréquence adopter selon ton profil et quand il est vraiment nécessaire de faire une pause pour préserver la santé de tes ongles sur le long terme.

@@ -88,6 +88,22 @@ export const getArticleBySlug = (slug: string): Article | undefined =>
       `${brouillons.length} brouillon(s) écarté(s)`,
   );
   for (const b of brouillons) console.log(`   ↳ brouillon : ${b.slug}`);
+
+  /*
+    Les dix-neuf articles ont longtemps pointé vers des images inexistantes.
+    Personne ne l'a vu parce qu'un `onError` les remplaçait discrètement par la
+    même photo de repli. On vérifie donc à la source, et on refuse de livrer un
+    article dont l'image manque.
+  */
+  const publics = path.join(__dirname, '../public');
+  const orphelins = articles.filter((a) => !fs.existsSync(path.join(publics, a.image)));
+
+  if (orphelins.length) {
+    console.error(`\n❌ ${orphelins.length} article(s) pointent vers une image absente :`);
+    for (const a of orphelins) console.error(`   ${a.slug} → public${a.image}`);
+    console.error('\n   Corrigez le champ `image:` du frontmatter, ou ajoutez le fichier.');
+    if (process.argv.includes('--strict')) process.exit(1);
+  }
 }
 
 generateArticlesTs();

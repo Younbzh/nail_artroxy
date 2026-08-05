@@ -6,7 +6,7 @@ category: Conseils
 readTime: 7
 tags: ['gel vs semi-permanent', 'différence gel semi-permanent', 'pose ongles Moréac', 'onglerie Morbihan']
 description: "Gel ou semi-permanent pour tes ongles ? Découvre les vraies différences et comment choisir selon tes besoins. Guide expert Moréac. -15% nouvelles clientes."
-image: "/blog/gel-vs-semi-permanent-difference.jpg"
+image: "/portfolio/gel-french-longue-800.webp"
 ---
 
 Tu arrives dans un salon d'onglerie et on te propose gel ou semi-permanent. Tu hoches la tête en faisant semblant de comprendre, mais au fond tu ne vois pas vraiment la différence. C'est pareil non ? Pas du tout. Dans mon institut à Moréac, c'est la question que mes nouvelles clientes me posent systématiquement. Et je les comprends : ces deux techniques se ressemblent visuellement mais sont fondamentalement différentes dans leur composition, leur application, leur tenue et leur prix. Choisir entre gel et semi-permanent sans connaître leurs spécificités, c'est comme acheter une voiture sans savoir si tu as besoin d'une citadine ou d'un 4x4. Je vais te donner toutes les clés pour faire le choix qui correspond vraiment à tes besoins, ton budget et ton mode de vie.

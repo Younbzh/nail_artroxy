@@ -6,7 +6,7 @@ category: Conseils
 readTime: 7
 tags: ['pause gel', 'ongles fragilisés', 'prothésiste ongulaire Moréac', 'soin ongles Morbihan']
 description: "Tes ongles se cassent après chaque pose gel ? Découvre pourquoi la pause est essentielle et comment ta prothésiste à Moréac peut t'aider. -15% nouvelles clientes."
-image: "/blog/pause-entre-poses-gel-ongles.jpg"
+image: "/portfolio/semi-gris-perle-800.webp"
 ---
 
 Tu enchaînes les poses de gel depuis des mois et tu commences à remarquer que tes ongles naturels deviennent fins, cassants, voire jaunâtres ? C'est le signal d'alarme que je vois trop souvent dans mon institut à Moréac. Beaucoup de mes clientes me demandent pourquoi leurs ongles se fragilisent alors qu'elles suivent pourtant un rythme de retouche régulier. La réponse est simple : tes ongles ont besoin de respirer. Dans cet article, je t'explique pourquoi la pause entre poses de gel n'est pas un caprice, mais une nécessité physiologique pour garder des ongles sains et beaux sur le long terme.

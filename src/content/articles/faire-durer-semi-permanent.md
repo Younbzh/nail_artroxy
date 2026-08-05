@@ -6,7 +6,7 @@ category: Conseils
 readTime: 6
 tags: ['semi-permanent longue tenue', 'vernis semi-permanent', 'manucure Moréac', 'onglerie Morbihan']
 description: "Ton semi-permanent s'écaille en 1 semaine ? Découvre les 8 secrets pour le faire tenir 4 semaines. Conseils pro de Moréac. -15% nouvelles clientes."
-image: "/blog/faire-durer-semi-permanent.jpg"
+image: "/portfolio/semi-nude-rose-800.webp"
 ---
 
 Ton vernis semi-permanent ne tient jamais plus de 10 jours alors qu'on te promet 3 semaines de tenue ? Tu es frustrée de voir ton investissement partir en éclats après une semaine seulement ? Je comprends parfaitement cette déception. Dans mon institut à Moréac, je rencontre régulièrement des clientes découragées qui pensent que le semi-permanent ne fonctionne tout simplement pas sur elles. Pourtant, avec les bonnes techniques et quelques ajustements simples, un vernis semi-permanent peut facilement tenir 3 à 4 semaines sans s'écailler. Le secret ne réside pas uniquement dans la qualité de la pose, mais surtout dans ce que tu fais après être sortie du salon. Je vais te partager mes 8 secrets de prothésiste ongulaire diplômée pour transformer ton semi-permanent capricieux en manucure ultra-résistante qui traverse le temps.

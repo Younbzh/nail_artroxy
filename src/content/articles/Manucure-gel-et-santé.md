@@ -6,7 +6,7 @@ category: Conseils
 readTime: 8
 tags: ['manucure santé', 'risques gel ongles', 'prévention allergie', 'onglerie sûre Moréac']
 description: "Gel, semi-permanent : quels risques réels pour ta santé ? Allergies, lampes UV, fragilisation. Les réponses d'une pro à Moréac. -15% nouvelles clientes."
-image: "/blog/manucure-gel-sante-risques-prevention.jpg"
+image: "/portfolio/gel-blanc-nacre-800.webp"
 ---
 
 Tu adores tes ongles en gel mais tu as entendu des histoires inquiétantes sur les risques pour la santé ? Tu hésites à franchir le pas par peur d'abîmer tes ongles ou de développer une allergie ? Les alertes de l'Académie nationale de médecine et les témoignages alarmants sur les réseaux sociaux ont de quoi faire réfléchir. La vérité, c'est que la manucure gel et semi-permanent comportent effectivement des risques réels qu'il ne faut pas minimiser. Mais la bonne nouvelle, c'est que ces risques peuvent être considérablement réduits voire éliminés quand on respecte certaines règles et qu'on s'adresse à une professionnelle qualifiée. Dans mon institut à Moréac, la sécurité sanitaire est ma priorité absolue avant même l'esthétique. Je vais te donner toutes les informations factuelles sur les vrais dangers de la manucure gel, les signaux d'alerte à surveiller, et surtout les bonnes pratiques qui te permettent de profiter de beaux ongles sans mettre ta santé en péril.

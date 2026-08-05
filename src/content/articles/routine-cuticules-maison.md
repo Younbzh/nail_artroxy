@@ -6,7 +6,7 @@ category: Soins
 readTime: 6
 tags: ['soin cuticules', 'routine maison', 'manucure Moréac', 'beauté mains Morbihan']
 description: "Cuticules sèches et abîmées ? Découvre la routine maison express de ta prothésiste à Moréac pour des cuticules impeccables. -15% nouvelles clientes ici."
-image: "/blog/routine-cuticules-maison.jpg"
+image: "/portfolio/nailart-abstrait-800.webp"
 ---
 
 Tu regardes tes mains et tu es frustrée par ces petites peaux qui rebiquent autour de tes ongles ? Ces cuticules sèches qui accrochent tes vêtements, qui donnent un aspect négligé à tes mains pourtant soignées ? Tu n'es pas seule. Dans mon institut à Moréac, 8 clientes sur 10 me demandent comment prendre soin de leurs cuticules entre deux rendez-vous. La bonne nouvelle, c'est qu'une routine cuticules maison efficace ne prend que 5 minutes par jour et ne nécessite que trois produits basiques. Je vais te partager ma méthode de prothésiste ongulaire diplômée pour transformer tes cuticules abîmées en contour d'ongles parfaitement lisse et sain, sans passer des heures devant ton miroir.

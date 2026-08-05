@@ -5,6 +5,7 @@ date: 2025-02-18
 category: Tendances
 readTime: 5
 tags: ['manucure mariage', 'nail art mariage', 'idées ongles 2026']
+image: "/portfolio/gel-french-longue-800.webp"
 ---
 
 Des idées élégantes et intemporelles pour sublimer vos ongles le jour J.

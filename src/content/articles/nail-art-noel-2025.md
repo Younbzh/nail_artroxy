@@ -5,6 +5,7 @@ date: 2025-02-23
 category: Actualités
 readTime: 4
 tags: ['nail art noël', 'ongles fêtes', 'idées manucure hiver']
+image: "/portfolio/nailart-rouge-pois-800.webp"
 ---
 
 Une sélection des plus belles créations festives réalisées en décembre dernier chez Nail.art.rox.
