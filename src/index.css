@@ -83,3 +83,12 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/*
+  Photo d'accueil animée : masquée quand le système demande moins de mouvement.
+  L'affiche étant la photo elle-même, la page redevient alors rigoureusement
+  celle d'avant.
+*/
+@media (prefers-reduced-motion: reduce) {
+  .video-hero { display: none; }
+}

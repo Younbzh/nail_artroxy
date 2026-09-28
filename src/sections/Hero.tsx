@@ -1,7 +1,37 @@
+import { useEffect, useState } from 'react';
 import { siteConfig } from '../config/siteConfig';
 import { heroSlug, pleineTaille } from '../data/portfolio';
 
 export default function Hero() {
+  /*
+    La photo d'accueil, mise en mouvement.
+
+    Un seul plan, une poussée lente vers les ongles, aucune coupe — c'est la
+    coupe qui fait lire un diaporama, pas le fait que la source soit fixe. Le
+    mouvement va vers le sujet plutôt qu'au hasard : c'est ce que fait
+    quelqu'un qui se penche pour regarder de plus près.
+
+    La source est SA photo, pas un plan de banque. Son travail vaut mieux que
+    n'importe quelle main anonyme, et l'affiche de la vidéo étant cette même
+    photo, la page est identique à l'ancienne pendant le chargement comme en
+    mouvement réduit.
+
+    Deux montages, un seul téléchargement : l'accueil fait 92 % de la hauteur
+    d'écran, et sur un téléphone une 16/9 y perdrait les deux tiers de sa
+    largeur. Le choix se fait ici parce que `<source media>` n'est pas appliqué
+    sur une vidéo, et que deux <video> dont l'un est masqué se téléchargent
+    tous les deux.
+  */
+  const [srcVideo, setSrcVideo] = useState('');
+  useEffect(() => {
+    const mq = window.matchMedia('(max-aspect-ratio: 1/1)');
+    const choisir = () =>
+      setSrcVideo(mq.matches ? '/videos/hero-mobile-v1.mp4' : '/videos/hero-v1.mp4');
+    choisir();
+    mq.addEventListener('change', choisir);
+    return () => mq.removeEventListener('change', choisir);
+  }, []);
+
   return (
     <section id="hero" className="relative flex min-h-[92svh] items-end overflow-hidden">
       <img
@@ -9,6 +39,18 @@ export default function Hero() {
         alt="French longue réalisée en gel par Roxana"
         fetchPriority="high"
         className="absolute inset-0 h-full w-full object-cover object-[center_35%]"
+      />
+      <video
+        src={srcVideo || undefined}
+        poster={pleineTaille(heroSlug)}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        aria-hidden="true"
+        tabIndex={-1}
+        className="video-hero absolute inset-0 h-full w-full object-cover object-[center_35%]"
       />
       {/* Voile dégradé : garantit la lisibilité du texte quelle que soit la photo */}
       <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/35 to-ink/10" />
