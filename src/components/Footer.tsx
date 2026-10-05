@@ -67,8 +67,14 @@ export default function Footer() {
         </p>
         <p className="mt-2">
           Site créé par{' '}
+          {/*
+            Le domaine est en .com, pas en .fr : `avalon-stratege.fr` n'a jamais
+            existé et le lien ne répondait pas du tout. Un lien mort dans le pied
+            de page d'un site livré, c'est un visiteur qui clique dans le vide, et
+            c'est la signature de l'agence qui le porte.
+          */}
           <a
-            href="https://avalon-stratege.fr"
+            href="https://www.avalon-stratege.com"
             target="_blank"
             rel="noopener noreferrer"
             className="underline underline-offset-2 transition-colors hover:text-white/60"
