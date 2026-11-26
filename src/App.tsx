@@ -32,10 +32,10 @@ function Accueil() {
       <Nav />
       <main>
         <Hero />
+        <Apropos />
         <Prestations />
         <EpilationLaser />
         <Portfolio />
-        <Apropos />
         <Diplomes />
         <Evenements onDevis={() => setDevisOuvert(true)} />
         <Articles />

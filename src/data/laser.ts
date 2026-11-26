@@ -65,7 +65,7 @@ export const questionsLaser = [
   },
   {
     q: 'Combien de séances faut-il ?',
-    r: "Le protocole compte 8 séances par zone, espacées de 4 à 8 semaines pour suivre le cycle de pousse du poil. Selon votre peau, vos poils et vos hormones, une séance d'entretien peut être utile plus tard : on en parle dès le bilan.",
+    r: "Comptez en moyenne 8 séances par zone, espacées de 4 à 8 semaines pour suivre le cycle de pousse du poil. Mais chaque personne est différente : la peau, la couleur et l'épaisseur des poils, les hormones font varier ce nombre d'une cliente à l'autre. On fait le point dès le bilan, puis à chaque séance, et une séance d'entretien peut être utile plus tard.",
   },
   {
     q: 'Est-ce que ça fait mal ?',

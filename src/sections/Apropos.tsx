@@ -22,7 +22,7 @@ export default function Apropos() {
           <p className="eyebrow">Qui suis-je</p>
           <h2 className="section-title mb-7">
             Roxana,
-            <em className="block font-normal italic">artiste ongulaire</em>
+            <em className="block font-normal italic">la beauté dans le détail</em>
           </h2>
           <div className="max-w-prose space-y-4 text-[15.5px] leading-relaxed text-ink-mut">
             <p>
@@ -34,6 +34,11 @@ export default function Apropos() {
               Je me forme en continu auprès de formatrices spécialisées — cuticules, résistance des
               ongles, techniques de pose — parce que la beauté d'une pose tient d'abord à la santé de
               l'ongle qui est dessous.
+            </p>
+            <p>
+              Depuis cette année, je propose aussi l'épilation au laser diode. J'ai suivi la
+              formation obligatoire, et j'y mets le même soin qu'à vos ongles : un bilan avant de
+              commencer, et une vraie écoute à chaque séance.
             </p>
             <p>
               Je vous reçois dans un espace dédié et calme, sur rendez-vous uniquement. Vous êtes la

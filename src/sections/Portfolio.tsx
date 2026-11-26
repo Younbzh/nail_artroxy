@@ -13,7 +13,7 @@ export default function Portfolio() {
     filtre === 'Sélection' ? realisations.filter((r) => r.vedette) : realisations.filter((r) => r.categorie === filtre);
 
   return (
-    <section id="portfolio" className="section bg-chalk">
+    <section id="portfolio" className="section bg-paper">
       <div className="section-inner">
         <div className="mb-10 max-w-prose">
           <p className="eyebrow">Portfolio</p>

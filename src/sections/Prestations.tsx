@@ -29,7 +29,7 @@ const prestations = [
 
 export default function Prestations() {
   return (
-    <section id="prestations" className="section bg-paper">
+    <section id="prestations" className="section bg-chalk">
       <div className="section-inner">
         <div className="mb-14 max-w-prose">
           <p className="eyebrow">Mes prestations</p>
@@ -44,7 +44,7 @@ export default function Prestations() {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-paper p-8 transition-colors hover:bg-chalk"
+              className="group bg-paper p-8 transition-colors hover:bg-blush-pale"
             >
               <p className="text-[10.5px] font-bold uppercase tracking-[0.16em] text-blush-ink tabular-nums">
                 {duree}
