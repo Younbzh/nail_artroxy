@@ -2,9 +2,15 @@ import { siteConfig } from '../config/siteConfig';
 
 const prestations = [
   {
-    nom: 'Gel',
-    duree: '2 h 30 à 3 h',
-    texte: "Une pose qui tient, pour des ongles solides sans jamais paraître artificiels.",
+    nom: 'Gel sur ongle naturel',
+    duree: '1 h à 1 h 30',
+    texte: "Le gel posé sur vos ongles, sans rallonge : solides, nets, et toujours naturels.",
+    url: siteConfig.reservation.prestations.gel,
+  },
+  {
+    nom: 'Construction',
+    duree: '2 h à 3 h',
+    texte: "Des ongles allongés et sculptés au gel, à la longueur et à la forme que vous choisissez.",
     url: siteConfig.reservation.prestations.gel,
   },
   {
@@ -27,11 +33,11 @@ export default function Prestations() {
       <div className="section-inner">
         <div className="mb-14 max-w-prose">
           <p className="eyebrow">Mes prestations</p>
-          <h2 className="section-title">Trois façons de prendre soin de vos ongles</h2>
+          <h2 className="section-title">Quatre façons de prendre soin de vos ongles</h2>
         </div>
 
         {/* La grille en 1px de gap sur fond `line` dessine les filets de séparation */}
-        <div className="grid gap-px bg-line md:grid-cols-3">
+        <div className="grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-4">
           {prestations.map(({ nom, duree, texte, url }) => (
             <a
               key={nom}

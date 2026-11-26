@@ -29,3 +29,6 @@ _photos-source/
 
 # Rendu serveur intermédiaire (scripts/prerendre.mjs le supprime en fin de build)
 .ssr/
+
+# Documents de travail de la cliente (dossier laser…) — hors site
+documents/

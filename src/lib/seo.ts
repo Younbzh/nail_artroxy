@@ -78,7 +78,7 @@ const questionsCommunes = [
   },
   {
     q: 'Combien de temps dure une prestation ?',
-    r: "Comptez 2 h 30 à 3 h pour une pose gel, 1 h à 1 h 30 pour un semi-permanent, 45 min à 1 h pour une pédicure. Le nail art ajoute environ 30 minutes.",
+    r: "Comptez 1 h à 1 h 30 pour un gel sur ongle naturel, 2 h à 3 h pour une construction, 1 h à 1 h 30 pour un semi-permanent, 45 min à 1 h pour une pédicure. Le nail art ajoute environ 30 minutes.",
   },
   {
     q: 'Comment prendre rendez-vous ?',
