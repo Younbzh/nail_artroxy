@@ -11,9 +11,9 @@ export default function Footer() {
         <div>
           <p className="text-xl"><Wordmark clair /></p>
           <p className="mt-3 text-[14.5px] leading-relaxed text-white/50">
-            Prothésiste ongulaire à Moréac.
+            Ongles et épilation laser à Moréac.
             <br />
-            Gel, semi-permanent, nail art et pédicure, sur rendez-vous.
+            Gel, semi-permanent, nail art, pédicure et épilation laser diode, sur rendez-vous.
           </p>
           <div className="mt-5 flex gap-2">
             <a

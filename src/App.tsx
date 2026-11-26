@@ -8,6 +8,7 @@ import DevisModal from './components/DevisModal';
 
 import Hero from './sections/Hero';
 import Prestations from './sections/Prestations';
+import EpilationLaser from './sections/EpilationLaser';
 import Portfolio from './sections/Portfolio';
 import Apropos from './sections/Apropos';
 import Diplomes from './sections/Diplomes';
@@ -32,6 +33,7 @@ function Accueil() {
       <main>
         <Hero />
         <Prestations />
+        <EpilationLaser />
         <Portfolio />
         <Apropos />
         <Diplomes />

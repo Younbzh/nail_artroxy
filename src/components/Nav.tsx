@@ -6,6 +6,7 @@ import Wordmark from './Wordmark';
 
 const liens = [
   { label: 'Prestations', href: '/#prestations' },
+  { label: 'Épilation laser', href: '/#epilation-laser' },
   { label: 'Portfolio', href: '/#portfolio' },
   { label: 'Qui suis-je', href: '/#apropos' },
   { label: 'Événements', href: '/#evenements' },

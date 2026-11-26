@@ -26,7 +26,9 @@ export const siteConfig = {
     prestations: {
       gel: "https://cal.eu/nail-art-roxy/gel",
       semiPermanent: "https://cal.eu/nail-art-roxy/semi-permanent",
-      pedicure: "https://cal.eu/nail-art-roxy/pedicure"
+      pedicure: "https://cal.eu/nail-art-roxy/pedicure",
+      // Page d'accueil Cal.eu tant que l'événement « bilan laser » n'existe pas
+      laser: "https://cal.eu/nail-art-roxy"
     }
   },
 
@@ -67,6 +69,11 @@ export const siteConfig = {
       name: "Pédicure",
       description: "Soins et beauté pour vos pieds",
       icon: "heart"
+    },
+    {
+      name: "Épilation laser diode",
+      description: "Réduction durable de la pilosité, du visage aux jambes, après un bilan personnalisé offert",
+      icon: "sparkles"
     }
   ],
 
@@ -88,14 +95,18 @@ export const siteConfig = {
   ],
 
   seo: {
-    title: "Roxé Beauté | Prothésiste Ongulaire Moréac (56500)",
-    description: "Roxana, prothésiste ongulaire à Moréac (56500). Gel, semi-permanent, nail art & pédicure dans un espace dédié, sur rendez-vous. -15% sur la première pose. ☎ 06 60 27 48 20",
+    title: "Roxé Beauté | Ongles & Épilation Laser à Moréac (56500)",
+    description: "Roxé Beauté à Moréac (56500) : gel, semi-permanent, nail art, pédicure et épilation laser diode, avec bilan offert. Sur rendez-vous, dans un espace dédié. ☎ 06 60 27 48 20",
     keywords: [
       "prothésiste ongulaire Moréac",
       "nail art Moréac",
       "onglerie Moréac 56500",
       "gel semi-permanent Morbihan",
       "pédicure Moréac",
+      "épilation laser Moréac",
+      "épilation laser diode Morbihan",
+      "épilation laser Locminé",
+      "épilation laser Pontivy",
       "manucure Locminé",
       "styliste ongulaire Bretagne",
       "pose gel Moréac",
@@ -104,7 +115,7 @@ export const siteConfig = {
     ],
     og: {
       title: "Roxé Beauté - Ongles parfaits, toujours",
-      description: "Prothésiste ongulaire à Moréac. Gel, semi-permanent, nail art sur-mesure, sur rendez-vous. -15% sur la première pose.",
+      description: "Ongles et épilation laser diode à Moréac. Gel, semi-permanent, nail art sur-mesure, bilan laser offert, sur rendez-vous.",
       image: "/og-image.jpg",
       type: "website"
     }
