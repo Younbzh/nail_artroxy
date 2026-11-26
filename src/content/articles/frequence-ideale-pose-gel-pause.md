@@ -1,5 +1,5 @@
 ---
-title: "Fréquence idéale des poses gel : quand faire une pause ? | Nail Art Roxy Moréac"
+title: "Fréquence idéale des poses gel : quand faire une pause ? | Roxé Beauté Moréac"
 slug: "frequence-ideale-pose-gel-pause"
 date: 2026-02-12
 category: Conseils

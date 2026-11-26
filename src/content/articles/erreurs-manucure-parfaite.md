@@ -1,5 +1,5 @@
 ---
-title: "10 erreurs qui ruinent ta manucure (et comment les éviter) | Nail Art Roxy Moréac"
+title: "10 erreurs qui ruinent ta manucure (et comment les éviter) | Roxé Beauté Moréac"
 slug: "erreurs-manucure-parfaite"
 date: 2026-02-12
 category: Conseils

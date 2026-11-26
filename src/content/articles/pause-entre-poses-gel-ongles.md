@@ -1,5 +1,5 @@
 ---
-title: "Pause entre poses de gel : pourquoi tes ongles en ont besoin | Nail Art Roxy Moréac"
+title: "Pause entre poses de gel : pourquoi tes ongles en ont besoin | Roxé Beauté Moréac"
 slug: "pause-gel-necessaire"
 date: 2026-02-12
 category: Conseils

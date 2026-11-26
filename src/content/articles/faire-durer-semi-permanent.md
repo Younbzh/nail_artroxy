@@ -1,5 +1,5 @@
 ---
-title: "Faire durer son semi-permanent 4 semaines : les secrets pro | Nail Art Roxy Moréac"
+title: "Faire durer son semi-permanent 4 semaines : les secrets pro | Roxé Beauté Moréac"
 slug: "faire-durer-semi-permanent"
 date: 2026-02-12
 category: Conseils

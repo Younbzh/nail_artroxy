@@ -1,19 +1,19 @@
 ---
-title: "Coulisses d'une prestation nail art chez Nail Art Roxy | Moréac"
+title: "Coulisses d'une prestation nail art chez Roxé Beauté | Moréac"
 slug: "coulisses-prestation-nail-art-roxy"
 date: 2026-02-13
 category: Actualités
 readTime: 6
 tags: ['coulisses nail art', 'prestation onglerie Moréac', 'expérience cliente', 'institut beauté Morbihan']
-description: "Découvre ce qui se passe vraiment lors d'une prestation nail art chez Nail Art Roxy à Moréac. De l'accueil aux finitions. -15% nouvelles clientes."
+description: "Découvre ce qui se passe vraiment lors d'une prestation nail art chez Roxé Beauté à Moréac. De l'accueil aux finitions. -15% nouvelles clientes."
 image: "/portfolio/nailart-fleur-relief-800.webp"
 ---
 
-Tu as réservé ton premier rendez-vous chez Nail Art Roxy mais tu ne sais pas vraiment à quoi t'attendre ? Tu te demandes comment se déroule une séance, combien de temps ça prend vraiment, si l'ambiance est sympa ou guindée ? Je comprends cette petite appréhension avant de franchir la porte d'un nouvel institut. C'est normal de vouloir savoir dans quoi tu t'engages, surtout quand tu vas passer 1h30 à 2h avec quelqu'un que tu ne connais pas encore. Dans mon institut à Moréac, j'ai à cœur que chaque cliente se sente à l'aise dès les premières minutes et reparte non seulement avec de beaux ongles, mais aussi avec l'envie de revenir. Je vais te faire découvrir les coulisses d'une prestation nail art chez moi, de ton arrivée jusqu'au moment où tu sors avec tes ongles parfaits. Prépare-toi à lever le voile sur ce qui se passe vraiment derrière la porte de mon cabinet.
+Tu as réservé ton premier rendez-vous chez Roxé Beauté mais tu ne sais pas vraiment à quoi t'attendre ? Tu te demandes comment se déroule une séance, combien de temps ça prend vraiment, si l'ambiance est sympa ou guindée ? Je comprends cette petite appréhension avant de franchir la porte d'un nouvel institut. C'est normal de vouloir savoir dans quoi tu t'engages, surtout quand tu vas passer 1h30 à 2h avec quelqu'un que tu ne connais pas encore. Dans mon institut à Moréac, j'ai à cœur que chaque cliente se sente à l'aise dès les premières minutes et reparte non seulement avec de beaux ongles, mais aussi avec l'envie de revenir. Je vais te faire découvrir les coulisses d'une prestation nail art chez moi, de ton arrivée jusqu'au moment où tu sors avec tes ongles parfaits. Prépare-toi à lever le voile sur ce qui se passe vraiment derrière la porte de mon cabinet.
 
 ## L'accueil : plus qu'un simple bonjour
 
-Dès que tu pousses la porte de Nail Art Roxy, mon objectif est que tu te sentes immédiatement bienvenue. Pas de réception froide, pas d'attente interminable dans un couloir impersonnel. Je t'accueille personnellement avec un sourire sincère et une vraie attention.
+Dès que tu pousses la porte de Roxé Beauté, mon objectif est que tu te sentes immédiatement bienvenue. Pas de réception froide, pas d'attente interminable dans un couloir impersonnel. Je t'accueille personnellement avec un sourire sincère et une vraie attention.
 
 Les premières minutes sont cruciales pour instaurer une relation de confiance. Je prends le temps de discuter avec toi avant même de toucher tes ongles. Comment s'est passée ta journée ? Tu as trouvé facilement ? Tu viens de loin ? Ces petites questions peuvent sembler anodines, mais elles créent une atmosphère détendue qui change complètement l'expérience.
 
@@ -81,7 +81,7 @@ Dans mon institut de Moréac, l'objectif est que tu ressortes non seulement avec
 
 ## Les petites attentions qui font la différence
 
-Ce sont souvent les détails qu'on remarque le plus et qui créent cette sensation de service exceptionnel. Chez Nail Art Roxy, ces détails sont pensés pour toi.
+Ce sont souvent les détails qu'on remarque le plus et qui créent cette sensation de service exceptionnel. Chez Roxé Beauté, ces détails sont pensés pour toi.
 
 **Le SMS de rappel** : tu reçois un message 24h avant ton rendez-vous pour te rappeler l'heure et l'adresse. Ça évite les oublis et les retards de dernière minute. Tu peux aussi me répondre directement si tu as besoin de décaler.
 
@@ -111,6 +111,6 @@ Préviens-moi dès que tu sais que tu vas être en retard. Jusqu'à 15 minutes, 
 
 Non, je travaille uniquement avec mes produits professionnels dont je maîtrise parfaitement la composition et la tenue. Si tu as une couleur précise en tête, montre-moi une photo et je trouverai l'équivalent dans ma gamme de 150 couleurs professionnelles.
 
-Maintenant tu sais exactement ce qui t'attend lors d'une prestation chez Nail Art Roxy. Plus de mystère, plus d'appréhension. Tu vas vivre un moment de détente et de beauté dans une ambiance bienveillante, avec une professionnelle qui prend le temps de faire les choses bien.
+Maintenant tu sais exactement ce qui t'attend lors d'une prestation chez Roxé Beauté. Plus de mystère, plus d'appréhension. Tu vas vivre un moment de détente et de beauté dans une ambiance bienveillante, avec une professionnelle qui prend le temps de faire les choses bien.
 
 Prête à découvrir les coulisses de ton côté ? Réserve ton rendez-vous sur cal.eu/nail-art-roxy à Moréac. En tant que nouvelle cliente, tu bénéficies de -15% sur ta première prestation. Je t'accueille avec le sourire et l'envie de te faire vivre une expérience nail art qui dépasse tes attentes.

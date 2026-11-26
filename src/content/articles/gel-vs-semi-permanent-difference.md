@@ -1,5 +1,5 @@
 ---
-title: "Gel ou semi-permanent : quelle technique choisir ? | Nail Art Roxy Moréac"
+title: "Gel ou semi-permanent : quelle technique choisir ? | Roxé Beauté Moréac"
 slug: "gel-vs-semi-permanent-difference"
 date: 2026-02-12
 category: Conseils

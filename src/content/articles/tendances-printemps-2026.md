@@ -1,5 +1,5 @@
 ---
-title: "3 tendances nail art printemps 2026 à adopter | Nail Art Roxy Moréac"
+title: "3 tendances nail art printemps 2026 à adopter | Roxé Beauté Moréac"
 slug: "tendances-nail-art-printemps-2026"
 date: 2026-02-20
 category: Tendances

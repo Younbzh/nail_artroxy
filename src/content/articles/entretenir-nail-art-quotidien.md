@@ -1,5 +1,5 @@
 ---
-title: "Entretenir son nail art : 7 gestes pour le faire durer | Nail Art Roxy Moréac"
+title: "Entretenir son nail art : 7 gestes pour le faire durer | Roxé Beauté Moréac"
 slug: "entretenir-nail-art-quotidien"
 date: 2026-02-12
 category: Conseils

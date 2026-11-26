@@ -1,5 +1,5 @@
 ---
-title: "Routine cuticules maison : 5 étapes pour des mains parfaites | Nail Art Roxy Moréac"
+title: "Routine cuticules maison : 5 étapes pour des mains parfaites | Roxé Beauté Moréac"
 slug: "routine-cuticules-maison"
 date: 2026-02-12
 category: Soins

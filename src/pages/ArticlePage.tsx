@@ -8,7 +8,7 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import AncrageLocal from '../components/AncrageLocal';
 
-const titreCourt = (t: string) => t.replace(/ \| Nail[ .]?[Aa]rt[ .]?[Rr]ox.*$/, '');
+const titreCourt = (t: string) => t.replace(/ \| (Roxé Beauté|Nail[ .]?[Aa]rt[ .]?[Rr]ox).*$/, '');
 
 /**
  * Les fichiers Markdown, indexés par leur nom réel.

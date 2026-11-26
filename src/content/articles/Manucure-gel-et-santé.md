@@ -1,5 +1,5 @@
 ---
-title: "Manucure gel et santé : les vrais risques et comment les éviter | Nail Art Roxy Moréac"
+title: "Manucure gel et santé : les vrais risques et comment les éviter | Roxé Beauté Moréac"
 slug: "manucure-gel-sante-risques-prevention"
 date: 2026-02-20
 category: Conseils

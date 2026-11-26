@@ -1,5 +1,5 @@
 ---
-title: "Micro-French : la manucure minimaliste qui cartonne en 2026 | Nail Art Roxy Moréac"
+title: "Micro-French : la manucure minimaliste qui cartonne en 2026 | Roxé Beauté Moréac"
 slug: "micro-french-manucure-minimaliste-2026"
 date: 2026-02-20
 category: Tendances

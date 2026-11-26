@@ -1,5 +1,5 @@
 ---
-title: "Préparer ses pieds pour l'été : le guide complet | Nail Art Roxy Moréac"
+title: "Préparer ses pieds pour l'été : le guide complet | Roxé Beauté Moréac"
 slug: "preparer-pieds-ete-guide-complet"
 date: 2026-02-12
 category: Soins

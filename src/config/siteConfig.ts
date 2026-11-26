@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Nail.art.rox by Dina",
+  name: "Roxé Beauté",
   url: "https://nail-art-rox.com",
   ville: "Moréac",
   tagline: "Ongles parfaits, toujours",
@@ -88,7 +88,7 @@ export const siteConfig = {
   ],
 
   seo: {
-    title: "Nail.art.rox by Dina | Prothésiste Ongulaire Moréac (56500)",
+    title: "Roxé Beauté | Prothésiste Ongulaire Moréac (56500)",
     description: "Roxana, prothésiste ongulaire à Moréac (56500). Gel, semi-permanent, nail art & pédicure dans un espace dédié, sur rendez-vous. -15% sur la première pose. ☎ 06 60 27 48 20",
     keywords: [
       "prothésiste ongulaire Moréac",
@@ -103,7 +103,7 @@ export const siteConfig = {
       "prothésiste ongulaire Centre Morbihan"
     ],
     og: {
-      title: "Nail.art.rox by Dina - Ongles parfaits, toujours",
+      title: "Roxé Beauté - Ongles parfaits, toujours",
       description: "Prothésiste ongulaire à Moréac. Gel, semi-permanent, nail art sur-mesure, sur rendez-vous. -15% sur la première pose.",
       image: "/og-image.jpg",
       type: "website"

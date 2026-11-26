@@ -1,15 +1,15 @@
 /**
- * Le nom, avec ses deux points en rose.
+ * Le nom, avec son point en rose.
  *
- * C'est la signature de la marque : « nail.art.rox » n'a rien de remarquable
- * en noir, mais les points colorés en font une forme reconnaissable. Le logo
- * et le favicon reprennent le même parti.
+ * C'est la signature de la marque : « Roxé Beauté » en noir seul n'a rien de
+ * remarquable, mais le point coloré qui le termine en fait une forme
+ * reconnaissable. Le favicon reprend l'initiale, le R.
  */
 export default function Wordmark({ clair = false }: { clair?: boolean }) {
   const encre = clair ? 'text-white' : 'text-ink';
   return (
     <span className={`font-display font-bold tracking-tight ${encre}`}>
-      Nail<span className="text-blush">.</span>art<span className="text-blush">.</span>rox
+      Roxé <em className="font-normal italic">Beauté</em><span className="text-blush">.</span>
     </span>
   );
 }

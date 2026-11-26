@@ -135,7 +135,7 @@ export function seoCommune(): DonneesSeo | null {
   if (!c) return null;
 
   const km = c.km.toString().replace('.', ',');
-  const titre = `Prothésiste ongulaire proche ${deCommune(c.nom)} (${c.codePostal}) | Nail.art.rox à Moréac`;
+  const titre = `Prothésiste ongulaire proche ${deCommune(c.nom)} (${c.codePostal}) | Roxé Beauté à Moréac`;
   const description =
     `Onglerie à ${km} km ${deCommune(c.nom)} : Roxana vous reçoit à Moréac, sur rendez-vous. ` +
     `Gel, semi-permanent, nail art et pédicure. ~${minutesTrajet(c.km)} min de trajet. −15 % sur la première pose.`;
@@ -172,7 +172,7 @@ export function seoBlog(): DonneesSeo {
   const description =
     'Conseils de prothésiste ongulaire : faire durer une pose, préparer ses ongles, entretenir un nail art, choisir entre gel et semi-permanent.';
   return {
-    titre: 'Conseils et actualités ongles | Nail.art.rox by Dina',
+    titre: 'Conseils et actualités ongles | Roxé Beauté',
     description,
     motsCles: 'conseils ongles, entretien manucure, faire durer semi-permanent, soin cuticules, tendances nail art',
     canonical: `${RACINE}/blog/`,

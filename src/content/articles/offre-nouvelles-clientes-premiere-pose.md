@@ -1,5 +1,5 @@
 ---
-title: "Nouvelles clientes : -15% sur ta première pose | Nail Art Roxy Moréac"
+title: "Nouvelles clientes : -15% sur ta première pose | Roxé Beauté Moréac"
 slug: "offre-nouvelles-clientes-premiere-pose"
 date: 2026-02-12
 category: Actualités
@@ -9,11 +9,11 @@ description: "Tu hésites à tester une pose gel ou semi-permanent ? Profite de 
 image: "/portfolio/nailart-corail-800.webp"
 ---
 
-Tu passes devant un salon d'onglerie depuis des semaines en te disant que tu devrais essayer. Tu scrolles sur Instagram en admirant les nail art parfaits en te demandant si ça pourrait tenir sur toi. Tu hésites parce que tu ne connais pas la prothésiste, tu ne sais pas si ça va te convenir, tu n'es pas sûre du résultat. Je comprends parfaitement cette hésitation. Franchir la porte d'un nouvel institut pour la première fois demande une certaine confiance. C'est pourquoi j'ai créé une offre spéciale pour les nouvelles clientes de mon institut à Moréac : une réduction de 15% sur ta toute première prestation, quelle qu'elle soit. Gel, semi-permanent, nail art, pédicure : tu choisis ce qui te fait envie et tu bénéficies automatiquement de cette remise de bienvenue. Je vais t'expliquer comment profiter de cette offre et surtout ce qui rend l'expérience Nail Art Roxy différente des autres salons d'onglerie.
+Tu passes devant un salon d'onglerie depuis des semaines en te disant que tu devrais essayer. Tu scrolles sur Instagram en admirant les nail art parfaits en te demandant si ça pourrait tenir sur toi. Tu hésites parce que tu ne connais pas la prothésiste, tu ne sais pas si ça va te convenir, tu n'es pas sûre du résultat. Je comprends parfaitement cette hésitation. Franchir la porte d'un nouvel institut pour la première fois demande une certaine confiance. C'est pourquoi j'ai créé une offre spéciale pour les nouvelles clientes de mon institut à Moréac : une réduction de 15% sur ta toute première prestation, quelle qu'elle soit. Gel, semi-permanent, nail art, pédicure : tu choisis ce qui te fait envie et tu bénéficies automatiquement de cette remise de bienvenue. Je vais t'expliquer comment profiter de cette offre et surtout ce qui rend l'expérience Roxé Beauté différente des autres salons d'onglerie.
 
 ## Pourquoi j'ai créé cette offre pour les nouvelles clientes
 
-Quand j'ai ouvert Nail Art Roxy à Moréac, je voulais que chaque femme puisse découvrir le plaisir d'avoir de beaux ongles sans que le prix soit un frein. Je sais qu'une première pose représente un investissement, surtout quand tu ne connais pas encore le résultat.
+Quand j'ai ouvert Roxé Beauté à Moréac, je voulais que chaque femme puisse découvrir le plaisir d'avoir de beaux ongles sans que le prix soit un frein. Je sais qu'une première pose représente un investissement, surtout quand tu ne connais pas encore le résultat.
 
 En tant que prothésiste ongulaire diplômée d'État avec un CAP Esthétique et plusieurs certifications professionnelles, je travaille uniquement avec des produits haut de gamme qui garantissent une tenue optimale. Mes poses gel tiennent 4 semaines minimum, mes semi-permanents 3 semaines sans s'écailler. Mais je comprends que tu aies besoin de le voir pour le croire.
 
@@ -33,7 +33,7 @@ L'offre s'applique sur toutes mes prestations principales, sans exception et san
 
 Que tu habites à Vannes, Pontivy ou dans les environs de Moréac, la réservation se fait en ligne sur [cal.eu/nail-art-roxy](https://cal.eu/nail-art-roxy) en quelques clics. Tu choisis ton créneau, tu confirmes, et la réduction s'applique automatiquement lors du paiement en institut.
 
-## Comment se passe ta première visite à Nail Art Roxy
+## Comment se passe ta première visite chez Roxé Beauté
 
 Je sais que la première fois dans un nouvel institut peut être source de stress. Voici exactement comment je travaille pour que tu te sentes à l'aise dès les premières minutes.
 
@@ -47,7 +47,7 @@ Je sais que la première fois dans un nouvel institut peut être source de stres
 
 Dans mon institut au cœur du Morbihan, chaque nouvelle cliente repart avec mes coordonnées personnelles. Si tu as le moindre problème (décollement, cassure, question), tu peux me contacter directement. Je préfère que tu reviennes pour une retouche rapide gratuite plutôt que de garder un ongle abîmé pendant 3 semaines.
 
-## Ce qui différencie Nail Art Roxy des autres instituts
+## Ce qui différencie Roxé Beauté des autres instituts
 
 Tu te demandes peut-être ce qui justifie de venir me voir plutôt que d'aller dans un bar à ongles en ville. Laisse-moi te donner trois raisons concrètes qui font la différence.
 
@@ -65,7 +65,7 @@ Plutôt que de te vanter mes services, je préfère te partager ce que mes nouve
 
 **Marine, 28 ans, de Locminé** : "J'ai hésité pendant 6 mois avant de prendre rendez-vous. J'avais peur que ça fasse trop chargé sur mes mains fines. Dina a su adapter l'épaisseur et la forme pour que ça reste naturel. Mon gel tient depuis 4 semaines et il est encore nickel. Je regrette juste de ne pas être venue plus tôt."
 
-**Sophie, 35 ans, de Pontivy** : "J'étais déjà allée dans deux autres instituts où mon semi-permanent s'écaillait au bout d'une semaine. Chez Nail Art Roxy, j'ai compris pourquoi : Dina prend le temps de bien préparer l'ongle, elle ne bâcle aucune étape. Mon semi-permanent a tenu 3 semaines complètes sans un seul éclat."
+**Sophie, 35 ans, de Pontivy** : "J'étais déjà allée dans deux autres instituts où mon semi-permanent s'écaillait au bout d'une semaine. Chez Roxé Beauté, j'ai compris pourquoi : Dina prend le temps de bien préparer l'ongle, elle ne bâcle aucune étape. Mon semi-permanent a tenu 3 semaines complètes sans un seul éclat."
 
 **Léa, 42 ans, de Vannes** : "Ce que j'aime chez Dina, c'est qu'elle est honnête. Quand mes ongles étaient trop abîmés pour une pose de gel, elle m'a conseillé d'attendre 2 semaines avec des soins réparateurs. Elle aurait pu me faire la pose quand même pour gagner de l'argent, mais elle a préféré préserver la santé de mes ongles. Ça, c'est du professionnalisme."
 
@@ -95,7 +95,7 @@ Non, l'offre nouvelles clientes n'est pas cumulable avec d'autres réductions é
 
 ### Combien de temps l'offre est-elle valable ?
 
-L'offre -15% nouvelles clientes est permanente, sans date de fin. Que tu prennes rendez-vous aujourd'hui ou dans 3 mois, tu en bénéficieras. Par contre, elle ne s'applique qu'une seule fois : sur ta toute première prestation chez Nail Art Roxy. Les rendez-vous suivants sont au tarif normal.
+L'offre -15% nouvelles clientes est permanente, sans date de fin. Que tu prennes rendez-vous aujourd'hui ou dans 3 mois, tu en bénéficieras. Par contre, elle ne s'applique qu'une seule fois : sur ta toute première prestation chez Roxé Beauté. Les rendez-vous suivants sont au tarif normal.
 
 ### Puis-je offrir cette réduction à une amie ?
 

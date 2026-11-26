@@ -68,7 +68,7 @@ export default function Contact() {
 
           <div className="min-h-[380px] overflow-hidden bg-paper">
             <iframe
-              title="Localisation de Nail.art.rox by Dina à Moréac"
+              title="Localisation de Roxé Beauté à Moréac"
               src={`https://www.google.com/maps?q=${encodeURIComponent(siteConfig.contact.address)}&output=embed`}
               width="100%"
               height="100%"

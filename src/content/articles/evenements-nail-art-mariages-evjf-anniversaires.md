@@ -1,5 +1,5 @@
 ---
-title: "Événements nail art : mariages, EVJF, anniversaires | Nail Art Roxy Moréac"
+title: "Événements nail art : mariages, EVJF, anniversaires | Roxé Beauté Moréac"
 slug: "evenements-nail-art-mariages-evjf-anniversaires"
 date: 2026-02-12
 category: Actualités

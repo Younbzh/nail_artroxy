@@ -59,8 +59,8 @@ export default function Hero() {
         <p className="eyebrow-on-dark mb-5">Prothésiste ongulaire · Moréac (56)</p>
 
         <h1 className="mb-6 text-[clamp(2.7rem,8vw,5.6rem)] font-bold leading-[0.88] tracking-[-0.015em] text-white">
-          Nail.art.rox
-          <em className="block font-normal italic opacity-90">by Dina</em>
+          Roxé
+          <em className="block font-normal italic opacity-90">Beauté</em>
         </h1>
 
         <p className="mb-9 max-w-[34ch] text-base leading-relaxed text-white/75">

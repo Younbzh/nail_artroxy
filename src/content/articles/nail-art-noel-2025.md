@@ -8,4 +8,4 @@ tags: ['nail art noël', 'ongles fêtes', 'idées manucure hiver']
 image: "/portfolio/nailart-rouge-pois-800.webp"
 ---
 
-Une sélection des plus belles créations festives réalisées en décembre dernier chez Nail.art.rox.
+Une sélection des plus belles créations festives réalisées en décembre dernier chez Roxé Beauté.

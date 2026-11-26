@@ -5,7 +5,7 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 
 /** Les titres portent un suffixe SEO qui n'a pas lieu d'être affiché en grille. */
-const titreCourt = (t: string) => t.replace(/ \| Nail[ .]?[Aa]rt[ .]?[Rr]ox.*$/, '');
+const titreCourt = (t: string) => t.replace(/ \| (Roxé Beauté|Nail[ .]?[Aa]rt[ .]?[Rr]ox).*$/, '');
 
 export default function Blog() {
   return (

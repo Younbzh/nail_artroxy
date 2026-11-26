@@ -1,5 +1,5 @@
 ---
-title: "Préparer ses ongles avant une pose de gel : le guide expert | Nail Art Roxy Moréac"
+title: "Préparer ses ongles avant une pose de gel : le guide expert | Roxé Beauté Moréac"
 slug: "preparer-ongles-avant-pose-gel"
 date: 2026-02-12
 category: Conseils
