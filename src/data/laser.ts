@@ -52,11 +52,18 @@ export const corpsComplet = {
 export const avantages = ['−10 % dès 3 zones', '−15 % sur un forfait de 6 séances', 'Bilan personnalisé offert'];
 
 /**
- * Les attestations de formation, à compléter quand Roxana les transmet.
- * Tant que la liste est vide, la section dit qu'elles sont affichées au salon,
- * ce qu'impose de toute façon la réglementation.
+ * Les attestations de formation à l'épilation laser.
+ * Elles sont aussi affichées au salon, comme l'impose la réglementation.
  */
-export const attestations: { titre: string; organisme: string; annee: string; image: string }[] = [];
+export const attestations: { titre: string; organisme: string; date: string; detail: string; image: string }[] = [
+  {
+    titre: 'Formation socle laser',
+    organisme: 'Lolympe Academy, organisme certifié Qualiopi',
+    date: 'du 9 au 11 novembre 2026',
+    detail: "Niveau d'acquis : 95 % de bonnes réponses",
+    image: '/epilation-laser/attestation-socle-laser.jpg',
+  },
+];
 
 export const questionsLaser = [
   {

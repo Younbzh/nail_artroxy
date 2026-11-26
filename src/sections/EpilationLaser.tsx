@@ -26,7 +26,7 @@ const engagements = [
     Icone: GraduationCap,
     titre: 'Une praticienne formée',
     texte:
-      "J'ai suivi la formation obligatoire à l'épilation laser. Mes attestations sont affichées au salon, comme l'exige la réglementation.",
+      "Formation socle laser suivie en novembre 2026 auprès d'un organisme certifié Qualiopi. L'attestation est consultable ci-dessous et affichée au salon.",
   },
   {
     Icone: ShieldCheck,
@@ -83,7 +83,7 @@ function Volet({ titre, children }: { titre: string; children: React.ReactNode }
 }
 
 export default function EpilationLaser() {
-  const [plaquette, setPlaquette] = useState(false);
+  const [zoom, setZoom] = useState<{ src: string; alt: string } | null>(null);
   const urlBilan = siteConfig.reservation.prestations.laser;
 
   return (
@@ -144,19 +144,37 @@ export default function EpilationLaser() {
           ))}
         </div>
 
-        {/* Attestations, dès qu'elles sont transmises */}
-        {attestations.length > 0 && (
-          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {attestations.map((a) => (
-              <figure key={a.image} className="rounded-2xl bg-paper p-4">
-                <img src={a.image} alt={a.titre} loading="lazy" className="aspect-[4/3] w-full rounded-lg bg-chalk object-contain p-2" />
-                <figcaption className="mt-3 text-[13.5px] text-ink-mut">
-                  <span className="font-bold text-ink">{a.titre}</span> · {a.organisme}, {a.annee}
-                </figcaption>
-              </figure>
-            ))}
+        {/* Attestations de formation : la preuve, pas seulement la promesse */}
+        {attestations.map((a) => (
+          <div key={a.image} className="mt-4 grid items-center gap-8 rounded-2xl bg-paper p-6 sm:p-8 md:grid-cols-[1.3fr_1fr]">
+            <button
+              type="button"
+              onClick={() => setZoom({ src: a.image, alt: `Attestation de ${a.titre.toLowerCase()}` })}
+              className="group overflow-hidden rounded-xl border border-line"
+            >
+              <img
+                src={a.image}
+                alt={`Attestation de ${a.titre.toLowerCase()}, ${a.organisme}`}
+                loading="lazy"
+                decoding="async"
+                className="w-full transition-transform duration-500 group-hover:scale-[1.02]"
+              />
+            </button>
+            <div>
+              <p className="eyebrow">Ma formation</p>
+              <h3 className="mt-3 text-2xl font-bold">{a.titre}</h3>
+              <p className="mt-3 text-[15px] leading-relaxed text-ink-mut">
+                {a.organisme}, {a.date}.
+                <br />
+                {a.detail}.
+              </p>
+              <p className="mt-4 text-[13.5px] leading-relaxed text-ink-mut">
+                Une formation obligatoire depuis le décret du 24 mai 2024 pour pratiquer l'épilation
+                au laser. Cliquez sur l'attestation pour l'agrandir.
+              </p>
+            </div>
           </div>
-        )}
+        ))}
 
         {/* Tarifs */}
         <div id="laser-tarifs" className="mt-20 rounded-3xl bg-paper p-7 sm:p-10">
@@ -167,7 +185,7 @@ export default function EpilationLaser() {
             </div>
             <button
               type="button"
-              onClick={() => setPlaquette(true)}
+              onClick={() => setZoom({ src: PLAQUETTE, alt: "Plaquette des tarifs d'épilation laser de Roxé Beauté" })}
               className="self-start text-[13px] font-bold text-ink underline decoration-blush decoration-2 underline-offset-4 hover:decoration-blush-ink sm:self-auto"
             >
               Voir la plaquette
@@ -287,13 +305,7 @@ export default function EpilationLaser() {
         </div>
       </div>
 
-      {plaquette && (
-        <Lightbox
-          src={PLAQUETTE}
-          alt="Plaquette des tarifs d'épilation laser de Roxé Beauté"
-          onClose={() => setPlaquette(false)}
-        />
-      )}
+      {zoom && <Lightbox src={zoom.src} alt={zoom.alt} onClose={() => setZoom(null)} />}
     </section>
   );
 }
