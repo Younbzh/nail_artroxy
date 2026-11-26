@@ -50,17 +50,17 @@ const etapes = [
   {
     titre: 'Les séances',
     texte:
-      'Zone rasée la veille, lunettes de protection, quelques minutes de laser. Vous repartez tout de suite à vos occupations.',
+      'Zone rasée au rasoir la veille, lunettes de protection, quelques minutes de laser. Vous repartez tout de suite à vos occupations.',
   },
   {
     titre: 'Le protocole',
     texte:
-      'En général 6 à 8 séances par zone, espacées de 4 à 8 semaines. Les poils repoussent de moins en moins, et de plus en plus fins.',
+      '8 séances par zone, espacées de 4 à 8 semaines. Les poils repoussent de moins en moins, et de plus en plus fins.',
   },
 ];
 
 const aSavoir = [
-  "Pas de cire ni de pince pendant le protocole : le laser a besoin de la racine. Le rasoir, oui.",
+  "Rasoir uniquement pendant tout le protocole : ni cire, ni pince, ni épilateur, ni crème dépilatoire. Le laser a besoin de la racine.",
   'Pas de soleil, d’UV ni d’autobronzant sur la zone dans les semaines avant et après chaque séance.',
   "Peu efficace sur les poils blancs, gris, roux ou très blonds : le laser cible le pigment.",
   'Déconseillé pendant la grossesse, sur une peau bronzée ou lésée, sur un tatouage, ou avec un traitement photosensibilisant.',

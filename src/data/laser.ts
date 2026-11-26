@@ -65,7 +65,7 @@ export const questionsLaser = [
   },
   {
     q: 'Combien de séances faut-il ?',
-    r: "En général 6 à 8 séances par zone, espacées de 4 à 8 semaines pour suivre le cycle de pousse du poil. Le nombre exact dépend de la zone, de la couleur et de l'épaisseur de vos poils : je vous le donne lors du bilan, avant tout engagement.",
+    r: "Le protocole compte 8 séances par zone, espacées de 4 à 8 semaines pour suivre le cycle de pousse du poil. Selon votre peau, vos poils et vos hormones, une séance d'entretien peut être utile plus tard : on en parle dès le bilan.",
   },
   {
     q: 'Est-ce que ça fait mal ?',
@@ -77,7 +77,7 @@ export const questionsLaser = [
   },
   {
     q: 'Comment me préparer avant une séance ?',
-    r: "Rasez la zone la veille, sans cire ni pince à épiler pendant tout le protocole, car le laser a besoin de la racine. Évitez le soleil, les UV et l'autobronzant sur la zone dans les semaines qui précèdent et qui suivent, et venez sans crème ni déodorant sur la zone.",
+    r: "Rasez la zone au rasoir la veille. Pendant tout le protocole, c'est rasoir uniquement : ni cire, ni pince, ni épilateur, ni crème dépilatoire, car le laser a besoin de la racine. Évitez le soleil, les UV et l'autobronzant sur la zone dans les semaines qui précèdent et qui suivent, et venez sans crème ni déodorant sur la zone.",
   },
   {
     q: 'Y a-t-il des contre-indications ?',
