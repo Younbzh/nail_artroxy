@@ -27,8 +27,7 @@ export const siteConfig = {
       gel: "https://cal.eu/nail-art-roxy/gel",
       semiPermanent: "https://cal.eu/nail-art-roxy/semi-permanent",
       pedicure: "https://cal.eu/nail-art-roxy/pedicure",
-      // Page d'accueil Cal.eu tant que l'événement « bilan laser » n'existe pas
-      laser: "https://cal.eu/nail-art-roxy"
+      laser: "https://cal.eu/nail-art-roxy/bilan-epilation-laser-offert"
     }
   },
 
