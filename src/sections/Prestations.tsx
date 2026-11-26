@@ -1,6 +1,14 @@
 import { siteConfig } from '../config/siteConfig';
 
-const prestations = [
+type Prestation = {
+  nom: string;
+  duree: string;
+  texte: string;
+  url: string;
+  tarifs?: { nom: string; prix: string }[];
+};
+
+const prestations: Prestation[] = [
   {
     nom: 'Gel sur ongle naturel',
     duree: '1 h à 1 h 30',
@@ -24,6 +32,11 @@ const prestations = [
     duree: '45 min à 1 h',
     texte: "Un vrai moment de soin, pour des pieds qu'on a envie de montrer.",
     url: siteConfig.reservation.prestations.pedicure,
+    tarifs: [
+      { nom: 'Pose semi-permanent', prix: '30 €' },
+      { nom: 'Dépose + pose', prix: '35 €' },
+      { nom: 'Dépose complète', prix: '20 €' },
+    ],
   },
 ];
 
@@ -38,7 +51,7 @@ export default function Prestations() {
 
         {/* La grille en 1px de gap sur fond `line` dessine les filets de séparation */}
         <div className="grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-4">
-          {prestations.map(({ nom, duree, texte, url }) => (
+          {prestations.map(({ nom, duree, texte, url, tarifs }) => (
             <a
               key={nom}
               href={url}
@@ -51,6 +64,16 @@ export default function Prestations() {
               </p>
               <h3 className="mb-2.5 mt-3 text-2xl font-bold">{nom}</h3>
               <p className="mb-7 text-[15px] leading-relaxed text-ink-mut">{texte}</p>
+              {tarifs && (
+                <ul className="-mt-2 mb-7 space-y-1.5 border-t border-line pt-4">
+                  {tarifs.map((t) => (
+                    <li key={t.nom} className="flex items-baseline justify-between gap-3 text-[13.5px] text-ink-soft">
+                      {t.nom}
+                      <span className="font-display text-[15px] font-bold text-ink tabular-nums">{t.prix}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
               <span className="text-[13px] font-bold text-ink underline decoration-blush decoration-2 underline-offset-4 group-hover:decoration-blush-ink">
                 Réserver
               </span>
