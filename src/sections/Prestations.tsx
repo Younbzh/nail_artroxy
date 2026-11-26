@@ -14,18 +14,21 @@ const prestations: Prestation[] = [
     duree: '1 h à 1 h 30',
     texte: "Le gel posé sur vos ongles, sans rallonge : solides, nets, et toujours naturels.",
     url: siteConfig.reservation.prestations.gel,
+    tarifs: [{ nom: 'À partir de', prix: '30 €' }],
   },
   {
     nom: 'Construction',
     duree: '2 h à 3 h',
     texte: "Des ongles allongés et sculptés au gel, à la longueur et à la forme que vous choisissez.",
     url: siteConfig.reservation.prestations.gel,
+    tarifs: [{ nom: 'À partir de', prix: '40 €' }],
   },
   {
     nom: 'Semi-permanent',
     duree: '1 h à 1 h 30',
     texte: 'La couleur qui reste impeccable trois semaines, avec une brillance de premier jour.',
     url: siteConfig.reservation.prestations.semiPermanent,
+    tarifs: [{ nom: 'À partir de', prix: '30 €' }],
   },
   {
     nom: 'Pédicure',
@@ -57,7 +60,7 @@ export default function Prestations() {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-paper p-8 transition-colors hover:bg-blush-pale"
+              className="group flex flex-col bg-paper p-8 transition-colors hover:bg-blush-pale"
             >
               <p className="text-[10.5px] font-bold uppercase tracking-[0.16em] text-blush-ink tabular-nums">
                 {duree}
@@ -65,7 +68,7 @@ export default function Prestations() {
               <h3 className="mb-2.5 mt-3 text-2xl font-bold">{nom}</h3>
               <p className="mb-7 text-[15px] leading-relaxed text-ink-mut">{texte}</p>
               {tarifs && (
-                <ul className="-mt-2 mb-7 space-y-1.5 border-t border-line pt-4">
+                <ul className="mb-7 mt-auto space-y-1.5 border-t border-line pt-4">
                   {tarifs.map((t) => (
                     <li key={t.nom} className="flex items-baseline justify-between gap-3 text-[13.5px] text-ink-soft">
                       {t.nom}
@@ -74,7 +77,7 @@ export default function Prestations() {
                   ))}
                 </ul>
               )}
-              <span className="text-[13px] font-bold text-ink underline decoration-blush decoration-2 underline-offset-4 group-hover:decoration-blush-ink">
+              <span className="self-start text-[13px] font-bold text-ink underline decoration-blush decoration-2 underline-offset-4 group-hover:decoration-blush-ink">
                 Réserver
               </span>
             </a>
