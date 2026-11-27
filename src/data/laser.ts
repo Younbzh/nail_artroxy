@@ -7,6 +7,14 @@
  * que la fiche d'information remise à la cliente décrit serait trompeur.
  */
 
+/**
+ * Interrupteur de la prestation laser, reportée à une date ultérieure.
+ * À false, rien du laser ne s'affiche : section, menu, bandeau du hero,
+ * paragraphe « Qui suis-je », pied de page, FAQ et textes SEO. Le contenu
+ * reste ici, prêt : repasser à true suffit pour le remettre en ligne.
+ */
+export const laserVisible = false;
+
 export interface Zone {
   nom: string;
   precision?: string;

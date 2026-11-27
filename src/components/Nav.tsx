@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { siteConfig } from '../config/siteConfig';
 import Wordmark from './Wordmark';
+import { laserVisible } from '../data/laser';
 
 const liens = [
   { label: 'Qui suis-je', href: '/#apropos' },
   { label: 'Prestations', href: '/#prestations' },
-  { label: 'Épilation laser', href: '/#epilation-laser' },
+  ...(laserVisible ? [{ label: 'Épilation laser', href: '/#epilation-laser' }] : []),
   { label: 'Portfolio', href: '/#portfolio' },
   { label: 'Événements', href: '/#evenements' },
   { label: 'Articles', href: '/blog' },

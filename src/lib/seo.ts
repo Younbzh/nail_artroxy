@@ -2,7 +2,7 @@ import { siteConfig } from '../config/siteConfig';
 import { communes, cheminCommune, deCommune, minutesTrajet } from '../data/communes';
 import { communeCiblee } from './commune';
 import type { Article } from '../content/articles';
-import { questionsLaser } from '../data/laser';
+import { laserVisible, questionsLaser } from '../data/laser';
 
 const RACINE = siteConfig.url.replace(/\/$/, '');
 const TEL = `+33${siteConfig.contact.phone.replace(/\s/g, '').slice(1)}`;
@@ -120,7 +120,7 @@ export function seoAccueil(): DonneesSeo {
     description,
     motsCles: siteConfig.seo.keywords.join(', '),
     canonical: `${RACINE}/`,
-    blocs: [etablissement(description), faq(questionsLaser), filAriane([{ nom: 'Accueil', url: '/' }])],
+    blocs: [etablissement(description), ...(laserVisible ? [faq(questionsLaser)] : []), filAriane([{ nom: 'Accueil', url: '/' }])],
   };
 }
 

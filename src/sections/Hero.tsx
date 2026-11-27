@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { siteConfig } from '../config/siteConfig';
 import { heroSlug, pleineTaille } from '../data/portfolio';
+import { laserVisible } from '../data/laser';
 
 export default function Hero() {
   /*
@@ -56,15 +57,17 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/35 to-ink/10" />
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-5 pb-16 pt-28 sm:px-8 md:pb-24">
-        <a
-          href="#epilation-laser"
-          className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-white/25 bg-ink/30 py-1.5 pl-1.5 pr-4 text-[12.5px] text-white/85 backdrop-blur-sm transition-colors hover:border-blush hover:text-white"
-        >
-          <span className="rounded-full bg-blush px-2.5 py-0.5 text-[10.5px] font-bold uppercase tracking-[0.14em] text-ink">Nouveau</span>
-          Épilation laser diode, bilan offert
-          <span aria-hidden="true">→</span>
-        </a>
-        <p className="eyebrow-on-dark mb-5">Ongles & épilation laser · Moréac (56)</p>
+        {laserVisible && (
+          <a
+            href="#epilation-laser"
+            className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-white/25 bg-ink/30 py-1.5 pl-1.5 pr-4 text-[12.5px] text-white/85 backdrop-blur-sm transition-colors hover:border-blush hover:text-white"
+          >
+            <span className="rounded-full bg-blush px-2.5 py-0.5 text-[10.5px] font-bold uppercase tracking-[0.14em] text-ink">Nouveau</span>
+            Épilation laser diode, bilan offert
+            <span aria-hidden="true">→</span>
+          </a>
+        )}
+        <p className="eyebrow-on-dark mb-5">{laserVisible ? 'Ongles & épilation laser' : 'Prothésiste ongulaire'} · Moréac (56)</p>
 
         <h1 className="mb-6 text-[clamp(2.7rem,8vw,5.6rem)] font-bold leading-[0.88] tracking-[-0.015em] text-white">
           Roxé

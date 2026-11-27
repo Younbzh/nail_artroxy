@@ -1,4 +1,5 @@
 import { vignette } from '../data/portfolio';
+import { laserVisible } from '../data/laser';
 
 export default function Apropos() {
   return (
@@ -35,11 +36,13 @@ export default function Apropos() {
               ongles, techniques de pose — parce que la beauté d'une pose tient d'abord à la santé de
               l'ongle qui est dessous.
             </p>
-            <p>
-              Depuis cette année, je propose aussi l'épilation au laser diode. J'ai suivi la
-              formation obligatoire, et j'y mets le même soin qu'à vos ongles : un bilan avant de
-              commencer, et une vraie écoute à chaque séance.
-            </p>
+            {laserVisible && (
+              <p>
+                Depuis cette année, je propose aussi l'épilation au laser diode. J'ai suivi la
+                formation obligatoire, et j'y mets le même soin qu'à vos ongles : un bilan avant de
+                commencer, et une vraie écoute à chaque séance.
+              </p>
+            )}
             <p>
               Je vous reçois dans un espace dédié et calme, sur rendez-vous uniquement. Vous êtes la
               seule cliente sur votre créneau.

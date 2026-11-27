@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { siteConfig } from '../config/siteConfig';
+import { laserVisible } from '../data/laser';
 import Wordmark from './Wordmark';
 
 const telBrut = siteConfig.contact.phone.replace(/\s/g, '');
@@ -11,9 +12,11 @@ export default function Footer() {
         <div>
           <p className="text-xl"><Wordmark clair /></p>
           <p className="mt-3 text-[14.5px] leading-relaxed text-white/50">
-            Ongles et épilation laser à Moréac.
+            {laserVisible ? 'Ongles et épilation laser à Moréac.' : 'Prothésiste ongulaire à Moréac.'}
             <br />
-            Gel, semi-permanent, nail art, pédicure et épilation laser diode, sur rendez-vous.
+            {laserVisible
+              ? 'Gel, semi-permanent, nail art, pédicure et épilation laser diode, sur rendez-vous.'
+              : 'Gel, semi-permanent, nail art et pédicure, sur rendez-vous.'}
           </p>
           <div className="mt-5 flex gap-2">
             <a

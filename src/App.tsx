@@ -9,6 +9,7 @@ import DevisModal from './components/DevisModal';
 import Hero from './sections/Hero';
 import Prestations from './sections/Prestations';
 import EpilationLaser from './sections/EpilationLaser';
+import { laserVisible } from './data/laser';
 import Portfolio from './sections/Portfolio';
 import Apropos from './sections/Apropos';
 import Diplomes from './sections/Diplomes';
@@ -34,7 +35,7 @@ function Accueil() {
         <Hero />
         <Apropos />
         <Prestations />
-        <EpilationLaser />
+        {laserVisible && <EpilationLaser />}
         <Portfolio />
         <Diplomes />
         <Evenements onDevis={() => setDevisOuvert(true)} />
